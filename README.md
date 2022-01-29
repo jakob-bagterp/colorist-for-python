@@ -71,11 +71,11 @@ from colorist import Color
 print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RESET))
 ```
 
-## Supported Colors
+## Supported Text Colors
 <table>
     <tr>
         <th>Color</th>
-        <th>Full</th>
+        <th>Full Text</th>
         <th>Custom</th>
     </tr>
     <tr>
