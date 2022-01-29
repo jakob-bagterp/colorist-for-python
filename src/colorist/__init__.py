@@ -27,7 +27,7 @@ class BrightColor(Enum):
     CYAN    = "\033[96m"
     WHITE   = "\033[97m"
     BLACK   = "\033[90m"
-    RESET   = "\033[0m"
+    RESET   = Color.RESET
 
 def print_color(text: str, color: Union[Color, BrightColor]) -> None:
     print(f"{color}{text}{Color.RESET}")
