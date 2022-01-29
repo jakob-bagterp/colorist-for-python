@@ -1,0 +1,20 @@
+from colorist import bright_green, bright_yellow, bright_red, bright_magenta, bright_blue, bright_cyan, bright_white, bright_black
+
+if __name__ == "__main__":
+    print("")
+    bright_green("This is BRIGHT GREEN!")
+    print("")
+    bright_yellow("This is BRIGHT YELLOW!")
+    print("")
+    bright_red("This is BRIGHT RED!")
+    print("")
+    bright_magenta("This is BRIGHT MAGENTA!")
+    print("")
+    bright_blue("This is BRIGHT BLUE!")
+    print("")
+    bright_cyan("This is BRIGHT CYAN!")
+    print("")
+    bright_white("This is BRIGHT WHITE!")
+    print("")
+    bright_black("This is BRIGHT BLACK!")
+    print("")
