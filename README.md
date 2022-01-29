@@ -29,7 +29,7 @@ And then install:
 brew install colorist-for-python
 ```
 
-## Getting Started
+## Getting Started: Colors
 ### Full Terminal Output
 How to print a full line of colored text in the terminal:
 
@@ -77,7 +77,7 @@ from colorist import Color
 print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RESET))
 ```
 
-## Supported Text Colors
+### Supported Text Colors
 <table>
     <tr>
         <th>Color</th>
