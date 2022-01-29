@@ -31,6 +31,23 @@ class BrightColor(Enum):
     DEFAULT = Color.DEFAULT
     RESET   = Color.RESET
 
+@unique
+class Effect(Enum):
+    BOLD      = "\033[1m"
+    DIM       = "\033[2m"
+    UNDERLINE = "\033[4m"
+    BLINK     = "\033[5m"
+    REVERSE   = "\033[7m"
+    HIDE      = "\033[8m"
+
+    RESET_BOLD      = "\033[21m"
+    RESET_DIM       = "\033[22m"
+    RESET_UNDERLINE = "\033[24m"
+    RESET_BLINK     = "\033[25m"
+    RESET_REVERSE   = "\033[27m"
+    RESET_HIDE      = "\033[28m"
+    RESET_ALL       = Color.RESET
+
 def print_color(text: str, color: Union[Color, BrightColor]) -> None:
     print(f"{color}{text}{Color.RESET}")
 
@@ -81,3 +98,24 @@ def bright_white(text: str) -> None:
 
 def bright_black(text: str) -> None:
     print_color(text, BrightColor.BLACK)
+
+def print_effect_with_color(text: str, effect: Effect, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+    print(f"{color}{effect}{text}{Effect.RESET_ALL}")
+
+def effect_bold(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+    print_effect_with_color(text, Effect.BOLD, color)
+
+def effect_dim(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+    print_effect_with_color(text, Effect.DIM, color)
+
+def effect_underline(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+    print_effect_with_color(text, Effect.UNDERLINE, color)
+
+def effect_blink(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+    print_effect_with_color(text, Effect.BLINK, color)
+
+def effect_reverse(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+    print_effect_with_color(text, Effect.REVERSE, color)
+
+def effect_hide(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+    print_effect_with_color(text, Effect.HIDE, color)

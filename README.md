@@ -166,6 +166,36 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RES
     </tr>
 </table>
 
+## Getting Started: Effects
+In addition to colors, Colorist for Python can also add effects to text messages in the terminal. Example:
+
+```python
+from colorist import Effect
+
+print(f"I want {Effect.UNDERLINE}underlined text{Effect.RESET_UNDERLINE} inside this paragraph")
+
+print(f"I want {Effect.BOLD}emphasized text{Effect.RESET_BOLD} inside this paragraph")
+```
+
+Effects can also be mixed with colors:
+
+```python
+from colorist import Color, Effect
+
+print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.RESET_BLINK} text{Color.RESET} inside this paragraph")
+```
+
+### Supported Effects
+| Effect           | Full Text | Custom | Reset |
+| ---------------- | --------- | ------ | ----- |
+| **Bold**         | effect_bold("text") | Effect.BOLD | Effect.RESET_BOLD |
+| Dim              | effect_dim("text") | Effect.DIM | Effect.RESET_DIM |
+| <u>Underline</u> | effect_underline("text") | Effect.UNDERLINE | Effect.RESET_UNDERLINE |
+| Blink            | effect_blink("text") | Effect.BLINK | Effect.RESET_BLINK |
+| Reverse          | effect_reverse("text") | Effect.REVERSE | Effect.RESET_REVERSE |
+| Hide             | effect_hide("text") | Effect.HIDE | Effect.RESET_HIDE |
+| -                | - | - | Effect.RESET_ALL |
+
 ## Donate
 This module is free to use. And if you like it, feel free to [buy me a coffee](https://github.com/sponsors/jakob-bagterp).
 
