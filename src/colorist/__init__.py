@@ -6,13 +6,13 @@ from enum import Enum, unique
 
 @unique
 class Color(Enum):
-    GREEN   = "\033[92m"
-    YELLOW  = "\033[93m"
-    RED     = "\033[91m"
+    GREEN   = "\033[32m"
+    YELLOW  = "\033[33m"
+    RED     = "\033[31m"
     MAGENTA = "\033[35m"
     BLUE    = "\033[34m"
     CYAN    = "\033[36m"
-    WHITE   = "\033[97m"
+    WHITE   = "\033[37m"
     BLACK   = "\033[30m"
     RESET   = "\033[0m"
 
