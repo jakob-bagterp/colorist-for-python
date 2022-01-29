@@ -2,8 +2,9 @@ __all__ = []
 
 from .version import __version__
 
-from enum import Enum
+from enum import Enum, unique
 
+@unique
 class Color(Enum):
     GREEN   = "\033[92m"
     YELLOW  = "\033[93m"
