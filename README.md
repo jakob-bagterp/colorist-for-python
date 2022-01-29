@@ -59,7 +59,7 @@ from colorist import BrightColor
 print(f"I want {BrightColor.CYAN}cyan{BrightColor.RESET} color inside this paragraph")
 ```
 
-Remember to use the `Color.RESET` or `BrightColor.RESET` every time you want to revert back to the default terminal text color. Otherwise the color may spill over and into other terminal messages.
+Remember to use `Color.RESET` or `BrightColor.RESET` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
 ##### Other String Formats
 It's easier and more readable to use f-strings as in the example above, but you can also use string addition...
