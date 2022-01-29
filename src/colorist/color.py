@@ -12,3 +12,6 @@ class Color(Enum):
     BLACK   = "\033[30m"
     DEFAULT = "\033[39m"
     RESET   = "\033[0m"
+
+    def __str__(self):
+        return str(self.value)

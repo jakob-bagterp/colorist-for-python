@@ -13,3 +13,6 @@ class BrightColor(Enum):
     BLACK   = "\033[90m"
     DEFAULT = Color.DEFAULT
     RESET   = Color.RESET
+
+    def __str__(self):
+        return str(self.value)
