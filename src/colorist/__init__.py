@@ -58,23 +58,23 @@ def bright_white(text: str) -> None:
 def bright_black(text: str) -> None:
     print_color(text, BrightColor.BLACK)
 
-def print_effect_with_color(text: str, effect: Effect, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+def print_effect(text: str, effect: Effect, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
     print(f"{color}{effect}{text}{Effect.RESET_ALL}")
 
 def effect_bold(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
-    print_effect_with_color(text, Effect.BOLD, color)
+    print_effect(text, Effect.BOLD, color)
 
 def effect_dim(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
-    print_effect_with_color(text, Effect.DIM, color)
+    print_effect(text, Effect.DIM, color)
 
 def effect_underline(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
-    print_effect_with_color(text, Effect.UNDERLINE, color)
+    print_effect(text, Effect.UNDERLINE, color)
 
 def effect_blink(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
-    print_effect_with_color(text, Effect.BLINK, color)
+    print_effect(text, Effect.BLINK, color)
 
 def effect_reverse(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
-    print_effect_with_color(text, Effect.REVERSE, color)
+    print_effect(text, Effect.REVERSE, color)
 
 def effect_hide(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
-    print_effect_with_color(text, Effect.HIDE, color)
+    print_effect(text, Effect.HIDE, color)
