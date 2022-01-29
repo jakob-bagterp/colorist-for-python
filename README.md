@@ -98,6 +98,26 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RES
         <td>magenta("text")</td>
         <td>Color.MAGENTA</td>
     </tr>
+    <tr>
+        <td style="background-color: rgb(114, 159, 207)"></td>
+        <td>blue("text")</td>
+        <td>Color.BLUE</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(6, 152, 154)"></td>
+        <td>cyan("text")</td>
+        <td>Color.CYAN</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(211, 215, 207)"></td>
+        <td>white("text")</td>
+        <td>Color.WHITE</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(0, 0, 0)"></td>
+        <td>black("text")</td>
+        <td>Color.BLACK</td>
+    </tr>
 </table>
 
 ## Donate

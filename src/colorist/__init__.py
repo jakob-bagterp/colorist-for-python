@@ -10,6 +10,10 @@ class Color(Enum):
     YELLOW  = "\033[93m"
     RED     = "\033[91m"
     MAGENTA = "\033[35m"
+    BLUE    = "\033[34m"
+    CYAN    = "\033[36m"
+    WHITE   = "\033[97m"
+    BLACK   = "\033[30m"
     RESET   = "\033[0m"
 
 def print_color(text: str, color: Color) -> None:
@@ -26,3 +30,15 @@ def red(text: str) -> None:
 
 def magenta(text: str) -> None:
     print_color(text, Color.MAGENTA)
+
+def blue(text: str) -> None:
+    print_color(text, Color.BLUE)
+
+def cyan(text: str) -> None:
+    print_color(text, Color.CYAN)
+
+def white(text: str) -> None:
+    print_color(text, Color.WHITE)
+
+def black(text: str) -> None:
+    print_color(text, Color.BLACK)
