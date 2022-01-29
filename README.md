@@ -219,6 +219,8 @@ from colorist import Color, Effect
 print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.RESET_BLINK} text{Color.RESET} inside this paragraph")
 ```
 
+Similar to `Color.RESET` and `BrightColor.RESET`, remember to turn off an effect with the relevant reset option (e.g `Effect.RESET_BOLD`, `Effect.RESET_BOLD`, etc. or even just `Effect.RESET_ALL`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
+
 ### Supported Effects
 | Effect           | Full Text Function       | Custom           | Reset                  |
 | ---------------- | ------------------------ | ---------------- | ---------------------- |
