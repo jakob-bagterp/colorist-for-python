@@ -1,12 +1,12 @@
 [![Latest version](https://img.shields.io/static/v1?label=version&message=v0.1.0&color=yellowgreen)](https://github.com/jakob-bagterp/timer-for-python/releases)
-![Python 3.4](https://img.shields.io/static/v1?label=python&message=v3.4&color=green)
+![Python 3.9](https://img.shields.io/static/v1?label=python&message=v3.9&color=green)
 [![MIT license](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)](https://github.com/jakob-bagterp/timer-for-python/blob/master/LICENSE.md)
 
 # 🌈 Colorist for Python 🌈
 Make it easy and fast to print terminal messages in colors.
 
 ## Prerequisites
-* Python 3.4 or higher
+* Python 3.9 or higher
 * macOS
     * It may work on Windows or Linux, but hasn't been tested
 
