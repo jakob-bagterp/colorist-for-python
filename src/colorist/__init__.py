@@ -2,51 +2,10 @@ __all__ = []
 
 from .version import __version__
 
-from enum import Enum, unique
 from typing import Union
-
-@unique
-class Color(Enum):
-    GREEN   = "\033[32m"
-    YELLOW  = "\033[33m"
-    RED     = "\033[31m"
-    MAGENTA = "\033[35m"
-    BLUE    = "\033[34m"
-    CYAN    = "\033[36m"
-    WHITE   = "\033[37m"
-    BLACK   = "\033[30m"
-    DEFAULT = "\033[39m"
-    RESET   = "\033[0m"
-
-@unique
-class BrightColor(Enum):
-    GREEN   = "\033[92m"
-    YELLOW  = "\033[93m"
-    RED     = "\033[91m"
-    MAGENTA = "\033[95m"
-    BLUE    = "\033[94m"
-    CYAN    = "\033[96m"
-    WHITE   = "\033[97m"
-    BLACK   = "\033[90m"
-    DEFAULT = Color.DEFAULT
-    RESET   = Color.RESET
-
-@unique
-class Effect(Enum):
-    BOLD      = "\033[1m"
-    DIM       = "\033[2m"
-    UNDERLINE = "\033[4m"
-    BLINK     = "\033[5m"
-    REVERSE   = "\033[7m"
-    HIDE      = "\033[8m"
-
-    RESET_BOLD      = "\033[21m"
-    RESET_DIM       = "\033[22m"
-    RESET_UNDERLINE = "\033[24m"
-    RESET_BLINK     = "\033[25m"
-    RESET_REVERSE   = "\033[27m"
-    RESET_HIDE      = "\033[28m"
-    RESET_ALL       = Color.RESET
+from .color import Color
+from .bright_color import BrightColor
+from .effect import Effect
 
 def print_color(text: str, color: Union[Color, BrightColor]) -> None:
     print(f"{color}{text}{Color.RESET}")
