@@ -201,7 +201,27 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RES
 
 ## Effects
 ### Getting Started
-In addition to colors, Colorist for Python can also add effects to text messages in the terminal. Example:
+In addition to colors, Colorist for Python can also add effects to text messages in the terminal.
+
+#### Full Terminal Output
+How to print a full line of text effect in the terminal:
+
+```python
+from colorist import effect_blink
+
+effect_blink("This is BLINKING!")
+```
+
+And this can also be combined with an optional color:
+
+```python
+from colorist import Color, effect_blink
+
+effect_blink("This is BLINKING!", Color.CYAN)
+```
+
+#### Custom Terminal Output
+How to customize terminal messages and change effect inside a paragraph:
 
 ```python
 from colorist import Effect
