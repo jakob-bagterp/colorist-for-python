@@ -85,7 +85,7 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RES
         <th>Custom</th>
     </tr>
     <tr>
-        <td style="background-color: rgb(78, 154, 6)">![Green](/assets/images/colors/green.png)</td>
+        <td style="background-color: rgb(78, 154, 6)"><img src="assets/images/colors/green.png" alt="Green"></td>
         <td>green("text")</td>
         <td>Color.GREEN</td>
     </tr>
