@@ -186,15 +186,15 @@ print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.RESET_B
 ```
 
 ### Supported Effects
-| Effect           | Full Text | Custom | Reset |
-| ---------------- | --------- | ------ | ----- |
-| **Bold**         | effect_bold("text") | Effect.BOLD | Effect.RESET_BOLD |
-| Dim              | effect_dim("text") | Effect.DIM | Effect.RESET_DIM |
+| Effect           | Full Text                | Custom           | Reset                  |
+| ---------------- | ------------------------ | ---------------- | ---------------------- |
+| **Bold**         | effect_bold("text")      | Effect.BOLD      | Effect.RESET_BOLD      |
+| Dim              | effect_dim("text")       | Effect.DIM       | Effect.RESET_DIM       |
 | <u>Underline</u> | effect_underline("text") | Effect.UNDERLINE | Effect.RESET_UNDERLINE |
-| Blink            | effect_blink("text") | Effect.BLINK | Effect.RESET_BLINK |
-| Reverse          | effect_reverse("text") | Effect.REVERSE | Effect.RESET_REVERSE |
-| Hide             | effect_hide("text") | Effect.HIDE | Effect.RESET_HIDE |
-| -                | - | - | Effect.RESET_ALL |
+| Blink            | effect_blink("text")     | Effect.BLINK     | Effect.RESET_BLINK     |
+| Reverse          | effect_reverse("text")   | Effect.REVERSE   | Effect.RESET_REVERSE   |
+| Hide             | effect_hide("text")      | Effect.HIDE      | Effect.RESET_HIDE      |
+| -                | -                        | -                | Effect.RESET_ALL       |
 
 ## Donate
 This module is free to use. And if you like it, feel free to [buy me a coffee](https://github.com/sponsors/jakob-bagterp).
