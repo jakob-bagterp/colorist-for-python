@@ -17,3 +17,6 @@ class Effect(Enum):
     RESET_REVERSE   = "\033[27m"
     RESET_HIDE      = "\033[28m"
     RESET_ALL       = Color.RESET
+
+    def __str__(self):
+        return str(self.value)
