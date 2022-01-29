@@ -81,7 +81,7 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RES
 <table>
     <tr>
         <th>Color</th>
-        <th>Full Text</th>
+        <th>Full Text Function</th>
         <th>Custom</th>
     </tr>
     <tr>
@@ -186,7 +186,7 @@ print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.RESET_B
 ```
 
 ### Supported Effects
-| Effect           | Full Text                | Custom           | Reset                  |
+| Effect           | Full Text Function       | Custom           | Reset                  |
 | ---------------- | ------------------------ | ---------------- | ---------------------- |
 | **Bold**         | effect_bold("text")      | Effect.BOLD      | Effect.RESET_BOLD      |
 | Dim              | effect_dim("text")       | Effect.DIM       | Effect.RESET_DIM       |
