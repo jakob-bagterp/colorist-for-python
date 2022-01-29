@@ -15,6 +15,7 @@ class Color(Enum):
     CYAN    = "\033[36m"
     WHITE   = "\033[37m"
     BLACK   = "\033[30m"
+    DEFAULT = "\033[39m"
     RESET   = "\033[0m"
 
 @unique
@@ -27,6 +28,7 @@ class BrightColor(Enum):
     CYAN    = "\033[96m"
     WHITE   = "\033[97m"
     BLACK   = "\033[90m"
+    DEFAULT = Color.DEFAULT
     RESET   = Color.RESET
 
 def print_color(text: str, color: Union[Color, BrightColor]) -> None:
