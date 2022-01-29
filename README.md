@@ -29,8 +29,9 @@ And then install:
 brew install colorist-for-python
 ```
 
-## Getting Started: Colors
-### Full Terminal Output
+## Colors
+### Getting Started
+#### Full Terminal Output
 How to print a full line of colored text in the terminal:
 
 ```python
@@ -41,7 +42,7 @@ yellow("This is YELLOW!")
 red("This is RED!")
 ```
 
-### Custom Terminal Output
+#### Custom Terminal Output
 How to customize terminal messages and change color inside a paragraph:
 
 ```python
@@ -60,7 +61,7 @@ print(f"I want {BrightColor.CYAN}cyan{BrightColor.RESET} color inside this parag
 
 Remember to use the `Color.RESET` or `BrightColor.RESET` every time you want to revert back to the default terminal text color. Otherwise the color may spill over and into other terminal messages.
 
-#### Other String Formats
+##### Other String Formats
 It's easier and more readable to use f-strings as in the example above, but you can also use string addition...
 
 ```python
@@ -198,7 +199,8 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RES
     </tr>
 </table>
 
-## Getting Started: Effects
+## Effects
+### Getting Started
 In addition to colors, Colorist for Python can also add effects to text messages in the terminal. Example:
 
 ```python
