@@ -87,112 +87,112 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RES
     </tr>
     <tr>
         <td style="background-color: rgb(78, 154, 6)">
-            <img src="assets/images/colors/green_16x16.png" alt="Green">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/green_16x16.png" alt="Green">
         </td>
         <td>green("text")</td>
         <td>Color.GREEN</td>
     </tr>
     <tr>
         <td style="background-color: rgb(196, 160, 0)">
-            <img src="assets/images/colors/yellow_16x16.png" alt="Yellow">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/yellow_16x16.png" alt="Yellow">
         </td>
         <td>yellow("text")</td>
         <td>Color.YELLOW</td>
     </tr>
     <tr>
         <td style="background-color: rgb(204, 0, 0)">
-            <img src="assets/images/colors/red_16x16.png" alt="Red">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/red_16x16.png" alt="Red">
         </td>
         <td>red("text")</td>
         <td>Color.RED</td>
     </tr>
     <tr>
         <td style="background-color: rgb(117, 80, 123)">
-            <img src="assets/images/colors/magenta_16x16.png" alt="Magenta">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/magenta_16x16.png" alt="Magenta">
         </td>
         <td>magenta("text")</td>
         <td>Color.MAGENTA</td>
     </tr>
     <tr>
         <td style="background-color: rgb(114, 159, 207)">
-            <img src="assets/images/colors/blue_16x16.png" alt="Blue">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/blue_16x16.png" alt="Blue">
         </td>
         <td>blue("text")</td>
         <td>Color.BLUE</td>
     </tr>
     <tr>
         <td style="background-color: rgb(6, 152, 154)">
-            <img src="assets/images/colors/cyan_16x16.png" alt="Cyan">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/cyan_16x16.png" alt="Cyan">
         </td>
         <td>cyan("text")</td>
         <td>Color.CYAN</td>
     </tr>
     <tr>
         <td style="background-color: rgb(211, 215, 207)">
-            <img src="assets/images/colors/white_16x16.png" alt="White">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/white_16x16.png" alt="White">
         </td>
         <td>white("text")</td>
         <td>Color.WHITE</td>
     </tr>
     <tr>
         <td style="background-color: rgb(0, 0, 0)">
-            <img src="assets/images/colors/black_16x16.png" alt="Black">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/black_16x16.png" alt="Black">
         </td>
         <td>black("text")</td>
         <td>Color.BLACK</td>
     </tr>
     <tr>
         <td style="background-color: rgb(138, 226, 52)">
-            <img src="assets/images/colors/bright_green_16x16.png" alt="Bright green">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_green_16x16.png" alt="Bright green">
         </td>
         <td>bright_green("text")</td>
         <td>BrightColor.GREEN</td>
     </tr>
     <tr>
         <td style="background-color: rgb(252, 233, 79)">
-            <img src="assets/images/colors/bright_yellow_16x16.png" alt="Bright_yellow">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_yellow_16x16.png" alt="Bright_yellow">
         </td>
         <td>bright_yellow("text")</td>
         <td>BrightColor.YELLOW</td>
     </tr>
     <tr>
         <td style="background-color: rgb(239, 41, 41)">
-            <img src="assets/images/colors/bright_red_16x16.png" alt="Bright red">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_red_16x16.png" alt="Bright red">
         </td>
         <td>bright_red("text")</td>
         <td>BrightColor.RED</td>
     </tr>
     <tr>
         <td style="background-color: rgb(173, 127, 168)">
-            <img src="assets/images/colors/bright_magenta_16x16.png" alt="Bright magenta">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_magenta_16x16.png" alt="Bright magenta">
         </td>
         <td>bright_magenta("text")</td>
         <td>BrightColor.MAGENTA</td>
     </tr>
     <tr>
         <td style="background-color: rgb(50, 175, 255)">
-            <img src="assets/images/colors/bright_blue_16x16.png" alt="Bright blue">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_blue_16x16.png" alt="Bright blue">
         </td>
         <td>bright_blue("text")</td>
         <td>BrightColor.BLUE</td>
     </tr>
     <tr>
         <td style="background-color: rgb(52, 226, 226)">
-            <img src="assets/images/colors/bright_cyan_16x16.png" alt="Bright cyan">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_cyan_16x16.png" alt="Bright cyan">
         </td>
         <td>bright_cyan("text")</td>
         <td>BrightColor.CYAN</td>
     </tr>
     <tr>
         <td style="background-color: rgb(255, 255, 255)">
-            <img src="assets/images/colors/bright_white_16x16.png" alt="Bright white">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_white_16x16.png" alt="Bright white">
         </td>
         <td>bright_white("text")</td>
         <td>BrightColor.WHITE</td>
     </tr>
     <tr>
         <td style="background-color: rgb(85, 87, 83)">
-            <img src="assets/images/colors/bright_black_16x16.png" alt="Bright black">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_black_16x16.png" alt="Bright black">
         </td>
         <td>bright_black("text")</td>
         <td>BrightColor.BLACK</td>
