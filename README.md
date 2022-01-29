@@ -49,7 +49,7 @@ from colorist import Color
 
 print(f"I want {Color.RED}red{Color.RESET} color inside this paragraph")
 
-print(f"I can't decide whether {Color.GREEN}green{Color.RESET} or {Color.YELLOW}yellow{Color.RESET} is better")
+print(f"Both {Color.GREEN}green{Color.RESET} and {Color.YELLOW}yellow{Color.RESET} are nice colors")
 ```
 
 ```python
