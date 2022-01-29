@@ -13,7 +13,7 @@ Make it easy and fast to print terminal messages in colors.
 ## Installation
 ### PyPI
 ```shell
-pip3 install colorist-for-python
+pip3 install colorist
 ```
 
 ### Homebrew
@@ -26,7 +26,7 @@ brew tap jakob-bagterp/colorist-for-python
 And then install:
 
 ```shell
-brew install colorist-for-python
+brew install colorist
 ```
 
 ## Colors
