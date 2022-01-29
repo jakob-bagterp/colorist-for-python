@@ -118,6 +118,46 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RES
         <td>black("text")</td>
         <td>Color.BLACK</td>
     </tr>
+    <tr>
+        <td style="background-color: rgb(138, 226, 52)"></td>
+        <td>bright_green("text")</td>
+        <td>BrightColor.GREEN</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(252, 233, 79)"></td>
+        <td>bright_yellow("text")</td>
+        <td>BrightColor.YELLOW</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(239, 41, 41)"></td>
+        <td>bright_red("text")</td>
+        <td>BrightColor.RED</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(173, 127, 168)"></td>
+        <td>bright_magenta("text")</td>
+        <td>BrightColor.MAGENTA</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(50, 175, 255)"></td>
+        <td>bright_blue("text")</td>
+        <td>BrightColor.BLUE</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(52, 226, 226)"></td>
+        <td>bright_cyan("text")</td>
+        <td>BrightColor.CYAN</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(255, 255, 255)"></td>
+        <td>bright_white("text")</td>
+        <td>BrightColor.WHITE</td>
+    </tr>
+    <tr>
+        <td style="background-color: rgb(85, 87, 83)"></td>
+        <td>bright_black("text")</td>
+        <td>BrightColor.BLACK</td>
+    </tr>
 </table>
 
 ## Donate
