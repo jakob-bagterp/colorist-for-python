@@ -93,6 +93,7 @@ How it appears in the terminal:
         <th>Color</th>
         <th>Full Text Function</th>
         <th>Custom</th>
+        <th>Example</th>
     </tr>
     <tr>
         <td style="background-color: rgb(78, 154, 6)">
@@ -100,6 +101,9 @@ How it appears in the terminal:
         </td>
         <td>green("text")</td>
         <td>Color.GREEN</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/green_full_text_167x16.png" alt="Green text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(196, 160, 0)">
@@ -107,6 +111,9 @@ How it appears in the terminal:
         </td>
         <td>yellow("text")</td>
         <td>Color.YELLOW</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/yellow_full_text_167x16.png" alt="Yellow text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(204, 0, 0)">
@@ -114,6 +121,9 @@ How it appears in the terminal:
         </td>
         <td>red("text")</td>
         <td>Color.RED</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/red_full_text_167x16.png" alt="Red text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(117, 80, 123)">
@@ -121,6 +131,9 @@ How it appears in the terminal:
         </td>
         <td>magenta("text")</td>
         <td>Color.MAGENTA</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/magenta_full_text_167x16.png" alt="Magenta text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(114, 159, 207)">
@@ -128,6 +141,9 @@ How it appears in the terminal:
         </td>
         <td>blue("text")</td>
         <td>Color.BLUE</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/blue_full_text_167x16.png" alt="Blue text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(6, 152, 154)">
@@ -135,6 +151,9 @@ How it appears in the terminal:
         </td>
         <td>cyan("text")</td>
         <td>Color.CYAN</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/cyan_full_text_167x16.png" alt="Cyan text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(211, 215, 207)">
@@ -142,6 +161,9 @@ How it appears in the terminal:
         </td>
         <td>white("text")</td>
         <td>Color.WHITE</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/white_full_text_167x16.png" alt="White text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(0, 0, 0)">
@@ -149,6 +171,9 @@ How it appears in the terminal:
         </td>
         <td>black("text")</td>
         <td>Color.BLACK</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/black_full_text_167x16.png" alt="Black text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(138, 226, 52)">
@@ -156,6 +181,9 @@ How it appears in the terminal:
         </td>
         <td>bright_green("text")</td>
         <td>BrightColor.GREEN</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/bright_green_full_text_167x16.png" alt="Bright green text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(252, 233, 79)">
@@ -163,6 +191,9 @@ How it appears in the terminal:
         </td>
         <td>bright_yellow("text")</td>
         <td>BrightColor.YELLOW</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/bright_yellow_full_text_167x16.png" alt="Bright yellow text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(239, 41, 41)">
@@ -170,6 +201,9 @@ How it appears in the terminal:
         </td>
         <td>bright_red("text")</td>
         <td>BrightColor.RED</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/bright_red_full_text_167x16.png" alt="Bright red text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(173, 127, 168)">
@@ -177,6 +211,9 @@ How it appears in the terminal:
         </td>
         <td>bright_magenta("text")</td>
         <td>BrightColor.MAGENTA</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/bright_magenta_full_text_167x16.png" alt="Bright magenta text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(50, 175, 255)">
@@ -184,6 +221,9 @@ How it appears in the terminal:
         </td>
         <td>bright_blue("text")</td>
         <td>BrightColor.BLUE</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/bright_blue_full_text_167x16.png" alt="Bright blue text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(52, 226, 226)">
@@ -191,6 +231,9 @@ How it appears in the terminal:
         </td>
         <td>bright_cyan("text")</td>
         <td>BrightColor.CYAN</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/bright_cyan_full_text_167x16.png" alt="Bright cyan text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(255, 255, 255)">
@@ -198,6 +241,9 @@ How it appears in the terminal:
         </td>
         <td>bright_white("text")</td>
         <td>BrightColor.WHITE</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/bright_white_full_text_167x16.png" alt="Bright white text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(85, 87, 83)">
@@ -205,6 +251,9 @@ How it appears in the terminal:
         </td>
         <td>bright_black("text")</td>
         <td>BrightColor.BLACK</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/bright_black_full_text_167x16.png" alt="Bright black text color in terminal">
+        </td>
     </tr>
 </table>
 
