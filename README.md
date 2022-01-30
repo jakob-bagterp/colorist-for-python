@@ -55,11 +55,16 @@ print(f"I want {Color.RED}red{Color.RESET} color inside this paragraph")
 print(f"Both {Color.GREEN}green{Color.RESET} and {Color.YELLOW}yellow{Color.RESET} are nice colors")
 ```
 
+![Example of colored terminal message in green, yellow, red](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_green_yellow_red.png)
+
+
 ```python
 from colorist import BrightColor
 
 print(f"I want {BrightColor.CYAN}cyan{BrightColor.RESET} color inside this paragraph")
 ```
+
+![Example of colored terminal message in cyan](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bright_color_custom_text_cyan.png)
 
 Remember to use `Color.RESET` or `BrightColor.RESET` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
@@ -71,6 +76,8 @@ from colorist import Color
 
 print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RESET))
 ```
+
+![Example of colored terminal message in red](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_red.png)
 
 ### Supported Text Colors
 <table>
