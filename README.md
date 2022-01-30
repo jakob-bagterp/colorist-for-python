@@ -20,7 +20,7 @@ pip3 install colorist
 If you already have installed the [Homebrew](https://brew.sh) package manager for Mac and Linux, use this terminal command to tap Colorist for Python:
 
 ```shell
-brew tap jakob-bagterp/colorist-for-python
+brew tap jakob-bagterp/colorist
 ```
 
 And then install:
