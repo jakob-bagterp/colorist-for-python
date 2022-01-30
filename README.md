@@ -270,6 +270,10 @@ from colorist import effect_blink
 effect_blink("This is BLINKING!")
 ```
 
+How it appears in the terminal:
+
+![Example of terminal message with blinking text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_full_text_blink_default.gif)
+
 And this can also be combined with an optional color:
 
 ```python
@@ -277,6 +281,10 @@ from colorist import Color, effect_blink
 
 effect_blink("This is BLINKING!", Color.CYAN)
 ```
+
+How it appears in the terminal:
+
+![Example of terminal message with blinking, cyan-colored text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_full_text_blink_cyan.gif)
 
 #### Custom Terminal Output
 How to customize terminal messages and change effect inside a paragraph:
