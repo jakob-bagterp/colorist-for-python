@@ -1,4 +1,5 @@
 from colorist import effect_bold, effect_dim, effect_underline, effect_blink, effect_reverse, effect_hide
+from colorist.color import Color
 import terminal
 
 class TestFullTextEffect():
@@ -37,3 +38,10 @@ class TestFullTextEffect():
         effect_hide(text)
         terminal_output = terminal.get_output(capfd)
         assert terminal_output == f"\033[39m\033[8m{text}\033[0m\n"
+
+class TestFullTextEffectWithColor():
+    def test_blink_full_text_effect_with_color(self, capfd: object) -> None:
+        text = "This is BLINKING!"
+        effect_blink(text, Color.CYAN)
+        terminal_output = terminal.get_output(capfd)
+        assert terminal_output == f"\033[36m\033[5m{text}\033[0m\n"
