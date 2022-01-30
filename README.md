@@ -42,6 +42,8 @@ yellow("This is YELLOW!")
 red("This is RED!")
 ```
 
+How it appears in the terminal:
+
 ![Example of colored terminal message in green, yellow, red](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_full_text_green_yellow_red.png)
 
 #### Custom Terminal Output
@@ -55,6 +57,8 @@ print(f"I want {Color.RED}red{Color.RESET} color inside this paragraph")
 print(f"Both {Color.GREEN}green{Color.RESET} and {Color.YELLOW}yellow{Color.RESET} are nice colors")
 ```
 
+How it appears in the terminal:
+
 ![Example of colored terminal message in green, yellow, red](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_green_yellow_red.png)
 
 
@@ -63,6 +67,8 @@ from colorist import BrightColor
 
 print(f"I want {BrightColor.CYAN}cyan{BrightColor.RESET} color inside this paragraph")
 ```
+
+How it appears in the terminal:
 
 ![Example of colored terminal message in cyan](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bright_color_custom_text_cyan.png)
 
@@ -76,6 +82,8 @@ from colorist import Color
 
 print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RESET))
 ```
+
+How it appears in the terminal:
 
 ![Example of colored terminal message in red](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_red.png)
 
