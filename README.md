@@ -44,7 +44,7 @@ red("This is RED!")
 
 How it appears in the terminal:
 
-![Example of colored terminal message in green, yellow, red](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_full_text_green_yellow_red.png)
+![Example of terminal message with green, yellow, red text color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_full_text_green_yellow_red.png)
 
 #### Custom Terminal Output
 How to customize terminal messages and change color inside a paragraph:
@@ -59,7 +59,7 @@ print(f"Both {Color.GREEN}green{Color.RESET} and {Color.YELLOW}yellow{Color.RESE
 
 How it appears in the terminal:
 
-![Example of colored terminal message in green, yellow, red](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_green_yellow_red.png)
+![Example of terminal message with green, yellow, red text color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_green_yellow_red.png)
 
 
 ```python
@@ -70,7 +70,7 @@ print(f"I want {BrightColor.CYAN}cyan{BrightColor.RESET} color inside this parag
 
 How it appears in the terminal:
 
-![Example of colored terminal message in cyan](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bright_color_custom_text_cyan.png)
+![Example of terminal message with cyan text color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bright_color_custom_text_cyan.png)
 
 Remember to use `Color.RESET` or `BrightColor.RESET` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
@@ -85,7 +85,7 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RES
 
 How it appears in the terminal:
 
-![Example of colored terminal message in red](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_red.png)
+![Example of terminal message with red text color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_red.png)
 
 ### Supported Text Colors
 <table>
