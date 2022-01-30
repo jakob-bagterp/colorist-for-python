@@ -3,7 +3,7 @@
 [![MIT license](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)](https://github.com/jakob-bagterp/colorist-for-python/blob/master/LICENSE.md)
 
 # 🌈 Colorist for Python 🌈
-Make it easy and fast to print terminal messages in colors.
+Lightweight Python package that makes it easy and fast to print terminal messages in colors.
 
 ## Prerequisites
 * Python 3.9 or higher
