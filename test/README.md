@@ -8,3 +8,9 @@ From the project base directory, use this command to run all tests:
 ```shell
 pytest
 ```
+
+You can also run the `pytest` suite of test cases including examples of the terminal output with this command:
+
+```shell
+python3 -m run_tests
+```
