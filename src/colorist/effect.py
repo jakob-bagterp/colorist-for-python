@@ -16,7 +16,7 @@ class Effect(Enum):
     BLINK_OFF     = "\033[25m"
     REVERSE_OFF   = "\033[27m"
     HIDE_OFF      = "\033[28m"
-    ALL_OFF       = Color.OFF
+    OFF           = Color.OFF
 
     def __str__(self) -> str:
         return str(self.value)

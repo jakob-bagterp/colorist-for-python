@@ -59,7 +59,7 @@ def bright_black(text: str) -> None:
     print_color(text, BrightColor.BLACK)
 
 def print_effect(text: str, effect: Effect, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
-    print(f"{color}{effect}{text}{Effect.ALL_OFF}")
+    print(f"{color}{effect}{text}{Effect.OFF}")
 
 def effect_bold(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
     print_effect(text, Effect.BOLD, color)

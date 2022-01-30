@@ -321,7 +321,7 @@ from colorist import Color, Effect
 print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph")
 ```
 
-Similar to `Color.OFF` and `BrightColor.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.BOLD_OFF`, etc. or even just `Effect.ALL_OFF`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
+Similar to `Color.OFF` and `BrightColor.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.BOLD_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
 
 ### Supported Effects
 | Effect           | Full Text Function       | Custom           | Reset                | Example    |
@@ -332,7 +332,7 @@ Similar to `Color.OFF` and `BrightColor.OFF`, remember to turn off an effect wit
 | Blink            | effect_blink("text")     | Effect.BLINK     | Effect.BLINK_OFF     | ![Example of terminal message with blinking text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/blink_full_text_140x16.gif) |
 | Reverse          | effect_reverse("text")   | Effect.REVERSE   | Effect.REVERSE_OFF   | ![Example of terminal message with reversed text color and background](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/reverse_full_text_140x16.png) |
 | Hide             | effect_hide("text")      | Effect.HIDE      | Effect.HIDE_OFF      | ![Example of terminal message with hidden text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/hide_full_text_140x16.png) |
-| -                | -                        | -                | Effect.ALL_OFF       | -          |
+| -                | -                        | -                | Effect.OFF           | -          |
 
 ## Donate
 This module is free to use. And if you like it, feel free to [buy me a coffee](https://github.com/sponsors/jakob-bagterp).
