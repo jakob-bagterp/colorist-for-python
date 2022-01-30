@@ -42,6 +42,8 @@ yellow("This is YELLOW!")
 red("This is RED!")
 ```
 
+![Example of colored terminal message in green, yellow, red](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_full_text_green_yellow_red.png)
+
 #### Custom Terminal Output
 How to customize terminal messages and change color inside a paragraph:
 
