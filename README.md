@@ -162,7 +162,7 @@ How it appears in the terminal:
     </tr>
     <tr>
         <td style="background-color: rgb(252, 233, 79)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_yellow_16x16.png" alt="Bright_yellow">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_yellow_16x16.png" alt="Bright yellow">
         </td>
         <td>bright_yellow("text")</td>
         <td>BrightColor.YELLOW</td>
