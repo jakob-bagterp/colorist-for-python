@@ -289,6 +289,10 @@ print(f"I want {Effect.UNDERLINE}underlined text{Effect.RESET_UNDERLINE} inside 
 print(f"I want {Effect.BOLD}emphasized text{Effect.RESET_BOLD} inside this paragraph")
 ```
 
+How it appears in the terminal:
+
+![Example of terminal message with underline and bold text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_custom_text_underline_bold.png)
+
 Effects can also be mixed with colors:
 
 ```python
