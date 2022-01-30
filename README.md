@@ -149,6 +149,9 @@ How it appears in the terminal:
         </td>
         <td>black("text")</td>
         <td>Color.BLACK</td>
+        <td>
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/black_full_text_167x16.png" alt="Black text color in terminal">
+        </td>
     </tr>
     <tr>
         <td style="background-color: rgb(138, 226, 52)">
