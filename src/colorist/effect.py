@@ -18,5 +18,5 @@ class Effect(Enum):
     RESET_HIDE      = "\033[28m"
     RESET_ALL       = Color.RESET
 
-    def __str__(self):
+    def __str__(self) -> str:
         return str(self.value)

@@ -14,5 +14,5 @@ class BrightColor(Enum):
     DEFAULT = Color.DEFAULT
     RESET   = Color.RESET
 
-    def __str__(self):
+    def __str__(self) -> str:
         return str(self.value)
