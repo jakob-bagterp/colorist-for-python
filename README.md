@@ -176,6 +176,12 @@ How it appears in the terminal:
         </td>
     </tr>
     <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>Color.OFF</td>
+        <td>-</td>
+    </tr>
+    <tr>
         <td style="background-color: rgb(138, 226, 52)">
             <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_green_16x16.png" alt="Bright green">
         </td>
@@ -254,6 +260,12 @@ How it appears in the terminal:
         <td>
             <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/bright_black_full_text_167x16.png" alt="Bright black text color in terminal">
         </td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>BrightColor.OFF</td>
+        <td>-</td>
     </tr>
 </table>
 
