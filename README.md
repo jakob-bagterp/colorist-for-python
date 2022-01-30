@@ -52,9 +52,9 @@ How to customize terminal messages and change color inside a paragraph:
 ```python
 from colorist import Color
 
-print(f"I want {Color.RED}red{Color.RESET} color inside this paragraph")
+print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
 
-print(f"Both {Color.GREEN}green{Color.RESET} and {Color.YELLOW}yellow{Color.RESET} are nice colors")
+print(f"Both {Color.GREEN}green{Color.OFF} and {Color.YELLOW}yellow{Color.OFF} are nice colors")
 ```
 
 How it appears in the terminal:
@@ -65,14 +65,14 @@ How it appears in the terminal:
 ```python
 from colorist import BrightColor
 
-print(f"I want {BrightColor.CYAN}cyan{BrightColor.RESET} color inside this paragraph")
+print(f"I want {BrightColor.CYAN}cyan{BrightColor.OFF} color inside this paragraph")
 ```
 
 How it appears in the terminal:
 
 ![Example of terminal message with cyan text color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bright_color_custom_text_cyan.png)
 
-Remember to use `Color.RESET` or `BrightColor.RESET` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
+Remember to use `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
 ##### Other String Formats
 It's easier and more readable to use f-strings as in the examples above, but you can also use string format:
@@ -80,7 +80,7 @@ It's easier and more readable to use f-strings as in the examples above, but you
 ```python
 from colorist import Color
 
-print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.RESET))
+print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.OFF))
 ```
 
 How it appears in the terminal:
@@ -292,9 +292,9 @@ How to customize terminal messages and change effect inside a paragraph:
 ```python
 from colorist import Effect
 
-print(f"I want {Effect.UNDERLINE}underlined text{Effect.RESET_UNDERLINE} inside this paragraph")
+print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF} inside this paragraph")
 
-print(f"I want {Effect.BOLD}emphasized text{Effect.RESET_BOLD} inside this paragraph")
+print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF} inside this paragraph")
 ```
 
 How it appears in the terminal:
@@ -306,21 +306,21 @@ Effects can also be mixed with colors:
 ```python
 from colorist import Color, Effect
 
-print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.RESET_BLINK} text{Color.RESET} inside this paragraph")
+print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph")
 ```
 
-Similar to `Color.RESET` and `BrightColor.RESET`, remember to turn off an effect with the relevant reset option (e.g `Effect.RESET_BOLD`, `Effect.RESET_BOLD`, etc. or even just `Effect.RESET_ALL`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
+Similar to `Color.OFF` and `BrightColor.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.BOLD_OFF`, etc. or even just `Effect.ALL_OFF`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
 
 ### Supported Effects
-| Effect           | Full Text Function       | Custom           | Reset                  | Example    |
-| ---------------- | ------------------------ | ---------------- | ---------------------- | ---------- |
-| **Bold**         | effect_bold("text")      | Effect.BOLD      | Effect.RESET_BOLD      | ![Example of terminal message with bold text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/bold_full_text_140x16.png) |
-| Dim              | effect_dim("text")       | Effect.DIM       | Effect.RESET_DIM       | ![Example of terminal message with dimmed text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/dim_full_text_140x16.png) |
-| <u>Underline</u> | effect_underline("text") | Effect.UNDERLINE | Effect.RESET_UNDERLINE | ![Example of terminal message with underlined text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/underline_full_text_140x16.png) |
-| Blink            | effect_blink("text")     | Effect.BLINK     | Effect.RESET_BLINK     | ![Example of terminal message with blinking text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/blink_full_text_140x16.gif) |
-| Reverse          | effect_reverse("text")   | Effect.REVERSE   | Effect.RESET_REVERSE   | ![Example of terminal message with reversed text color and background](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/reverse_full_text_140x16.png) |
-| Hide             | effect_hide("text")      | Effect.HIDE      | Effect.RESET_HIDE      | ![Example of terminal message with hidden text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/hide_full_text_140x16.png) |
-| -                | -                        | -                | Effect.RESET_ALL       | -          |
+| Effect           | Full Text Function       | Custom           | Reset                | Example    |
+| ---------------- | ------------------------ | ---------------- | -------------------- | ---------- |
+| **Bold**         | effect_bold("text")      | Effect.BOLD      | Effect.BOLD_OFF      | ![Example of terminal message with bold text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/bold_full_text_140x16.png) |
+| Dim              | effect_dim("text")       | Effect.DIM       | Effect.DIM_OFF       | ![Example of terminal message with dimmed text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/dim_full_text_140x16.png) |
+| <u>Underline</u> | effect_underline("text") | Effect.UNDERLINE | Effect.UNDERLINE_OFF | ![Example of terminal message with underlined text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/underline_full_text_140x16.png) |
+| Blink            | effect_blink("text")     | Effect.BLINK     | Effect.BLINK_OFF     | ![Example of terminal message with blinking text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/blink_full_text_140x16.gif) |
+| Reverse          | effect_reverse("text")   | Effect.REVERSE   | Effect.REVERSE_OFF   | ![Example of terminal message with reversed text color and background](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/reverse_full_text_140x16.png) |
+| Hide             | effect_hide("text")      | Effect.HIDE      | Effect.HIDE_OFF      | ![Example of terminal message with hidden text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/hide_full_text_140x16.png) |
+| -                | -                        | -                | Effect.ALL_OFF       | -          |
 
 ## Donate
 This module is free to use. And if you like it, feel free to [buy me a coffee](https://github.com/sponsors/jakob-bagterp).

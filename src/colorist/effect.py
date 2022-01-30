@@ -10,13 +10,13 @@ class Effect(Enum):
     REVERSE   = "\033[7m"
     HIDE      = "\033[8m"
 
-    RESET_BOLD      = "\033[21m"
-    RESET_DIM       = "\033[22m"
-    RESET_UNDERLINE = "\033[24m"
-    RESET_BLINK     = "\033[25m"
-    RESET_REVERSE   = "\033[27m"
-    RESET_HIDE      = "\033[28m"
-    RESET_ALL       = Color.RESET
+    BOLD_OFF      = "\033[21m"
+    DIM_OFF       = "\033[22m"
+    UNDERLINE_OFF = "\033[24m"
+    BLINK_OFF     = "\033[25m"
+    REVERSE_OFF   = "\033[27m"
+    HIDE_OFF      = "\033[28m"
+    ALL_OFF       = Color.OFF
 
     def __str__(self) -> str:
         return str(self.value)

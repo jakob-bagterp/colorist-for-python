@@ -8,7 +8,7 @@ from .bright_color import BrightColor
 from .effect import Effect
 
 def print_color(text: str, color: Union[Color, BrightColor]) -> None:
-    print(f"{color}{text}{Color.RESET}")
+    print(f"{color}{text}{Color.OFF}")
 
 def green(text: str) -> None:
     print_color(text, Color.GREEN)
@@ -59,7 +59,7 @@ def bright_black(text: str) -> None:
     print_color(text, BrightColor.BLACK)
 
 def print_effect(text: str, effect: Effect, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
-    print(f"{color}{effect}{text}{Effect.RESET_ALL}")
+    print(f"{color}{effect}{text}{Effect.ALL_OFF}")
 
 def effect_bold(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
     print_effect(text, Effect.BOLD, color)
