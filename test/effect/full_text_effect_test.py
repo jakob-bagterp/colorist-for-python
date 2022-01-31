@@ -1,5 +1,4 @@
-from colorist import effect_bold, effect_dim, effect_underline, effect_blink, effect_reverse, effect_hide
-from colorist.color import Color
+from colorist import Color, effect_bold, effect_dim, effect_underline, effect_blink, effect_reverse, effect_hide
 import terminal
 
 class TestFullTextEffect():
