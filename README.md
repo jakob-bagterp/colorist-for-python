@@ -294,7 +294,7 @@ from colorist import BgColor
 
 print(f"I want {BgColor.RED}red{BgColor.OFF} background color inside this paragraph")
 
-print(f"Both {BgColor.GREEN}green{BgColor.OFF} and {BgColor.YELLOW}yellow{Color.BgColor} are nice background colors")
+print(f"Both {BgColor.GREEN}green{BgColor.OFF} and {BgColor.YELLOW}yellow{BgColor.OFF} are nice background colors")
 ```
 
 How it appears in the terminal:
