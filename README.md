@@ -328,7 +328,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_green("text")</td>
         <td>BgColor.GREEN</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/green_full_text_167x16.png" alt="Green background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/green_full_text_194x16.png" alt="Green background color in terminal">
         </td>
     </tr>
     <tr>
@@ -338,7 +338,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_yellow("text")</td>
         <td>BgColor.YELLOW</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/yellow_full_text_167x16.png" alt="Yellow background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/yellow_full_text_194x16.png" alt="Yellow background color in terminal">
         </td>
     </tr>
     <tr>
@@ -348,7 +348,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_red("text")</td>
         <td>BgColor.RED</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/red_full_text_167x16.png" alt="Red background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/red_full_text_194x16.png" alt="Red background color in terminal">
         </td>
     </tr>
     <tr>
@@ -358,7 +358,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_magenta("text")</td>
         <td>BgColor.MAGENTA</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/magenta_full_text_167x16.png" alt="Magenta background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/magenta_full_text_194x16.png" alt="Magenta background color in terminal">
         </td>
     </tr>
     <tr>
@@ -368,7 +368,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_blue("text")</td>
         <td>BgColor.BLUE</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/blue_full_text_167x16.png" alt="Blue background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/blue_full_text_194x16.png" alt="Blue background color in terminal">
         </td>
     </tr>
     <tr>
@@ -378,7 +378,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_cyan("text")</td>
         <td>BgColor.CYAN</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/cyan_full_text_167x16.png" alt="Cyan background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/cyan_full_text_194x16.png" alt="Cyan background color in terminal">
         </td>
     </tr>
     <tr>
@@ -388,7 +388,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_white("text")</td>
         <td>BgColor.WHITE</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/white_full_text_167x16.png" alt="White background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/white_full_text_194x16.png" alt="White background color in terminal">
         </td>
     </tr>
     <tr>
@@ -398,7 +398,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_black("text")</td>
         <td>BgColor.BLACK</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/black_full_text_167x16.png" alt="Black background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/black_full_text_194x16.png" alt="Black background color in terminal">
         </td>
     </tr>
     <tr>
@@ -414,7 +414,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_bright_green("text")</td>
         <td>BgBrightColor.GREEN</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_green_full_text_167x16.png" alt="Bright green background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_green_full_text_194x16.png" alt="Bright green background color in terminal">
         </td>
     </tr>
     <tr>
@@ -424,7 +424,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_bright_yellow("text")</td>
         <td>BgBrightColor.YELLOW</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_yellow_full_text_167x16.png" alt="Bright yellow background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_yellow_full_text_194x16.png" alt="Bright yellow background color in terminal">
         </td>
     </tr>
     <tr>
@@ -434,7 +434,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_bright_red("text")</td>
         <td>BgBrightColor.RED</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_red_full_text_167x16.png" alt="Bright red background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_red_full_text_194x16.png" alt="Bright red background color in terminal">
         </td>
     </tr>
     <tr>
@@ -444,7 +444,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_bright_magenta("text")</td>
         <td>BgBrightColor.MAGENTA</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_magenta_full_text_167x16.png" alt="Bright magenta background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_magenta_full_text_194x16.png" alt="Bright magenta background color in terminal">
         </td>
     </tr>
     <tr>
@@ -454,7 +454,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_bright_blue("text")</td>
         <td>BgBrightColor.BLUE</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_blue_full_text_167x16.png" alt="Bright blue background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_blue_full_text_194x16.png" alt="Bright blue background color in terminal">
         </td>
     </tr>
     <tr>
@@ -464,7 +464,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_bright_cyan("text")</td>
         <td>BgBrightColor.CYAN</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_cyan_full_text_167x16.png" alt="Bright cyan background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_cyan_full_text_194x16.png" alt="Bright cyan background color in terminal">
         </td>
     </tr>
     <tr>
@@ -474,7 +474,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_bright_white("text")</td>
         <td>BgBrightColor.WHITE</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_white_full_text_167x16.png" alt="Bright white background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_white_full_text_194x16.png" alt="Bright white background color in terminal">
         </td>
     </tr>
     <tr>
@@ -484,7 +484,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
         <td>bg_bright_black("text")</td>
         <td>BgBrightColor.BLACK</td>
         <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_black_full_text_167x16.png" alt="Bright black background color in terminal">
+            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_black_full_text_194x16.png" alt="Bright black background color in terminal">
         </td>
     </tr>
     <tr>
