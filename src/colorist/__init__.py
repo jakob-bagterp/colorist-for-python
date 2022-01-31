@@ -1,13 +1,14 @@
-__all__ = ["background_bright_color", "background_color", "bright_color", "color", "effect"]
+__all__ = ["model"]
 
 from .version import __version__
 
 from typing import Union
-from .color import Color
-from .bright_color import BrightColor
-from .background_color import BgColor
-from .background_bright_color import BgBrightColor
-from .effect import Effect
+from . import model
+from .model.color import Color
+from .model.bright_color import BrightColor
+from .model.background_color import BgColor
+from .model.background_bright_color import BgBrightColor
+from .model.effect import Effect
 
 def print_color(text: str, color: Union[Color, BrightColor, str, None] = None, bgcolor: Union[BgColor, BgBrightColor, str, None] = None) -> None:
     if color is None:

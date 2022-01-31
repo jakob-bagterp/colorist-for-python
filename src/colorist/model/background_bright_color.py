@@ -1,5 +1,4 @@
 from enum import Enum, unique
-
 from .background_color import BgColor
 from .color import Color
 
