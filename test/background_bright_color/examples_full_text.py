@@ -1,0 +1,20 @@
+from colorist import BgBrightColor, print_color
+
+if __name__ == "__main__":
+    print("")
+    print_color("This is GREEN background!", color = None, bgcolor = BgBrightColor.GREEN)
+    print("")
+    print_color("This is YELLOW background!", color = None, bgcolor = BgBrightColor.YELLOW)
+    print("")
+    print_color("This is RED background!", color = None, bgcolor = BgBrightColor.RED)
+    print("")
+    print_color("This is MAGENTA background!", color = None, bgcolor = BgBrightColor.MAGENTA)
+    print("")
+    print_color("This is BLUE background!", color = None, bgcolor = BgBrightColor.BLUE)
+    print("")
+    print_color("This is CYAN background!", color = None, bgcolor = BgBrightColor.CYAN)
+    print("")
+    print_color("This is WHITE background!", color = None, bgcolor = BgBrightColor.WHITE)
+    print("")
+    print_color("This is BLACK background!", color = None, bgcolor = BgBrightColor.BLACK)
+    print("")
