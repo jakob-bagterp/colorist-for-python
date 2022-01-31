@@ -547,6 +547,10 @@ from colorist import Color, Effect
 print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph")
 ```
 
+How it appears in the terminal:
+
+![Example of terminal message with red and blinking text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_custom_text_blink_red.gif)
+
 Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
 
 ### Supported Effects
