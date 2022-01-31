@@ -269,6 +269,23 @@ How it appears in the terminal:
     </tr>
 </table>
 
+## Background Colors
+### Getting Started
+#### Full Terminal Output
+How to print a full line of text with colored background in the terminal:
+
+```python
+from colorist import bg_green, bg_yellow, bg_red
+
+bg_green("This is GREEN background!")
+bg_yellow("This is YELLOW background!")
+bg_red("This is RED background!")
+```
+
+How it appears in the terminal:
+
+![Example of terminal message with green, yellow, red background color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_full_text_green_yellow_red.png)
+
 ## Effects
 ### Getting Started
 In addition to colors, Colorist for Python can also add effects to text messages in the terminal.
