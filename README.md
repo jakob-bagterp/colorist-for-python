@@ -29,7 +29,7 @@ And then install:
 brew install colorist
 ```
 
-## Colors
+## Text Colors
 ### Getting Started
 #### Full Terminal Output
 How to print a full line of colored text in the terminal:
