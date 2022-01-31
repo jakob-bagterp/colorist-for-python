@@ -286,6 +286,33 @@ How it appears in the terminal:
 
 ![Example of terminal message with green, yellow, red background color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_full_text_green_yellow_red.png)
 
+#### Custom Terminal Output
+How to customize terminal messages and change background color inside a paragraph:
+
+```python
+from colorist import BgColor
+
+print(f"I want {BgColor.RED}red{BgColor.OFF} background color inside this paragraph")
+
+print(f"Both {BgColor.GREEN}green{BgColor.OFF} and {BgColor.YELLOW}yellow{Color.BgColor} are nice colors")
+```
+
+How it appears in the terminal:
+
+![Example of terminal message with green, yellow, red background color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_custom_text_green_yellow_red.png)
+
+```python
+from colorist import BgBrightColor
+
+print(f"I want {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color inside this paragraph")
+```
+
+How it appears in the terminal:
+
+![Example of terminal message with cyan background color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_bright_color_custom_text_cyan.png)
+
+As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
+
 ### Supported Background Colors
 <table>
     <tr>
