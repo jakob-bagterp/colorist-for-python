@@ -11,7 +11,7 @@ class BgBrightColor(Enum):
     MAGENTA = "\033[105m"
     BLUE    = "\033[104m"
     CYAN    = "\033[106m"
-    WHITE   = "\033[97m"
+    WHITE   = "\033[107m"
     BLACK   = "\033[100m"
     DEFAULT = BgColor.DEFAULT
     OFF     = Color.OFF
