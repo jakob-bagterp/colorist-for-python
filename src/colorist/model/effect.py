@@ -3,7 +3,7 @@ from .color import Color
 
 @unique
 class Effect(Enum):
-    """Options for effects and formatting."""
+    """Options for effects and styling."""
 
     BOLD      = "\033[1m"
     DIM       = "\033[2m"
