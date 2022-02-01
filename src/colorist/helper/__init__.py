@@ -1,3 +1,3 @@
-__all__ = ["print"]
+__all__ = ["color", "effect"]
 
-from . import print
+from .print import color, effect
