@@ -3,6 +3,8 @@ from .color import Color
 
 @unique
 class Effect(Enum):
+    """Options for effects and formatting."""
+
     BOLD      = "\033[1m"
     DIM       = "\033[2m"
     UNDERLINE = "\033[4m"

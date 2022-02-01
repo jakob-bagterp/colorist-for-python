@@ -3,6 +3,8 @@ from .color import Color
 
 @unique
 class BgColor(Enum):
+    """Options for standard background colors."""
+
     GREEN   = "\033[42m"
     YELLOW  = "\033[43m"
     RED     = "\033[41m"

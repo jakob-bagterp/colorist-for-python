@@ -4,6 +4,8 @@ from .color import Color
 
 @unique
 class BgBrightColor(Enum):
+    """Options for bright background colors."""
+    
     GREEN   = "\033[102m"
     YELLOW  = "\033[103m"
     RED     = "\033[101m"

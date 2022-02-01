@@ -2,6 +2,8 @@ from enum import Enum, unique
 
 @unique
 class Color(Enum):
+    """Options for standard colors."""
+
     GREEN   = "\033[32m"
     YELLOW  = "\033[33m"
     RED     = "\033[31m"

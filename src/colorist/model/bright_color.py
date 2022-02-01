@@ -3,6 +3,8 @@ from .color import Color
 
 @unique
 class BrightColor(Enum):
+    """Options for bright colors."""
+
     GREEN   = "\033[92m"
     YELLOW  = "\033[93m"
     RED     = "\033[91m"
