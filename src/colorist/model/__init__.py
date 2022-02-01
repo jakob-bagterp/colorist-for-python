@@ -1,3 +1,7 @@
-__all__ = ["background_bright_color", "background_color", "bright_color", "color", "effect"]
+__all__ = ["BgBrightColor", "BgColor", "BrightColor", "Color", "Effect"]
 
-from . import background_bright_color, background_color, bright_color, color, effect
+from .background_bright_color import BgBrightColor
+from .background_color import BgColor
+from .bright_color import BrightColor
+from .color import Color
+from .effect import Effect
