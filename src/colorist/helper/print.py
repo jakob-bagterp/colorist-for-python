@@ -5,11 +5,7 @@ from ..model.bright_color import BrightColor
 from ..model.color import Color
 from ..model.effect import Effect
 
-def color(text: str, color: Union[Color, BrightColor, str, None] = None, bgcolor: Union[BgColor, BgBrightColor, str, None] = None) -> None:
-    if color is None:
-        color = ""
-    if bgcolor is None:
-        bgcolor = ""
+def color(text: str, color: Union[Color, BrightColor, str] = "", bgcolor: Union[BgColor, BgBrightColor, str] = "") -> None:
     print(f"{bgcolor}{color}{text}{Color.OFF}")
 
 def effect(text: str, effect: Effect, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
