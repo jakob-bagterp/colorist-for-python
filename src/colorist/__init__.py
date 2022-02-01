@@ -2,10 +2,10 @@ __all__ = ["model"]
 
 from typing import Union
 from . import model
-from .model.color import Color
-from .model.bright_color import BrightColor
-from .model.background_color import BgColor
 from .model.background_bright_color import BgBrightColor
+from .model.background_color import BgColor
+from .model.bright_color import BrightColor
+from .model.color import Color
 from .model.effect import Effect
 from .version import __version__
 
