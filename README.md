@@ -89,6 +89,7 @@ How it appears in the terminal:
 
 ### Supported Text Colors
 | Color | Full Text Function | Custom | Example |
+| ----- | ------------------ | ------ | ------- |
 | ![Green](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/green_16x16.png) | `green("text")` | `Color.GREEN` | ![Green text color in terminal](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_map/green_full_text_167x16.png) |
 
 <table>
