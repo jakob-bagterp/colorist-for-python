@@ -44,7 +44,7 @@ red("This is RED!")
 
 How it appears in the terminal:
 
-![Example of terminal message with green, yellow, red text color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_full_text_green_yellow_red.png)
+![Example of terminal message with green, yellow, red text color](/assets/images/examples/color_full_text_green_yellow_red.png)
 
 #### Custom Terminal Output
 How to customize terminal messages and change color inside a paragraph:
@@ -59,7 +59,7 @@ print(f"Both {Color.GREEN}green{Color.OFF} and {Color.YELLOW}yellow{Color.OFF} a
 
 How it appears in the terminal:
 
-![Example of terminal message with green, yellow, red text color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_green_yellow_red.png)
+![Example of terminal message with green, yellow, red text color](/assets/images/examples/color_custom_text_green_yellow_red.png)
 
 
 ```python
@@ -70,7 +70,7 @@ print(f"I want {BrightColor.CYAN}cyan{BrightColor.OFF} color inside this paragra
 
 How it appears in the terminal:
 
-![Example of terminal message with cyan text color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bright_color_custom_text_cyan.png)
+![Example of terminal message with cyan text color](/assets/images/examples/bright_color_custom_text_cyan.png)
 
 Remember to use `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
@@ -85,7 +85,7 @@ print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.OFF
 
 How it appears in the terminal:
 
-![Example of terminal message with red text color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/color_custom_text_red.png)
+![Example of terminal message with red text color](/assets/images/examples/color_custom_text_red.png)
 
 ### Supported Text Colors
 | Color | Full Text Function | Custom | Example |
@@ -124,7 +124,7 @@ bg_red("This is RED background!")
 
 How it appears in the terminal:
 
-![Example of terminal message with green, yellow, red background color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_full_text_green_yellow_red.png)
+![Example of terminal message with green, yellow, red background color](/assets/images/examples/bg_color_full_text_green_yellow_red.png)
 
 #### Custom Terminal Output
 How to customize terminal messages and change background color inside a paragraph:
@@ -139,7 +139,7 @@ print(f"Both {BgColor.GREEN}green{BgColor.OFF} and {BgColor.YELLOW}yellow{BgColo
 
 How it appears in the terminal:
 
-![Example of terminal message with green, yellow, red background color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_custom_text_green_yellow_red.png)
+![Example of terminal message with green, yellow, red background color](/assets/images/examples/bg_color_custom_text_green_yellow_red.png)
 
 ```python
 from colorist import BgBrightColor
@@ -149,7 +149,7 @@ print(f"I want {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color insi
 
 How it appears in the terminal:
 
-![Example of terminal message with cyan background color](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_bright_color_custom_text_cyan.png)
+![Example of terminal message with cyan background color](/assets/images/examples/bg_bright_color_custom_text_cyan.png)
 
 As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
@@ -190,7 +190,7 @@ effect_blink("This is BLINKING!")
 
 How it appears in the terminal:
 
-![Example of terminal message with blinking text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_full_text_blink_default.gif)
+![Example of terminal message with blinking text](/assets/images/examples/effect_full_text_blink_default.gif)
 
 And this can also be combined with an optional color:
 
@@ -202,7 +202,7 @@ effect_blink("This is BLINKING!", Color.CYAN)
 
 How it appears in the terminal:
 
-![Example of terminal message with blinking, cyan-colored text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_full_text_blink_cyan.gif)
+![Example of terminal message with blinking, cyan-colored text](/assets/images/examples/effect_full_text_blink_cyan.gif)
 
 #### Custom Terminal Output
 How to customize terminal messages and change effect inside a paragraph:
@@ -217,7 +217,7 @@ print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF} inside this paragra
 
 How it appears in the terminal:
 
-![Example of terminal message with underline and bold text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_custom_text_underline_bold.png)
+![Example of terminal message with underline and bold text](/assets/images/examples/effect_custom_text_underline_bold.png)
 
 Effects can also be mixed with colors:
 
@@ -229,19 +229,19 @@ print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_O
 
 How it appears in the terminal:
 
-![Example of terminal message with red and blinking text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_custom_text_blink_red.gif)
+![Example of terminal message with red and blinking text](/assets/images/examples/effect_custom_text_blink_red.gif)
 
 Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
 
 ### Supported Effects
 | Effect           | Full Text Function         | Custom             | Reset                  | Example    |
 | ---------------- | -------------------------- | ------------------ | ---------------------- | ---------- |
-| **Bold**         | `effect_bold("text")`      | `Effect.BOLD`      | `Effect.BOLD_OFF`      | ![Example of terminal message with bold text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/bold_full_text_140x16.png) |
-| Dim              | `effect_dim("text")`       | `Effect.DIM`       | `Effect.DIM_OFF`       | ![Example of terminal message with dimmed text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/dim_full_text_140x16.png) |
-| <u>Underline</u> | `effect_underline("text")` | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | ![Example of terminal message with underlined text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/underline_full_text_140x16.png) |
-| Blink            | `effect_blink("text")`     | `Effect.BLINK`     | `Effect.BLINK_OFF`     | ![Example of terminal message with blinking text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/blink_full_text_140x16.gif) |
-| Reverse          | `effect_reverse("text")`   | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | ![Example of terminal message with reversed text color and background](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/reverse_full_text_140x16.png) |
-| Hide             | `effect_hide("text")`      | `Effect.HIDE`      | `Effect.HIDE_OFF`      | ![Example of terminal message with hidden text](https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/effect_map/hide_full_text_140x16.png) |
+| **Bold**         | `effect_bold("text")`      | `Effect.BOLD`      | `Effect.BOLD_OFF`      | ![Example of terminal message with bold text](/assets/images/examples/effect_map/bold_full_text_140x16.png) |
+| Dim              | `effect_dim("text")`       | `Effect.DIM`       | `Effect.DIM_OFF`       | ![Example of terminal message with dimmed text](/assets/images/examples/effect_map/dim_full_text_140x16.png) |
+| <u>Underline</u> | `effect_underline("text")` | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | ![Example of terminal message with underlined text](/assets/images/examples/effect_map/underline_full_text_140x16.png) |
+| Blink            | `effect_blink("text")`     | `Effect.BLINK`     | `Effect.BLINK_OFF`     | ![Example of terminal message with blinking text](/assets/images/examples/effect_map/blink_full_text_140x16.gif) |
+| Reverse          | `effect_reverse("text")`   | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | ![Example of terminal message with reversed text color and background](/assets/images/examples/effect_map/reverse_full_text_140x16.png) |
+| Hide             | `effect_hide("text")`      | `Effect.HIDE`      | `Effect.HIDE_OFF`      | ![Example of terminal message with hidden text](/assets/images/examples/effect_map/hide_full_text_140x16.png) |
 | -                | -                          | -                  | `Effect.OFF`           | -          |
 
 ## Donate
