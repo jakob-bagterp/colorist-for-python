@@ -154,186 +154,26 @@ How it appears in the terminal:
 As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
 ### Supported Background Colors
-<table>
-    <tr>
-        <th>Color</th>
-        <th>Full Text Function</th>
-        <th>Custom</th>
-        <th>Example</th>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(78, 154, 6)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/green_16x16.png" alt="Green">
-        </td>
-        <td>`bg_green("text")`</td>
-        <td>`BgColor.GREEN`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/green_full_text_194x16.png" alt="Green background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(196, 160, 0)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/yellow_16x16.png" alt="Yellow">
-        </td>
-        <td>`bg_yellow("text")`</td>
-        <td>`BgColor.YELLOW`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/yellow_full_text_194x16.png" alt="Yellow background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(204, 0, 0)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/red_16x16.png" alt="Red">
-        </td>
-        <td>`bg_red("text")`</td>
-        <td>`BgColor.RED`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/red_full_text_194x16.png" alt="Red background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(117, 80, 123)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/magenta_16x16.png" alt="Magenta">
-        </td>
-        <td>`bg_magenta("text")`</td>
-        <td>`BgColor.MAGENTA`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/magenta_full_text_194x16.png" alt="Magenta background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(114, 159, 207)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/blue_16x16.png" alt="Blue">
-        </td>
-        <td>`bg_blue("text")`</td>
-        <td>`BgColor.BLUE`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/blue_full_text_194x16.png" alt="Blue background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(6, 152, 154)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/cyan_16x16.png" alt="Cyan">
-        </td>
-        <td>`bg_cyan("text")`</td>
-        <td>`BgColor.CYAN`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/cyan_full_text_194x16.png" alt="Cyan background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(211, 215, 207)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/white_16x16.png" alt="White">
-        </td>
-        <td>`bg_white("text")`</td>
-        <td>`BgColor.WHITE`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/white_full_text_194x16.png" alt="White background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(0, 0, 0)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/black_16x16.png" alt="Black">
-        </td>
-        <td>`bg_black("text")`</td>
-        <td>`BgColor.BLACK`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/black_full_text_194x16.png" alt="Black background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td>-</td>
-        <td>-</td>
-        <td>`BgColor.OFF`</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(138, 226, 52)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_green_16x16.png" alt="Bright green">
-        </td>
-        <td>`bg_bright_green("text")`</td>
-        <td>`BgBrightColor.GREEN`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_green_full_text_194x16.png" alt="Bright green background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(252, 233, 79)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_yellow_16x16.png" alt="Bright yellow">
-        </td>
-        <td>`bg_bright_yellow("text")`</td>
-        <td>`BgBrightColor.YELLOW`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_yellow_full_text_194x16.png" alt="Bright yellow background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(239, 41, 41)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_red_16x16.png" alt="Bright red">
-        </td>
-        <td>`bg_bright_red("text")`</td>
-        <td>`BgBrightColor.RED`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_red_full_text_194x16.png" alt="Bright red background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(173, 127, 168)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_magenta_16x16.png" alt="Bright magenta">
-        </td>
-        <td>`bg_bright_magenta("text")`</td>
-        <td>`BgBrightColor.MAGENTA`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_magenta_full_text_194x16.png" alt="Bright magenta background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(50, 175, 255)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_blue_16x16.png" alt="Bright blue">
-        </td>
-        <td>`bg_bright_blue("text")`</td>
-        <td>`BgBrightColor.BLUE`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_blue_full_text_194x16.png" alt="Bright blue background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(52, 226, 226)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_cyan_16x16.png" alt="Bright cyan">
-        </td>
-        <td>`bg_bright_cyan("text")`</td>
-        <td>`BgBrightColor.CYAN`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_cyan_full_text_194x16.png" alt="Bright cyan background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(255, 255, 255)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_white_16x16.png" alt="Bright white">
-        </td>
-        <td>`bg_bright_white("text")`</td>
-        <td>`BgBrightColor.WHITE`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_white_full_text_194x16.png" alt="Bright white background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(85, 87, 83)">
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/colors/bright_black_16x16.png" alt="Bright black">
-        </td>
-        <td>`bg_bright_black("text")`</td>
-        <td>`BgBrightColor.BLACK`</td>
-        <td>
-            <img src="https://github.com/jakob-bagterp/colorist-for-python/blob/master/assets/images/examples/bg_color_map/bright_black_full_text_194x16.png" alt="Bright black background color in terminal">
-        </td>
-    </tr>
-    <tr>
-        <td>-</td>
-        <td>-</td>
-        <td>`BgBrightColor.OFF`</td>
-        <td>-</td>
-    </tr>
-</table>
+| Color | Full Text Function | Custom | Example |
+| ----- | ------------------ | ------ | ------- |
+| ![Green](/assets/images/colors/green_16x16.png) | `bg_green("text")` | `BgColor.GREEN` | ![Green background color in terminal](/assets/images/examples/bg_color_map/green_full_text_167x16.png) |
+| ![Yellow](/assets/images/colors/yellow_16x16.png) | `bg_yellow("text")` | `BgColor.YELLOW` | ![Yellow background color in terminal](/assets/images/examples/bg_color_map/yellow_full_text_167x16.png) |
+| ![Red](/assets/images/colors/red_16x16.png) | `bg_red("text")` | `BgColor.RED` | ![Red background color in terminal](/assets/images/examples/bg_color_map/red_full_text_167x16.png) |
+| ![Magenta](/assets/images/colors/magenta_16x16.png) | `bg_magenta("text")` | `BgColor.MAGENTA` | ![Magenta background color in terminal](/assets/images/examples/bg_color_map/magenta_full_text_167x16.png) |
+| ![Blue](/assets/images/colors/blue_16x16.png) | `bg_blue("text")` | `BgColor.BLUE` | ![Blue background color in terminal](/assets/images/examples/bg_color_map/blue_full_text_167x16.png) |
+| ![Cyan](/assets/images/colors/cyan_16x16.png) | `bg_cyan("text")` | `BgColor.CYAN` | ![Cyan background color in terminal](/assets/images/examples/bg_color_map/cyan_full_text_167x16.png) |
+| ![White](/assets/images/colors/white_16x16.png) | `bg_white("text")` | `BgColor.WHITE` | ![White background color in terminal](/assets/images/examples/bg_color_map/white_full_text_167x16.png) |
+| ![Black](/assets/images/colors/black_16x16.png) | `bg_black("text")` | `BgColor.BLACK` | ![Black background color in terminal](/assets/images/examples/bg_color_map/black_full_text_167x16.png) |
+| - | - | `BgColor.OFF` | - |
+| ![Bright green](/assets/images/colors/bright_green_16x16.png) | `bg_bright_green("text")` | `BgBrightColor.GREEN` | ![Bright green background color in terminal](/assets/images/examples/bg_color_map/bright_green_full_text_167x16.png) |
+| ![Bright yellow](/assets/images/colors/bright_yellow_16x16.png) | `bg_bright_yellow("text")` | `BgBrightColor.YELLOW` | ![Bright yellow background color in terminal](/assets/images/examples/bg_color_map/bright_yellow_full_text_167x16.png) |
+| ![Bright red](/assets/images/colors/bright_red_16x16.png) | `bg_bright_red("text")` | `BgBrightColor.RED` | ![Bright red background color in terminal](/assets/images/examples/bg_color_map/bright_red_full_text_167x16.png) |
+| ![Bright magenta](/assets/images/colors/bright_magenta_16x16.png) | `bg_bright_magenta("text")` | `BgBrightColor.MAGENTA` | ![Bright magenta background color in terminal](/assets/images/examples/bg_color_map/bright_magenta_full_text_167x16.png) |
+| ![Bright blue](/assets/images/colors/bright_blue_16x16.png) | `bg_bright_blue("text")` | `BgBrightColor.BLUE` | ![Bright blue background color in terminal](/assets/images/examples/bg_color_map/bright_blue_full_text_167x16.png) |
+| ![Bright cyan](/assets/images/colors/bright_cyan_16x16.png) | `bg_bright_cyan("text")` | `BgBrightColor.CYAN` | ![Bright cyan background color in terminal](/assets/images/examples/bg_color_map/bright_cyan_full_text_167x16.png) |
+| ![Bright white](/assets/images/colors/bright_white_16x16.png) | `bg_bright_white("text")` | `BgBrightColor.WHITE` | ![Bright white background color in terminal](/assets/images/examples/bg_color_map/bright_white_full_text_167x16.png) |
+| ![Bright black](/assets/images/colors/bright_black_16x16.png) | `bg_bright_black("text")` | `BgBrightColor.BLACK` | ![Bright black background color in terminal](/assets/images/examples/bg_color_map/bright_black_full_text_167x16.png) |
+| - | - | `BgBrightColor.OFF` | - |
 
 ## Effects
 ### Getting Started
