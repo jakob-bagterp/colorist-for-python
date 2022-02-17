@@ -5,7 +5,6 @@ __all__ = ["green", "yellow", "red", "magenta", "blue", "cyan", "white", "black"
            "effect_bold", "effect_underline", "effect_blink", "effect_reverse", "effect_hide",
            "BgBrightColor", "BgColor", "BrightColor", "Color", "Effect"]
 
-from typing import Union
 from . import helper
 from .model.background_bright_color import BgBrightColor
 from .model.background_color import BgColor
@@ -110,20 +109,20 @@ def bg_bright_white(text: str) -> None:
 def bg_bright_black(text: str) -> None:
     helper.print.color(text, bgcolor = BgBrightColor.BLACK)
 
-def effect_bold(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+def effect_bold(text: str, color: Color | BrightColor = Color.DEFAULT) -> None:
     helper.print.effect(text, Effect.BOLD, color)
 
-def effect_dim(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+def effect_dim(text: str, color: Color | BrightColor = Color.DEFAULT) -> None:
     helper.print.effect(text, Effect.DIM, color)
 
-def effect_underline(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+def effect_underline(text: str, color: Color | BrightColor = Color.DEFAULT) -> None:
     helper.print.effect(text, Effect.UNDERLINE, color)
 
-def effect_blink(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+def effect_blink(text: str, color: Color | BrightColor = Color.DEFAULT) -> None:
     helper.print.effect(text, Effect.BLINK, color)
 
-def effect_reverse(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+def effect_reverse(text: str, color: Color | BrightColor = Color.DEFAULT) -> None:
     helper.print.effect(text, Effect.REVERSE, color)
 
-def effect_hide(text: str, color: Union[Color, BrightColor] = Color.DEFAULT) -> None:
+def effect_hide(text: str, color: Color | BrightColor = Color.DEFAULT) -> None:
     helper.print.effect(text, Effect.HIDE, color)
