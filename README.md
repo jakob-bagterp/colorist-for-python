@@ -1,4 +1,4 @@
-[![Latest version](https://img.shields.io/static/v1?label=version&message=1.1.2&color=yellowgreen)](https://github.com/jakob-bagterp/colorist-for-python/releases/latest)
+[![Latest version](https://img.shields.io/static/v1?label=version&message=1.2.0&color=yellowgreen)](https://github.com/jakob-bagterp/colorist-for-python/releases/latest)
 ![Python >=3.10](https://img.shields.io/static/v1?label=python&message=>=3.10&color=blueviolet)
 [![MIT license](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)](https://github.com/jakob-bagterp/colorist-for-python/blob/master/LICENSE.md)
 
