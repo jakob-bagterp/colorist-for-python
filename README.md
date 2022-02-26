@@ -12,12 +12,20 @@ Lightweight Python package that makes it easy and fast to print terminal message
 
 ## Installation
 ### PyPI
+Assuming that Python is installed already, execute this command in the terminal:
+
 ```shell
 pip3 install colorist
 ```
 
+If you already have installed Colorist for Python, use this command to upgrade to latest version:
+
+```shell
+pip3 install --upgrade colorist
+```
+
 ### Homebrew
-If you already have installed the [Homebrew](https://brew.sh) package manager for Mac and Linux, use this terminal command to tap Colorist for Python:
+If you already have installed the [Homebrew](https://brew.sh) package manager for Mac and Linux, execute this terminal command to tap Colorist for Python:
 
 ```shell
 brew tap jakob-bagterp/colorist
