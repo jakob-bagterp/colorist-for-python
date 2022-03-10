@@ -1,5 +1,7 @@
-from colorist import BgBrightColor
 import terminal
+
+from colorist import BgBrightColor
+
 
 def test_custom_text_background_color_1(capfd: object) -> None:
     print(f"I want {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color inside this paragraph")
