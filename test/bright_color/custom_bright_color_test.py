@@ -1,5 +1,7 @@
-from colorist import BrightColor
 import terminal
+
+from colorist import BrightColor
+
 
 def test_custom_text_color_1(capfd: object) -> None:
     print(f"I want {BrightColor.CYAN}cyan{BrightColor.OFF} color inside this paragraph")

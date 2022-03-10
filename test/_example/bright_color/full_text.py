@@ -1,4 +1,5 @@
-from colorist import bright_green, bright_yellow, bright_red, bright_magenta, bright_blue, bright_cyan, bright_white, bright_black
+from colorist import (bright_black, bright_blue, bright_cyan, bright_green,
+                      bright_magenta, bright_red, bright_white, bright_yellow)
 
 if __name__ == "__main__":
     print("")

@@ -1,4 +1,6 @@
-from colorist import bg_bright_green, bg_bright_red, bg_bright_yellow, bg_bright_magenta, bg_bright_blue, bg_bright_cyan, bg_bright_white, bg_bright_black
+from colorist import (bg_bright_black, bg_bright_blue, bg_bright_cyan,
+                      bg_bright_green, bg_bright_magenta, bg_bright_red,
+                      bg_bright_white, bg_bright_yellow)
 
 if __name__ == "__main__":
     print("")

@@ -1,4 +1,5 @@
-from colorist import effect_bold, effect_dim, effect_underline, effect_blink, effect_reverse, effect_hide
+from colorist import (effect_blink, effect_bold, effect_dim, effect_hide,
+                      effect_reverse, effect_underline)
 
 if __name__ == "__main__":
     print("")

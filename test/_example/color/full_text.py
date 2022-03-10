@@ -1,4 +1,4 @@
-from colorist import green, yellow, red, magenta, blue, cyan, white, black
+from colorist import black, blue, cyan, green, magenta, red, white, yellow
 
 if __name__ == "__main__":
     print("")
