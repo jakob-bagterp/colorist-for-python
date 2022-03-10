@@ -8,8 +8,6 @@ Lightweight Python package that makes it easy and fast to print terminal message
 
 ## Prerequisites
 * Python 3.10 or higher
-* macOS
-    * It may work on Windows or Linux, but hasn't been tested
 
 ## Installation
 ### PyPI
