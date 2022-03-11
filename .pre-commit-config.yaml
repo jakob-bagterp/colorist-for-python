@@ -60,3 +60,8 @@ repos:
     -   id: pyupgrade
         args:
         -   --py310-plus
+
+ci:
+    autofix_prs: true
+    autoupdate_schedule: weekly
+    submodules: false
