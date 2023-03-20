@@ -1,6 +1,7 @@
 [![Latest version](https://img.shields.io/static/v1?label=version&message=1.2.3&color=yellowgreen)](https://github.com/jakob-bagterp/colorist-for-python/releases/latest)
 ![Python >=3.10](https://img.shields.io/static/v1?label=python&message=>=3.10&color=blueviolet)
 [![MIT license](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)](https://github.com/jakob-bagterp/colorist-for-python/blob/master/LICENSE.md)
+[![Codecov](https://codecov.io/gh/jakob-bagterp/browserist/branch/master/graph/badge.svg?token=1E69VOP4ED)](https://codecov.io/gh/jakob-bagterp/colorist-for-python)
 [![Test](https://github.com/jakob-bagterp/colorist-for-python/actions/workflows/test.yml/badge.svg)](https://github.com/jakob-bagterp/colorist-for-python/actions/workflows/test.yml)
 
 # 🌈 Colorist for Python 🌈
