@@ -3,7 +3,9 @@ from enum import Enum, unique
 
 @unique
 class Color(Enum):
-    """Options for standard colors."""
+    """Options for standard colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+
+    Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
     GREEN = "\033[32m"
     YELLOW = "\033[33m"

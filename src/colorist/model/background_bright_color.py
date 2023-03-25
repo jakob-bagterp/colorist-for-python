@@ -6,7 +6,9 @@ from .color import Color
 
 @unique
 class BgBrightColor(Enum):
-    """Options for bright background colors."""
+    """Options for bright background colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+
+    Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
     GREEN = "\033[102m"
     YELLOW = "\033[103m"

@@ -5,7 +5,9 @@ from .color import Color
 
 @unique
 class BrightColor(Enum):
-    """Options for bright colors."""
+    """Options for bright colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+
+    Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
     GREEN = "\033[92m"
     YELLOW = "\033[93m"

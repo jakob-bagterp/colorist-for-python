@@ -5,7 +5,9 @@ from .color import Color
 
 @unique
 class BgColor(Enum):
-    """Options for standard background colors."""
+    """Options for standard background colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+
+    Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
     GREEN = "\033[42m"
     YELLOW = "\033[43m"

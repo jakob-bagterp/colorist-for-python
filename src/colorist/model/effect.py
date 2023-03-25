@@ -5,7 +5,9 @@ from .color import Color
 
 @unique
 class Effect(Enum):
-    """Options for effects and styling."""
+    """Options for effects and styling. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+
+    Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
     BOLD = "\033[1m"
     DIM = "\033[2m"
