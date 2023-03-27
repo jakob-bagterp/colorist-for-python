@@ -1,10 +1,7 @@
-from enum import Enum, unique
-
 from .color import Color
 
 
-@unique
-class BrightColor(Enum):
+class BrightColor():
     """Options for bright colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
@@ -19,6 +16,3 @@ class BrightColor(Enum):
     BLACK = "\033[90m"
     DEFAULT = Color.DEFAULT
     OFF = Color.OFF
-
-    def __str__(self) -> str:
-        return str(self.value)
