@@ -2,13 +2,13 @@ import terminal
 
 from colorist import Color
 
-_red_text = "I want \033[31mred\033[0m color inside this paragraph\n"
+RED_TEXT = "I want \033[31mred\033[0m color inside this paragraph\n"
 
 
 def test_custom_text_color_1(capfd: object) -> None:
     print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
     terminal_output = terminal.get_output(capfd)
-    assert terminal_output == _red_text
+    assert terminal_output == RED_TEXT
 
 
 def test_custom_text_color_2(capfd: object) -> None:
@@ -20,4 +20,4 @@ def test_custom_text_color_2(capfd: object) -> None:
 def test_custom_text_color_string_concatenation(capfd: object) -> None:
     print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
     terminal_output = terminal.get_output(capfd)
-    assert terminal_output == _red_text
+    assert terminal_output == RED_TEXT
