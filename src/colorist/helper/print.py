@@ -9,5 +9,5 @@ def color(text: str, color: Color | BrightColor | str = "", bgcolor: BgColor | B
     print(f"{bgcolor}{color}{text}{Color.OFF}")
 
 
-def effect(text: str, effect: Effect, color: Color | BrightColor = Color.DEFAULT) -> None:
+def effect(text: str, effect: Effect | str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
     print(f"{color}{effect}{text}{Effect.OFF}")

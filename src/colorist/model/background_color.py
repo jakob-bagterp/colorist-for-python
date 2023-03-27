@@ -1,10 +1,7 @@
-from enum import Enum, unique
-
 from .color import Color
 
 
-@unique
-class BgColor(Enum):
+class BgColor():
     """Options for standard background colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
@@ -19,6 +16,3 @@ class BgColor(Enum):
     BLACK = "\033[40m"
     DEFAULT = "\033[49m"
     OFF = Color.OFF
-
-    def __str__(self) -> str:
-        return str(self.value)

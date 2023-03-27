@@ -1,10 +1,7 @@
-from enum import Enum, unique
-
 from .color import Color
 
 
-@unique
-class Effect(Enum):
+class Effect():
     """Options for effects and styling. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
@@ -23,6 +20,3 @@ class Effect(Enum):
     REVERSE_OFF = "\033[27m"
     HIDE_OFF = "\033[28m"
     OFF = Color.OFF
-
-    def __str__(self) -> str:
-        return str(self.value)
