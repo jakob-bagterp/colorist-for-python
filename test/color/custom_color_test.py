@@ -18,6 +18,6 @@ def test_custom_text_color_2(capfd: object) -> None:
 
 
 def test_custom_text_color_string_concatenation(capfd: object) -> None:
-    print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
+    print("I want " + Color.RED + "red" + Color.OFF + " color inside this paragraph")
     terminal_output = terminal.get_output(capfd)
     assert terminal_output == RED_TEXT
