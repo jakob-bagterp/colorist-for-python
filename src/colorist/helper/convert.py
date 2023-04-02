@@ -4,7 +4,8 @@ import colorsys
 def normalise_colorsys_rgb_to_real_rgb(rgb_colorsys: tuple[float, float, float]) -> tuple[int, int, int]:
     """Since Colorsys outputs RGB values as floats between 0.0 an 1.0, we need to normalise this to a standard RGB scale from 0 to 255."""
 
-    return tuple(int(color * 255) for color in rgb_colorsys)
+    red, green, blue = tuple(int(color * 255) for color in rgb_colorsys)
+    return red, green, blue
 
 
 def normalise_hue_degrees_to_colorsys_hue(hue: float) -> float:
