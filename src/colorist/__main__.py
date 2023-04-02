@@ -156,3 +156,7 @@ def effect_reverse(text: str, color: Color | BrightColor | str = Color.DEFAULT) 
 
 def effect_hide(text: str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
     helper.print.effect(text, Effect.HIDE, color)
+
+
+def rgb(text: str, red: int, green: int, blue: int) -> None:
+    helper.print.rgb(text, red, green, blue)

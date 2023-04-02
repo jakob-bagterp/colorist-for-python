@@ -26,6 +26,15 @@ How it appears in the terminal:
 
 ![Example of terminal message with green, yellow, red text color](/assets/images/examples/color_full_text_green_yellow_red.png)
 
+#### Print RGB Colors in Terminal Output
+Not all terminals support RGB colors. If it does, use the `rgb` function where the values for red, green, blue can be an integer between 0-255.
+
+```python
+from colorist import rgb
+
+rgb("I want this text in RGB", 0, 128, 255)
+```
+
 #### Custom Terminal Output
 How to customize terminal messages and change color inside a paragraph:
 

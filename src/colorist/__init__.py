@@ -4,7 +4,8 @@ __all__ = [  # isort:skip
     "bright_green", "bright_yellow", "bright_red", "bright_magenta", "bright_blue", "bright_cyan", "bright_white", "bright_black",
     "bg_green", "bg_yellow", "bg_red", "bg_magenta", "bg_blue", "bg_cyan", "bg_white", "bg_black",
     "bg_bright_green", "bg_bright_yellow", "bg_bright_red", "bg_bright_magenta", "bg_bright_blue", "bg_bright_cyan", "bg_bright_white", "bg_bright_black",
-    "effect_bold", "effect_dim", "effect_underline", "effect_blink", "effect_reverse", "effect_hide"
+    "effect_bold", "effect_dim", "effect_underline", "effect_blink", "effect_reverse", "effect_hide",
+    "rgb"
 ]
 
 from .model.background_bright_color import BgBrightColor
@@ -19,5 +20,6 @@ from .__main__ import (  # isort:skip
     bright_green, bright_yellow, bright_red, bright_magenta, bright_blue, bright_cyan, bright_white, bright_black,
     bg_green, bg_yellow, bg_red, bg_magenta, bg_blue, bg_cyan, bg_white, bg_black,
     bg_bright_green, bg_bright_yellow, bg_bright_red, bg_bright_magenta, bg_bright_blue, bg_bright_cyan, bg_bright_white, bg_bright_black,
-    effect_bold, effect_dim, effect_underline, effect_blink, effect_reverse, effect_hide
+    effect_bold, effect_dim, effect_underline, effect_blink, effect_reverse, effect_hide,
+    rgb
 )
