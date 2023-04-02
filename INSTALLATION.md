@@ -8,6 +8,7 @@
 
 ## Prerequisites
 * Python 3.10 or higher
+* Terminal that supports color (i.e. [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code))
 
 ## Installation
 ### PyPI
