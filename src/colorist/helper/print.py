@@ -11,3 +11,7 @@ def color(text: str, color: Color | BrightColor | str = "", bgcolor: BgColor | B
 
 def effect(text: str, effect: Effect | str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
     print(f"{color}{effect}{text}{Effect.OFF}")
+
+
+def rgb(text: str, red: int, green: int, blue: int) -> None:
+    print(f"\033[38;2;{red};{green};{blue}m{text}{Color.OFF}")
