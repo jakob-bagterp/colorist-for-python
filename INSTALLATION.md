@@ -5,7 +5,6 @@
 [![Test](https://github.com/jakob-bagterp/colorist-for-python/actions/workflows/test.yml/badge.svg)](https://github.com/jakob-bagterp/colorist-for-python/actions/workflows/test.yml)
 
 # 🌈 How to Install Colorist for Python 🌈
-
 ## Prerequisites
 * Python 3.10 or higher
 * Terminal that supports color (i.e. [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code))
