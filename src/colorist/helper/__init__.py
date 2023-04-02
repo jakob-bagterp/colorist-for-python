@@ -1,3 +1,3 @@
-__all__ = ["color", "effect", "rgb"]
+__all__ = ["bg_rgb", "color", "effect", "rgb"]
 
-from .print import color, effect, rgb
+from .print import bg_rgb, color, effect, rgb

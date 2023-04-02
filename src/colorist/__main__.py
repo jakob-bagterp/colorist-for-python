@@ -160,3 +160,7 @@ def effect_hide(text: str, color: Color | BrightColor | str = Color.DEFAULT) -> 
 
 def rgb(text: str, red: int, green: int, blue: int) -> None:
     helper.print.rgb(text, red, green, blue)
+
+
+def bg_rgb(text: str, red: int, green: int, blue: int) -> None:
+    helper.print.bg_rgb(text, red, green, blue)
