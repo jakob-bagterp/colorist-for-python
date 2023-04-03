@@ -3,7 +3,7 @@ from ..constants.ascii import AsciiEscapeCode
 
 
 def control_sequence_inducer(ascii_escape_code: AsciiEscapeCode) -> str:
-    """Control Sequence Inducer (CSI) marks the beginning of a control sequence, e.g. "\\u1b[31m"."""
+    """Control Sequence Inducer (CSI) marks the beginning of a control sequence, e.g. "\\u1b[" in "\\u1b[31m"."""
 
     return f"{ascii_escape_code}["
 
