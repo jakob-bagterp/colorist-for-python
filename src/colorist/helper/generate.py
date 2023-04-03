@@ -8,7 +8,7 @@ def control_sequence_inducer(ascii_escape_code: AsciiEscapeCode) -> str:
     return f"{ascii_escape_code}["
 
 
-def ansi_standard_color_sequence(ascii_escape_code: AsciiEscapeCode, selector: AnsiColorSelector, color: AnsiColor) -> str:
+def ansi_standard_color_sequence(selector: AnsiColorSelector, color: AnsiColor, ascii_escape_code: AsciiEscapeCode = AsciiEscapeCode.OCTAL) -> str:
     """Generate standard ANSI color sequence, e.g. "\\u1b[31m"."""
 
     csi = control_sequence_inducer(ascii_escape_code)
