@@ -1,7 +1,6 @@
-from enum import Enum, unique
+from enum import Enum
 
 
-@unique
 class AsciiEscapeCode(Enum):
     """Control Sequence Introducer (CSI) marks the beginning of a control sequence, e.g. "\\u1b[31m"."""
 
