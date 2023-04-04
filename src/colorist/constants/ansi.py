@@ -64,7 +64,3 @@ class AnsiEffect(Enum):
 
     def __str__(self) -> str:
         return str(self.value)
-
-
-SGR_END = "m"
-"""Final byte "m" of a Select Graphic Rendition (SGR) control sequence, e.g. "\\u1b[31m"."""

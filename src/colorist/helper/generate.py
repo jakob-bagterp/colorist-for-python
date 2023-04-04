@@ -1,4 +1,4 @@
-from ..constants.ansi import SGR_END, AnsiColor, AnsiColorSelector
+from ..constants.ansi import AnsiColor, AnsiColorSelector
 from ..constants.ascii import AsciiEscapeCode
 
 
@@ -12,4 +12,4 @@ def ansi_standard_color_sequence(selector: AnsiColorSelector, color: AnsiColor, 
     """Generate standard ANSI color sequence, e.g. "\\u1b[31m"."""
 
     csi = control_sequence_inducer(ascii_escape_code)
-    return f"{csi}{selector}{color}{SGR_END}"
+    return f"{csi}{selector}{color}m"
