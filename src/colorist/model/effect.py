@@ -1,4 +1,5 @@
-from ..constants.ansi import RESET_ALL
+from ..constants.ansi import RESET_ALL, AnsiEffect, AnsiEffectSelector
+from ..helper.generate import ansi_standard_color_sequence
 from .abc.effect import Effect_ABC
 
 
@@ -7,18 +8,18 @@ class Effect(Effect_ABC):
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
-    BOLD = "\033[1m"
-    DIM = "\033[2m"
-    UNDERLINE = "\033[4m"
-    BLINK = "\033[5m"
-    REVERSE = "\033[7m"
-    HIDE = "\033[8m"
+    BOLD = ansi_standard_color_sequence(AnsiEffectSelector.ON, AnsiEffect.BOLD)
+    DIM = ansi_standard_color_sequence(AnsiEffectSelector.ON, AnsiEffect.DIM)
+    UNDERLINE = ansi_standard_color_sequence(AnsiEffectSelector.ON, AnsiEffect.UNDERLINE)
+    BLINK = ansi_standard_color_sequence(AnsiEffectSelector.ON, AnsiEffect.BLINK)
+    REVERSE = ansi_standard_color_sequence(AnsiEffectSelector.ON, AnsiEffect.REVERSE)
+    HIDE = ansi_standard_color_sequence(AnsiEffectSelector.ON, AnsiEffect.HIDE)
 
-    BOLD_OFF = "\033[21m"
-    DIM_OFF = "\033[22m"
-    UNDERLINE_OFF = "\033[24m"
-    BLINK_OFF = "\033[25m"
-    REVERSE_OFF = "\033[27m"
-    HIDE_OFF = "\033[28m"
+    BOLD_OFF = ansi_standard_color_sequence(AnsiEffectSelector.OFF, AnsiEffect.BOLD)
+    DIM_OFF = ansi_standard_color_sequence(AnsiEffectSelector.OFF, AnsiEffect.DIM)
+    UNDERLINE_OFF = ansi_standard_color_sequence(AnsiEffectSelector.OFF, AnsiEffect.UNDERLINE)
+    BLINK_OFF = ansi_standard_color_sequence(AnsiEffectSelector.OFF, AnsiEffect.BLINK)
+    REVERSE_OFF = ansi_standard_color_sequence(AnsiEffectSelector.OFF, AnsiEffect.REVERSE)
+    HIDE_OFF = ansi_standard_color_sequence(AnsiEffectSelector.OFF, AnsiEffect.HIDE)
 
     OFF = RESET_ALL

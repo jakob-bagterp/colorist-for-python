@@ -61,11 +61,26 @@ class AnsiRgbColorSelector(Enum):
 class AnsiEffect(Enum):
     """ANSI effect codes to be mixed with effect selector."""
 
-    RESET_ALL = 0
     BOLD = 1
     DIM = 2
     UNDERLINE = 4
     BLINK = 5
+    REVERSE = 7
+    HIDE = 8
+
+    def __str__(self) -> str:
+        return str(self.value)
+
+
+@unique
+class AnsiEffectSelector(Enum):
+    """ANSI effect selector to be mixed with AnsiEffect for on (1-8) or off (21-28)."""
+
+    ON = ""
+    """Mix with AnsiEffect to select effects: 1-8."""
+
+    OFF = 2
+    """Mix with AnsiEffect to select effects: 21-28."""
 
     def __str__(self) -> str:
         return str(self.value)
