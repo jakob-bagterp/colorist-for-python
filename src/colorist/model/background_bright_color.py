@@ -17,4 +17,5 @@ class BgBrightColor(BgColor_ABC):
     CYAN = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.CYAN)
     WHITE = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.WHITE)
     DEFAULT = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.DEFAULT)
+
     OFF = RESET_ALL

@@ -16,6 +16,7 @@ class Color_ABC(ABC):
         self.CYAN: str
         self.WHITE: str
         self.DEFAULT: str
+
         self.OFF: str
 
 

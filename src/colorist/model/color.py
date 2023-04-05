@@ -17,4 +17,5 @@ class Color(FgColor_ABC):
     CYAN = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.CYAN)
     WHITE = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.WHITE)
     DEFAULT = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.DEFAULT)
+
     OFF = RESET_ALL

@@ -17,4 +17,5 @@ class BrightColor(FgColor_ABC):
     CYAN = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.CYAN)
     WHITE = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.WHITE)
     DEFAULT = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.DEFAULT)
+
     OFF = RESET_ALL

@@ -17,4 +17,5 @@ class BgColor(BgColor_ABC):
     CYAN = ansi_standard_color_sequence(AnsiColorSelector.BACKGROUND, AnsiColor.CYAN)
     WHITE = ansi_standard_color_sequence(AnsiColorSelector.BACKGROUND, AnsiColor.WHITE)
     DEFAULT = ansi_standard_color_sequence(AnsiColorSelector.BACKGROUND, AnsiColor.DEFAULT)
+
     OFF = RESET_ALL
