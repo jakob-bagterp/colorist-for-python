@@ -5,8 +5,8 @@ from ..model.color import Color
 from ..model.effect import Effect
 
 
-def color(text: str, color: Color | BrightColor | str = "", bgcolor: BgColor | BgBrightColor | str = "") -> None:
-    print(f"{bgcolor}{color}{text}{Color.OFF}")
+def color(text: str, color: Color | BrightColor | str = "", bg_color: BgColor | BgBrightColor | str = "") -> None:
+    print(f"{bg_color}{color}{text}{Color.OFF}")
 
 
 def effect(text: str, effect: Effect | str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
