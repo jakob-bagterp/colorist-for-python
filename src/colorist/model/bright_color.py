@@ -3,7 +3,7 @@ from .color import Color
 
 
 class BrightColor(Color_ABC):
-    """Options for bright colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+    """Options for bright colors (not standard, but mostly supported). Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
