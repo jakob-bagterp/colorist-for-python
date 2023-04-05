@@ -1,16 +1,13 @@
 from ..constants.ansi import RESET_ALL
-from ..model.background_bright_color import BgBrightColor
-from ..model.background_color import BgColor
-from ..model.bright_color import BrightColor
-from ..model.color import Color
+from ..model.abc.color import BgColor_ABC, FgColor_ABC
 from ..model.effect import Effect
 
 
-def color(text: str, color: Color | BrightColor | str = "", bg_color: BgColor | BgBrightColor | str = "") -> None:
+def color(text: str, color: FgColor_ABC | str = "", bg_color: BgColor_ABC | str = "") -> None:
     print(f"{bg_color}{color}{text}{RESET_ALL}")
 
 
-def effect(text: str, effect: Effect | str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
+def effect(text: str, effect: Effect | str, color: FgColor_ABC | str = FgColor_ABC.DEFAULT) -> None:
     print(f"{color}{effect}{text}{RESET_ALL}")
 
 

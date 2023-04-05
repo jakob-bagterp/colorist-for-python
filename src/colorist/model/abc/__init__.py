@@ -1,3 +1,3 @@
-__all__ = ["Color_ABC"]
+__all__ = ["BgColor_ABC", "Color_ABC", "FgColor_ABC"]
 
-from .color import Color_ABC
+from .color import BgColor_ABC, Color_ABC, FgColor_ABC

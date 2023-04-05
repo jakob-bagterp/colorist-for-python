@@ -1,8 +1,8 @@
 from ..constants.ansi import RESET_ALL
-from .abc.color import Color_ABC
+from .abc.color import FgColor_ABC
 
 
-class BrightColor(Color_ABC):
+class BrightColor(FgColor_ABC):
     """Options for bright colors (not standard, but mostly supported). Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""

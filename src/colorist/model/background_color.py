@@ -1,8 +1,8 @@
 from ..constants.ansi import RESET_ALL
-from .abc.color import Color_ABC
+from .abc.color import BgColor_ABC
 
 
-class BgColor(Color_ABC):
+class BgColor(BgColor_ABC):
     """Options for standard background colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""

@@ -17,3 +17,11 @@ class Color_ABC(ABC):
         self.WHITE: str
         self.DEFAULT: str
         self.OFF: str
+
+
+class FgColor_ABC(Color_ABC):
+    """Abstract base class for foreground classes of standard ANSI colors."""
+
+
+class BgColor_ABC(Color_ABC):
+    """Abstract base class for background classes of standard ANSI colors."""

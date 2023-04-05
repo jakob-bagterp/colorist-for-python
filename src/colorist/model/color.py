@@ -1,8 +1,8 @@
 from ..constants.ansi import RESET_ALL
-from .abc.color import Color_ABC
+from .abc.color import FgColor_ABC
 
 
-class Color(Color_ABC):
+class Color(FgColor_ABC):
     """Options for standard colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
