@@ -1,5 +1,5 @@
+from ..constants.ansi import RESET_ALL
 from .abc.color import Color_ABC
-from .color import Color
 
 
 class BgColor(Color_ABC):
@@ -16,4 +16,4 @@ class BgColor(Color_ABC):
     WHITE = "\033[47m"
     BLACK = "\033[40m"
     DEFAULT = "\033[49m"
-    OFF = Color.OFF
+    OFF = RESET_ALL

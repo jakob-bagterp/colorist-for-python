@@ -1,3 +1,4 @@
+from ..constants.ansi import RESET_ALL
 from .abc.color import Color_ABC
 from .color import Color
 
@@ -16,4 +17,4 @@ class BrightColor(Color_ABC):
     WHITE = "\033[97m"
     BLACK = "\033[90m"
     DEFAULT = Color.DEFAULT
-    OFF = Color.OFF
+    OFF = RESET_ALL

@@ -1,5 +1,9 @@
 from enum import Enum, unique
 
+from .ascii import AsciiEscapeCode
+
+RESET_ALL = f"{AsciiEscapeCode.OCTAL}[0m"
+
 
 @unique
 class AnsiColor(Enum):

@@ -1,4 +1,4 @@
-from .color import Color
+from ..constants.ansi import RESET_ALL
 
 
 class Effect():
@@ -19,4 +19,5 @@ class Effect():
     BLINK_OFF = "\033[25m"
     REVERSE_OFF = "\033[27m"
     HIDE_OFF = "\033[28m"
-    OFF = Color.OFF
+
+    OFF = RESET_ALL
