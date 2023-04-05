@@ -1,4 +1,5 @@
-from ..constants.ansi import RESET_ALL
+from ..constants.ansi import RESET_ALL, AnsiColor, AnsiColorSelector
+from ..helper.generate import ansi_standard_color_sequence
 from .abc.color import FgColor_ABC
 
 
@@ -7,13 +8,13 @@ class BrightColor(FgColor_ABC):
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
-    GREEN = "\033[92m"
-    YELLOW = "\033[93m"
-    RED = "\033[91m"
-    MAGENTA = "\033[95m"
-    BLUE = "\033[94m"
-    CYAN = "\033[96m"
-    WHITE = "\033[97m"
-    BLACK = "\033[90m"
-    DEFAULT = "\033[99m"
+    BLACK = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.BLACK)
+    RED = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.RED)
+    GREEN = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.GREEN)
+    YELLOW = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.YELLOW)
+    BLUE = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.BLUE)
+    MAGENTA = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.MAGENTA)
+    CYAN = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.CYAN)
+    WHITE = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.WHITE)
+    DEFAULT = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_FOREGROUND, AnsiColor.DEFAULT)
     OFF = RESET_ALL

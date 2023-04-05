@@ -1,4 +1,5 @@
-from ..constants.ansi import RESET_ALL
+from ..constants.ansi import RESET_ALL, AnsiColor, AnsiColorSelector
+from ..helper.generate import ansi_standard_color_sequence
 from .abc.color import BgColor_ABC
 
 
@@ -7,13 +8,13 @@ class BgBrightColor(BgColor_ABC):
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
-    GREEN = "\033[102m"
-    YELLOW = "\033[103m"
-    RED = "\033[101m"
-    MAGENTA = "\033[105m"
-    BLUE = "\033[104m"
-    CYAN = "\033[106m"
-    WHITE = "\033[107m"
-    BLACK = "\033[100m"
-    DEFAULT = "\033[99m"
+    BLACK = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.BLACK)
+    RED = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.RED)
+    GREEN = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.GREEN)
+    YELLOW = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.YELLOW)
+    BLUE = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.BLUE)
+    MAGENTA = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.MAGENTA)
+    CYAN = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.CYAN)
+    WHITE = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.WHITE)
+    DEFAULT = ansi_standard_color_sequence(AnsiColorSelector.BRIGHT_BACKGROUND, AnsiColor.DEFAULT)
     OFF = RESET_ALL
