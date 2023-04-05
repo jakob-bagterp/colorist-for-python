@@ -1,7 +1,8 @@
 from ..constants.ansi import RESET_ALL
+from .abc.effect import Effect_ABC
 
 
-class Effect():
+class Effect(Effect_ABC):
     """Options for effects and styling. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
