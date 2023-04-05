@@ -1,8 +1,9 @@
+from .abc.color import Color_ABC
 from .background_color import BgColor
 from .color import Color
 
 
-class BgBrightColor():
+class BgBrightColor(Color_ABC):
     """Options for bright background colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
