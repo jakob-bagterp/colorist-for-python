@@ -17,6 +17,7 @@ class AnsiColor(Enum):
     MAGENTA = 5
     CYAN = 6
     WHITE = 7
+    DEFAULT = 9  # Not standard, but mostly supported.
 
     def __str__(self) -> str:
         return str(self.value)
