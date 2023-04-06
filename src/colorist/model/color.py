@@ -1,15 +1,21 @@
-class Color():
+from ..constants.ansi import RESET_ALL, AnsiColor, AnsiColorSelector
+from ..helper.generate import ansi_standard_color_sequence
+from .abc.color import FgColor_ABC
+
+
+class Color(FgColor_ABC):
     """Options for standard colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 
-    GREEN = "\033[32m"
-    YELLOW = "\033[33m"
-    RED = "\033[31m"
-    MAGENTA = "\033[35m"
-    BLUE = "\033[34m"
-    CYAN = "\033[36m"
-    WHITE = "\033[37m"
-    BLACK = "\033[30m"
-    DEFAULT = "\033[39m"
-    OFF = "\033[0m"
+    BLACK = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.BLACK)
+    RED = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.RED)
+    GREEN = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.GREEN)
+    YELLOW = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.YELLOW)
+    BLUE = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.BLUE)
+    MAGENTA = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.MAGENTA)
+    CYAN = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.CYAN)
+    WHITE = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.WHITE)
+    DEFAULT = ansi_standard_color_sequence(AnsiColorSelector.FOREGROUND, AnsiColor.DEFAULT)
+
+    OFF = RESET_ALL

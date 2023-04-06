@@ -71,90 +71,90 @@ def bright_black(text: str) -> None:
 
 
 def bg_green(text: str) -> None:
-    helper.print.color(text, bgcolor=BgColor.GREEN)
+    helper.print.color(text, bg_color=BgColor.GREEN)
 
 
 def bg_yellow(text: str) -> None:
-    helper.print.color(text, bgcolor=BgColor.YELLOW)
+    helper.print.color(text, bg_color=BgColor.YELLOW)
 
 
 def bg_red(text: str) -> None:
-    helper.print.color(text, bgcolor=BgColor.RED)
+    helper.print.color(text, bg_color=BgColor.RED)
 
 
 def bg_magenta(text: str) -> None:
-    helper.print.color(text, bgcolor=BgColor.MAGENTA)
+    helper.print.color(text, bg_color=BgColor.MAGENTA)
 
 
 def bg_blue(text: str) -> None:
-    helper.print.color(text, bgcolor=BgColor.BLUE)
+    helper.print.color(text, bg_color=BgColor.BLUE)
 
 
 def bg_cyan(text: str) -> None:
-    helper.print.color(text, bgcolor=BgColor.CYAN)
+    helper.print.color(text, bg_color=BgColor.CYAN)
 
 
 def bg_white(text: str) -> None:
-    helper.print.color(text, bgcolor=BgColor.WHITE)
+    helper.print.color(text, bg_color=BgColor.WHITE)
 
 
 def bg_black(text: str) -> None:
-    helper.print.color(text, bgcolor=BgColor.BLACK)
+    helper.print.color(text, bg_color=BgColor.BLACK)
 
 
 def bg_bright_green(text: str) -> None:
-    helper.print.color(text, bgcolor=BgBrightColor.GREEN)
+    helper.print.color(text, bg_color=BgBrightColor.GREEN)
 
 
 def bg_bright_yellow(text: str) -> None:
-    helper.print.color(text, bgcolor=BgBrightColor.YELLOW)
+    helper.print.color(text, bg_color=BgBrightColor.YELLOW)
 
 
 def bg_bright_red(text: str) -> None:
-    helper.print.color(text, bgcolor=BgBrightColor.RED)
+    helper.print.color(text, bg_color=BgBrightColor.RED)
 
 
 def bg_bright_magenta(text: str) -> None:
-    helper.print.color(text, bgcolor=BgBrightColor.MAGENTA)
+    helper.print.color(text, bg_color=BgBrightColor.MAGENTA)
 
 
 def bg_bright_blue(text: str) -> None:
-    helper.print.color(text, bgcolor=BgBrightColor.BLUE)
+    helper.print.color(text, bg_color=BgBrightColor.BLUE)
 
 
 def bg_bright_cyan(text: str) -> None:
-    helper.print.color(text, bgcolor=BgBrightColor.CYAN)
+    helper.print.color(text, bg_color=BgBrightColor.CYAN)
 
 
 def bg_bright_white(text: str) -> None:
-    helper.print.color(text, bgcolor=BgBrightColor.WHITE)
+    helper.print.color(text, bg_color=BgBrightColor.WHITE)
 
 
 def bg_bright_black(text: str) -> None:
-    helper.print.color(text, bgcolor=BgBrightColor.BLACK)
+    helper.print.color(text, bg_color=BgBrightColor.BLACK)
 
 
-def effect_bold(text: str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
+def effect_bold(text: str, color: Color | BrightColor | str = "") -> None:
     helper.print.effect(text, Effect.BOLD, color)
 
 
-def effect_dim(text: str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
+def effect_dim(text: str, color: Color | BrightColor | str = "") -> None:
     helper.print.effect(text, Effect.DIM, color)
 
 
-def effect_underline(text: str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
+def effect_underline(text: str, color: Color | BrightColor | str = "") -> None:
     helper.print.effect(text, Effect.UNDERLINE, color)
 
 
-def effect_blink(text: str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
+def effect_blink(text: str, color: Color | BrightColor | str = "") -> None:
     helper.print.effect(text, Effect.BLINK, color)
 
 
-def effect_reverse(text: str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
+def effect_reverse(text: str, color: Color | BrightColor | str = "") -> None:
     helper.print.effect(text, Effect.REVERSE, color)
 
 
-def effect_hide(text: str, color: Color | BrightColor | str = Color.DEFAULT) -> None:
+def effect_hide(text: str, color: Color | BrightColor | str = "") -> None:
     helper.print.effect(text, Effect.HIDE, color)
 
 
