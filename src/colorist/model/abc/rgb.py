@@ -1,5 +1,8 @@
 from abc import ABC, abstractmethod
 
+from ...helper.error import message_for_rgb_value_error
+from ...helper.validate import is_valid_rgb_value
+
 
 class RGB_ABC(ABC):
     """Abstract base class for RGB color classes."""
@@ -7,6 +10,13 @@ class RGB_ABC(ABC):
     __slots__ = ["red", "green", "blue", "_ansi_code"]
 
     def __init__(self, red: int, green: int, blue: int) -> None:
+        if not is_valid_rgb_value(red):
+            raise ValueError(message_for_rgb_value_error("red", red))
+        if not is_valid_rgb_value(green):
+            raise ValueError(message_for_rgb_value_error("green", green))
+        if not is_valid_rgb_value(blue):
+            raise ValueError(message_for_rgb_value_error("blue", blue))
+
         self.red: int = red
         self.green: int = green
         self.blue: int = blue
