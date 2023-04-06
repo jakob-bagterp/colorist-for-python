@@ -1,6 +1,7 @@
 from ..constants.ansi import (AnsiColor, AnsiColorSelector, AnsiEffect,
-                              AnsiEffectSelector)
+                              AnsiEffectSelector, AnsiRgbColorSelector)
 from ..constants.ascii import AsciiEscapeCode
+from ..model.abc.rgb import RGB_ABC
 
 
 def control_sequence_inducer(ascii_escape_code: AsciiEscapeCode) -> str:
@@ -14,3 +15,10 @@ def ansi_standard_color_sequence(selector: AnsiColorSelector | AnsiEffectSelecto
 
     csi = control_sequence_inducer(ascii_escape_code)
     return f"{csi}{selector}{value}m"
+
+
+def ansi_rgb_color_sequence(selector: AnsiRgbColorSelector, color: RGB_ABC, ascii_escape_code: AsciiEscapeCode = AsciiEscapeCode.OCTAL) -> str:
+    """Generate ANSI RGB color sequence, e.g. "\\u1b[38;2;r;g;bm"."""
+
+    csi = control_sequence_inducer(ascii_escape_code)
+    return f"{csi}{selector};{color.red};{color.green};{color.blue}m"
