@@ -187,6 +187,18 @@ from colorist import hsl, bg_hsl
 hsl("I want this text in HSL", 120, 50, 50)
 bg_hsl("I want this background in HSL", 120, 50, 50)
 ```
+
+Or customize the styling of text and background with the `ColorHSL` and `BgColorHSL` classes:
+
+```python
+from colorist import ColorHSL, BgColorHSL
+
+aged_pink = ColorHSL(7, 31, 69)
+bg_steel_gray = BgColorHSL(190, 2, 49)
+
+print(f"I want to use {aged_rose}dusty pink{ColorHSL.OFF} and {bg_steel_gray}steel blue{BgColorHSL.OFF} colors inside this paragraph")
+```
+
 ## Effects
 ### Getting Started
 In addition to colors, Colorist for Python can also add effects to text messages in the terminal.
