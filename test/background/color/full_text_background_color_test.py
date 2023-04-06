@@ -1,60 +1,22 @@
+import pytest
 import terminal
+from _config.callables import PrintFullTextCallable
 
 from colorist import (bg_black, bg_blue, bg_cyan, bg_green, bg_magenta, bg_red,
                       bg_white, bg_yellow)
 
 
-def test_green_full_text_background_color(capfd: object) -> None:
-    text = "This is GREEN background!"
-    bg_green(text)
+@pytest.mark.parametrize("print_function, text, expected", [
+    (bg_black, "black", "\033[40mblack\033[0m\n"),
+    (bg_red, "red", "\033[41mred\033[0m\n"),
+    (bg_green, "green", "\033[42mgreen\033[0m\n"),
+    (bg_yellow, "yellow", "\033[43myellow\033[0m\n"),
+    (bg_blue, "blue", "\033[44mblue\033[0m\n"),
+    (bg_magenta, "magenta", "\033[45mmagenta\033[0m\n"),
+    (bg_cyan, "cyan", "\033[46mcyan\033[0m\n"),
+    (bg_white, "white", "\033[47mwhite\033[0m\n"),
+])
+def test_full_text_background_color(print_function: PrintFullTextCallable, text: str, expected: str, capfd: object) -> None:
+    print_function(text)
     terminal_output = terminal.get_output(capfd)
-    assert terminal_output == f"\033[42m{text}\033[0m\n"
-
-
-def test_yellow_full_text_background_color(capfd: object) -> None:
-    text = "This is YELLOW background!"
-    bg_yellow(text)
-    terminal_output = terminal.get_output(capfd)
-    assert terminal_output == f"\033[43m{text}\033[0m\n"
-
-
-def test_red_full_text_background_color(capfd: object) -> None:
-    text = "This is RED background!"
-    bg_red(text)
-    terminal_output = terminal.get_output(capfd)
-    assert terminal_output == f"\033[41m{text}\033[0m\n"
-
-
-def test_magenta_full_text_background_color(capfd: object) -> None:
-    text = "This is MAGENTA background!"
-    bg_magenta(text)
-    terminal_output = terminal.get_output(capfd)
-    assert terminal_output == f"\033[45m{text}\033[0m\n"
-
-
-def test_blue_full_text_background_color(capfd: object) -> None:
-    text = "This is BLUE background!"
-    bg_blue(text)
-    terminal_output = terminal.get_output(capfd)
-    assert terminal_output == f"\033[44m{text}\033[0m\n"
-
-
-def test_cyan_full_text_background_color(capfd: object) -> None:
-    text = "This is CYAN background!"
-    bg_cyan(text)
-    terminal_output = terminal.get_output(capfd)
-    assert terminal_output == f"\033[46m{text}\033[0m\n"
-
-
-def test_white_full_text_background_color(capfd: object) -> None:
-    text = "This is WHITE background!"
-    bg_white(text)
-    terminal_output = terminal.get_output(capfd)
-    assert terminal_output == f"\033[47m{text}\033[0m\n"
-
-
-def test_black_full_text_background_color(capfd: object) -> None:
-    text = "This is BLACK background!"
-    bg_black(text)
-    terminal_output = terminal.get_output(capfd)
-    assert terminal_output == f"\033[40m{text}\033[0m\n"
+    assert terminal_output == expected
