@@ -1,5 +1,5 @@
 __all__ = [  # isort:skip
-    "Color", "BrightColor", "BgColor", "BgBrightColor", "Effect",
+    "Color", "BrightColor", "BgColor", "BgBrightColor", "ColorRGB", "BgColorRGB", "Effect",
     "green", "yellow", "red", "magenta", "blue", "cyan", "white", "black",
     "bright_green", "bright_yellow", "bright_red", "bright_magenta", "bright_blue", "bright_cyan", "bright_white", "bright_black",
     "bg_green", "bg_yellow", "bg_red", "bg_magenta", "bg_blue", "bg_cyan", "bg_white", "bg_black",
@@ -14,6 +14,7 @@ from .model.background_color import BgColor
 from .model.bright_color import BrightColor
 from .model.color import Color
 from .model.effect import Effect
+from .model.rgb import BgColorRGB, ColorRGB
 from .version import __version__  # noqa
 
 from .__main__ import (  # isort:skip

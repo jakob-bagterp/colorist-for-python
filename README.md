@@ -26,23 +26,6 @@ How it appears in the terminal:
 
 ![Example of terminal message with green, yellow, red text color](/assets/images/examples/color_full_text_green_yellow_red.png)
 
-#### Print RGB or HSL Colors in Terminal Output
-Not all terminals support RGB colors. If it does, use the `rgb` function where the values for red, green, blue can be an integer between 0-255.
-
-```python
-from colorist import rgb
-
-rgb("I want this text in RGB", 0, 128, 255)
-```
-
-Similarly, you can also output colors where HSL. Value for hue can be between 0 and 360 degrees, while saturation and lightness can be a percentage between 0(%) and 100(%):
-
-```python
-from colorist import hsl
-
-hsl("I want this text in HSL", 120, 50, 50)
-```
-
 #### Custom Terminal Output
 How to customize terminal messages and change color inside a paragraph:
 
@@ -57,7 +40,6 @@ print(f"Both {Color.GREEN}green{Color.OFF} and {Color.YELLOW}yellow{Color.OFF} a
 How it appears in the terminal:
 
 ![Example of terminal message with green, yellow, red text color](/assets/images/examples/color_custom_text_green_yellow_red.png)
-
 
 ```python
 from colorist import BrightColor
@@ -172,6 +154,39 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
 | ![Bright black](/assets/images/colors/bright_black_16x16.png) | `bg_bright_black("text")` | `BgBrightColor.BLACK` | ![Bright black background color in terminal](/assets/images/examples/bg_color_map/bright_black_full_text_194x16.png) |
 | - | - | `BgBrightColor.OFF` | - |
 
+## RGB and HSL Colors
+Note that not all terminals support RGB or HSL colors. If your terminal does support advanced colors definition, read on.
+
+### Print RGB Colors in the Terminal
+Use the `rgb` and `bg_rgb` methods where the values for red, green, blue can be an integer between 0-255.
+
+```python
+from colorist import rgb, bg_rgb
+
+rgb("I want this text in RGB", 0, 128, 255)
+bg_rgb("I want this background in RGB", 0, 128, 255)
+```
+
+Or customize the styling of text and background with the `ColorRGB` and `BgColorRGB` classes:
+
+```python
+from colorist import ColorRGB, BgColorRGB
+
+dusty_pink = ColorRGB(194, 145, 164)
+bg_steel_blue = BgColorRGB(70, 130, 180)
+
+print(f"I want to use {dusty_pink}dusty pink{ColorRGB.OFF} and {bg_steel_blue}steel blue{BgColorRGB.OFF} colors inside this paragraph")
+```
+
+### Print HSL Colors in the Terminal
+Similarly, you can also output colors in HSL with the `hsl` and `bg_hsl` methods. The value for hue can be between 0 and 360 degrees, while saturation and lightness can be a percentage between 0(%) and 100(%):
+
+```python
+from colorist import hsl, bg_hsl
+
+hsl("I want this text in HSL", 120, 50, 50)
+bg_hsl("I want this background in HSL", 120, 50, 50)
+```
 ## Effects
 ### Getting Started
 In addition to colors, Colorist for Python can also add effects to text messages in the terminal.
