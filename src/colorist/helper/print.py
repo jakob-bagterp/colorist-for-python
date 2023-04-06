@@ -7,7 +7,7 @@ def color(text: str, color: FgColor_ABC | str = "", bg_color: BgColor_ABC | str 
     print(f"{bg_color}{color}{text}{RESET_ALL}")
 
 
-def effect(text: str, effect: Effect_ABC | str, color: FgColor_ABC | str = FgColor_ABC.DEFAULT) -> None:
+def effect(text: str, effect: Effect_ABC | str, color: FgColor_ABC | str = "") -> None:
     print(f"{color}{effect}{text}{RESET_ALL}")
 
 
