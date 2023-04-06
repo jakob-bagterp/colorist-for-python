@@ -11,7 +11,7 @@ from colorist import hsl
     ("random text", (0, 100, 0), (255, 255, 255)),
     ("random text", (0, 0, 0), (0, 0, 0)),
 ])
-def test_full_text_hsl(text: str, hsl_input: tuple[float, float, float], rgb_expected: tuple[int, int, int], capfd: object) -> None:
+def test_full_text_hsl_color(text: str, hsl_input: tuple[float, float, float], rgb_expected: tuple[int, int, int], capfd: object) -> None:
     hue, saturation, lightness = hsl_input
     hsl(text, hue, saturation, lightness)
     terminal_output = terminal.get_output(capfd)
