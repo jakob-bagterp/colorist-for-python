@@ -22,7 +22,7 @@ MIXED_PARAMETERS_MOCK_TEXT = "Both \033[102mgreen\033[0m and \033[103myellow\033
     ("I want " + BgBrightColor.RED + "red" + BgBrightColor.OFF + " color inside this paragraph", "I want \033[101mred\033[0m color inside this paragraph\n"),
 
     # String format placeholders:
-    (f"Both {BgBrightColor.GREEN}green{BgBrightColor.OFF} and {BgBrightColor.YELLOW}yellow{BgBrightColor.OFF} are nice colors", MIXED_PARAMETERS_MOCK_TEXT),
+    ("Both {0}green{1} and {2}yellow{3} are nice colors".format(BgBrightColor.GREEN, BgBrightColor.OFF, BgBrightColor.YELLOW, BgBrightColor.OFF), MIXED_PARAMETERS_MOCK_TEXT),
 
     # Multiple and mixed parameters inside string:
     (f"Both {BgBrightColor.GREEN}green{BgBrightColor.OFF} and {BgBrightColor.YELLOW}yellow{BgBrightColor.OFF} are nice colors", MIXED_PARAMETERS_MOCK_TEXT),
