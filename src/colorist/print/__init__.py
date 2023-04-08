@@ -1,3 +1,3 @@
-__all__ = ["background", "foreground"]
+__all__ = ["background", "effect", "foreground"]
 
-from . import background, foreground
+from . import background, effect, foreground
