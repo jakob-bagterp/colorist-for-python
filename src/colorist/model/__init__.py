@@ -1,4 +1,3 @@
-__all__ = ["background", "BgColorRGB", "effect", "foreground", "ColorRGB"]
+__all__ = ["background", "effect", "foreground"]
 
 from . import background, effect, foreground
-from .rgb import BgColorRGB, ColorRGB
