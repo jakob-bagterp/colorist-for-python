@@ -22,6 +22,7 @@ from .print.background.bright_color import (bg_bright_black, bg_bright_blue,
                                             bg_bright_white, bg_bright_yellow)
 from .print.background.color import (bg_black, bg_blue, bg_cyan, bg_green,
                                      bg_magenta, bg_red, bg_white, bg_yellow)
+from .print.background.rgb import bg_rgb
 from .print.effect import (effect_blink, effect_bold, effect_dim, effect_hide,
                            effect_reverse, effect_underline)
 from .print.foreground.bright_color import (bright_black, bright_blue,
@@ -30,9 +31,10 @@ from .print.foreground.bright_color import (bright_black, bright_blue,
                                             bright_white, bright_yellow)
 from .print.foreground.color import (black, blue, cyan, green, magenta, red,
                                      white, yellow)
+from .print.foreground.rgb import rgb
 from .version import __version__  # noqa
 
 from .__main__ import (  # isort:skip
-    rgb, hsl,
-    bg_rgb, bg_hsl
+    hsl,
+    bg_hsl
 )
