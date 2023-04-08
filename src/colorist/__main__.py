@@ -6,38 +6,6 @@ from .model.color import Color
 from .model.effect import Effect
 
 
-def green(text: str) -> None:
-    helper.print.color(text, color=Color.GREEN)
-
-
-def yellow(text: str) -> None:
-    helper.print.color(text, color=Color.YELLOW)
-
-
-def red(text: str) -> None:
-    helper.print.color(text, color=Color.RED)
-
-
-def magenta(text: str) -> None:
-    helper.print.color(text, color=Color.MAGENTA)
-
-
-def blue(text: str) -> None:
-    helper.print.color(text, color=Color.BLUE)
-
-
-def cyan(text: str) -> None:
-    helper.print.color(text, color=Color.CYAN)
-
-
-def white(text: str) -> None:
-    helper.print.color(text, color=Color.WHITE)
-
-
-def black(text: str) -> None:
-    helper.print.color(text, color=Color.BLACK)
-
-
 def bright_green(text: str) -> None:
     helper.print.color(text, color=BrightColor.GREEN)
 
