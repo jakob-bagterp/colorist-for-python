@@ -18,6 +18,9 @@ MIXED_PARAMETERS_MOCK_TEXT = "I want both \033[31mcolored and \033[5mblinking\03
     # String concatenation:
     ("I want both " + Color.RED + "colored and " + Effect.BLINK + "blinking" + Effect.BLINK_OFF + " text" + Color.OFF + " inside this paragraph", MIXED_PARAMETERS_MOCK_TEXT),
 
+    # String format placeholders:
+    ("I want both {0}colored and {1}blinking{2} text{3} inside this paragraph".format(Color.RED, Effect.BLINK, Effect.BLINK_OFF, Color.OFF), MIXED_PARAMETERS_MOCK_TEXT),
+
     # Multiple and mixed parameters inside string:
     (f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph", MIXED_PARAMETERS_MOCK_TEXT),
 ])
