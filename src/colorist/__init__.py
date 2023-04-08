@@ -9,8 +9,8 @@ __all__ = [  # isort:skip
     "bg_rgb", "bg_hsl"
 ]
 
+from .model.background.color import BgColor
 from .model.background_bright_color import BgBrightColor
-from .model.background_color import BgColor
 from .model.bright_color import BrightColor
 from .model.effect import Effect
 from .model.foreground.color import Color
