@@ -1,5 +1,5 @@
 from ... import helper
-from ...model.bright_color import BrightColor
+from ...model.foreground.bright_color import BrightColor
 
 
 def bright_green(text: str) -> None:

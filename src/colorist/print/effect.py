@@ -1,6 +1,6 @@
 from .. import helper
-from ..model.bright_color import BrightColor
 from ..model.effect import Effect
+from ..model.foreground.bright_color import BrightColor
 from ..model.foreground.color import Color
 
 

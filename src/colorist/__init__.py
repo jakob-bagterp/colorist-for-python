@@ -11,8 +11,8 @@ __all__ = [  # isort:skip
 
 from .model.background.color import BgColor
 from .model.background_bright_color import BgBrightColor
-from .model.bright_color import BrightColor
 from .model.effect import Effect
+from .model.foreground.bright_color import BrightColor
 from .model.foreground.color import Color
 from .model.hsl import BgColorHSL, ColorHSL
 from .model.rgb import BgColorRGB, ColorRGB
