@@ -16,6 +16,10 @@ from .model.color import Color
 from .model.effect import Effect
 from .model.hsl import BgColorHSL, ColorHSL
 from .model.rgb import BgColorRGB, ColorRGB
+from .print.background.bright_color import (bg_bright_black, bg_bright_blue,
+                                            bg_bright_cyan, bg_bright_green,
+                                            bg_bright_magenta, bg_bright_red,
+                                            bg_bright_white, bg_bright_yellow)
 from .print.background.color import (bg_black, bg_blue, bg_cyan, bg_green,
                                      bg_magenta, bg_red, bg_white, bg_yellow)
 from .print.foreground.bright_color import (bright_black, bright_blue,
@@ -27,7 +31,6 @@ from .print.foreground.color import (black, blue, cyan, green, magenta, red,
 from .version import __version__  # noqa
 
 from .__main__ import (  # isort:skip
-    bg_bright_green, bg_bright_yellow, bg_bright_red, bg_bright_magenta, bg_bright_blue, bg_bright_cyan, bg_bright_white, bg_bright_black,
     effect_bold, effect_dim, effect_underline, effect_blink, effect_reverse, effect_hide,
     rgb, hsl,
     bg_rgb, bg_hsl
