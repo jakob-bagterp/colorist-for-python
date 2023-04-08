@@ -1,6 +1,6 @@
-from ..constants.ansi import RESET_ALL, AnsiColor, AnsiColorSelector
-from ..helper.generate import ansi_standard_color_sequence
-from .abc.color import BgColor_ABC
+from ...constants.ansi import RESET_ALL, AnsiColor, AnsiColorSelector
+from ...helper.generate import ansi_standard_color_sequence
+from ..abc.color import BgColor_ABC
 
 
 class BgBrightColor(BgColor_ABC):

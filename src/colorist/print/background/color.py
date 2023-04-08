@@ -1,5 +1,5 @@
 from ... import helper
-from ...model.background_color import BgColor
+from ...model.background.color import BgColor
 
 
 def bg_green(text: str) -> None:

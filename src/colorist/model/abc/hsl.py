@@ -5,7 +5,7 @@ from ...constants.ansi import RESET_ALL
 from ...helper.error import (message_for_hsl_hue_value_error,
                              message_for_hsl_percentage_value_error)
 from ...helper.validate import is_valid_hsl_hue, is_valid_percentage
-from ..rgb import ColorRGB
+from ..foreground.rgb import ColorRGB
 from .rgb import RGB_ABC
 
 

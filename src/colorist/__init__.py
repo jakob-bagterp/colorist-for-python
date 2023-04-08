@@ -9,13 +9,15 @@ __all__ = [  # isort:skip
     "bg_rgb", "bg_hsl"
 ]
 
-from .model.background_bright_color import BgBrightColor
-from .model.background_color import BgColor
-from .model.bright_color import BrightColor
-from .model.color import Color
+from .model.background.bright_color import BgBrightColor
+from .model.background.color import BgColor
+from .model.background.hsl import BgColorHSL
+from .model.background.rgb import BgColorRGB
 from .model.effect import Effect
-from .model.hsl import BgColorHSL, ColorHSL
-from .model.rgb import BgColorRGB, ColorRGB
+from .model.foreground.bright_color import BrightColor
+from .model.foreground.color import Color
+from .model.foreground.hsl import ColorHSL
+from .model.foreground.rgb import ColorRGB
 from .print.background.bright_color import (bg_bright_black, bg_bright_blue,
                                             bg_bright_cyan, bg_bright_green,
                                             bg_bright_magenta, bg_bright_red,
