@@ -1,6 +1,6 @@
-from ..constants.ansi import RESET_ALL, AnsiColor, AnsiColorSelector
-from ..helper.generate import ansi_standard_color_sequence
-from .abc.color import FgColor_ABC
+from ...constants.ansi import RESET_ALL, AnsiColor, AnsiColorSelector
+from ...helper.generate import ansi_standard_color_sequence
+from ..abc.color import FgColor_ABC
 
 
 class Color(FgColor_ABC):

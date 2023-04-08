@@ -1,7 +1,7 @@
 from .. import helper
 from ..model.bright_color import BrightColor
-from ..model.color import Color
 from ..model.effect import Effect
+from ..model.foreground.color import Color
 
 
 def effect_bold(text: str, color: Color | BrightColor | str = "") -> None:
