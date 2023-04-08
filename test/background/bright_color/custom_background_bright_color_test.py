@@ -3,6 +3,8 @@ import terminal
 
 from colorist import BgBrightColor
 
+MIXED_PARAMETERS_MOCK_TEXT = "Both \033[102mgreen\033[0m and \033[103myellow\033[0m are nice colors\n"
+
 
 @pytest.mark.parametrize("text, expected", [
     # F-strings and all color options:
@@ -19,8 +21,11 @@ from colorist import BgBrightColor
     # String concatenation:
     ("I want " + BgBrightColor.RED + "red" + BgBrightColor.OFF + " color inside this paragraph", "I want \033[101mred\033[0m color inside this paragraph\n"),
 
+    # String format placeholders:
+    ("Both {0}green{1} and {2}yellow{3} are nice colors".format(BgBrightColor.GREEN, BgBrightColor.OFF, BgBrightColor.YELLOW, BgBrightColor.OFF), MIXED_PARAMETERS_MOCK_TEXT),
+
     # Multiple and mixed parameters inside string:
-    (f"Both {BgBrightColor.GREEN}green{BgBrightColor.OFF} and {BgBrightColor.YELLOW}yellow{BgBrightColor.OFF} are nice colors", "Both \033[102mgreen\033[0m and \033[103myellow\033[0m are nice colors\n"),
+    (f"Both {BgBrightColor.GREEN}green{BgBrightColor.OFF} and {BgBrightColor.YELLOW}yellow{BgBrightColor.OFF} are nice colors", MIXED_PARAMETERS_MOCK_TEXT),
 ])
 def test_custom_text_background_bright_color(text: str, expected: str, capfd: object) -> None:
     print(text)

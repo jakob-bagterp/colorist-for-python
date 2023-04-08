@@ -3,6 +3,8 @@ import terminal
 
 from colorist import Color
 
+MIXED_PARAMETERS_MOCK_TEXT = "Both \033[32mgreen\033[0m and \033[33myellow\033[0m are nice colors\n"
+
 
 @pytest.mark.parametrize("text, expected", [
     # F-strings and all color options:
@@ -19,8 +21,11 @@ from colorist import Color
     # String concatenation:
     ("I want " + Color.RED + "red" + Color.OFF + " color inside this paragraph", "I want \033[31mred\033[0m color inside this paragraph\n"),
 
+    # String format placeholders:
+    ("Both {0}green{1} and {2}yellow{3} are nice colors".format(Color.GREEN, Color.OFF, Color.YELLOW, Color.OFF), MIXED_PARAMETERS_MOCK_TEXT),
+
     # Multiple and mixed parameters inside string:
-    (f"Both {Color.GREEN}green{Color.OFF} and {Color.YELLOW}yellow{Color.OFF} are nice colors", "Both \033[32mgreen\033[0m and \033[33myellow\033[0m are nice colors\n"),
+    (f"Both {Color.GREEN}green{Color.OFF} and {Color.YELLOW}yellow{Color.OFF} are nice colors", MIXED_PARAMETERS_MOCK_TEXT),
 ])
 def test_custom_text_color(text: str, expected: str, capfd: object) -> None:
     print(text)

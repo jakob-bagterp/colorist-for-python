@@ -58,6 +58,7 @@ repos:
     rev: v3.3.1
     hooks:
     -   id: pyupgrade
+        exclude: ^test/
         args:
         -   --py310-plus
 

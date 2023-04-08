@@ -3,7 +3,7 @@ import terminal
 
 from colorist import Color, Effect
 
-EFFECT_TEXT = "I want both \033[31mcolored and \033[5mblinking\033[25m text\033[0m inside this paragraph\n"
+MIXED_PARAMETERS_MOCK_TEXT = "I want both \033[31mcolored and \033[5mblinking\033[25m text\033[0m inside this paragraph\n"
 
 
 @pytest.mark.parametrize("text, expected", [
@@ -16,10 +16,13 @@ EFFECT_TEXT = "I want both \033[31mcolored and \033[5mblinking\033[25m text\033[
     (f"Only effect for this {Effect.HIDE}word{Effect.HIDE_OFF}.", "Only effect for this \033[8mword\033[28m.\n"),
 
     # String concatenation:
-    ("I want both " + Color.RED + "colored and " + Effect.BLINK + "blinking" + Effect.BLINK_OFF + " text" + Color.OFF + " inside this paragraph", EFFECT_TEXT),
+    ("I want both " + Color.RED + "colored and " + Effect.BLINK + "blinking" + Effect.BLINK_OFF + " text" + Color.OFF + " inside this paragraph", MIXED_PARAMETERS_MOCK_TEXT),
+
+    # String format placeholders:
+    ("I want both {0}colored and {1}blinking{2} text{3} inside this paragraph".format(Color.RED, Effect.BLINK, Effect.BLINK_OFF, Color.OFF), MIXED_PARAMETERS_MOCK_TEXT),
 
     # Multiple and mixed parameters inside string:
-    (f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph", EFFECT_TEXT),
+    (f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph", MIXED_PARAMETERS_MOCK_TEXT),
 ])
 def test_custom_text_effect(text: str, expected: str, capfd: object) -> None:
     print(text)
