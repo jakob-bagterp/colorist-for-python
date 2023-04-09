@@ -33,3 +33,27 @@ FgColor_ABC <|-- BrightColor
 BgColor_ABC <|-- BgColor
 BgColor_ABC <|-- BgBrightColor
 ```
+
+## Effect Classes
+```mermaid
+classDiagram
+class Effect_ABC {
+    <<abstract>>
+    +str BOLD
+    +str DIM
+    +str UNDERLINE
+    +str BLINK
+    +str REVERSE
+    +str HIDE
+    +str BOLD_OFF
+    +str DIM_OFF
+    +str UNDERLINE_OFF
+    +str BLINK_OFF
+    +str REVERSE_OFF
+    +str HIDE_OFF
+    +str OFF
+}
+class Effect
+
+Effect_ABC <|-- Effect
+```
