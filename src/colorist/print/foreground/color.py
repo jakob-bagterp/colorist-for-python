@@ -2,6 +2,18 @@ from ... import helper
 from ...model.foreground.color import Color
 
 
+def black(text: str) -> None:
+    """Prints full line of black text."""
+
+    helper.print.color(text, color=Color.BLACK)
+
+
+def red(text: str) -> None:
+    """Prints full line of red text."""
+
+    helper.print.color(text, color=Color.RED)
+
+
 def green(text: str) -> None:
     """Prints full line of green text."""
 
@@ -14,22 +26,16 @@ def yellow(text: str) -> None:
     helper.print.color(text, color=Color.YELLOW)
 
 
-def red(text: str) -> None:
-    """Prints full line of red text."""
+def blue(text: str) -> None:
+    """Prints full line of blue text."""
 
-    helper.print.color(text, color=Color.RED)
+    helper.print.color(text, color=Color.BLUE)
 
 
 def magenta(text: str) -> None:
     """Prints full line of magenta text."""
 
     helper.print.color(text, color=Color.MAGENTA)
-
-
-def blue(text: str) -> None:
-    """Prints full line of blue text."""
-
-    helper.print.color(text, color=Color.BLUE)
 
 
 def cyan(text: str) -> None:
@@ -42,9 +48,3 @@ def white(text: str) -> None:
     """Prints full line of white text."""
 
     helper.print.color(text, color=Color.WHITE)
-
-
-def black(text: str) -> None:
-    """Prints full line of black text."""
-
-    helper.print.color(text, color=Color.BLACK)
