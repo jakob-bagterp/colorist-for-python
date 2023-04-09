@@ -57,3 +57,22 @@ class Effect
 
 Effect_ABC <|-- Effect
 ```
+
+## RGB Color Classes
+```mermaid
+classDiagram
+class RGB_ABC {
+    <<abstract>>
+    +int red
+    +int green
+    +int blue
+    +str _ansi_code
+    +str OFF
+    +generate_ansi_code()
+}
+class ColorRGB
+class BgColorRGB
+
+RGB_ABC <|-- ColorRGB
+RGB_ABC <|-- BgColorRGB
+```
