@@ -47,4 +47,4 @@ class HSL_ABC(ABC):
     def generate_ansi_code(self) -> str:
         """Method to generate ANSI RGB color sequence."""
 
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
