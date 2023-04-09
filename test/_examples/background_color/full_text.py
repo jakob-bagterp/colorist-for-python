@@ -1,3 +1,5 @@
+# Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
+
 from colorist import (bg_black, bg_blue, bg_cyan, bg_green, bg_magenta, bg_red,
                       bg_white, bg_yellow)
 

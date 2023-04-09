@@ -1,3 +1,5 @@
+# Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
+
 from ..constants.ansi import RESET_ALL
 from ..model.abc.color import BgColor_ABC, FgColor_ABC
 from ..model.abc.effect import Effect_ABC

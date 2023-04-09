@@ -1,3 +1,5 @@
+# Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
+
 from ..constants.ansi import RESET_ALL, AnsiEffect, AnsiEffectSelector
 from ..helper.generate import ansi_standard_color_sequence
 from .abc.effect import Effect_ABC

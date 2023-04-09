@@ -1,3 +1,5 @@
+# Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
+
 from abc import ABC, abstractmethod
 
 from ... import helper
@@ -47,4 +49,4 @@ class HSL_ABC(ABC):
     def generate_ansi_code(self) -> str:
         """Method to generate ANSI RGB color sequence."""
 
-        raise NotImplementedError
+        raise NotImplementedError  # pragma: no cover
