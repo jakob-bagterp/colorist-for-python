@@ -76,3 +76,24 @@ class BgColorRGB
 RGB_ABC <|-- ColorRGB
 RGB_ABC <|-- BgColorRGB
 ```
+
+## HSL Color Classes
+```mermaid
+classDiagram
+class HSL_ABC {
+    <<abstract>>
+    +float hue
+    +float saturation
+    +float lightness
+    +ColorRGB _rgb
+    +str _ansi_code
+    +str OFF
+    +convert_hsl_to_rgb()
+    +generate_ansi_code()
+}
+class ColorHSL
+class BgColorHSL
+
+HSL_ABC <|-- ColorHSL
+HSL_ABC <|-- BgColorHSL
+```
