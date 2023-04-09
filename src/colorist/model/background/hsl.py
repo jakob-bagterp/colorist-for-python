@@ -1,3 +1,5 @@
+# Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
+
 from ... import helper
 from ...constants.ansi import AnsiRgbColorSelector
 from ..abc.hsl import HSL_ABC
