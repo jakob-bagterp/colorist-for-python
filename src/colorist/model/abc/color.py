@@ -6,18 +6,17 @@ class Color_ABC(ABC):
 
     __slots__ = ["BLACK", "RED", "GREEN", "YELLOW", "BLUE", "MAGENTA", "CYAN", "WHITE", "DEFAULT", "OFF"]
 
-    def __init__(self) -> None:
-        self.BLACK: str
-        self.RED: str
-        self.GREEN: str
-        self.YELLOW: str
-        self.BLUE: str
-        self.MAGENTA: str
-        self.CYAN: str
-        self.WHITE: str
-        self.DEFAULT: str
+    BLACK: str
+    RED: str
+    GREEN: str
+    YELLOW: str
+    BLUE: str
+    MAGENTA: str
+    CYAN: str
+    WHITE: str
+    DEFAULT: str
 
-        self.OFF: str
+    OFF: str
 
 
 class FgColor_ABC(Color_ABC):
