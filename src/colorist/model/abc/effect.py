@@ -8,19 +8,18 @@ class Effect_ABC(ABC):
                  "BOLD_OFF", "DIM_OFF", "UNDERLINE_OFF", "BLINK_OFF", "REVERSE_OFF", "HIDE_OFF",
                  "OFF"]
 
-    def __init__(self) -> None:
-        self.BOLD: str
-        self.DIM: str
-        self.UNDERLINE: str
-        self.BLINK: str
-        self.REVERSE: str
-        self.HIDE: str
+    BOLD: str
+    DIM: str
+    UNDERLINE: str
+    BLINK: str
+    REVERSE: str
+    HIDE: str
 
-        self.BOLD_OFF: str
-        self.DIM_OFF: str
-        self.UNDERLINE_OFF: str
-        self.BLINK_OFF: str
-        self.REVERSE_OFF: str
-        self.HIDE_OFF: str
+    BOLD_OFF: str
+    DIM_OFF: str
+    UNDERLINE_OFF: str
+    BLINK_OFF: str
+    REVERSE_OFF: str
+    HIDE_OFF: str
 
-        self.OFF: str
+    OFF: str
