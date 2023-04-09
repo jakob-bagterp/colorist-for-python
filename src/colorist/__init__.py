@@ -1,4 +1,4 @@
-__all__ = [  # isort:skip
+__all__ = [
     "Color", "BrightColor", "BgColor", "BgBrightColor", "ColorRGB", "BgColorRGB", "ColorHSL", "BgColorHSL", "Effect",
     "green", "yellow", "red", "magenta", "blue", "cyan", "white", "black",
     "bright_green", "bright_yellow", "bright_red", "bright_magenta", "bright_blue", "bright_cyan", "bright_white", "bright_black",
