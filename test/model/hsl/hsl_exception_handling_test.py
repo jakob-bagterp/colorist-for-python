@@ -21,12 +21,12 @@ MOCK_DATASET = [
 
 
 @pytest.mark.parametrize("hsl, expectation", MOCK_DATASET)
-def test_exception_handling_of_color_hsl(hsl: tuple[int, int, int], expectation: Any) -> None:
+def test_exception_handling_of_color_hsl(hsl: tuple[float, float, float], expectation: Any) -> None:
     with expectation:
         _ = ColorHSL(*hsl) is not None
 
 
 @pytest.mark.parametrize("hsl, expectation", MOCK_DATASET)
-def test_exception_handling_of_background_color_hsl(hsl: tuple[int, int, int], expectation: Any) -> None:
+def test_exception_handling_of_background_color_hsl(hsl: tuple[float, float, float], expectation: Any) -> None:
     with expectation:
         _ = BgColorHSL(*hsl) is not None
