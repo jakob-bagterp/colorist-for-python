@@ -1,3 +1,5 @@
+# Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
+
 __all__ = [
     "Color", "BrightColor", "BgColor", "BgBrightColor", "ColorRGB", "BgColorRGB", "ColorHSL", "BgColorHSL", "Effect",
     "green", "yellow", "red", "magenta", "blue", "cyan", "white", "black",
