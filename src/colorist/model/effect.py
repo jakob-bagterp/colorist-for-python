@@ -4,7 +4,7 @@ from .abc.effect import Effect_ABC
 
 
 class Effect(Effect_ABC):
-    """Options for effects and styling. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+    """Options for effects and styling of text. Implements ANSI escape codes for effects and styling in the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 

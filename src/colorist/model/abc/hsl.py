@@ -10,7 +10,7 @@ from .rgb import RGB_ABC
 
 
 class HSL_ABC(ABC):
-    """Abstract base class for HSL color classes."""
+    """Abstract base class for custom HSL color instances."""
 
     __slots__ = ["hue", "saturation", "lightness", "_rgb", "_ansi_code"]
 

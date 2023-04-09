@@ -4,7 +4,7 @@ from ..abc.color import FgColor_ABC
 
 
 class Color(FgColor_ABC):
-    """Options for standard colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+    """Options for standard text colors. Implements ANSI escape codes for printing color, effects, and styling in the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 

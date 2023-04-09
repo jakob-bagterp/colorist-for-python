@@ -4,7 +4,7 @@ from ..abc.color import BgColor_ABC
 
 
 class BgBrightColor(BgColor_ABC):
-    """Options for bright background colors (not standard, but mostly supported). Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+    """Options for bright background colors (not standard, but mostly supported). Implements ANSI escape codes for printing color, effects, and styling in the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 

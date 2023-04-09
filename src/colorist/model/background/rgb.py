@@ -4,7 +4,7 @@ from ..abc.rgb import RGB_ABC
 
 
 class BgColorRGB(RGB_ABC):
-    """Class for RGB background color."""
+    """Class for custom RGB background color."""
 
     def generate_ansi_code(self) -> str:
         return helper.generate.ansi_rgb_color_sequence(AnsiRgbColorSelector.BACKGROUND, self)
