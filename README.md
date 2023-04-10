@@ -97,7 +97,7 @@ How it appears in the terminal:
 As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
 ### Other String Formats
-It's often easier and more readable to use f-strings as in the examples above, but f-strings aren't supported in some earlier versions of Python. Instead, you can also use string formatting or concatenation:
+It's often easier and more readable to use [f-strings](https://peps.python.org/pep-0498/) as in the examples above, but f-strings aren't supported in some earlier versions of Python. Instead, you can also use string formatting or concatenation:
 
 ```python
 from colorist import Color
