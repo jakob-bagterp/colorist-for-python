@@ -226,6 +226,14 @@ How it appears in the terminal:
 Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
 
 # Supported Colors and Styles
+Colorist is based on [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code), a standard that defines colors, styling and effects for text in terminal windows. Note that most terminals support all color options, but not all:
+
+| Category                                               | Color Options                                      |
+| ------------------------------------------------------ | -------------------------------------------------- |
+| Standard ANSI colors supported by almost all terminals | `Color`, `BgColor`, `Effect`                       |
+| Non-standard ANSI colors supported by most terminals   | `BrightColor`, `BgBrightColor`                     |
+| Advanced ANSI colors only supported by some terminals  | `ColorRGB`, `BgColorRGB`, `ColorHSL`, `BgColorHSL` |
+
 ## Foreground Text
 | Color | Full Text Function | Custom | Example |
 | ----- | ------------------ | ------ | ------- |
