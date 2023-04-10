@@ -6,7 +6,7 @@ from ..abc.color import BgColor_ABC
 
 
 class BgColor(BgColor_ABC):
-    """Options for standard background colors. Implements ANSI escape codes for printing color, effects, and styling to the terminal.
+    """Options for standard background colors. Implements ANSI escape codes for printing color, effects, and styling in the terminal.
 
     Reference: https://en.wikipedia.org/wiki/ANSI_escape_code"""
 

@@ -5,13 +5,12 @@
 [![Test](https://github.com/jakob-bagterp/colorist-for-python/actions/workflows/test.yml/badge.svg)](https://github.com/jakob-bagterp/colorist-for-python/actions/workflows/test.yml)
 
 # 🌈 Colorist for Python 🌈
-Lightweight Python package that makes it easy and fast to print terminal messages in colors.
+Lightweight Python package that makes it easy and fast to print colored text in the terminal.
 
 Ready to try? [Learn how to install](https://github.com/jakob-bagterp/colorist-for-python/blob/master/INSTALLATION.md).
 
-## Text Colors
-### Getting Started
-#### Full Terminal Output
+## Getting Started
+### Print Line of Colored Text
 How to print a full line of colored text in the terminal:
 
 ```python
@@ -24,10 +23,10 @@ red("This is RED!")
 
 How it appears in the terminal:
 
-![Example of terminal message with green, yellow, red text color](/assets/images/examples/color_full_text_green_yellow_red.png)
+![Example of full line of green, yellow, red colored text printed in a terminal window](/assets/images/examples/color_full_text_green_yellow_red.png)
 
-#### Custom Terminal Output
-How to customize terminal messages and change color inside a paragraph:
+### Print Mixed Text Colors
+How to customize colors inside a paragraph and print it in the terminal:
 
 ```python
 from colorist import Color
@@ -39,7 +38,11 @@ print(f"Both {Color.GREEN}green{Color.OFF} and {Color.YELLOW}yellow{Color.OFF} a
 
 How it appears in the terminal:
 
-![Example of terminal message with green, yellow, red text color](/assets/images/examples/color_custom_text_green_yellow_red.png)
+![Example of white text mixed with green, yellow, red colors printed in a terminal window](/assets/images/examples/color_custom_text_green_yellow_red.png)
+
+## Other Styling Options
+### Print Bright Colors
+Most terminals support bright colors that stand more out:
 
 ```python
 from colorist import BrightColor
@@ -49,50 +52,11 @@ print(f"I want {BrightColor.CYAN}cyan{BrightColor.OFF} color inside this paragra
 
 How it appears in the terminal:
 
-![Example of terminal message with cyan text color](/assets/images/examples/bright_color_custom_text_cyan.png)
+![Example of white text mixed with cyan printed in a terminal window](/assets/images/examples/bright_color_custom_text_cyan.png)
 
 Remember to use `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
-##### Other String Formats
-It's easier and more readable to use f-strings as in the examples above, but you can also use string format:
-
-```python
-from colorist import Color
-
-print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.OFF))
-```
-
-How it appears in the terminal:
-
-![Example of terminal message with red text color](/assets/images/examples/color_custom_text_red.png)
-
-### Supported Text Colors
-| Color | Full Text Function | Custom | Example |
-| ----- | ------------------ | ------ | ------- |
-| ![Green](/assets/images/colors/green_16x16.png) | `green("text")` | `Color.GREEN` | ![Green text color in terminal](/assets/images/examples/color_map/green_full_text_167x16.png) |
-| ![Yellow](/assets/images/colors/yellow_16x16.png) | `yellow("text")` | `Color.YELLOW` | ![Yellow text color in terminal](/assets/images/examples/color_map/yellow_full_text_167x16.png) |
-| ![Red](/assets/images/colors/red_16x16.png) | `red("text")` | `Color.RED` | ![Red text color in terminal](/assets/images/examples/color_map/red_full_text_167x16.png) |
-| ![Magenta](/assets/images/colors/magenta_16x16.png) | `magenta("text")` | `Color.MAGENTA` | ![Magenta text color in terminal](/assets/images/examples/color_map/magenta_full_text_167x16.png) |
-| ![Blue](/assets/images/colors/blue_16x16.png) | `blue("text")` | `Color.BLUE` | ![Blue text color in terminal](/assets/images/examples/color_map/blue_full_text_167x16.png) |
-| ![Cyan](/assets/images/colors/cyan_16x16.png) | `cyan("text")` | `Color.CYAN` | ![Cyan text color in terminal](/assets/images/examples/color_map/cyan_full_text_167x16.png) |
-| ![White](/assets/images/colors/white_16x16.png) | `white("text")` | `Color.WHITE` | ![White text color in terminal](/assets/images/examples/color_map/white_full_text_167x16.png) |
-| ![Black](/assets/images/colors/black_16x16.png) | `black("text")` | `Color.BLACK` | ![Black text color in terminal](/assets/images/examples/color_map/black_full_text_167x16.png) |
-| - | - | `Color.OFF` | - |
-| ![Bright green](/assets/images/colors/bright_green_16x16.png) | `bright_green("text")` | `BrightColor.GREEN` | ![Bright green text color in terminal](/assets/images/examples/color_map/bright_green_full_text_167x16.png) |
-| ![Bright yellow](/assets/images/colors/bright_yellow_16x16.png) | `bright_yellow("text")` | `BrightColor.YELLOW` | ![Bright yellow text color in terminal](/assets/images/examples/color_map/bright_yellow_full_text_167x16.png) |
-| ![Bright red](/assets/images/colors/bright_red_16x16.png) | `bright_red("text")` | `BrightColor.RED` | ![Bright red text color in terminal](/assets/images/examples/color_map/bright_red_full_text_167x16.png) |
-| ![Bright magenta](/assets/images/colors/bright_magenta_16x16.png) | `bright_magenta("text")` | `BrightColor.MAGENTA` | ![Bright magenta text color in terminal](/assets/images/examples/color_map/bright_magenta_full_text_167x16.png) |
-| ![Bright blue](/assets/images/colors/bright_blue_16x16.png) | `bright_blue("text")` | `BrightColor.BLUE` | ![Bright blue text color in terminal](/assets/images/examples/color_map/bright_blue_full_text_167x16.png) |
-| ![Bright cyan](/assets/images/colors/bright_cyan_16x16.png) | `bright_cyan("text")` | `BrightColor.CYAN` | ![Bright cyan text color in terminal](/assets/images/examples/color_map/bright_cyan_full_text_167x16.png) |
-| ![Bright white](/assets/images/colors/bright_white_16x16.png) | `bright_white("text")` | `BrightColor.WHITE` | ![Bright white text color in terminal](/assets/images/examples/color_map/bright_white_full_text_167x16.png) |
-| ![Bright black](/assets/images/colors/bright_black_16x16.png) | `bright_black("text")` | `BrightColor.BLACK` | ![Bright black text color in terminal](/assets/images/examples/color_map/bright_black_full_text_167x16.png) |
-| - | - | `BrightColor.OFF` | - |
-
-## Background Colors
-### Getting Started
-#### Full Terminal Output
-How to print a full line of text with colored background in the terminal:
-
+### Print Background Colors
 ```python
 from colorist import bg_green, bg_yellow, bg_red
 
@@ -103,10 +67,9 @@ bg_red("This is RED background!")
 
 How it appears in the terminal:
 
-![Example of terminal message with green, yellow, red background color](/assets/images/examples/bg_color_full_text_green_yellow_red.png)
+![Example of white text and colored backgrounds if green, yellow, red printed in a terminal window](/assets/images/examples/bg_color_full_text_green_yellow_red.png)
 
-#### Custom Terminal Output
-How to customize terminal messages and change background color inside a paragraph:
+Background colors can also be mixed inside a paragraph:
 
 ```python
 from colorist import BgColor
@@ -118,7 +81,8 @@ print(f"Both {BgColor.GREEN}green{BgColor.OFF} and {BgColor.YELLOW}yellow{BgColo
 
 How it appears in the terminal:
 
-![Example of terminal message with green, yellow, red background color](/assets/images/examples/bg_color_custom_text_green_yellow_red.png)
+![Example of black, green, yellow, red background colors mixed inside paragraph printed in a terminal window](/assets/images/examples/bg_color_custom_text_green_yellow_red.png)
+
 
 ```python
 from colorist import BgBrightColor
@@ -128,44 +92,40 @@ print(f"I want {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color insi
 
 How it appears in the terminal:
 
-![Example of terminal message with cyan background color](/assets/images/examples/bg_bright_color_custom_text_cyan.png)
+![Example of white text on a cyan background color printed in a terminal window](/assets/images/examples/bg_bright_color_custom_text_cyan.png)
 
 As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
 
-### Supported Background Colors
-| Color | Full Text Function | Custom | Example |
-| ----- | ------------------ | ------ | ------- |
-| ![Green](/assets/images/colors/green_16x16.png) | `bg_green("text")` | `BgColor.GREEN` | ![Green background color in terminal](/assets/images/examples/bg_color_map/green_full_text_194x16.png) |
-| ![Yellow](/assets/images/colors/yellow_16x16.png) | `bg_yellow("text")` | `BgColor.YELLOW` | ![Yellow background color in terminal](/assets/images/examples/bg_color_map/yellow_full_text_194x16.png) |
-| ![Red](/assets/images/colors/red_16x16.png) | `bg_red("text")` | `BgColor.RED` | ![Red background color in terminal](/assets/images/examples/bg_color_map/red_full_text_194x16.png) |
-| ![Magenta](/assets/images/colors/magenta_16x16.png) | `bg_magenta("text")` | `BgColor.MAGENTA` | ![Magenta background color in terminal](/assets/images/examples/bg_color_map/magenta_full_text_194x16.png) |
-| ![Blue](/assets/images/colors/blue_16x16.png) | `bg_blue("text")` | `BgColor.BLUE` | ![Blue background color in terminal](/assets/images/examples/bg_color_map/blue_full_text_194x16.png) |
-| ![Cyan](/assets/images/colors/cyan_16x16.png) | `bg_cyan("text")` | `BgColor.CYAN` | ![Cyan background color in terminal](/assets/images/examples/bg_color_map/cyan_full_text_194x16.png) |
-| ![White](/assets/images/colors/white_16x16.png) | `bg_white("text")` | `BgColor.WHITE` | ![White background color in terminal](/assets/images/examples/bg_color_map/white_full_text_194x16.png) |
-| ![Black](/assets/images/colors/black_16x16.png) | `bg_black("text")` | `BgColor.BLACK` | ![Black background color in terminal](/assets/images/examples/bg_color_map/black_full_text_194x16.png) |
-| - | - | `BgColor.OFF` | - |
-| ![Bright green](/assets/images/colors/bright_green_16x16.png) | `bg_bright_green("text")` | `BgBrightColor.GREEN` | ![Bright green background color in terminal](/assets/images/examples/bg_color_map/bright_green_full_text_194x16.png) |
-| ![Bright yellow](/assets/images/colors/bright_yellow_16x16.png) | `bg_bright_yellow("text")` | `BgBrightColor.YELLOW` | ![Bright yellow background color in terminal](/assets/images/examples/bg_color_map/bright_yellow_full_text_194x16.png) |
-| ![Bright red](/assets/images/colors/bright_red_16x16.png) | `bg_bright_red("text")` | `BgBrightColor.RED` | ![Bright red background color in terminal](/assets/images/examples/bg_color_map/bright_red_full_text_194x16.png) |
-| ![Bright magenta](/assets/images/colors/bright_magenta_16x16.png) | `bg_bright_magenta("text")` | `BgBrightColor.MAGENTA` | ![Bright magenta background color in terminal](/assets/images/examples/bg_color_map/bright_magenta_full_text_194x16.png) |
-| ![Bright blue](/assets/images/colors/bright_blue_16x16.png) | `bg_bright_blue("text")` | `BgBrightColor.BLUE` | ![Bright blue background color in terminal](/assets/images/examples/bg_color_map/bright_blue_full_text_194x16.png) |
-| ![Bright cyan](/assets/images/colors/bright_cyan_16x16.png) | `bg_bright_cyan("text")` | `BgBrightColor.CYAN` | ![Bright cyan background color in terminal](/assets/images/examples/bg_color_map/bright_cyan_full_text_194x16.png) |
-| ![Bright white](/assets/images/colors/bright_white_16x16.png) | `bg_bright_white("text")` | `BgBrightColor.WHITE` | ![Bright white background color in terminal](/assets/images/examples/bg_color_map/bright_white_full_text_194x16.png) |
-| ![Bright black](/assets/images/colors/bright_black_16x16.png) | `bg_bright_black("text")` | `BgBrightColor.BLACK` | ![Bright black background color in terminal](/assets/images/examples/bg_color_map/bright_black_full_text_194x16.png) |
-| - | - | `BgBrightColor.OFF` | - |
+### Other String Formats
+It's often easier and more readable to use [f-strings](https://peps.python.org/pep-0498/) as in the examples above, but f-strings aren't supported in some earlier versions of Python. Instead, you can also use string formatting or concatenation:
 
-## RGB and HSL Colors
-Note that not all terminals support RGB or HSL colors. If your terminal does support advanced colors definition, read on.
+```python
+from colorist import Color
 
-### Print RGB Colors in the Terminal
-Use the `rgb` and `bg_rgb` methods where the values for red, green, blue can be an integer between 0-255.
+print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.OFF))
+print("I want " + Color.RED + "red" + Color.OFF + " color inside this paragraph")
+```
+
+Both options appear the same in the terminal:
+
+![Example of terminal message with red text color](/assets/images/examples/color_custom_text_red.png)
+
+### Print RGB and HSL Colors
+Note that not all terminals support RGB or HSL colors. If your terminal does support such advanced colors, read on.
+
+#### RGB Colors
+Try the `rgb` and `bg_rgb` methods for a full line of colored text. The values for red, green, blue can be an integer between `0-255`.
 
 ```python
 from colorist import rgb, bg_rgb
 
-rgb("I want this text in RGB", 0, 128, 255)
-bg_rgb("I want this background in RGB", 0, 128, 255)
+rgb("I want this text in blue RGB colors", 0, 128, 255)
+bg_rgb("I want this background in blue RGB colors", 0, 128, 255)
 ```
+
+How it appears in the terminal:
+
+![Example of text in RGB colors printed in a terminal window](/assets/images/examples/rgb_full_text.png)
 
 Or customize the styling of text and background with the `ColorRGB` and `BgColorRGB` classes:
 
@@ -175,36 +135,44 @@ from colorist import ColorRGB, BgColorRGB
 dusty_pink = ColorRGB(194, 145, 164)
 bg_steel_blue = BgColorRGB(70, 130, 180)
 
-print(f"I want to use {dusty_pink}dusty pink{ColorRGB.OFF} and {bg_steel_blue}steel blue{BgColorRGB.OFF} colors inside this paragraph")
+print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF} and {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors inside this paragraph")
 ```
 
-### Print HSL Colors in the Terminal
-Similarly, you can also output colors in HSL with the `hsl` and `bg_hsl` methods. The value for hue can be between 0 and 360 degrees, while saturation and lightness can be a percentage between 0(%) and 100(%):
+How it appears in the terminal:
+
+![Another example of text in RGB colors printed in a terminal window](/assets/images/examples/rgb_custom_text.png)
+
+#### HSL Colors
+Similarly, you can also output colors in HSL with the `hsl` and `bg_hsl` methods. The value for hue can be between `0-360` degrees, while saturation and lightness can be a percentage between `0-100` %:
 
 ```python
 from colorist import hsl, bg_hsl
 
-hsl("I want this text in HSL", 120, 50, 50)
-bg_hsl("I want this background in HSL", 120, 50, 50)
+hsl("I want this text in green HSL colors", 120, 50, 50)
+bg_hsl("I want this background in green HSL colors", 120, 50, 50)
 ```
+
+How it appears in the terminal:
+
+![Example of text in HSL colors printed in a terminal window](/assets/images/examples/hsl_full_text.png)
 
 Or customize the styling of text and background with the `ColorHSL` and `BgColorHSL` classes:
 
 ```python
 from colorist import ColorHSL, BgColorHSL
 
-aged_pink = ColorHSL(7, 31, 69)
+mustard_green = ColorHSL(60, 56, 43)
 bg_steel_gray = BgColorHSL(190, 2, 49)
 
-print(f"I want to use {aged_rose}dusty pink{ColorHSL.OFF} and {bg_steel_gray}steel blue{BgColorHSL.OFF} colors inside this paragraph")
+print(f"I want to use {mustard_green}mustard green{mustard_green.OFF} and {bg_steel_gray}steel blue{bg_steel_gray.OFF} colors inside this paragraph")
 ```
 
-## Effects
-### Getting Started
-In addition to colors, Colorist for Python can also add effects to text messages in the terminal.
+How it appears in the terminal:
 
-#### Full Terminal Output
-How to print a full line of text effect in the terminal:
+![Another example of text in HSL colors printed in a terminal window](/assets/images/examples/hsl_custom_text.png)
+
+### Print Effects and Other Styles
+In addition to colors, Colorist can also add effects when you print text in the terminal. How to print a full line of text with effects:
 
 ```python
 from colorist import effect_blink
@@ -228,7 +196,6 @@ How it appears in the terminal:
 
 ![Example of terminal message with blinking, cyan-colored text](/assets/images/examples/effect_full_text_blink_cyan.gif)
 
-#### Custom Terminal Output
 How to customize terminal messages and change effect inside a paragraph:
 
 ```python
@@ -257,7 +224,60 @@ How it appears in the terminal:
 
 Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
 
-### Supported Effects
+# Supported Colors and Styles
+Colorist is based on [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code), a standard that defines colors, styling and effects for text in terminal windows. Note that most terminals support all color options, but not all:
+
+| Category                                               | Color Options                                      |
+| ------------------------------------------------------ | -------------------------------------------------- |
+| Standard ANSI colors supported by almost all terminals | `Color`, `BgColor`, `Effect`                       |
+| Non-standard ANSI colors supported by most terminals   | `BrightColor`, `BgBrightColor`                     |
+| Advanced ANSI colors only supported by some terminals  | `ColorRGB`, `BgColorRGB`, `ColorHSL`, `BgColorHSL` |
+
+## Foreground Text
+| Color | Full Text Function | Custom | Example |
+| ----- | ------------------ | ------ | ------- |
+| ![Green](/assets/images/colors/green_16x16.png) | `green("text")` | `Color.GREEN` | ![Green text color in terminal](/assets/images/examples/color_map/green_full_text_167x16.png) |
+| ![Yellow](/assets/images/colors/yellow_16x16.png) | `yellow("text")` | `Color.YELLOW` | ![Yellow text color in terminal](/assets/images/examples/color_map/yellow_full_text_167x16.png) |
+| ![Red](/assets/images/colors/red_16x16.png) | `red("text")` | `Color.RED` | ![Red text color in terminal](/assets/images/examples/color_map/red_full_text_167x16.png) |
+| ![Magenta](/assets/images/colors/magenta_16x16.png) | `magenta("text")` | `Color.MAGENTA` | ![Magenta text color in terminal](/assets/images/examples/color_map/magenta_full_text_167x16.png) |
+| ![Blue](/assets/images/colors/blue_16x16.png) | `blue("text")` | `Color.BLUE` | ![Blue text color in terminal](/assets/images/examples/color_map/blue_full_text_167x16.png) |
+| ![Cyan](/assets/images/colors/cyan_16x16.png) | `cyan("text")` | `Color.CYAN` | ![Cyan text color in terminal](/assets/images/examples/color_map/cyan_full_text_167x16.png) |
+| ![White](/assets/images/colors/white_16x16.png) | `white("text")` | `Color.WHITE` | ![White text color in terminal](/assets/images/examples/color_map/white_full_text_167x16.png) |
+| ![Black](/assets/images/colors/black_16x16.png) | `black("text")` | `Color.BLACK` | ![Black text color in terminal](/assets/images/examples/color_map/black_full_text_167x16.png) |
+| - | - | `Color.OFF` | - |
+| ![Bright green](/assets/images/colors/bright_green_16x16.png) | `bright_green("text")` | `BrightColor.GREEN` | ![Bright green text color in terminal](/assets/images/examples/color_map/bright_green_full_text_167x16.png) |
+| ![Bright yellow](/assets/images/colors/bright_yellow_16x16.png) | `bright_yellow("text")` | `BrightColor.YELLOW` | ![Bright yellow text color in terminal](/assets/images/examples/color_map/bright_yellow_full_text_167x16.png) |
+| ![Bright red](/assets/images/colors/bright_red_16x16.png) | `bright_red("text")` | `BrightColor.RED` | ![Bright red text color in terminal](/assets/images/examples/color_map/bright_red_full_text_167x16.png) |
+| ![Bright magenta](/assets/images/colors/bright_magenta_16x16.png) | `bright_magenta("text")` | `BrightColor.MAGENTA` | ![Bright magenta text color in terminal](/assets/images/examples/color_map/bright_magenta_full_text_167x16.png) |
+| ![Bright blue](/assets/images/colors/bright_blue_16x16.png) | `bright_blue("text")` | `BrightColor.BLUE` | ![Bright blue text color in terminal](/assets/images/examples/color_map/bright_blue_full_text_167x16.png) |
+| ![Bright cyan](/assets/images/colors/bright_cyan_16x16.png) | `bright_cyan("text")` | `BrightColor.CYAN` | ![Bright cyan text color in terminal](/assets/images/examples/color_map/bright_cyan_full_text_167x16.png) |
+| ![Bright white](/assets/images/colors/bright_white_16x16.png) | `bright_white("text")` | `BrightColor.WHITE` | ![Bright white text color in terminal](/assets/images/examples/color_map/bright_white_full_text_167x16.png) |
+| ![Bright black](/assets/images/colors/bright_black_16x16.png) | `bright_black("text")` | `BrightColor.BLACK` | ![Bright black text color in terminal](/assets/images/examples/color_map/bright_black_full_text_167x16.png) |
+| - | - | `BrightColor.OFF` | - |
+
+## Background
+| Color | Full Text Function | Custom | Example |
+| ----- | ------------------ | ------ | ------- |
+| ![Green](/assets/images/colors/green_16x16.png) | `bg_green("text")` | `BgColor.GREEN` | ![Green background color in terminal](/assets/images/examples/bg_color_map/green_full_text_194x16.png) |
+| ![Yellow](/assets/images/colors/yellow_16x16.png) | `bg_yellow("text")` | `BgColor.YELLOW` | ![Yellow background color in terminal](/assets/images/examples/bg_color_map/yellow_full_text_194x16.png) |
+| ![Red](/assets/images/colors/red_16x16.png) | `bg_red("text")` | `BgColor.RED` | ![Red background color in terminal](/assets/images/examples/bg_color_map/red_full_text_194x16.png) |
+| ![Magenta](/assets/images/colors/magenta_16x16.png) | `bg_magenta("text")` | `BgColor.MAGENTA` | ![Magenta background color in terminal](/assets/images/examples/bg_color_map/magenta_full_text_194x16.png) |
+| ![Blue](/assets/images/colors/blue_16x16.png) | `bg_blue("text")` | `BgColor.BLUE` | ![Blue background color in terminal](/assets/images/examples/bg_color_map/blue_full_text_194x16.png) |
+| ![Cyan](/assets/images/colors/cyan_16x16.png) | `bg_cyan("text")` | `BgColor.CYAN` | ![Cyan background color in terminal](/assets/images/examples/bg_color_map/cyan_full_text_194x16.png) |
+| ![White](/assets/images/colors/white_16x16.png) | `bg_white("text")` | `BgColor.WHITE` | ![White background color in terminal](/assets/images/examples/bg_color_map/white_full_text_194x16.png) |
+| ![Black](/assets/images/colors/black_16x16.png) | `bg_black("text")` | `BgColor.BLACK` | ![Black background color in terminal](/assets/images/examples/bg_color_map/black_full_text_194x16.png) |
+| - | - | `BgColor.OFF` | - |
+| ![Bright green](/assets/images/colors/bright_green_16x16.png) | `bg_bright_green("text")` | `BgBrightColor.GREEN` | ![Bright green background color in terminal](/assets/images/examples/bg_color_map/bright_green_full_text_194x16.png) |
+| ![Bright yellow](/assets/images/colors/bright_yellow_16x16.png) | `bg_bright_yellow("text")` | `BgBrightColor.YELLOW` | ![Bright yellow background color in terminal](/assets/images/examples/bg_color_map/bright_yellow_full_text_194x16.png) |
+| ![Bright red](/assets/images/colors/bright_red_16x16.png) | `bg_bright_red("text")` | `BgBrightColor.RED` | ![Bright red background color in terminal](/assets/images/examples/bg_color_map/bright_red_full_text_194x16.png) |
+| ![Bright magenta](/assets/images/colors/bright_magenta_16x16.png) | `bg_bright_magenta("text")` | `BgBrightColor.MAGENTA` | ![Bright magenta background color in terminal](/assets/images/examples/bg_color_map/bright_magenta_full_text_194x16.png) |
+| ![Bright blue](/assets/images/colors/bright_blue_16x16.png) | `bg_bright_blue("text")` | `BgBrightColor.BLUE` | ![Bright blue background color in terminal](/assets/images/examples/bg_color_map/bright_blue_full_text_194x16.png) |
+| ![Bright cyan](/assets/images/colors/bright_cyan_16x16.png) | `bg_bright_cyan("text")` | `BgBrightColor.CYAN` | ![Bright cyan background color in terminal](/assets/images/examples/bg_color_map/bright_cyan_full_text_194x16.png) |
+| ![Bright white](/assets/images/colors/bright_white_16x16.png) | `bg_bright_white("text")` | `BgBrightColor.WHITE` | ![Bright white background color in terminal](/assets/images/examples/bg_color_map/bright_white_full_text_194x16.png) |
+| ![Bright black](/assets/images/colors/bright_black_16x16.png) | `bg_bright_black("text")` | `BgBrightColor.BLACK` | ![Bright black background color in terminal](/assets/images/examples/bg_color_map/bright_black_full_text_194x16.png) |
+| - | - | `BgBrightColor.OFF` | - |
+
+## Effects
 | Effect           | Full Text Function         | Custom             | Reset                  | Example    |
 | ---------------- | -------------------------- | ------------------ | ---------------------- | ---------- |
 | **Bold**         | `effect_bold("text")`      | `Effect.BOLD`      | `Effect.BOLD_OFF`      | ![Example of terminal message with bold text](/assets/images/examples/effect_map/bold_full_text_140x16.png) |
@@ -268,6 +288,7 @@ Similar to `Color.OFF`, remember to turn off an effect with the relevant reset o
 | Hide             | `effect_hide("text")`      | `Effect.HIDE`      | `Effect.HIDE_OFF`      | ![Example of terminal message with hidden text](/assets/images/examples/effect_map/hide_full_text_140x16.png) |
 | -                | -                          | -                  | `Effect.OFF`           | -          |
 
+# Thank You for Supporting
 ## Donate
 This module is free to use. And if you like it, feel free to [buy me a coffee](https://github.com/sponsors/jakob-bagterp).
 

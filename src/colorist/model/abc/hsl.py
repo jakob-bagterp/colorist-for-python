@@ -12,7 +12,7 @@ from .rgb import RGB_ABC
 
 
 class HSL_ABC(ABC):
-    """Abstract base class for HSL color classes."""
+    """Abstract base class for custom HSL color instances."""
 
     OFF = RESET_ALL
 
