@@ -111,7 +111,7 @@ Both options appear the same in the terminal:
 ![Example of terminal message with red text color](/assets/images/examples/color_custom_text_red.png)
 
 ### Print RGB and HSL Colors
-Note that not all terminals support RGB or HSL colors. If your terminal does support advanced colors, read on.
+Note that not all terminals support RGB or HSL colors. If your terminal does support such advanced colors, read on.
 
 #### RGB Colors
 Try the `rgb` and `bg_rgb` methods for a full line of colored text. The values for red, green, blue can be an integer between `0-255`.
@@ -171,7 +171,7 @@ How it appears in the terminal:
 
 ![Another example of text in HSL colors printed in a terminal window](/assets/images/examples/hsl_custom_text.png)
 
-### Print Effects
+### Print Effects and Other Styles
 In addition to colors, Colorist can also add effects when you print text in the terminal. How to print a full line of text with effects:
 
 ```python
@@ -196,7 +196,6 @@ How it appears in the terminal:
 
 ![Example of terminal message with blinking, cyan-colored text](/assets/images/examples/effect_full_text_blink_cyan.gif)
 
-#### Custom Terminal Output
 How to customize terminal messages and change effect inside a paragraph:
 
 ```python
