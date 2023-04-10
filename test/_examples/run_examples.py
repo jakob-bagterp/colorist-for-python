@@ -4,23 +4,17 @@ import subprocess
 
 
 def run_terminal_examples_for_color() -> None:
-    subprocess.call("python3 ./foreground/color/full_text.py".split())
-    subprocess.call("python3 ./foreground/color/custom_text.py".split())
+    subprocess.call("python3 ./color/foreground/full_text.py".split())
+    subprocess.call("python3 ./color/foreground/custom_text.py".split())
+    subprocess.call("python3 ./color/background/full_text.py".split())
+    subprocess.call("python3 ./color/background/custom_text.py".split())
 
 
 def run_terminal_examples_for_bright_color() -> None:
-    subprocess.call("python3 ./foreground/bright_color/full_text.py".split())
-    subprocess.call("python3 ./foreground/bright_color/custom_text.py".split())
-
-
-def run_terminal_examples_for_background_color() -> None:
-    subprocess.call("python3 ./background/color/full_text.py".split())
-    subprocess.call("python3 ./background/color/custom_text.py".split())
-
-
-def run_terminal_examples_for_background_bright_color() -> None:
-    subprocess.call("python3 ./background/bright_color/full_text.py".split())
-    subprocess.call("python3 ./background/bright_color/custom_text.py".split())
+    subprocess.call("python3 ./bright_color/foreground/full_text.py".split())
+    subprocess.call("python3 ./bright_color/foreground/custom_text.py".split())
+    subprocess.call("python3 ./bright_color/background/full_text.py".split())
+    subprocess.call("python3 ./bright_color/background/custom_text.py".split())
 
 
 def run_terminal_examples_for_effect() -> None:
@@ -42,8 +36,6 @@ def run_terminal_examples_for_hsl_color() -> None:
 if __name__ == "__main__":
     run_terminal_examples_for_color()
     run_terminal_examples_for_bright_color()
-    run_terminal_examples_for_background_color()
-    run_terminal_examples_for_background_bright_color()
     run_terminal_examples_for_effect()
     run_terminal_examples_for_rgb_color()
     run_terminal_examples_for_hsl_color()
