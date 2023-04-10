@@ -3,9 +3,9 @@
 from colorist import BgColorHSL, ColorHSL
 
 if __name__ == "__main__":
-    aged_pink = ColorHSL(7, 31, 69)
+    mustard_green = ColorHSL(60, 56, 43)
     bg_steel_gray = BgColorHSL(190, 2, 49)
 
     print("")
-    print(f"I want to use {aged_pink}dusty pink{aged_pink.OFF} and {bg_steel_gray}steel blue{bg_steel_gray.OFF} colors inside this paragraph")
+    print(f"I want to use {mustard_green}mustard green{mustard_green.OFF} and {bg_steel_gray}steel blue{bg_steel_gray.OFF} colors inside this paragraph")
     print("")
