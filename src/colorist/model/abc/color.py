@@ -6,8 +6,6 @@ from abc import ABC
 class Color_ABC(ABC):
     """Abstract base class for standard ANSI color classes."""
 
-    __slots__ = ["BLACK", "RED", "GREEN", "YELLOW", "BLUE", "MAGENTA", "CYAN", "WHITE", "DEFAULT", "OFF"]
-
     BLACK: str
     RED: str
     GREEN: str
