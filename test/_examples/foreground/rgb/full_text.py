@@ -4,5 +4,5 @@ from colorist import rgb
 
 if __name__ == "__main__":
     print("")
-    rgb("I want this text in RGB", 0, 128, 255)
+    rgb("I want this text in blue RGB colors", 0, 128, 255)
     print("")

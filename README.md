@@ -163,8 +163,8 @@ Use the `rgb` and `bg_rgb` methods where the values for red, green, blue can be 
 ```python
 from colorist import rgb, bg_rgb
 
-rgb("I want this text in RGB", 0, 128, 255)
-bg_rgb("I want this background in RGB", 0, 128, 255)
+rgb("I want this text in blue RGB colors", 0, 128, 255)
+bg_rgb("I want this background in blue RGB colors", 0, 128, 255)
 ```
 
 Or customize the styling of text and background with the `ColorRGB` and `BgColorRGB` classes:
@@ -184,8 +184,8 @@ Similarly, you can also output colors in HSL with the `hsl` and `bg_hsl` methods
 ```python
 from colorist import hsl, bg_hsl
 
-hsl("I want this text in HSL", 120, 50, 50)
-bg_hsl("I want this background in HSL", 120, 50, 50)
+hsl("I want this text in green HSL colors", 120, 50, 50)
+bg_hsl("I want this background in green HSL colors", 120, 50, 50)
 ```
 
 Or customize the styling of text and background with the `ColorHSL` and `BgColorHSL` classes:
