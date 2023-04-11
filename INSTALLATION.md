@@ -16,13 +16,13 @@
 Assuming that Python is installed already, execute this command in the terminal:
 
 ```shell
-pip3 install colorist
+pip install colorist
 ```
 
 If you already have installed Colorist for Python, use this command to upgrade to latest version:
 
 ```shell
-pip3 install --upgrade colorist
+pip install --upgrade colorist
 ```
 
 ### Homebrew
