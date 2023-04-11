@@ -47,7 +47,7 @@ class AnsiColorSelector(Enum):
 
 @unique
 class AnsiRgbColorSelector(Enum):
-    """ANSI RGB color selector to be mixed with AnsiColor for foreground (30-37), background (40-47) and other combinations."""
+    """ANSI RGB color selector to be mixed with values for red, green, blue."""
 
     FOREGROUND = "38;2"
     """Parameter for RGB foreground color sequence: 38;2;r;g;b."""
