@@ -12,11 +12,11 @@ from .rgb import RGB_ABC
 
 
 class HSL_ABC(ABC):
-    """Abstract base class for HSL color classes."""
-
-    __slots__ = ["hue", "saturation", "lightness", "_rgb", "_ansi_code"]
+    """Abstract base class for custom HSL color instances."""
 
     OFF = RESET_ALL
+
+    __slots__ = ["hue", "saturation", "lightness", "_rgb", "_ansi_code"]
 
     def __init__(self, hue: float, saturation: float, lightness: float) -> None:
         if not is_valid_hsl_hue(hue):

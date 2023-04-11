@@ -8,11 +8,11 @@ from ...helper.validate import is_valid_rgb_value
 
 
 class RGB_ABC(ABC):
-    """Abstract base class for RGB color classes."""
-
-    __slots__ = ["red", "green", "blue", "_ansi_code"]
+    """Abstract base class for custom RGB color instances."""
 
     OFF = RESET_ALL
+
+    __slots__ = ["red", "green", "blue", "_ansi_code"]
 
     def __init__(self, red: int, green: int, blue: int) -> None:
         if not is_valid_rgb_value(red):

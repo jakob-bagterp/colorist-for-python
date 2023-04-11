@@ -2,10 +2,10 @@
 
 __all__ = [
     "Color", "BrightColor", "BgColor", "BgBrightColor", "ColorRGB", "BgColorRGB", "ColorHSL", "BgColorHSL", "Effect",
-    "green", "yellow", "red", "magenta", "blue", "cyan", "white", "black",
-    "bright_green", "bright_yellow", "bright_red", "bright_magenta", "bright_blue", "bright_cyan", "bright_white", "bright_black",
-    "bg_green", "bg_yellow", "bg_red", "bg_magenta", "bg_blue", "bg_cyan", "bg_white", "bg_black",
-    "bg_bright_green", "bg_bright_yellow", "bg_bright_red", "bg_bright_magenta", "bg_bright_blue", "bg_bright_cyan", "bg_bright_white", "bg_bright_black",
+    "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white",
+    "bright_black", "bright_red", "bright_green", "bright_yellow", "bright_blue", "bright_magenta", "bright_cyan", "bright_white",
+    "bg_black", "bg_red", "bg_green", "bg_yellow", "bg_blue", "bg_magenta", "bg_cyan", "bg_white",
+    "bg_bright_black", "bg_bright_red", "bg_bright_green", "bg_bright_yellow", "bg_bright_blue", "bg_bright_magenta", "bg_bright_cyan", "bg_bright_white",
     "effect_bold", "effect_dim", "effect_underline", "effect_blink", "effect_reverse", "effect_hide",
     "rgb", "hsl",
     "bg_rgb", "bg_hsl"
