@@ -2,6 +2,8 @@
 
 import colorsys
 
+from ..helper.error import message_for_hex_value_error
+
 
 def normalise_colorsys_rgb_to_real_rgb(rgb_colorsys: tuple[float, float, float]) -> tuple[int, int, int]:
     """Since Colorsys outputs RGB values as floats between 0.0 an 1.0, we need to normalise this to a standard RGB scale from 0 to 255."""
@@ -28,3 +30,15 @@ def hsl_to_rgb(hue: float, saturation: float, lightness: float) -> tuple[int, in
     lightness_colorsys = normalise_percentage_to_colorsys_value(lightness)
     rgb_colorsys = colorsys.hls_to_rgb(hue_colorsys, lightness_colorsys, saturation_colorsys)
     return normalise_colorsys_rgb_to_real_rgb(rgb_colorsys)
+
+
+def hex_to_rgb(hex: str) -> tuple[int, int, int]:
+    """Convert hex color to RGB. Expects valid hex value, for instance #B4FBB8 or B4FBB8, #B4F or B4F."""
+
+    hex = hex.lstrip("#")
+    if len(hex) == 3:
+        return tuple(int(hex[i] * 2, 16) for i in (0, 1, 2))
+    elif len(hex) == 6:
+        return tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
+    else:
+        raise ValueError(message_for_hex_value_error(hex))

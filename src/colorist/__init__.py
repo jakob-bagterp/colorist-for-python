@@ -7,7 +7,7 @@ __all__ = [
     "bg_black", "bg_red", "bg_green", "bg_yellow", "bg_blue", "bg_magenta", "bg_cyan", "bg_white",
     "bg_bright_black", "bg_bright_red", "bg_bright_green", "bg_bright_yellow", "bg_bright_blue", "bg_bright_magenta", "bg_bright_cyan", "bg_bright_white",
     "effect_bold", "effect_dim", "effect_underline", "effect_blink", "effect_reverse", "effect_hide",
-    "rgb", "hsl",
+    "hex", "rgb", "hsl",
     "bg_rgb", "bg_hsl"
 ]
 
@@ -36,6 +36,7 @@ from .print.foreground.bright_color import (bright_black, bright_blue,
                                             bright_white, bright_yellow)
 from .print.foreground.color import (black, blue, cyan, green, magenta, red,
                                      white, yellow)
+from .print.foreground.hex import hex
 from .print.foreground.hsl import hsl
 from .print.foreground.rgb import rgb
 from .version import __version__  # noqa
