@@ -97,3 +97,22 @@ class BgColorHSL
 HSL_ABC <|-- ColorHSL
 HSL_ABC <|-- BgColorHSL
 ```
+
+## Hex Color Classes
+```mermaid
+classDiagram
+class Hex_ABC {
+    <<abstract>>
+    +str hex
+    +ColorRGB _rgb
+    +str _ansi_code
+    +str OFF
+    +convert_hex_to_rgb()
+    +generate_ansi_code()
+}
+class ColorHex
+class BgColorHex
+
+Hex_ABC <|-- ColorHex
+Hex_ABC <|-- BgColorHex
+```
