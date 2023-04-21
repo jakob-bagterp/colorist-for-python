@@ -8,7 +8,7 @@ __all__ = [
     "bg_bright_black", "bg_bright_red", "bg_bright_green", "bg_bright_yellow", "bg_bright_blue", "bg_bright_magenta", "bg_bright_cyan", "bg_bright_white",
     "effect_bold", "effect_dim", "effect_underline", "effect_blink", "effect_reverse", "effect_hide",
     "hex", "rgb", "hsl",
-    "bg_rgb", "bg_hsl"
+    "bg_hex", "bg_rgb", "bg_hsl"
 ]
 
 from .model.background.bright_color import BgBrightColor
@@ -26,6 +26,7 @@ from .print.background.bright_color import (bg_bright_black, bg_bright_blue,
                                             bg_bright_white, bg_bright_yellow)
 from .print.background.color import (bg_black, bg_blue, bg_cyan, bg_green,
                                      bg_magenta, bg_red, bg_white, bg_yellow)
+from .print.background.hex import bg_hex
 from .print.background.hsl import bg_hsl
 from .print.background.rgb import bg_rgb
 from .print.effect import (effect_blink, effect_bold, effect_dim, effect_hide,
