@@ -37,8 +37,10 @@ def hex_to_rgb(hex: str) -> tuple[int, int, int]:
 
     hex = hex.lstrip("#")
     if len(hex) == 3:
-        return tuple(int(hex[i] * 2, 16) for i in (0, 1, 2))
+        red, green, blue = tuple(int(hex[i] * 2, 16) for i in (0, 1, 2))
+        return red, green, blue
     elif len(hex) == 6:
-        return tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
+        red, green, blue = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
+        return red, green, blue
     else:
         raise ValueError(message_for_hex_value_error(hex))
