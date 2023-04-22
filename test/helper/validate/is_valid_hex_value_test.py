@@ -24,6 +24,8 @@ from colorist import helper
     ("1A", False),
     ("#random", False),
     ("random", False),
+    ("##1AFFa1", False),
+    ("##1AF", False),
 ])
 def test_is_valid_hex_value(input: str, expected: bool) -> None:
     assert helper.validate.is_valid_hex_value(input) is expected
