@@ -11,7 +11,7 @@ from .rgb import RGB_ABC
 
 
 class Hex_ABC(ABC):
-    """Abstract base class for custom hex color instances."""
+    """Abstract base class for custom Hex color instances."""
 
     OFF = RESET_ALL
 
@@ -33,7 +33,7 @@ class Hex_ABC(ABC):
         return f"Hex: #{self.hex.lstrip('#')}"
 
     def convert_hex_to_rgb(self) -> RGB_ABC:
-        """Method to convert hex to RGB color."""
+        """Method to convert Hex to RGB color."""
 
         red, green, blue = helper.convert.hex_to_rgb(self.hex)
         return ColorRGB(red, green, blue)

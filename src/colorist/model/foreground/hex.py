@@ -6,7 +6,7 @@ from ..abc.hex import Hex_ABC
 
 
 class ColorHex(Hex_ABC):
-    """Class for custom foreground text color defined as hex color."""
+    """Class for custom foreground text defined in Hex color."""
 
     def generate_ansi_code(self) -> str:
         return helper.generate.ansi_rgb_color_sequence(AnsiRgbColorSelector.FOREGROUND, self._rgb)
