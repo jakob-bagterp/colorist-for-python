@@ -1,7 +1,7 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
 __all__ = [
-    "Color", "BrightColor", "BgColor", "BgBrightColor", "ColorRGB", "BgColorRGB", "ColorHSL", "BgColorHSL", "Effect",
+    "Color", "BrightColor", "BgColor", "BgBrightColor", "ColorHex", "BgColorHex", "ColorRGB", "BgColorRGB", "ColorHSL", "BgColorHSL", "Effect",
     "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white",
     "bright_black", "bright_red", "bright_green", "bright_yellow", "bright_blue", "bright_magenta", "bright_cyan", "bright_white",
     "bg_black", "bg_red", "bg_green", "bg_yellow", "bg_blue", "bg_magenta", "bg_cyan", "bg_white",
@@ -13,11 +13,13 @@ __all__ = [
 
 from .model.background.bright_color import BgBrightColor
 from .model.background.color import BgColor
+from .model.background.hex import BgColorHex
 from .model.background.hsl import BgColorHSL
 from .model.background.rgb import BgColorRGB
 from .model.effect import Effect
 from .model.foreground.bright_color import BrightColor
 from .model.foreground.color import Color
+from .model.foreground.hex import ColorHex
 from .model.foreground.hsl import ColorHSL
 from .model.foreground.rgb import ColorRGB
 from .print.background.bright_color import (bg_bright_black, bg_bright_blue,
