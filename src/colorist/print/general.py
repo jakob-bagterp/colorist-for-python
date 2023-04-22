@@ -21,4 +21,8 @@ def print_color(text: str,
                 ) -> None:
     """Prints full line of text with various options for text and background color, styling and effects."""
 
-    print(f"{color}{bg_color}{effect}{text}{RESET_ALL}")
+    color_str = str(color) if color is not None else ""
+    bg_color_str = str(bg_color) if bg_color is not None else ""
+    effect_str = str(effect) if bg_color is not None else ""
+
+    print(f"{color_str}{bg_color_str}{effect_str}{text}{RESET_ALL}")
