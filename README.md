@@ -110,8 +110,8 @@ Both options appear the same in the terminal:
 
 ![Example of terminal message with red text color](/assets/images/examples/color_custom_text_red.png)
 
-### Print RGB and HSL Colors
-Note that not all terminals support RGB or HSL colors. If your terminal does support such advanced colors, read on.
+### Print RGB, HSL and Hex Colors
+Note that not all terminals support RGB, HSL or Hex colors. If your terminal does support such advanced colors, read on.
 
 #### RGB Colors
 Try the `rgb` and `bg_rgb` methods for a full line of colored text. The values for red, green, blue can be an integer between `0-255`.
@@ -170,6 +170,35 @@ print(f"I want to use {mustard_green}mustard green{mustard_green.OFF} and {bg_st
 How it appears in the terminal:
 
 ![Another example of text in HSL colors printed in a terminal window](/assets/images/examples/hsl_custom_text.png)
+
+#### Hex Colors
+Try the `hex` and `bg_hex` methods for a full line of colored text. Allowed Hex values are, for instance, `#00aaff` or `#0af`, alternatively without the hash sign as `00aaff` or `0af`.
+
+```python
+from colorist import hex, bg_hex
+
+hex("I want this text in coral Hex colors", "#ff7f50")
+bg_hex("I want this background in coral Hex colors", "#ff7f50")
+```
+
+How it appears in the terminal:
+
+![Example of text in Hex colors printed in a terminal window](/assets/images/examples/hex_full_text.png)
+
+Or customize the styling of text and background with the `ColorHex` and `BgColorHex` classes:
+
+```python
+from colorist import ColorHex, BgColorHex
+
+watermelon_red = ColorHex("#ff5733")
+bg_mint_green = BgColorHex("#99ff99")
+
+print(f"I want to use {watermelon_red}watermelon pink{watermelon_red.OFF} and {bg_mint_green}mint green{bg_mint_green.OFF} colors inside this paragraph")
+```
+
+How it appears in the terminal:
+
+![Another example of text in Hex colors printed in a terminal window](/assets/images/examples/hex_custom_text.png)
 
 ### Print Effects and Other Styles
 In addition to colors, Colorist can also add effects when you print text in the terminal. How to print a full line of text with effects:
