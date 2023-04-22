@@ -256,11 +256,11 @@ Similar to `Color.OFF`, remember to turn off an effect with the relevant reset o
 # Supported Colors and Styles
 Colorist is based on [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code), a standard that defines colors, styling and effects for text in terminal windows. Note that most terminals support all color options, but not all:
 
-| Category                                               | Color Options                                      |
-| ------------------------------------------------------ | -------------------------------------------------- |
-| Standard ANSI colors supported by almost all terminals | `Color`, `BgColor`, `Effect`                       |
-| Non-standard ANSI colors supported by most terminals   | `BrightColor`, `BgBrightColor`                     |
-| Advanced ANSI colors only supported by some terminals  | `ColorRGB`, `BgColorRGB`, `ColorHSL`, `BgColorHSL` |
+| Category                                               | Color Options                                                                |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Standard ANSI colors supported by almost all terminals | `Color`, `BgColor`, `Effect`                                                 |
+| Non-standard ANSI colors supported by most terminals   | `BrightColor`, `BgBrightColor`                                               |
+| Advanced ANSI colors only supported by some terminals  | `ColorRGB`, `BgColorRGB`, `ColorHSL`, `BgColorHSL`, `ColorHex`, `BgColorHex` |
 
 ## Foreground Text
 | Color | Full Text Function | Custom | Example |
