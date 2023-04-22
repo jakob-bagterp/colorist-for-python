@@ -6,7 +6,7 @@ from ..abc.hex import Hex_ABC
 
 
 class BgColorHex(Hex_ABC):
-    """Class for custom background color defined as hex color."""
+    """Class for custom background defined in Hex color."""
 
     def generate_ansi_code(self) -> str:
         return helper.generate.ansi_rgb_color_sequence(AnsiRgbColorSelector.BACKGROUND, self._rgb)

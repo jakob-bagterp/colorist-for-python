@@ -33,7 +33,7 @@ def hsl_to_rgb(hue: float, saturation: float, lightness: float) -> tuple[int, in
 
 
 def hex_to_rgb(hex: str) -> tuple[int, int, int]:
-    """Convert hex color to RGB. Expects valid hex value, for instance #B4FBB8 or B4FBB8, #B4F or B4F."""
+    """Convert Hex color to RGB. Expects valid Hex color value, for instance #B4FBB8 or B4FBB8, #B4F or B4F."""
 
     hex = hex.lstrip("#")
     if len(hex) == 3:
