@@ -21,7 +21,7 @@ class Hex_ABC(ABC):
         if not is_valid_hex_value(hex):
             raise ValueError(message_for_hex_value_error(hex))
 
-        self.hex: str = hex
+        self.hex: str = hex.lower()
 
         self._rgb: RGB_ABC = self.convert_hex_to_rgb()
         self._ansi_code: str = self.generate_ansi_code()
