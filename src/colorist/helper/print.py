@@ -32,7 +32,7 @@ def bg_rgb(text: str, red: int, green: int, blue: int) -> None:
     print(f"\033[48;2;{red};{green};{blue}m{text}{RESET_ALL}")
 
 
-def normalize_input(input: FgColor_ABC | BgColor_ABC | RGB_ABC | HSL_ABC | Hex_ABC | Effect_ABC | None) -> str:
+def normalize_input(input: FgColor_ABC | BgColor_ABC | RGB_ABC | HSL_ABC | Hex_ABC | Effect_ABC | str | None) -> str:
     """Normalize and convert color classes to string of ANSI escape code for print methods, especially converting None values to empty string."""
 
     return str(input) if input is not None else ""

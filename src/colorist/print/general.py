@@ -16,9 +16,9 @@ from ..model.foreground.rgb import ColorRGB
 
 
 def print_color(text: str,
-                color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | None = None,
-                bg_color: BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | None = None,
-                effect: Effect | None = None
+                color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | str | None = None,
+                bg_color: BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None,
+                effect: Effect | str | None = None
                 ) -> None:
     """Prints full line of text with various options for text and background color, styling and effects."""
 
