@@ -1,5 +1,6 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
+from .. import helper
 from ..constants.ansi import RESET_ALL
 from ..model.background.bright_color import BgBrightColor
 from ..model.background.color import BgColor
@@ -21,11 +22,8 @@ def print_color(text: str,
                 ) -> None:
     """Prints full line of text with various options for text and background color, styling and effects."""
 
-    def normalize_input(input: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | Effect | None) -> str:
-        return str(input) if input is not None else ""
-
-    color_str = normalize_input(color)
-    bg_color_str = normalize_input(bg_color)
-    effect_str = normalize_input(effect)
+    color_str = helper.print.normalize_input(color)
+    bg_color_str = helper.print.normalize_input(bg_color)
+    effect_str = helper.print.normalize_input(effect)
 
     print(f"{color_str}{bg_color_str}{effect_str}{text}{RESET_ALL}")
