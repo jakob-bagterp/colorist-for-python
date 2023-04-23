@@ -20,6 +20,7 @@ from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
     ("random text", None, BgColorRGB(255, 144, 168), None, "\033[48;2;255;144;168mrandom text\033[0m\n"),
     ("random text", None, BgColorHSL(250, 50, 55), None, "\033[48;2;101;82;197mrandom text\033[0m\n"),
     ("random text", None, BgColorHex("aB3"), None, "\033[48;2;170;187;51mrandom text\033[0m\n"),
+    ("random text", None, None, Effect.BOLD, "\033[1mrandom text\033[0m\n"),
 ])
 def test_full_text_general_print_color(text: str,
                                        color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | None,
