@@ -2,6 +2,7 @@
 
 __all__ = [
     "Color", "BrightColor", "BgColor", "BgBrightColor", "ColorHex", "BgColorHex", "ColorRGB", "BgColorRGB", "ColorHSL", "BgColorHSL", "Effect",
+    "print_color",
     "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white",
     "bright_black", "bright_red", "bright_green", "bright_yellow", "bright_blue", "bright_magenta", "bright_cyan", "bright_white",
     "bg_black", "bg_red", "bg_green", "bg_yellow", "bg_blue", "bg_magenta", "bg_cyan", "bg_white",
@@ -42,4 +43,5 @@ from .print.foreground.color import (black, blue, cyan, green, magenta, red,
 from .print.foreground.hex import hex
 from .print.foreground.hsl import hsl
 from .print.foreground.rgb import rgb
+from .print.general import print_color
 from .version import __version__  # noqa

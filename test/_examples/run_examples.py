@@ -38,6 +38,10 @@ def run_terminal_examples_for_hex_color() -> None:
     subprocess.call("python3 ./hex/custom_text.py".split())
 
 
+def run_terminal_examples_for_general_print_method() -> None:
+    subprocess.call("python3 ./general/full_text.py".split())
+
+
 if __name__ == "__main__":
     run_terminal_examples_for_color()
     run_terminal_examples_for_bright_color()
@@ -45,3 +49,4 @@ if __name__ == "__main__":
     run_terminal_examples_for_rgb_color()
     run_terminal_examples_for_hsl_color()
     run_terminal_examples_for_hex_color()
+    run_terminal_examples_for_general_print_method()
