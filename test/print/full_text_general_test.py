@@ -9,13 +9,12 @@ from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
 
 
 @pytest.mark.parametrize("text, color, bg_color, effect, expected", [
-    ("random text", None, None, None, "random text\033[0m.\n"),
+    ("random text", None, None, None, "random text\033[0m\n"),
     ("random text", Color.BLACK, None, None, "\033[30mrandom text\033[0m\n"),
-    ("random text", BrightColor.BLACK, None, None, "\033[30mrandom text\033[0m\n"),
-    ("random text", ColorRGB(127, 57, 203), None, None, "\033[38;2;127;57;203mrandom text\033[0m.\n"),
-    ("random text", ColorHSL(360, 30, 70), None, None, "\033[38;2;201;155;155mrandom text\033[0m.\n"),
-    ("random text", ColorHex("#9b9Ac7"), None, None, "\033[38;2;155;154;199mrandom text\033[0m.\n"),
-    ("random text", None, None, None, "random text\033[0m.\n"),
+    ("random text", BrightColor.YELLOW, None, None, "\033[93mrandom text\033[0m\n"),
+    ("random text", ColorRGB(127, 57, 203), None, None, "\033[38;2;127;57;203mrandom text\033[0m\n"),
+    ("random text", ColorHSL(360, 30, 70), None, None, "\033[38;2;201;155;155mrandom text\033[0m\n"),
+    ("random text", ColorHex("#9b9Ac7"), None, None, "\033[38;2;155;154;199mrandom text\033[0m\n"),
 ])
 def test_full_text_general_print_color(text: str,
                                        color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | None,
