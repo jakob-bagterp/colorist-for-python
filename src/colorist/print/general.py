@@ -21,8 +21,11 @@ def print_color(text: str,
                 ) -> None:
     """Prints full line of text with various options for text and background color, styling and effects."""
 
-    color_str = str(color) if color is not None else ""
-    bg_color_str = str(bg_color) if bg_color is not None else ""
-    effect_str = str(effect) if bg_color is not None else ""
+    def normalize_input(input: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | Effect | None) -> str:
+        return str(input) if input is not None else ""
+
+    color_str = normalize_input(color)
+    bg_color_str = normalize_input(bg_color)
+    effect_str = normalize_input(effect)
 
     print(f"{color_str}{bg_color_str}{effect_str}{text}{RESET_ALL}")
