@@ -20,18 +20,6 @@ def effect(text: str, effect: Effect_ABC | str, color: FgColor_ABC | str = "") -
     print(f"{color}{effect}{text}{RESET_ALL}")
 
 
-def rgb(text: str, red: int, green: int, blue: int) -> None:
-    """Helper function to print a full line of text in custom RGB foreground colors in the terminal."""
-
-    print(f"\033[38;2;{red};{green};{blue}m{text}{RESET_ALL}")
-
-
-def bg_rgb(text: str, red: int, green: int, blue: int) -> None:
-    """Helper function to print a full line of text in custom RGB background colors in the terminal."""
-
-    print(f"\033[48;2;{red};{green};{blue}m{text}{RESET_ALL}")
-
-
 def normalize_input(input: FgColor_ABC | BgColor_ABC | RGB_ABC | HSL_ABC | Hex_ABC | Effect_ABC | str | None) -> str:
     """Normalize and convert color classes to string of ANSI escape code for print methods, especially converting None values to empty string."""
 
