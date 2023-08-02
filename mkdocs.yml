@@ -18,6 +18,8 @@ nav:
     - getting-started/index.md
     - Installation: getting-started/installation.md
     - First Script: getting-started/first-script.md
+  - Reference:
+    - reference/index.md
 
 theme:
   name: material
