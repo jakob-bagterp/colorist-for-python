@@ -9,7 +9,7 @@
 # 🌈 Colorist for Python 🌈
 Lightweight Python package that makes it easy and fast to print colored text in the terminal.
 
-Ready to try? [Learn how to install](https://github.com/jakob-bagterp/colorist-for-python/blob/master/INSTALLATION.md).
+Ready to try? [Learn how to install](https://jakob-bagterp.github.io/colorist-for-python/getting-started/installation/).
 
 ## Getting Started
 ### Print Line of Colored Text
