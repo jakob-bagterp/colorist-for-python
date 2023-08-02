@@ -8,10 +8,12 @@ repo_url: https://github.com/jakob-bagterp/colorist-for-python
 nav:
   - Home:
     - index.md
-    - Tags: tags.md
+    - Donate: donate.md
+    - Support and Contribution: support-and-contribution.md
     - License: https://github.com/jakob-bagterp/colorist-for-python/blob/master/LICENSE.md
     - Release Notes: https://github.com/jakob-bagterp/colorist-for-python/releases
     - Source Code: https://github.com/jakob-bagterp/colorist-for-python
+    - Tags: tags.md
 
 theme:
   name: material
