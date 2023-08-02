@@ -1,0 +1,30 @@
+name: docs new version release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy-docs-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Set release notes tag
+        run: |
+            export RELEASE_TAG_VERSION=${{ github.event.release.tag_name }}
+            echo "RELEASE_TAG_VERSION=${RELEASE_TAG_VERSION:1}" >> $GITHUB_ENV
+      - name: Install dependencies
+        run: pip install -r ./docs/requirements.txt
+      - name: Set up Git config
+        run: |
+            git config --global user.name Docs Deploy
+            git config --global user.email docs@dummy.bot.com
+      - name: Deploy docs website and API reference
+        run: |
+            mike deploy --push --update-aliases ${RELEASE_TAG_VERSION} latest
+            mike set-default --push latest
