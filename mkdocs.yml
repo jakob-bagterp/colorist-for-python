@@ -14,6 +14,10 @@ nav:
     - Release Notes: https://github.com/jakob-bagterp/colorist-for-python/releases
     - Source Code: https://github.com/jakob-bagterp/colorist-for-python
     - Tags: tags.md
+  - Getting Started:
+    - getting-started/index.md
+    - Installation: getting-started/installation.md
+    - First Script: getting-started/first-script.md
 
 theme:
   name: material
