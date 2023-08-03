@@ -21,14 +21,12 @@ Find more details and options in the [installation guide](installation.md).
 You're now ready to go:
 
 ```python linenums="1"
-from timer import Timer
+from colorist import Color, green
 
-timer = Timer()
-timer.start()
+green("This is GREEN!")
 
-# Insert your code here
-
-timer.stop() # Output example: 12.34 seconds
+print(f"Both {Color.RED}red{Color.OFF}...")
+print(f"... and {Color.YELLOW}yellow{Color.OFF} are nice colors")
 ```
 
 ## Next Steps
