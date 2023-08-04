@@ -137,6 +137,11 @@ plugins:
             show_symbol_type_heading: true
             show_symbol_type_toc: true
             merge_init_into_class: true
+  - git-revision-date-localized:
+      enabled: true
+      type: timeago
+      enable_creation_date: true
+      fallback_to_build_date: true
 
 watch:
   - src
