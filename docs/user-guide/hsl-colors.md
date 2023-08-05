@@ -5,6 +5,9 @@ tags:
 ---
 
 # HSL Colors
+!!! info "Disclaimer"
+    Not all terminals support RGB, HSL, or Hex colors. If your terminal does support such advanced colors, read on.
+
 ## Full Text Functions
 You can output colors in HSL with the `hsl()` and `bg_hsl()` methods. The value for hue can be between `0-360` degrees, while saturation and lightness can be a percentage between `0-100` %:
 

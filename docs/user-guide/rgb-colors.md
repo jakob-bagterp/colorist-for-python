@@ -5,6 +5,9 @@ tags:
 ---
 
 # RGB Colors
+!!! info "Disclaimer"
+    Not all terminals support RGB, HSL, or Hex colors. If your terminal does support such advanced colors, read on.
+
 ## Full Text Functions
 Try the `rgb()` and `bg_rgb()` methods for a full line of colored text. The values for red, green, blue can be an integer between `0-255`.
 
