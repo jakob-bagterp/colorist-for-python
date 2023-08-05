@@ -19,6 +19,7 @@ nav:
     - Installation: getting-started/installation.md
   - User Guide:
     - user-guide/index.md
+    - RGB Colors: user-guide/rgb-colors.md
   - Reference:
     - reference/index.md
     - ANSI Escape Codes: reference/ansi-escape-codes.md
