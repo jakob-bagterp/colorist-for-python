@@ -97,24 +97,6 @@ How it appears in the terminal:
 ![Example of white text on a cyan background color printed in a terminal window](/docs/assets/images/examples/bg_bright_color_custom_text_cyan.png)
 
 As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
-
-### Other String Formats
-It's often easier and more readable to use [f-strings](https://peps.python.org/pep-0498/) as in the examples above, but f-strings aren't supported in some earlier versions of Python. Instead, you can also use string formatting or concatenation:
-
-```python
-from colorist import Color
-
-print("I want {0}red{1} color inside this paragraph".format(Color.RED, Color.OFF))
-print("I want " + Color.RED + "red" + Color.OFF + " color inside this paragraph")
-```
-
-Both options appear the same in the terminal:
-
-![Example of terminal message with red text color](/docs/assets/images/examples/color_custom_text_red.png)
-
-### Print RGB, HSL and Hex Colors
-Note that not all terminals support RGB, HSL or Hex colors. If your terminal does support such advanced colors, read on.
-
 #### RGB Colors
 Try the `rgb` and `bg_rgb` methods for a full line of colored text. The values for red, green, blue can be an integer between `0-255`.
 
@@ -202,59 +184,6 @@ How it appears in the terminal:
 
 ![Another example of text in Hex colors printed in a terminal window](/docs/assets/images/examples/hex_custom_text.png)
 
-### Print Effects and Other Styles
-In addition to colors, Colorist can also add effects when you print text in the terminal. How to print a full line of text with effects:
-
-```python
-from colorist import effect_blink
-
-effect_blink("This is BLINKING!")
-```
-
-How it appears in the terminal:
-
-![Example of terminal message with blinking text](/docs/assets/images/examples/effect_full_text_blink_default.gif)
-
-And this can also be combined with an optional color:
-
-```python
-from colorist import Color, effect_blink
-
-effect_blink("This is BLINKING!", Color.CYAN)
-```
-
-How it appears in the terminal:
-
-![Example of terminal message with blinking, cyan-colored text](/docs/assets/images/examples/effect_full_text_blink_cyan.gif)
-
-How to customize terminal messages and change effect inside a paragraph:
-
-```python
-from colorist import Effect
-
-print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF} inside this paragraph")
-
-print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF} inside this paragraph")
-```
-
-How it appears in the terminal:
-
-![Example of terminal message with underline and bold text](/docs/assets/images/examples/effect_custom_text_underline_bold.png)
-
-Effects can also be mixed with colors:
-
-```python
-from colorist import Color, Effect
-
-print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph")
-```
-
-How it appears in the terminal:
-
-![Example of terminal message with red and blinking text](/docs/assets/images/examples/effect_custom_text_blink_red.gif)
-
-Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
-
 # Supported Colors and Styles
 Colorist is based on [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code), a standard that defines colors, styling and effects for text in terminal windows. Note that most terminals support all color options, but not all:
 
@@ -311,17 +240,6 @@ Colorist is based on [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_esca
 | ![Bright black](/docs/assets/images/colors/bright_black_16x16.png) | `bg_bright_black("text")` | `BgBrightColor.BLACK` | ![Bright black background color in terminal](/docs/assets/images/examples/bg_color_map/bright_black_full_text_194x16.png) |
 | - | - |`BgBrightColor.DEFAULT` | - |
 | - | - | `BgBrightColor.OFF` | - |
-
-## Effects
-| Effect           | Full Text Function         | Custom             | Reset                  | Example    |
-| ---------------- | -------------------------- | ------------------ | ---------------------- | ---------- |
-| **Bold**         | `effect_bold("text")`      | `Effect.BOLD`      | `Effect.BOLD_OFF`      | ![Example of terminal message with bold text](/docs/assets/images/examples/effect_map/bold_full_text_140x16.png) |
-| Dim              | `effect_dim("text")`       | `Effect.DIM`       | `Effect.DIM_OFF`       | ![Example of terminal message with dimmed text](/docs/assets/images/examples/effect_map/dim_full_text_140x16.png) |
-| <u>Underline</u> | `effect_underline("text")` | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | ![Example of terminal message with underlined text](/docs/assets/images/examples/effect_map/underline_full_text_140x16.png) |
-| Blink            | `effect_blink("text")`     | `Effect.BLINK`     | `Effect.BLINK_OFF`     | ![Example of terminal message with blinking text](/docs/assets/images/examples/effect_map/blink_full_text_140x16.gif) |
-| Reverse          | `effect_reverse("text")`   | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | ![Example of terminal message with reversed text color and background](/docs/assets/images/examples/effect_map/reverse_full_text_140x16.png) |
-| Hide             | `effect_hide("text")`      | `Effect.HIDE`      | `Effect.HIDE_OFF`      | ![Example of terminal message with hidden text](/docs/assets/images/examples/effect_map/hide_full_text_140x16.png) |
-| -                | -                          | -                  | `Effect.OFF`           | -          |
 
 # Thank You for Supporting
 ## Donate
