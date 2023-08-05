@@ -21,6 +21,7 @@ nav:
     - user-guide/index.md
   - Reference:
     - reference/index.md
+    - ANSI Escape Codes: reference/ansi-escape-codes.md
 
 theme:
   name: material
