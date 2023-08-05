@@ -22,6 +22,7 @@ nav:
     - RGB Colors: user-guide/rgb-colors.md
     - HSL Colors: user-guide/hsl-colors.md
     - Hex Colors: user-guide/hex-colors.md
+    - Effects and Other Styles: user-guide/effects-and-other-styles.md
   - Reference:
     - reference/index.md
     - ANSI Escape Codes: reference/ansi-escape-codes.md
