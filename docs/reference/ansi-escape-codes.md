@@ -26,7 +26,7 @@ And yet, the characters of the sequences are hidden in the terminal output:
 ![Example of terminal message with red text color](../assets/images/examples/color_custom_text_red.png)
 
 ## Humanised Sequences
-This is also why it's convenient to use Colorist instead of manually writing raw ANSI escape codes. The `Color` class will generate the ANSI escape sequences and keep the code readable. This example generates the same terminal as above:
+This is also why it's convenient to use Colorist instead of manually writing raw ANSI escape codes. The `Color` class will generate the ANSI escape sequences and keep the code readable. This example generates the same terminal output as above:
 
 ```python
 from colorist import Color
@@ -41,9 +41,30 @@ All ANSI escape sequences follow the same pattern. The sequence `\x1b[31m` can b
 * `31`: The color code
 * `m`: Ends sequence, also called the Select Graphic Rendition (SGR)
 
+There are 8 standard colors and 8 bright colors – 16 in total. The bright colors are the same as the standard colors, yet with a higher intensity, and each color can be in the foreground (i.e. as text) or background.
+
+| Code | Color   |
+| :--: | :-----: |
+| 0    | Black   |
+| 1    | Red     |
+| 2    | Green   |
+| 3    | Yellow  |
+| 4    | Blue    |
+| 5    | Magenta |
+| 6    | Cyan    |
+| 7    | White   |
+
+Each color needs to be prepended with a foreground and background option. The foreground option is the default, and the background option is the same color code plus 10. When combining the two codes, `34` for example is blue text, and `44` is blue background:
+
+| Code | Placement  | Intensity |
+| :--: | :--------: | :-------: |
+| 3x   | Foreground | Standard  |
+| 4x   | Background | Standard  |
+| 9x   | Foreground | Bright    |
+| 10x  | Background | Bright    |
 
 ### Foreground Text and Background Colors
-To apply different color and styling options, simply replace `31` with any of the following color codes:
+To apply different color and styling options, simply replace the two underscores `__` in `\x1b[__m` with any of the following color codes:
 
 | Color   | Example | Text | Background | Bright Text | Bright Background |
 | :-----: | :-----: | :--: | :--------: | :---------: | :---------------: |
