@@ -27,6 +27,7 @@ nav:
     - Supported Colors and Styles by Terminals: user-guide/terminal-support.md
   - Reference:
     - reference/index.md
+    - Effects and Styling: reference/effects-and-styling.md
     - RGB: reference/rgb-colors.md
     - HSL: reference/hsl-colors.md
     - Hex: reference/hex-colors.md
