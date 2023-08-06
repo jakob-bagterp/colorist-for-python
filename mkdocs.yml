@@ -24,6 +24,7 @@ nav:
     - HSL Colors: user-guide/hsl-colors.md
     - Hex Colors: user-guide/hex-colors.md
     - Other String Formats: user-guide/other-string-formats.md
+    - Supported Colors and Styles by Terminals: user-guide/terminal-support.md
   - Reference:
     - reference/index.md
     - RGB: reference/rgb-colors.md
