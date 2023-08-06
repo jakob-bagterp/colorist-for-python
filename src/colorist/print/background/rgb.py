@@ -22,8 +22,6 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             green (int): Number between `0` and `255`.
             blue (int): Number between `0` and `255`.
 
-            Try the `rgb` and `bg_rgb` methods for a full line of colored text. The values for red, green, blue can be an integer between `0-255`.
-
         Example:
             ```python linenums="1"
             from colorist import rgb, bg_rgb
