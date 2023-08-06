@@ -26,6 +26,7 @@ nav:
     - Other String Formats: user-guide/other-string-formats.md
   - Reference:
     - reference/index.md
+    - RGB: reference/rgb-colors.md
     - ANSI Escape Codes: reference/ansi-escape-codes.md
 
 theme:
