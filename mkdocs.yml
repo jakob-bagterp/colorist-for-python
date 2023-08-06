@@ -83,6 +83,7 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - attr_list
+  - footnotes
   - tables
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
