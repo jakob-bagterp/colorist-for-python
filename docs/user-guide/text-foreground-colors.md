@@ -57,4 +57,4 @@ How it appears in the terminal:
 
 ![Example of white text mixed with cyan printed in a terminal window](../assets/images/examples/bright_color_custom_text_cyan.png)
 
-For a complete list of full text color functions and custom string styling, refer to the [documentation](../reference/text-foreground-colors.md).
+Refer to the documentation for a complete list of [full line text color functions](../reference/text-colors/full-line.md) and [custom string styling](../reference/text-colors/mixed.md).

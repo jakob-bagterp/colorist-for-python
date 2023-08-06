@@ -31,8 +31,12 @@ nav:
     - ANSI Escape Codes: user-guide/ansi-escape-codes.md
   - Reference:
     - reference/index.md
-    - Text: reference/text-foreground-colors.md
-    - Background: reference/background-colors.md
+    - Text Colors:
+      - Full Line: reference/text-colors/full-line.md
+      - Mixed: reference/text-colors/mixed.md
+    - Background Colors:
+      - Full Line: reference/background-colors/full-line.md
+      - Mixed: reference/background-colors/mixed.md
     - Effects and Styling: reference/effects-and-styling.md
     - RGB: reference/rgb-colors.md
     - HSL: reference/hsl-colors.md
