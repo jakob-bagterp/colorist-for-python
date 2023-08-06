@@ -21,6 +21,7 @@ nav:
     - user-guide/index.md
     - Text Colors: user-guide/text-foreground-colors.md
     - Background Colors: user-guide/background-colors.md
+    - Standard and Bright Color Palette: user-guide/standard-and-bright-color-palette.md
     - Effects and Styling: user-guide/effects-and-styling.md
     - RGB Colors: user-guide/rgb-colors.md
     - HSL Colors: user-guide/hsl-colors.md

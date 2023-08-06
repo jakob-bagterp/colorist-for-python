@@ -57,16 +57,4 @@ How it appears in the terminal:
 
 ![Example of white text mixed with cyan printed in a terminal window](../assets/images/examples/bright_color_custom_text_cyan.png)
 
-## Overview of Standard and Bright Colors
 For a complete list of full text color functions and custom string styling, refer to the [documentation](../reference/text-foreground-colors.md).
-
-| Color | Normal | Bright |
-| ----- | :----: | :----: |
-| Green | ![Green](../assets/images/colors/green_16x16.png) | ![Bright green](../assets/images/colors/bright_green_16x16.png) |
-| Yellow | ![Yellow](../assets/images/colors/yellow_16x16.png) | ![Bright yellow](../assets/images/colors/bright_yellow_16x16.png) |
-| Red | ![Red](../assets/images/colors/red_16x16.png) | ![Bright red](../assets/images/colors/bright_red_16x16.png) |
-| Magenta | ![Magenta](../assets/images/colors/magenta_16x16.png) | ![Bright magenta](../assets/images/colors/bright_magenta_16x16.png) |
-| Blue | ![Blue](../assets/images/colors/blue_16x16.png) | ![Bright blue](../assets/images/colors/bright_blue_16x16.png) |
-| Cyan | ![Cyan](../assets/images/colors/cyan_16x16.png) | ![Bright cyan](../assets/images/colors/bright_cyan_16x16.png) |
-| White | ![White](../assets/images/colors/white_16x16.png) | ![Bright white](../assets/images/colors/bright_white_16x16.png) |
-| Black | ![Black](../assets/images/colors/black_16x16.png) | ![Bright black](../assets/images/colors/bright_black_16x16.png) |
