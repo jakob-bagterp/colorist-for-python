@@ -27,7 +27,7 @@ class ColorHSL(HSL_ABC):
 
             How it appears in the terminal:
 
-            ![Another example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_custom_text.png)
+            ![Another example of text in HSL colors printed in a terminal window](../assets/images/examples/hsl_custom_text.png)
         """
         # TODO: Update code example to only use ColorHSL and not BgColorHSL.
 
