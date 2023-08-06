@@ -25,7 +25,7 @@ nav:
     - Hex Colors: user-guide/hex-colors.md
     - Other String Formats: user-guide/other-string-formats.md
     - Supported Colors and Styles by Terminals: user-guide/terminal-support.md
-    - ANSI Escape Codes: reference/ansi-escape-codes.md
+    - ANSI Escape Codes: user-guide/ansi-escape-codes.md
   - Reference:
     - reference/index.md
     - Effects and Styling: reference/effects-and-styling.md
