@@ -9,15 +9,16 @@ tags:
     Not all terminals support RGB, HSL, or Hex colors. If your terminal does support such advanced colors, read on.
 
 ## Custom String Styling
-
+### `ColorRGB()`
 ::: colorist.ColorRGB
     options:
-      heading_level: 3
-      show_root_heading: true
+      show_category_heading: false
+      heading_level: 4
       merge_init_into_class: false
 
+### `BgColorRGB()`
 ::: colorist.BgColorRGB
     options:
-      heading_level: 3
-      show_root_heading: true
+      show_category_heading: false
+      heading_level: 4
       merge_init_into_class: false
