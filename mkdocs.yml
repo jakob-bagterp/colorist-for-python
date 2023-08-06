@@ -31,6 +31,7 @@ nav:
   - Reference:
     - reference/index.md
     - Text: reference/text-foreground-colors.md
+    - Background: reference/background-colors.md
     - Effects and Styling: reference/effects-and-styling.md
     - RGB: reference/rgb-colors.md
     - HSL: reference/hsl-colors.md
