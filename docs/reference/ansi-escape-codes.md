@@ -5,10 +5,12 @@ tags:
 ---
 
 # ANSI Escape Codes
+Colorist uses ANSI escape codes to style text in the terminal. This page explains how ANSI escape codes work, and how to use them in your own code.
+
 ## What Are ANSI Escape Codes?
 ANSI escape sequences were introduced in the 1970s as a standard to style text terminals with color, font styling, and other options. They are supported by most modern terminals in operating systems like Windows, macOS, and Linux.
 
-They always start with `\x1b`, or `\e`, or `\033` depending on the operating system. Technically this inserts byte 27 into a string, which is equivalent to `0x1b` and the `ESC` key when you look at an [ASCII table](https://www.asciitable.com). Hence the name.
+They always start with `\x1b`, `\e`, or `\033` depending on the operating system or programming language. Technically this inserts byte 27 into a string, which is equivalent to `0x1b` and the `ESC` key when you look at an [ASCII table](https://www.asciitable.com). Hence the name.
 
 Though ANSI escape sequences appear in a string as multiple characters, they are in reality interpreted by the terminal as a single command. For example:
 
@@ -21,7 +23,7 @@ How to apply this in a print command:
 print(f"I want \x1b[31mred\x1b[0m color inside this paragraph")
 ```
 
-And yet, the characters of the sequences are hidden in the terminal output:
+And yet, the characters of the sequences are hidden in the terminal output apart from the color change:
 
 ![Example of terminal message with red text color](../assets/images/examples/color_custom_text_red.png)
 
@@ -36,7 +38,7 @@ print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
 
 ## Overview of Standard Colors
 ### Color Codes and Building Blocks
-All ANSI escape sequences follow the same pattern. The sequence `\x1b[31m` can be broken down into:
+All ANSI escape sequences follow the same pattern. For example, the sequence `\x1b[31m` can be broken down into:
 
 * `\x1b[`: Starts sequence, also called the Control Sequence Introducer (CSI)
 * `31`: The color code
@@ -57,14 +59,14 @@ The 8 colors are simply black and white, plus the 6 colors of the rainbow. First
 | 6    | Cyan    |
 | 7    | White   |
 
-Each color needs to be prepended by a foreground or background option. The foreground option is the default, and the background option is the same color code plus 10. When combining the two codes, `34` for example is blue text, and `44` is blue background:
+Each color then needs to be prepended by a foreground or background option. When combining the two codes – simply replace the underscore `_` with the missing color code – `34` for example is blue text, and `44` is blue background:
 
 | Code | Placement  | Intensity |
 | :--: | :--------: | :-------: |
-| 3x   | Foreground | Standard  |
-| 4x   | Background | Standard  |
-| 9x   | Foreground | Bright    |
-| 10x  | Background | Bright    |
+| 3_   | Foreground | Standard  |
+| 4_   | Background | Standard  |
+| 9_   | Foreground | Bright    |
+| 10_  | Background | Bright    |
 
 ### Foreground Text and Background Colors
 To apply different color and styling options, simply replace the two underscores `__` in `\x1b[__m` with any of the following color codes:
@@ -84,6 +86,8 @@ To apply different color and styling options, simply replace the two underscores
 
 !!! tip
     Remember to use `\033[0m` every time you want to revert back to the default terminal text style. Otherwise, any color or styling may spill over and into other terminal messages.
+
+    When using Colorist, you can for example use `Color.OFF` to reset the terminal text style.
 
 ### Effects
 For effects, the codes are:
