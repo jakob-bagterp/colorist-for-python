@@ -19,10 +19,10 @@ nav:
     - Installation: getting-started/installation.md
   - User Guide:
     - user-guide/index.md
+    - Effects and Styling: user-guide/effects-and-styling.md
     - RGB Colors: user-guide/rgb-colors.md
     - HSL Colors: user-guide/hsl-colors.md
     - Hex Colors: user-guide/hex-colors.md
-    - Effects and Other Styles: user-guide/effects-and-other-styles.md
     - Other String Formats: user-guide/other-string-formats.md
   - Reference:
     - reference/index.md
