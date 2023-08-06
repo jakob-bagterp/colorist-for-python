@@ -72,7 +72,7 @@ How it appears in the terminal:
 ![Example of terminal message with red and blinking text](../assets/images/examples/effect_custom_text_blink_red.gif)
 
 !!! tip
-    Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise the effect may spill over and into other terminal messages.
+    Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
 
 ### Overview
 | Effect           | Custom             | Reset                  | Example    |
