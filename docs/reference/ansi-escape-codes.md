@@ -35,6 +35,7 @@ print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
 ```
 
 ## Overview of Standard Colors
+### Color Codes and Building Blocks
 All ANSI escape sequences follow the same pattern. The sequence `\x1b[31m` can be broken down into:
 
 * `\x1b[`: Starts sequence, also called the Control Sequence Introducer (CSI)
@@ -42,6 +43,8 @@ All ANSI escape sequences follow the same pattern. The sequence `\x1b[31m` can b
 * `m`: Ends sequence, also called the Select Graphic Rendition (SGR)
 
 There are 8 standard colors and 8 bright colors – 16 in total. The bright colors are the same as the standard colors, yet with a higher intensity, and each color can be in the foreground (i.e. as text) or background.
+
+The 8 colors are simply black and white, plus the 6 colors of the rainbow. Firstly, the three primary colors red, green, and blue. Then the secondary colors yellow, magenta, and cyan:
 
 | Code | Color   |
 | :--: | :-----: |
@@ -54,7 +57,7 @@ There are 8 standard colors and 8 bright colors – 16 in total. The bright col
 | 6    | Cyan    |
 | 7    | White   |
 
-Each color needs to be prepended with a foreground and background option. The foreground option is the default, and the background option is the same color code plus 10. When combining the two codes, `34` for example is blue text, and `44` is blue background:
+Each color needs to be prepended by a foreground or background option. The foreground option is the default, and the background option is the same color code plus 10. When combining the two codes, `34` for example is blue text, and `44` is blue background:
 
 | Code | Placement  | Intensity |
 | :--: | :--------: | :-------: |
