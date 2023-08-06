@@ -36,7 +36,7 @@ from colorist import Color
 print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
 ```
 
-## Overview of Standard Colors
+## Standard Colors
 ### Color Codes and Building Blocks
 All ANSI escape sequences follow the same pattern. For example, the sequence `\x1b[31m` can be broken down into:
 
@@ -63,9 +63,9 @@ Each color then needs to be prepended by a foreground or background option. When
 
 | Code | Placement  | Intensity |
 | :--: | :--------: | :-------: |
-| 3_   | Foreground | Standard  |
+| 3_   | Text       | Standard  |
 | 4_   | Background | Standard  |
-| 9_   | Foreground | Bright    |
+| 9_   | Text       | Bright    |
 | 10_  | Background | Bright    |
 
 ### Foreground Text and Background Colors
@@ -85,12 +85,12 @@ To apply different color and styling options, simply replace the two underscores
 | Reset   | | 0 | 0 | 0 | 0 |
 
 !!! tip
-    Remember to use `\033[0m` every time you want to revert back to the default terminal text style. Otherwise, any color or styling may spill over and into other terminal messages.
+    Remember to use `\x1b[0m` every time you want to revert back to the default terminal text style. Otherwise, any color or styling may spill over and into other terminal messages.
 
     When using Colorist, you can for example use `Color.OFF` to reset the terminal text style.
 
 ### Effects
-For effects, the codes are:
+For effects, the codes are. And as before, replace the two underscores `__` in `\x1b[__m` with any of the following color codes:
 
 | Effect    | On  | Off | Example |
 | :-------: | :-: | :-: | :-----: |
@@ -103,3 +103,33 @@ For effects, the codes are:
 
 !!! info "Different Color Schemes in Different Terminals"
     Most terminals apply different color schemes so `\x1b[31m` or `Color.RED` won't produce the exact same screen color of red. Some straight, others with an orange tint. For further reading, refer to this [list of common terminals and their color schemes](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit).
+
+## Non-Standard Colors
+To have more control of the colors or want to be more creative, you aren't limited to 16 colors. In addition, the escape codes can be used with an extended 256 color palette or the RGB color space.
+
+!!! info "Not All Terminals Support Extended Color Palettes"
+    While most terminals support the standard ANSI color sequences, far from all support the extended 256 or RGB color space. For example, the Windows Command Prompt does not support RGB colors while the Windows Terminal does support RGB colors.
+
+    Refer to the terminal's documentation to see if it supports extended color palettes.
+
+### Extended 256 Colors
+The [extended palette of 256 colors](https://commons.wikimedia.org/wiki/File:Xterm_256color_chart.svg) is a 6x6x6 color cube, with 216 colors, plus 24 shades of gray. The color cube is made up of 6 levels of red, green, and blue, respectively. The color cube is then combined with the 24 shades of gray to make up the 256 colors.
+
+It works both with foreground text and background colors. Simply replace the two underscores `__` with any number from `0` to `255`:
+
+| Code            | Placement  |
+| :-------------: | :--------: |
+| `\x1b[38;5;__m` | Text       |
+| `\x1b[48;5;__m` | Background |
+
+For example, `\x1b[38;5;243m` is a light gray foreground text color, and `\x1b[48;5;243m` is a light gray background color.
+
+### RGB Colors
+The RGB color space represents a much broader array of colors. Simply use any number from `0` to `255` to set each of the red `r`, green `g`, and blue `b` colors in the sequences `38;2;r;g;b` for text color and `38;2;r;g;b` for background color:
+
+| Code               | Placement  |
+| :----------------: | :--------: |
+| `\x1b[38;2;r;g;bm` | Text       |
+| `\x1b[48;2;r;g;bm` | Background |
+
+For example, `\x1b[38;2;255;0;0m` is a red foreground text color, and `\x1b[48;2;255;0;0m` is a red background color.
