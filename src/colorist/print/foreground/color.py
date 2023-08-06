@@ -1,6 +1,7 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
 from ... import helper
+from ...model.abc.mkdocstrings import MkDocstringsWrapper_ABC
 from ...model.foreground.color import Color
 
 
@@ -50,3 +51,61 @@ def white(text: str) -> None:
     """Prints full line of white text."""
 
     helper.print.color(text, color=Color.WHITE)
+
+
+class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
+    def black(self, text: str) -> None:
+        """Prints full line of black text.
+
+        Args:
+            text (str): Text to be printed with color.
+        """
+
+    def red(self, text: str) -> None:
+        """Prints full line of red text.
+
+        Args:
+            text (str): Text to be printed with color.
+        """
+
+    def green(self, text: str) -> None:
+        """Prints full line of green text.
+
+        Args:
+            text (str): Text to be printed with color.
+        """
+
+    def yellow(self, text: str) -> None:
+        """Prints full line of yellow text.
+
+        Args:
+            text (str): Text to be printed with color.
+        """
+
+    def blue(self, text: str) -> None:
+        """Prints full line of blue text.
+
+        Args:
+            text (str): Text to be printed with color.
+        """
+
+    def magenta(self, text: str) -> None:
+        """Prints full line of magenta text.
+
+        Args:
+            text (str): Text to be printed with color.
+        """
+
+    def cyan(self, text: str) -> None:
+        """Prints full line of cyan text.
+
+        Args:
+            text (str): Text to be printed with color.
+        """
+
+    def white(self, text: str) -> None:
+        """Prints full line of white text.
+
+        Args:
+            text (str): Text to be printed with color.
+        """

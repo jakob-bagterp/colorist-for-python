@@ -19,6 +19,7 @@ nav:
     - Installation: getting-started/installation.md
   - User Guide:
     - user-guide/index.md
+    - Text Colors: user-guide/text-foreground-colors.md
     - Background Colors: user-guide/background-colors.md
     - Effects and Styling: user-guide/effects-and-styling.md
     - RGB Colors: user-guide/rgb-colors.md
@@ -29,6 +30,7 @@ nav:
     - ANSI Escape Codes: user-guide/ansi-escape-codes.md
   - Reference:
     - reference/index.md
+    - Text: reference/text-foreground-colors.md
     - Effects and Styling: reference/effects-and-styling.md
     - RGB: reference/rgb-colors.md
     - HSL: reference/hsl-colors.md
