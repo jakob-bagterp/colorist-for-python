@@ -27,6 +27,8 @@ def test_full_text_with_effect(print_function: PrintEffectCallable, text: str, e
 @pytest.mark.parametrize("print_function, text, color, expected", [
     (effect_blink, "cyan and blinking", Color.CYAN, "\033[36m\033[5mcyan and blinking\033[0m\n"),
     (effect_underline, "bright red and underline", BrightColor.RED, "\033[91m\033[4mbright red and underline\033[0m\n"),
+    (effect_underline, "only underline", None, "\033[4monly underline\033[0m\n"),
+    (effect_underline, "only underline", "", "\033[4monly underline\033[0m\n"),
 ])
 def test_blink_full_text_effect_with_color(print_function: PrintEffectWithColorCallable, text: str, color: FgColor_ABC | BgColor_ABC, expected: str, capfd: object) -> None:
     print_function(text, color)
