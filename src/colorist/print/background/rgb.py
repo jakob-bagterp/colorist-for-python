@@ -35,5 +35,3 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             ![Example of text in RGB colors printed in a terminal window](../assets/images/examples/rgb_full_text.png)
         """
         # TODO: Update code example to only use bg_rgb() and not rgb().
-
-        bg_rgb(text, red, green, blue)
