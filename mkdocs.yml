@@ -27,6 +27,7 @@ nav:
   - Reference:
     - reference/index.md
     - RGB: reference/rgb-colors.md
+    - HSL: reference/hsl-colors.md
     - Hex: reference/hex-colors.md
     - ANSI Escape Codes: reference/ansi-escape-codes.md
 

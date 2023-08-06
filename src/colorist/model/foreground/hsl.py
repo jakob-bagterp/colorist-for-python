@@ -6,7 +6,32 @@ from ..abc.hsl import HSL_ABC
 
 
 class ColorHSL(HSL_ABC):
-    """Class for custom HSL foreground text color. Value for hue can be between 0 and 360 degrees, while saturation and lightness can be a percentage between 0(%) and 100(%)."""
+    """Class for custom HSL foreground text color."""
+
+    def __init__(self, hue: float, saturation: float, lightness: float) -> None:
+        """
+        Args:
+            hue (float): Number between `0` and `360` degrees.
+            saturation (float): Percentage between `0` and `100` %.
+            lightness (float): Percentage between `0` and `100` %.
+
+        Example:
+            ```python linenums="1"
+            from colorist import ColorHSL, BgColorHSL
+
+            mustard_green = ColorHSL(60, 56, 43)
+            bg_steel_gray = BgColorHSL(190, 2, 49)
+
+            print(f"I want to use {mustard_green}mustard green{mustard_green.OFF} and {bg_steel_gray}steel blue{bg_steel_gray.OFF} colors inside this paragraph")
+            ```
+
+            How it appears in the terminal:
+
+            ![Another example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_custom_text.png)
+        """
+        # TODO: Update code example to only use ColorHSL and not BgColorHSL.
+
+        super().__init__(hue, saturation, lightness)
 
     def generate_ansi_code(self) -> str:
         return helper.generate.ansi_rgb_color_sequence(AnsiRgbColorSelector.FOREGROUND, self._rgb)
