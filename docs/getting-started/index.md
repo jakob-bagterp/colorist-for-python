@@ -28,10 +28,9 @@ green("This is GREEN!")
 print(f"Both {Color.RED}red{Color.OFF}...")
 print(f"... and {Color.YELLOW}yellow{Color.OFF} are nice colors")
 ```
+[//]: # (Example of what's printed in your terminal:)
 
-Example of what's printed in your terminal:
-
-TODO: INSERT IMAGE
+[//]: # (TODO: INSERT IMAGE)
 
 ## Next Steps
 Find more usage examples and tutorials in the [user guide](../user-guide/index.md) section.

@@ -5,10 +5,11 @@ tags:
 ---
 
 # Text Foreground Colors
+## Introduction
 When you want to print colored text in the terminal, Colorist offers two ways of doing so:
 
 * **Full text functions:** Print a full line of colored text with the `green()`, `yellow()`, `red()`, etc. functions.
-* **Custom string styling:** Add color to any part of a string with the `Color` and `BrightColor` classes.
+* **Custom string styling:** Mix colors to any part of a string with the `Color` and `BrightColor` classes.
 
 ## Print Line of Colored Text
 How to print a full line of colored text in the terminal:
@@ -25,7 +26,7 @@ How it appears in the terminal:
 
 ![Example of full line of green, yellow, red colored text printed in a terminal window](../assets/images/examples/color_full_text_green_yellow_red.png)
 
-## Print Mixed Text Colors
+## Print Mixed Colors in Text
 How to customize colors inside a paragraph and print it in the terminal:
 
 ```python linenums="1"

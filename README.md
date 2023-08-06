@@ -56,7 +56,7 @@ How it appears in the terminal:
 
 ![Example of white text mixed with cyan printed in a terminal window](/docs/assets/images/examples/bright_color_custom_text_cyan.png)
 
-Remember to use `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
+Remember to use `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the color may spill over and into other terminal messages.
 
 ### Print Background Colors
 ```python
@@ -85,7 +85,6 @@ How it appears in the terminal:
 
 ![Example of black, green, yellow, red background colors mixed inside paragraph printed in a terminal window](/docs/assets/images/examples/bg_color_custom_text_green_yellow_red.png)
 
-
 ```python
 from colorist import BgBrightColor
 
@@ -96,7 +95,7 @@ How it appears in the terminal:
 
 ![Example of white text on a cyan background color printed in a terminal window](/docs/assets/images/examples/bg_bright_color_custom_text_cyan.png)
 
-As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise the color may spill over and into other terminal messages.
+As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the color may spill over and into other terminal messages.
 
 ## Foreground Text
 | Color | Full Text Function | Custom | Example |
@@ -143,7 +142,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
 | ![Bright cyan](/docs/assets/images/colors/bright_cyan_16x16.png) | `bg_bright_cyan("text")` | `BgBrightColor.CYAN` | ![Bright cyan background color in terminal](/docs/assets/images/examples/bg_color_map/bright_cyan_full_text_194x16.png) |
 | ![Bright white](/docs/assets/images/colors/bright_white_16x16.png) | `bg_bright_white("text")` | `BgBrightColor.WHITE` | ![Bright white background color in terminal](/docs/assets/images/examples/bg_color_map/bright_white_full_text_194x16.png) |
 | ![Bright black](/docs/assets/images/colors/bright_black_16x16.png) | `bg_bright_black("text")` | `BgBrightColor.BLACK` | ![Bright black background color in terminal](/docs/assets/images/examples/bg_color_map/bright_black_full_text_194x16.png) |
-| - | - |`BgBrightColor.DEFAULT` | - |
+| - | - | `BgBrightColor.DEFAULT` | - |
 | - | - | `BgBrightColor.OFF` | - |
 
 # Thank You for Supporting
