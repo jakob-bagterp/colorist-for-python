@@ -24,7 +24,7 @@ bg_red("This is RED background!")
 
 How it appears in the terminal:
 
-![Example of white text and colored backgrounds if green, yellow, red printed in a terminal window](../assets/images/examples/bg_color_full_text_green_yellow_red.png)
+![Example of white text and colored backgrounds if green, yellow, red printed in a terminal window](../../assets/images/examples/bg_color_full_text_green_yellow_red.png)
 
 ## Print Mixed Colors in Text
 Background colors can also be mixed inside a paragraph:
@@ -39,7 +39,7 @@ print(f"Both {BgColor.GREEN}green{BgColor.OFF} and {BgColor.YELLOW}yellow{BgColo
 
 How it appears in the terminal:
 
-![Example of black, green, yellow, red background colors mixed inside paragraph printed in a terminal window](../assets/images/examples/bg_color_custom_text_green_yellow_red.png)
+![Example of black, green, yellow, red background colors mixed inside paragraph printed in a terminal window](../../assets/images/examples/bg_color_custom_text_green_yellow_red.png)
 
 !!! tip
     Remember to turn off a color with `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -55,6 +55,6 @@ print(f"I want {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color insi
 
 How it appears in the terminal:
 
-![Example of white text on a cyan background color printed in a terminal window](../assets/images/examples/bg_bright_color_custom_text_cyan.png)
+![Example of white text on a cyan background color printed in a terminal window](../../assets/images/examples/bg_bright_color_custom_text_cyan.png)
 
-Refer to the documentation for a complete list of [full line text color functions](../reference/background-colors/full-line.md) and [custom string styling](../reference/background-colors/mixed.md).
+Refer to the documentation for a complete list of [full line text color functions](../../reference/background-colors/full-line.md) and [custom string styling](../../reference/background-colors/mixed.md).

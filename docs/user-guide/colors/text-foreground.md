@@ -24,7 +24,7 @@ red("This is RED!")
 
 How it appears in the terminal:
 
-![Example of full line of green, yellow, red colored text printed in a terminal window](../assets/images/examples/color_full_text_green_yellow_red.png)
+![Example of full line of green, yellow, red colored text printed in a terminal window](../../assets/images/examples/color_full_text_green_yellow_red.png)
 
 ## Print Mixed Colors in Text
 How to customize colors inside a paragraph and print it in the terminal:
@@ -39,7 +39,7 @@ print(f"Both {Color.GREEN}green{Color.OFF} and {Color.YELLOW}yellow{Color.OFF} a
 
 How it appears in the terminal:
 
-![Example of white text mixed with green, yellow, red colors printed in a terminal window](../assets/images/examples/color_custom_text_green_yellow_red.png)
+![Example of white text mixed with green, yellow, red colors printed in a terminal window](../../assets/images/examples/color_custom_text_green_yellow_red.png)
 
 !!! tip
     Remember to turn off a color with `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -55,6 +55,6 @@ print(f"I want {BrightColor.CYAN}cyan{BrightColor.OFF} color inside this paragra
 
 How it appears in the terminal:
 
-![Example of white text mixed with cyan printed in a terminal window](../assets/images/examples/bright_color_custom_text_cyan.png)
+![Example of white text mixed with cyan printed in a terminal window](../../assets/images/examples/bright_color_custom_text_cyan.png)
 
-Refer to the documentation for a complete list of [full line text color functions](../reference/text-colors/full-line.md) and [custom string styling](../reference/text-colors/mixed.md).
+Refer to the documentation for a complete list of [full line text color functions](../../reference/text-colors/full-line.md) and [custom string styling](../../reference/text-colors/mixed.md).

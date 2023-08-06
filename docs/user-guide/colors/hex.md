@@ -6,7 +6,7 @@ tags:
 
 # Hex Colors
 !!! info "Disclaimer"
-    Not all [terminals support](terminal-support.md) RGB, HSL, or Hex colors. If your terminal does support such advanced colors, read on.
+    Not all [terminals support](../terminal-support.md) RGB, HSL, or Hex colors. If your terminal does support such advanced colors, read on.
 
 ## Full Text Functions
 Try the `hex()` and `bg_hex()` methods for a full line of colored text. Allowed Hex values are, for instance, `#00aaff` or `#0af`, alternatively without the hash sign as `00aaff` or `0af`.
@@ -20,7 +20,7 @@ bg_hex("I want this background in coral Hex colors", "#ff7f50")
 
 How it appears in the terminal:
 
-![Example of text in Hex colors printed in a terminal window](../assets/images/examples/hex_full_text.png)
+![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_full_text.png)
 
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorHex()` and `BgColorHex()` classes:
@@ -36,4 +36,4 @@ print(f"I want to use {watermelon_red}watermelon pink{watermelon_red.OFF} and {b
 
 How it appears in the terminal:
 
-![Another example of text in Hex colors printed in a terminal window](../assets/images/examples/hex_custom_text.png)
+![Another example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_custom_text.png)
