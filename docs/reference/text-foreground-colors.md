@@ -33,8 +33,7 @@ tags:
 | ![Bright white](../assets/images/colors/bright_white_16x16.png) | `bright_white("text")` | ![Bright white text color in terminal](../assets/images/examples/color_map/bright_white_full_text_167x16.png) |
 | ![Bright black](../assets/images/colors/bright_black_16x16.png) | `bright_black("text")` | ![Bright black text color in terminal](../assets/images/examples/color_map/bright_black_full_text_167x16.png) |
 
-
-!!! note
+!!! note "Limited Support for Bright Colors"
     Note that bright colors are [supported by many terminals](../user-guide/terminal-support.md), but not all as bright colors aren't part of the standard set of ANSI colors.
 
 ::: colorist.print.foreground.color.MkDocstringsWrapper
