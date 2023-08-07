@@ -32,6 +32,6 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            ![Example of text in RGB colors printed in a terminal window](../assets/images/examples/rgb_full_text.png)
+            ![Example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_full_text.png)
         """
         # TODO: Update code example to only use rgb() and not bg_rgb().

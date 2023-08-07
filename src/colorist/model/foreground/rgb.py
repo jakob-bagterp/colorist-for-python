@@ -27,7 +27,7 @@ class ColorRGB(RGB_ABC):
 
             How it appears in the terminal:
 
-            ![Another example of text in RGB colors printed in a terminal window](../assets/images/examples/rgb_custom_text.png)
+            ![Another example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_custom_text.png)
         """
         # TODO: Update code example to only use ColorRGB and not BgColorRGB.
 

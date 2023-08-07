@@ -32,6 +32,6 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            ![Example of text in HSL colors printed in a terminal window](../assets/images/examples/hsl_full_text.png)
+            ![Example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_full_text.png)
         """
         # TODO: Update code example to only use bg_hsl() and not hsl().

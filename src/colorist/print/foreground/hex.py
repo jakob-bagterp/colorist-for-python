@@ -30,6 +30,6 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            ![Example of text in Hex colors printed in a terminal window](../assets/images/examples/hex_full_text.png)
+            ![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_full_text.png)
         """
         # TODO: Update code example to only use hex() and not bg_hex().

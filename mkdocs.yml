@@ -39,9 +39,10 @@ nav:
       - Full Line: reference/background-colors/full-line.md
       - Mixed: reference/background-colors/mixed.md
     - Effects and Styling: reference/effects-and-styling.md
-    - RGB: reference/rgb-colors.md
-    - HSL: reference/hsl-colors.md
-    - Hex: reference/hex-colors.md
+    - Extended Colors:
+      - RGB: reference/extended-colors/rgb.md
+      - HSL: reference/extended-colors/hsl.md
+      - Hex: reference/extended-colors/hex.md
 
 theme:
   name: material
