@@ -1,0 +1,171 @@
+site_name: Colorist for Python 🌈
+site_url: https://jakob-bagterp.github.io/colorist-for-python/
+site_description: Lightweight Python package that makes it easy and fast to print colored text in the terminal
+site_author: Jakob Bagterp
+copyright: Copyright © 2022 - 2023, Jakob Bagterp. All Rights Reserved.
+repo_url: https://github.com/jakob-bagterp/colorist-for-python
+
+nav:
+  - Home:
+    - index.md
+    - Donate: donate.md
+    - Support and Contribution: support-and-contribution.md
+    - License: https://github.com/jakob-bagterp/colorist-for-python/blob/master/LICENSE.md
+    - Release Notes: https://github.com/jakob-bagterp/colorist-for-python/releases
+    - Source Code: https://github.com/jakob-bagterp/colorist-for-python
+    - Tags: tags.md
+  - Getting Started:
+    - getting-started/index.md
+    - Installation: getting-started/installation.md
+  - User Guide:
+    - user-guide/index.md
+    - Colors:
+      - Text: user-guide/colors/text-foreground.md
+      - Background: user-guide/colors/background.md
+      - Standard and Bright Palette: user-guide/colors/standard-and-bright-palette.md
+      - RGB Colors: user-guide/colors/colors/rgb.md
+      - HSL Colors: user-guide/colors/hsl.md
+      - Hex Colors: user-guide/colors/hex.md
+    - Effects and Styling: user-guide/effects-and-styling.md
+    - Other String Formats: user-guide/other-string-formats.md
+    - Supported Colors and Styles by Terminals: user-guide/terminal-support.md
+    - ANSI Escape Codes: user-guide/ansi-escape-codes.md
+  - Reference:
+    - reference/index.md
+    - Text Colors:
+      - Full Line: reference/text-colors/full-line.md
+      - Mixed: reference/text-colors/mixed.md
+    - Background Colors:
+      - Full Line: reference/background-colors/full-line.md
+      - Mixed: reference/background-colors/mixed.md
+    - Effects and Styling: reference/effects-and-styling.md
+    - RGB: reference/rgb-colors.md
+    - HSL: reference/hsl-colors.md
+    - Hex: reference/hex-colors.md
+
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.path
+    - navigation.indexes
+    - content.code.copy
+    - content.code.select
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      accent: purple
+      toggle:
+        icon: material/eye
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: purple
+      toggle:
+        icon: material/eye-outline
+        name: Switch to light mode
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      use_pygments: true
+      pygments_lang_class: true
+      auto_title: true
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - attr_list
+  - footnotes
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      name: Colorist for Python on GitHub
+      link: https://github.com/jakob-bagterp/colorist-for-python
+    - icon: fontawesome/brands/linkedin
+      name: Jakob Bagterp on LinkedIn
+      link: https://www.linkedin.com/in/jakobbagterp/
+    - icon: fontawesome/brands/instagram
+      name: Jakob Bagterp on Instagram
+      link: https://www.instagram.com/bagterp_photography/
+  analytics:
+    provider: google
+    property: G-0BNHYMBHHK
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thank you for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thank you for your feedback! Help us improve this page by using our
+            <a href="https://github.com/jakob-bagterp/colorist-for-python/issues/new/?title=[Feedback]+{title}+-+{url}"
+            target="_blank" rel="noopener">
+            feedback form</a>.
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  version:
+    provider: mike
+
+plugins:
+  - search:
+      lang: en
+  - tags:
+      tags_file: tags.md
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: google
+            show_source: false
+            show_bases: false
+            heading_level: 2
+            show_category_heading: true
+            show_root_toc_entry: false
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            merge_init_into_class: true
+  - git-revision-date-localized:
+      enabled: true
+      type: timeago
+      enable_creation_date: true
+      fallback_to_build_date: true
+
+watch:
+  - src
+
+dev_addr: 127.0.0.1:8002
