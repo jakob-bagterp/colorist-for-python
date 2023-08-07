@@ -164,6 +164,17 @@ plugins:
       type: timeago
       enable_creation_date: true
       fallback_to_build_date: true
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+      js_files:
+          - js/timeago_mkdocs_material.js
+      css_files:
+          - css/timeago.css
+          - assets/_mkdocstrings.css
 
 watch:
   - src
