@@ -28,12 +28,12 @@ Or customize the styling of text and background with the `ColorHex()` and `BgCol
 ```python
 from colorist import ColorHex, BgColorHex
 
-watermelon_red = ColorHex("#ff5733")
+watermelon_pink = ColorHex("#ff5733")
 bg_mint_green = BgColorHex("#99ff99")
 
-print(f"I want to use {watermelon_red}watermelon pink{watermelon_red.OFF} and {bg_mint_green}mint green{bg_mint_green.OFF} colors inside this paragraph")
+print(f"I want to use {watermelon_pink}watermelon pink{watermelon_pink.OFF} and {bg_mint_green}mint green{bg_mint_green.OFF} colors inside this paragraph")
 ```
 
 How it appears in the terminal:
 
-![Another example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_custom_text.png)
+![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_custom_text.png)
