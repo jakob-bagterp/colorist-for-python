@@ -22,14 +22,12 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Example:
             ```python linenums="1"
-            from colorist import hex, bg_hex
+            from colorist import hex
 
             hex("I want this text in coral Hex colors", "#ff7f50")
-            bg_hex("I want this background in coral Hex colors", "#ff7f50")
             ```
 
             How it appears in the terminal:
 
-            ![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_full_text.png)
+            ![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_full_text_foreground.png)
         """
-        # TODO: Update code example to only use hex() and not bg_hex().
