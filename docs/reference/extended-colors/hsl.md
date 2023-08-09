@@ -4,34 +4,34 @@ tags:
     - Tutorial
 ---
 
-# RGB Colors
+# HSL Colors
 !!! info "Disclaimer"
-    Not all [terminals support](../user-guide/terminal-support.md) RGB, HSL, or Hex colors. If your terminal does support such advanced colors, read on.
+    Not all [terminals support](../../user-guide/materials/terminal-support.md) RGB, HSL, or Hex colors. If your terminal does support such advanced colors, read on.
 
 ## Full Text Functions
 
-::: colorist.print.foreground.rgb.MkDocstringsWrapper
+::: colorist.print.foreground.hsl.MkDocstringsWrapper
     options:
       show_category_heading: false
       heading_level: 4
       merge_init_into_class: true
 
-::: colorist.print.background.rgb.MkDocstringsWrapper
+::: colorist.print.background.hsl.MkDocstringsWrapper
     options:
       show_category_heading: false
       heading_level: 4
       merge_init_into_class: true
 
 ## Custom String Styling
-### `ColorRGB(red, green, blue)`
-::: colorist.ColorRGB
+### `ColorHSL(hue, saturation, lightness)`
+::: colorist.ColorHSL
     options:
       show_category_heading: false
       heading_level: 4
       merge_init_into_class: true
 
-### `BgColorRGB(red, green, blue)`
-::: colorist.BgColorRGB
+### `BgColorHSL(hue, saturation, lightness)`
+::: colorist.BgColorHSL
     options:
       show_category_heading: false
       heading_level: 4

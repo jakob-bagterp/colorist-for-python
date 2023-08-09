@@ -24,14 +24,12 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Example:
             ```python linenums="1"
-            from colorist import hsl, bg_hsl
+            from colorist import hsl
 
             hsl("I want this text in green HSL colors", 120, 50, 50)
-            bg_hsl("I want this background in green HSL colors", 120, 50, 50)
             ```
 
             How it appears in the terminal:
 
-            ![Example of text in HSL colors printed in a terminal window](../assets/images/examples/hsl_full_text.png)
+            ![Example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_full_text_foreground.png)
         """
-        # TODO: Update code example to only use hsl() and not bg_hsl().

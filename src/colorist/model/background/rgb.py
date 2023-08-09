@@ -17,19 +17,17 @@ class BgColorRGB(RGB_ABC):
 
         Example:
             ```python linenums="1"
-            from colorist import ColorRGB, BgColorRGB
+            from colorist import BgColorRGB
 
-            dusty_pink = ColorRGB(194, 145, 164)
             bg_steel_blue = BgColorRGB(70, 130, 180)
 
-            print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF} and {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors inside this paragraph")
+            print(f"I want to use {bg_steel_blue}steel blue{bg_steel_blue.OFF} color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            ![Another example of text in RGB colors printed in a terminal window](../assets/images/examples/rgb_custom_text.png)
+            ![Example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_custom_text_background.png)
         """
-        # TODO: Update code example to only use BgColorRGB and not ColorRGB.
 
         super().__init__(red, green, blue)
 

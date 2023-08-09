@@ -4,8 +4,8 @@ tags:
     - Tutorial
 ---
 
-# Palette of Standard and Bright Colors
-Bright colors have higher intensity that stand more out than standard colors.
+# Palette of Normal and Bright Colors
+Bright colors have higher intensity that stand more out than normal colors.
 
 ## Overview
 | Color | Normal | Bright |
@@ -20,4 +20,4 @@ Bright colors have higher intensity that stand more out than standard colors.
 | Black | ![Black](../../assets/images/colors/black_16x16.png) | ![Bright black](../../assets/images/colors/bright_black_16x16.png) |
 
 !!! note "Limited Support for Bright Colors"
-    Note that bright colors are [supported by many terminals](../terminal-support.md), but not all as bright colors aren't part of the standard set of ANSI colors.
+    Note that bright colors are [supported by many terminals](../materials/terminal-support.md), but not all as bright colors aren't part of the standard set of ANSI colors.

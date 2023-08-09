@@ -19,4 +19,4 @@ print("I want " + Color.RED + "red" + Color.OFF + " color inside this paragraph"
 
 Both options appear the same in the terminal:
 
-![Example of terminal message with red text color](../assets/images/examples/color_custom_text_red.png)
+![Example of terminal message with red text color](../../assets/images/examples/color_custom_text_red.png)
