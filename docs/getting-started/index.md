@@ -28,9 +28,9 @@ green("This is GREEN!")
 print(f"Both {Color.RED}red{Color.OFF}...")
 print(f"... and {Color.YELLOW}yellow{Color.OFF} are nice colors")
 ```
-[//]: # (Example of what's printed in your terminal:)
+How it appears in the terminal:
 
-[//]: # (TODO: INSERT IMAGE)
+![Example of mixed text functions (green, yellow, red) printed in a terminal window](../assets/images/examples/mixed_text_functions.png)
 
 ## Next Steps
 Find more usage examples and tutorials in the [user guide](../user-guide/index.md) section.
