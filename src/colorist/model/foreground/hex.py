@@ -26,7 +26,6 @@ class ColorHex(Hex_ABC):
 
             ![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_custom_text_foreground.png)
         """
-        # TODO: Update code example to only use ColorHex and not BgColorHex.
 
         super().__init__(hex)
 
