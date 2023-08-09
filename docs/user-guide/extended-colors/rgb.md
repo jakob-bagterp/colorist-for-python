@@ -36,4 +36,4 @@ print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF} and {bg_steel_blue}
 
 How it appears in the terminal:
 
-![Another example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_custom_text.png)
+![Example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_custom_text.png)

@@ -9,3 +9,11 @@ if __name__ == "__main__":
     print("")
     print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF} and {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors inside this paragraph")
     print("")
+
+    print("")
+    print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF} color inside this paragraph")
+    print("")
+
+    print("")
+    print(f"I want to use {bg_steel_blue}steel blue{bg_steel_blue.OFF} color inside this paragraph")
+    print("")
