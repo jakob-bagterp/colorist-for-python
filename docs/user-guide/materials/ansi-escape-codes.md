@@ -48,16 +48,16 @@ There are 8 standard colors and 8 bright colors – 16 in total. The bright col
 
 The 8 colors are simply black and white, plus the 6 colors of the rainbow. Firstly, the three primary colors red, green, and blue. Then the secondary colors yellow, magenta, and cyan:
 
-| Code | Color   |
-| :--: | :-----: |
-| 0    | Black   |
-| 1    | Red     |
-| 2    | Green   |
-| 3    | Yellow  |
-| 4    | Blue    |
-| 5    | Magenta |
-| 6    | Cyan    |
-| 7    | White   |
+| Code | Color   | Example |
+| :--: | :-----: | :-----: |
+| 0    | Black   | ![Black](../../assets/images/colors/black_16x16.png) |
+| 1    | Red     | ![Red](../../assets/images/colors/red_16x16.png) |
+| 2    | Green   | ![Green](../../assets/images/colors/green_16x16.png) |
+| 3    | Yellow  | ![Yellow](../../assets/images/colors/yellow_16x16.png) |
+| 4    | Blue    | ![Blue](../../assets/images/colors/blue_16x16.png) |
+| 5    | Magenta | ![Magenta](../../assets/images/colors/magenta_16x16.png) |
+| 6    | Cyan    | ![Cyan](../../assets/images/colors/cyan_16x16.png) |
+| 7    | White   | ![White](../../assets/images/colors/white_16x16.png) |
 
 Each color then needs to be prepended by a foreground or background option. When combining the two codes – simply replace the underscore `_` with the missing color code – `34` for example is blue text, and `44` is blue background:
 
