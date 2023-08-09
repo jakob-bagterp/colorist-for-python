@@ -4,8 +4,8 @@ tags:
     - Tutorial
 ---
 
-# Palette of Standard and Bright Colors
-Bright colors have higher intensity that stand more out than standard colors.
+# Palette of Normal and Bright Colors
+Bright colors have higher intensity that stand more out than normal colors.
 
 ## Overview
 | Color | Normal | Bright |
