@@ -36,4 +36,4 @@ print(f"I want to use {mustard_green}mustard green{mustard_green.OFF} and {bg_st
 
 How it appears in the terminal:
 
-![Another example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_custom_text.png)
+![Example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_custom_text.png)

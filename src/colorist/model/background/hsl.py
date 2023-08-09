@@ -17,19 +17,17 @@ class BgColorHSL(HSL_ABC):
 
         Example:
             ```python linenums="1"
-            from colorist import ColorHSL, BgColorHSL
+            from colorist import BgColorHSL
 
-            mustard_green = ColorHSL(60, 56, 43)
             bg_steel_gray = BgColorHSL(190, 2, 49)
 
-            print(f"I want to use {mustard_green}mustard green{mustard_green.OFF} and {bg_steel_gray}steel blue{bg_steel_gray.OFF} colors inside this paragraph")
+            print(f"I want to use {bg_steel_gray}steel blue{bg_steel_gray.OFF} color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            ![Another example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_custom_text.png)
+            ![Example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_custom_text_background.png)
         """
-        # TODO: Update code example to only use BgColorHSL and not ColorHSL.
 
         super().__init__(hue, saturation, lightness)
 
