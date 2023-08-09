@@ -28,7 +28,7 @@ And yet, the characters of the sequences are hidden in the terminal output apart
 ![Example of terminal message with red text color](../../assets/images/examples/color_custom_text_red.png)
 
 ## Humanised Sequences
-This is also why it's convenient to use Colorist instead of manually writing raw ANSI escape codes. The `Color` class will generate the ANSI escape sequences and keep the code readable. This example generates the same terminal output as above:
+This is also why it's [convenient to use Colorist](../standard-colors/text-foreground.md) instead of manually writing raw ANSI escape codes. The `Color` class will generate the ANSI escape sequences and keep the code readable. This example generates the same terminal output as above:
 
 ```python
 from colorist import Color
@@ -105,7 +105,7 @@ For effects, the codes are. And as before, replace the two underscores `__` in `
     Most terminals apply different color schemes so `\x1b[31m` or `Color.RED` won't produce the exact same screen color of red. Some straight, others with an orange tint. For further reading, refer to this [list of common terminals and their color schemes](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit).
 
 ## Non-Standard Colors
-To have more control of the colors or want to be more creative, you aren't limited to 16 colors. In addition, the escape codes can be used with an extended 256 color palette or the RGB color space.
+To have more control of the colors or want to be more creative, you aren't limited to 16 colors. In addition, the escape codes can be used with an extended 256 color palette or the [RGB color space](../extended-colors/rgb.md).
 
 !!! info "Not All Terminals Support Extended Color Palettes"
     While most terminals support the standard ANSI color sequences, far from all support the extended 256 or RGB color space. For example, the Windows Command Prompt does not support RGB colors while the Windows Terminal does support RGB colors.
@@ -133,3 +133,5 @@ The RGB color space represents a much broader array of colors. Simply use any nu
 | `\x1b[48;2;r;g;bm` | Background |
 
 For example, `\x1b[38;2;255;0;0m` is a red foreground text color, and `\x1b[48;2;255;0;0m` is a red background color.
+
+In Colorist, the [RGB color space](../extended-colors/rgb.md) is used to furthermore support definition of colors as [HSL](../extended-colors/hsl.md) or [Hex](../extended-colors/hex.md).
