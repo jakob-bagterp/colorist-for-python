@@ -7,3 +7,9 @@ if __name__ == "__main__":
     rgb("I want this text in blue RGB colors", 0, 128, 255)
     bg_rgb("I want this background in blue RGB colors", 0, 128, 255)
     print("")
+
+    rgb("I want this text in blue RGB colors", 0, 128, 255)
+    print("")
+
+    bg_rgb("I want this background in blue RGB colors", 0, 128, 255)
+    print("")

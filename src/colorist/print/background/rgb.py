@@ -24,14 +24,12 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Example:
             ```python linenums="1"
-            from colorist import rgb, bg_rgb
+            from colorist import bg_rgb
 
-            rgb("I want this text in blue RGB colors", 0, 128, 255)
             bg_rgb("I want this background in blue RGB colors", 0, 128, 255)
             ```
 
             How it appears in the terminal:
 
-            ![Example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_full_text.png)
+            ![Example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_full_text_background.png)
         """
-        # TODO: Update code example to only use bg_rgb() and not rgb().
