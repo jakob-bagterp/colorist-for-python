@@ -28,9 +28,10 @@ nav:
       - HSL: user-guide/extended-colors/hsl.md
       - Hex: user-guide/extended-colors/hex.md
     - Effects and Styling: user-guide/effects-and-styling.md
-    - Other String Formats: user-guide/other-string-formats.md
-    - Supported Colors and Styles by Terminals: user-guide/terminal-support.md
-    - ANSI Escape Codes: user-guide/ansi-escape-codes.md
+    - Materials:
+      - Other String Formats: user-guide/materials/other-string-formats.md
+      - Supported Colors and Styles by Terminals: user-guide/materials/terminal-support.md
+      - ANSI Escape Codes: user-guide/materials/ansi-escape-codes.md
   - Reference:
     - reference/index.md
     - Text Colors:

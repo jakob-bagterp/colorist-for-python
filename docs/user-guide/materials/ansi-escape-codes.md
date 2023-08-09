@@ -25,7 +25,7 @@ print(f"I want \x1b[31mred\x1b[0m color inside this paragraph")
 
 And yet, the characters of the sequences are hidden in the terminal output apart from the color change:
 
-![Example of terminal message with red text color](../assets/images/examples/color_custom_text_red.png)
+![Example of terminal message with red text color](../../assets/images/examples/color_custom_text_red.png)
 
 ## Humanised Sequences
 This is also why it's convenient to use Colorist instead of manually writing raw ANSI escape codes. The `Color` class will generate the ANSI escape sequences and keep the code readable. This example generates the same terminal output as above:
@@ -73,14 +73,14 @@ To apply different color and styling options, simply replace the two underscores
 
 | Color   | Example | Text | Background | Bright Text | Bright Background |
 | :-----: | :-----: | :--: | :--------: | :---------: | :---------------: |
-| Black   | ![Black](../assets/images/colors/black_16x16.png) | 30 | 40 | 90 | 100 |
-| Red     | ![Red](../assets/images/colors/red_16x16.png) | 31 | 41 | 91 | 101 |
-| Green   | ![Green](../assets/images/colors/green_16x16.png) | 32 | 42 | 92 | 102 |
-| Yellow  | ![Yellow](../assets/images/colors/yellow_16x16.png) | 33 | 43 | 93 | 103 |
-| Blue    | ![Blue](../assets/images/colors/blue_16x16.png) | 34 | 44 | 94 | 104 |
-| Magenta | ![Magenta](../assets/images/colors/magenta_16x16.png) | 35 | 45 | 95 | 105 |
-| Cyan    | ![Cyan](../assets/images/colors/cyan_16x16.png) | 36 | 46 | 96 | 106 |
-| White   | ![White](../assets/images/colors/white_16x16.png) | 37 | 47 | 97 | 107 |
+| Black   | ![Black](../../assets/images/colors/black_16x16.png) | 30 | 40 | 90 | 100 |
+| Red     | ![Red](../../assets/images/colors/red_16x16.png) | 31 | 41 | 91 | 101 |
+| Green   | ![Green](../../assets/images/colors/green_16x16.png) | 32 | 42 | 92 | 102 |
+| Yellow  | ![Yellow](../../assets/images/colors/yellow_16x16.png) | 33 | 43 | 93 | 103 |
+| Blue    | ![Blue](../../assets/images/colors/blue_16x16.png) | 34 | 44 | 94 | 104 |
+| Magenta | ![Magenta](../../assets/images/colors/magenta_16x16.png) | 35 | 45 | 95 | 105 |
+| Cyan    | ![Cyan](../../assets/images/colors/cyan_16x16.png) | 36 | 46 | 96 | 106 |
+| White   | ![White](../../assets/images/colors/white_16x16.png) | 37 | 47 | 97 | 107 |
 | Default | | 39 | 49 | 99 | 109 |
 | Reset   | | 0 | 0 | 0 | 0 |
 
@@ -94,12 +94,12 @@ For effects, the codes are. And as before, replace the two underscores `__` in `
 
 | Effect    | On  | Off | Example |
 | :-------: | :-: | :-: | :-----: |
-| Bold      | 1   | 21  | ![Bold](../assets/images/examples/effect_map/bold_full_text_140x16.png) |
-| Dim       | 2   | 22  | ![Dim](../assets/images/examples/effect_map/dim_full_text_140x16.png) |
-| Underline | 4   | 24  | ![Underline](../assets/images/examples/effect_map/underline_full_text_140x16.png) |
-| Blink     | 5   | 25  | ![Blink](../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
-| Reverse   | 7   | 27  | ![Reverse](../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
-| Hide      | 8   | 28  | ![Hide](../assets/images/examples/effect_map/hide_full_text_140x16.png) |
+| Bold      | 1   | 21  | ![Bold](../../assets/images/examples/effect_map/bold_full_text_140x16.png) |
+| Dim       | 2   | 22  | ![Dim](../../assets/images/examples/effect_map/dim_full_text_140x16.png) |
+| Underline | 4   | 24  | ![Underline](../../assets/images/examples/effect_map/underline_full_text_140x16.png) |
+| Blink     | 5   | 25  | ![Blink](../../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
+| Reverse   | 7   | 27  | ![Reverse](../../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
+| Hide      | 8   | 28  | ![Hide](../../assets/images/examples/effect_map/hide_full_text_140x16.png) |
 
 !!! info "Different Color Schemes in Different Terminals"
     Most terminals apply different color schemes so `\x1b[31m` or `Color.RED` won't produce the exact same screen color of red. Some straight, others with an orange tint. For further reading, refer to this [list of common terminals and their color schemes](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit).
