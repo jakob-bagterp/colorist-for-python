@@ -11,7 +11,7 @@ class ColorHex(Hex_ABC):
     def __init__(self, hex: str) -> None:
         """
         Args:
-            hex (str): Hex color value, for instance `#B4FBB8` or `B4FBB8`, `#B4F` or `B4F`.
+            hex (str): Hex color value with or without hashtag, for instance `#B4FBB8` or `B4FBB8`, `#B4F` or `B4F`.
 
         Example:
             ```python linenums="1"

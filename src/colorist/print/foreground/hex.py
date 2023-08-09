@@ -6,7 +6,7 @@ from ...print.general import print_color
 
 
 def hex(text: str, hex: str) -> None:
-    """Prints full line of text in Hex color. Expects valid Hex color value, for instance `#B4FBB8` or `B4FBB8`, `#B4F` or `B4F`."""
+    """Prints full line of text in Hex color. Expects valid Hex color value with or without hashtag, for instance `#B4FBB8` or `B4FBB8`, `#B4F` or `B4F`."""
 
     color_hex = ColorHex(hex)
     print_color(text, color=color_hex)
@@ -18,7 +18,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with color.
-            hex (str): Hex color value, for instance `#B4FBB8` or `B4FBB8`, `#B4F` or `B4F`.
+            hex (str): Hex color value with or without hashtag, for instance `#B4FBB8` or `B4FBB8`, `#B4F` or `B4F`.
 
         Example:
             ```python linenums="1"
