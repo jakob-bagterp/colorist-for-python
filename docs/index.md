@@ -19,14 +19,14 @@ Lightweight Python package that makes it easy and fast to print colored text in 
 Colorist is intended to be easy to use. Once [installed](./getting-started/installation.md), simply import the `colorist` module and start printing colored text:
 
 ```python linenums="1"
-from colorist import BrightColor
+from colorist import Color
 
-print(f"I want {BrightColor.CYAN}cyan{BrightColor.OFF} color inside this paragraph")
+print(f"This is {Color.CYAN}CYAN{Color.OFF}!")
 ```
 
 How it appears in the terminal:
 
-![Example of white text mixed with cyan printed in a terminal window](./assets/images/examples/bright_color_custom_text_cyan.png)
+![Example of white text mixed with cyan printed in a terminal window](./assets/images/examples/color_custom_text_cyan.png)
 
 Or simply print a full line of colored text:
 

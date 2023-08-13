@@ -12,3 +12,5 @@ if __name__ == "__main__":
     print("")
     print("I want " + Color.RED + "red" + Color.OFF + " color inside this paragraph")
     print("")
+    print(f"This is {Color.CYAN}CYAN{Color.OFF}!")
+    print("")
