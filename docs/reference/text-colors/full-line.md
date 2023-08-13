@@ -35,6 +35,8 @@ tags:
 !!! note "Limited Support for Bright Colors"
     Note that bright colors are [supported by many terminals](../../user-guide/materials/terminal-support.md), but not all as bright colors aren't part of the standard set of ANSI colors.
 
+## Functions
+
 ::: colorist.print.foreground.color.MkDocstringsWrapper
     options:
       show_category_heading: false

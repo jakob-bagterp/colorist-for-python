@@ -6,7 +6,7 @@ tags:
 
 # Full Text Functions for Background Colors
 ## Examples
-#### Normal Colors
+### Normal Colors
 
 | Color | Full Text Function | Example |
 | ----- | ------------------ | ------- |
@@ -19,7 +19,7 @@ tags:
 | ![White](../../assets/images/colors/white_16x16.png) | `bg_white("text")` | ![White background color in terminal](../../assets/images/examples/bg_color_map/white_full_text_194x16.png) |
 | ![Black](../../assets/images/colors/black_16x16.png) | `bg_black("text")` | ![Black background color in terminal](../../assets/images/examples/bg_color_map/black_full_text_194x16.png) |
 
-## Bright Colors
+### Bright Colors
 
 | Color | Full Text Function | Example |
 | ----- | ------------------ | ------- |
@@ -34,6 +34,8 @@ tags:
 
 !!! note "Limited Support for Bright Colors"
     Note that bright colors are [supported by many terminals](../../user-guide/materials/terminal-support.md), but not all as bright colors aren't part of the standard set of ANSI colors.
+
+## Functions
 
 ::: colorist.print.background.color.MkDocstringsWrapper
     options:
