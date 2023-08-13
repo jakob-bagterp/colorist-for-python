@@ -8,15 +8,11 @@ tags:
 Colorist is a lightweight package and intended to be easy to use. Find tutorials and background information in this section.
 
 ## Quick Links
-### Standard Colors
-
-[//]: # (TODO: Add graphic)
+### ![Range of standard colors](../assets/images/colors/palette/rainbow_standard_96x16.png) Standard Colors
 
 Use the standard palette to add color to both [text](./standard-colors/text-foreground.md) and [background](./standard-colors/background.md).
 
-### Bright Colors
-
-[//]: # (TODO: Add graphic)
+### ![Range of bright colors](../assets/images/colors/palette/rainbow_bright_96x16.png) Bright Colors
 
 The [bright colors](./standard-colors/normal-and-bright-palette.md) extend the standard palette and is [supported by most terminals](./materials/terminal-support.md).
 
