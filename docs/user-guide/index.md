@@ -22,8 +22,6 @@ The [bright colors](./standard-colors/normal-and-bright-palette.md) extend the s
 
 Apply [text styling and animations](./effects-and-styling.md) to your terminal output.
 
-### Extended Color Space
-
-[//]: # (TODO: Add graphic)
+### ![Range of RGB colors](../assets/images/colors/palette/rainbow_rgb_96x16.png) Extended Color Space
 
 If your terminal supports an extended color space, learn how to define colors as [RGB](./extended-colors/rgb.md), [HSL](./extended-colors/hsl.md), or [Hex](./extended-colors/hex.md).
