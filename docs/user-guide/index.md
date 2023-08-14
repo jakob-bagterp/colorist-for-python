@@ -14,7 +14,7 @@ Use the standard palette to add color to both [text](./standard-colors/text-fore
 
 ### ![Range of bright colors](../assets/images/colors/palette/rainbow_bright_96x16.png) &nbsp;&nbsp;Bright Colors
 
-The [bright colors](./standard-colors/normal-and-bright-palette.md) extend the standard palette and is [supported by most terminals](./materials/terminal-support.md).
+The [bright colors](./standard-colors/normal-and-bright-palette.md) extend the standard palette and are [supported by most terminals](./materials/terminal-support.md).
 
 ### ![Animated effects](../assets/images/colors/palette/rainbow_effects_96x16.gif) &nbsp;&nbsp;Effects
 
