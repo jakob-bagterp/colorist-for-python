@@ -28,6 +28,8 @@ jobs:
             git config --global user.name ci-bot
             git config --global user.email ci-bot@example.com
             git config --global pull.rebase false
+            git lfs install
+            git lfs pull
             git fetch origin gh-pages --depth=1
             git pull origin gh-pages --depth=1 --allow-unrelated-histories
       - name: Deploy docs website and API reference
