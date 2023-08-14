@@ -16,9 +16,7 @@ Use the standard palette to add color to both [text](./standard-colors/text-fore
 
 The [bright colors](./standard-colors/normal-and-bright-palette.md) extend the standard palette and is [supported by most terminals](./materials/terminal-support.md).
 
-### Effects
-
-[//]: # (TODO: Add animated graphic)
+### ![Animated effects](../assets/images/colors/palette/rainbow_effects_96x16.gif) Effects
 
 Apply [text styling and animations](./effects-and-styling.md) to your terminal output.
 
