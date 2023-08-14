@@ -22,8 +22,9 @@ jobs:
         run: pip install -r ./docs/requirements.txt
       - name: Set up Git config
         run: |
-            git config --global user.name Docs Deploy
-            git config --global user.email docs@dummy.bot.com
+            git config --global user.name ci-bot
+            git config --global user.email ci-bot@example.com
+            git fetch origin gh-pages --depth=1
       - name: Deploy docs website and API reference
         run: |
             mike deploy --push --update-aliases ${RELEASE_TAG_VERSION} latest
