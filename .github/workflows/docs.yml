@@ -9,19 +9,31 @@ permissions:
   contents: write
 
 jobs:
-  deploy-docs:
+  deploy-docs-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v4
         with:
           python-version: "3.10"
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v3
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: pip install -r ./docs/requirements.txt
-      - run: mkdocs gh-deploy --force
+      - name: Set release notes tag
+        run: |
+            export RELEASE_TAG_VERSION=${{ github.event.release.tag_name }}
+            echo "RELEASE_TAG_VERSION=${RELEASE_TAG_VERSION:1}" >> $GITHUB_ENV
+      - name: Install dependencies
+        run: pip install -r ./docs/requirements.txt
+      - name: Set up Git config
+        run: |
+            git config --global user.name ci-bot
+            git config --global user.email ci-bot@example.com
+            git config --global pull.rebase false
+            git lfs install
+            git lfs pull
+            git fetch origin gh-pages --depth=1
+            git pull origin gh-pages --depth=1 --allow-unrelated-histories
+      - name: Deploy docs website and API reference
+        run: |
+            mike deploy --push --force --ignore --update-aliases ${RELEASE_TAG_VERSION} latest
+            mike set-default --push latest
