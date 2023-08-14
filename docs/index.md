@@ -29,7 +29,7 @@ print(f"This is {Color.CYAN}CYAN{Color.OFF}!")
 ```
 
 ### Varied Color Palette
-Or simply print a full line of colored text from a varied [palette of color](./user-guide/standard-colors/text-foreground/#print-line-of-colored-text):
+Or simply print a full line of colored text from a varied [palette of color](./user-guide/standard-colors/text-foreground.md#print-line-of-colored-text):
 
 ```python linenums="1"
 from colorist import bright_yellow
