@@ -1,9 +1,6 @@
 name: docs new version release
 
 on:
-  pull_request:
-    branches:
-      - "**"
   release:
     types: [published]
 
