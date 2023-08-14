@@ -28,6 +28,7 @@ jobs:
             git config --global user.name ci-bot
             git config --global user.email ci-bot@example.com
             git fetch origin gh-pages --depth=1
+            git pull origin gh-pages --depth=1
       - name: Deploy docs website and API reference
         run: |
             mike deploy --push --ignore --update-aliases ${RELEASE_TAG_VERSION} latest
