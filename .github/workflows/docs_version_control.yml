@@ -29,7 +29,7 @@ jobs:
             git config --global user.email ci-bot@example.com
             git config --global pull.rebase false
             git fetch origin gh-pages --depth=1
-            git pull origin gh-pages --depth=1
+            git pull origin gh-pages
       - name: Deploy docs website and API reference
         run: |
             mike deploy --push --ignore --update-aliases ${RELEASE_TAG_VERSION} latest
