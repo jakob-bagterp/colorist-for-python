@@ -32,5 +32,5 @@ jobs:
             git pull origin gh-pages --depth=1 --allow-unrelated-histories
       - name: Deploy docs website and API reference
         run: |
-            mike deploy --push --ignore --update-aliases ${RELEASE_TAG_VERSION} latest
+            mike deploy --push --force --ignore --update-aliases ${RELEASE_TAG_VERSION} latest
             mike set-default --push latest
