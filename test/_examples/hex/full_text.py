@@ -7,3 +7,9 @@ if __name__ == "__main__":
     hex("I want this text in coral Hex colors", "#ff7f50")
     bg_hex("I want this background in coral Hex colors", "#ff7f50")
     print("")
+
+    hex("I want this text in coral Hex colors", "#ff7f50")
+    print("")
+
+    bg_hex("I want this background in coral Hex colors", "#ff7f50")
+    print("")

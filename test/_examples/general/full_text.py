@@ -2,7 +2,7 @@
 
 from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
                       BgColorRGB, BrightColor, Color, ColorHex, ColorHSL,
-                      ColorRGB, Effect, print_color)
+                      ColorRGB, Effect, green, print_color)
 
 if __name__ == "__main__":
     print("")
@@ -19,4 +19,10 @@ if __name__ == "__main__":
     print_color("Text on Hex colored background", bg_color=BgColorHex("aB3"))
     print_color("Blinking text", effect=Effect.BLINK)
     print_color("Bold RGB colored text on cyan background", color=ColorRGB(57, 33, 253), bg_color=BgColor.CYAN, effect=Effect.BOLD)
+    # Docs homepage:
+    print("")
+    green("This is GREEN!")
+    print("")
+    print(f"Both {Color.RED}red{Color.OFF}...")
+    print(f"... and {Color.YELLOW}yellow{Color.OFF} are nice colors")
     print("")

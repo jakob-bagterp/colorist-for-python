@@ -1,6 +1,7 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
 from ... import helper
+from ...model.abc.mkdocstrings import MkDocstringsWrapper_ABC
 from ...model.background.color import BgColor
 
 
@@ -50,3 +51,61 @@ def bg_white(text: str) -> None:
     """Prints full line of text on white background."""
 
     helper.print.color(text, bg_color=BgColor.WHITE)
+
+
+class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
+    def bg_black(self, text: str) -> None:
+        """Prints full line of text on black background.
+
+        Args:
+            text (str): Text to be printed on colored background.
+        """
+
+    def bg_red(self, text: str) -> None:
+        """Prints full line of text on red background.
+
+        Args:
+            text (str): Text to be printed on colored background.
+        """
+
+    def bg_green(self, text: str) -> None:
+        """Prints full line of text on green background.
+
+        Args:
+            text (str): Text to be printed on colored background.
+        """
+
+    def bg_yellow(self, text: str) -> None:
+        """Prints full line of text on yellow background.
+
+        Args:
+            text (str): Text to be printed on colored background.
+        """
+
+    def bg_blue(self, text: str) -> None:
+        """Prints full line of text on blue background.
+
+        Args:
+            text (str): Text to be printed on colored background.
+        """
+
+    def bg_magenta(self, text: str) -> None:
+        """Prints full line of text on magenta background.
+
+        Args:
+            text (str): Text to be printed on colored background.
+        """
+
+    def bg_cyan(self, text: str) -> None:
+        """Prints full line of text on cyan background.
+
+        Args:
+            text (str): Text to be printed on colored background.
+        """
+
+    def bg_white(self, text: str) -> None:
+        """Prints full line of text on white background.
+
+        Args:
+            text (str): Text to be printed on colored background.
+        """
