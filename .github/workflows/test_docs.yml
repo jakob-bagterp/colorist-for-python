@@ -1,4 +1,4 @@
-name: test-docs
+name: Test MkDocs
 
 on:
   pull_request:
