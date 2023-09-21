@@ -20,8 +20,8 @@ Colorist is intended to be easy to use. Imagine you want to print a mix of color
 
 ![Example of white text mixed with cyan printed in a terminal window](./assets/images/examples/color_custom_text_cyan.png)
 
-```
-This is CYAN!
+```shell title=""
+% This is CYAN!
 ```
 
 Once [installed](./getting-started/installation.md), simply import the `colorist` module and start printing colored text with the `Color` class:
@@ -45,10 +45,10 @@ How it appears in the terminal:
 
 ![Bright yellow text color in terminal](./assets/images/examples/color_map/bright_yellow_full_text_167x16.png)
 
-```
-This is BRIGHT YELLOW!
+```shell title=""
+% This is BRIGHT YELLOW!
 ```
 
-<!-- TODOs: Disable "Text Only" label above. Can we disable copy button on the right side? How can we style the text color? -->
+<!-- TODOs: Can we disable copy button on the right side? How can we style the text color? -->
 
 Ready to try more options and features? [Let's get started](./getting-started/index.md).
