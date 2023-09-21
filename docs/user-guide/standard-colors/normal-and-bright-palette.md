@@ -5,6 +5,12 @@ tags:
 ---
 
 # Palette of Normal and Bright Colors
+![Range of standard colors](../../assets/images/colors/palette/rainbow_standard_96x16.png)
+
+Normal colors are slight dimmed and more easy on the eye than bright colors.
+
+![Range of bright colors](../../assets/images/colors/palette/rainbow_bright_96x16.png)
+
 Bright colors have higher intensity that stand more out than normal colors.
 
 ## Overview
