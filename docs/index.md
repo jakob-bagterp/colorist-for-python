@@ -50,5 +50,6 @@ How it appears in the terminal:
 ```
 
 <!-- TODOs: Can we disable copy button on the right side? How can we style the text color? -->
+<!-- TODOs: Once done, clean up unused graphics in assets folder -->
 
 Ready to try more options and features? [Let's get started](./getting-started/index.md).
