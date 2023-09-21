@@ -13,6 +13,11 @@ Normal colors are slight dimmed and more easy on the eye than bright colors.
 
 Bright colors have higher intensity that stand more out than normal colors.
 
+!!! note "Color Definition May Vary from Terminal to Terminal"
+    Be aware that text in standard red color isn't the same tone of red in all terminals, whether it's normal or bright. Sometimes with a little orange teint, sometimes a little darker. And the same goes for other standard colors.
+
+    Find an overview of various terminals and their color palettes [here](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit).
+
 ## Overview
 | Color | Normal | Bright |
 | ----- | :----: | :----: |
