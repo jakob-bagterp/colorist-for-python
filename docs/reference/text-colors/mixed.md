@@ -12,14 +12,14 @@ Enumerable class of all available standard text colors.
 
 | Color | Custom | Example |
 | ----- | ------ | ------- |
-| ![Green](../../assets/images/colors/green_16x16.png) | `Color.GREEN` | ![Green text color in terminal](../../assets/images/examples/color_map/green_full_text_167x16.png) |
-| ![Yellow](../../assets/images/colors/yellow_16x16.png) | `Color.YELLOW` | ![Yellow text color in terminal](../../assets/images/examples/color_map/yellow_full_text_167x16.png) |
-| ![Red](../../assets/images/colors/red_16x16.png) | `Color.RED` | ![Red text color in terminal](../../assets/images/examples/color_map/red_full_text_167x16.png) |
-| ![Magenta](../../assets/images/colors/magenta_16x16.png) | `Color.MAGENTA` | ![Magenta text color in terminal](../../assets/images/examples/color_map/magenta_full_text_167x16.png) |
-| ![Blue](../../assets/images/colors/blue_16x16.png) | `Color.BLUE` | ![Blue text color in terminal](../../assets/images/examples/color_map/blue_full_text_167x16.png) |
-| ![Cyan](../../assets/images/colors/cyan_16x16.png) | `Color.CYAN` | ![Cyan text color in terminal](../../assets/images/examples/color_map/cyan_full_text_167x16.png) |
-| ![White](../../assets/images/colors/white_16x16.png) | `Color.WHITE` | ![White text color in terminal](../../assets/images/examples/color_map/white_full_text_167x16.png) |
-| ![Black](../../assets/images/colors/black_16x16.png) | `Color.BLACK` | ![Black text color in terminal](../../assets/images/examples/color_map/black_full_text_167x16.png) |
+| ![Green](../../assets/images/colors/green_16x16.png) | `Color.GREEN` | <code><font color="lawngreen">This is GREEN!</font></code> |
+| ![Yellow](../../assets/images/colors/yellow_16x16.png) | `Color.YELLOW` | <code><font color="yellow">This is YELLOW!</font></code> |
+| ![Red](../../assets/images/colors/red_16x16.png) | `Color.RED` | <code><font color="red">This is RED!</font></code> |
+| ![Magenta](../../assets/images/colors/magenta_16x16.png) | `Color.MAGENTA` | <code><font color="magenta">This is MAGENTA!</font></code> |
+| ![Blue](../../assets/images/colors/blue_16x16.png) | `Color.BLUE` | <code><font color="blue">This is BLUE!</font></code> |
+| ![Cyan](../../assets/images/colors/cyan_16x16.png) | `Color.CYAN` | <code><font color="cyan">This is CYAN!</font></code> |
+| ![White](../../assets/images/colors/white_16x16.png) | `Color.WHITE` | <code><font color="white">This is WHITE!</font></code> |
+| ![Black](../../assets/images/colors/black_16x16.png) | `Color.BLACK` | <code><font color="black">This is BLACK!</font></code> |
 | - | `Color.DEFAULT` | - |
 | - | `Color.OFF` | - |
 
@@ -36,7 +36,8 @@ Enumerable class of all available standard text colors.
 
     How it appears in the terminal:
 
-    ![Example of white text mixed with green, yellow, red colors printed in a terminal window](../../assets/images/examples/color_custom_text_green_yellow_red.png)
+    <pre><code>% I want <font color="red">red</font> color inside this paragraph
+    % Both <font color="lawngreen">green</font> and <font color="yellow">yellow</font> are nice colors</code></pre>
 
 !!! tip
     Remember to turn off a color with `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -48,14 +49,14 @@ Enumerable class of all available standard bright text colors.
 
 | Color | Custom | Example |
 | ----- | ------ | ------- |
-| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BrightColor.GREEN` | ![Bright green text color in terminal](../../assets/images/examples/color_map/bright_green_full_text_167x16.png) |
-| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BrightColor.YELLOW` | ![Bright yellow text color in terminal](../../assets/images/examples/color_map/bright_yellow_full_text_167x16.png) |
-| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BrightColor.RED` | ![Bright red text color in terminal](../../assets/images/examples/color_map/bright_red_full_text_167x16.png) |
-| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BrightColor.MAGENTA` | ![Bright magenta text color in terminal](../../assets/images/examples/color_map/bright_magenta_full_text_167x16.png) |
-| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BrightColor.BLUE` | ![Bright blue text color in terminal](../../assets/images/examples/color_map/bright_blue_full_text_167x16.png) |
-| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BrightColor.CYAN` | ![Bright cyan text color in terminal](../../assets/images/examples/color_map/bright_cyan_full_text_167x16.png) |
-| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BrightColor.WHITE` | ![Bright white text color in terminal](../../assets/images/examples/color_map/bright_white_full_text_167x16.png) |
-| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BrightColor.BLACK` | ![Bright black text color in terminal](../../assets/images/examples/color_map/bright_black_full_text_167x16.png) |
+| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BrightColor.GREEN` | <code><font color="lawngreen">This is BRIGHT GREEN!</font></code> |
+| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BrightColor.YELLOW` | <code><font color="yellow">This is BRIGHT YELLOW!</font></code> |
+| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BrightColor.RED` | <code><font color="red">This is BRIGHT RED!</font></code> |
+| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BrightColor.MAGENTA` | <code><font color="magenta">This is BRIGHT MAGENTA!</font></code> |
+| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BrightColor.BLUE` | <code><font color="blue">This is BRIGHT BLUE!</font></code> |
+| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BrightColor.CYAN` | <code><font color="cyan">This is BRIGHT CYAN!</font></code> |
+| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BrightColor.WHITE` | <code><font color="white">This is BRIGHT WHITE!</font></code> |
+| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BrightColor.BLACK` | <code><font color="black">This is BRIGHT BLACK!</font></code> |
 | - | `BrightColor.DEFAULT` | - |
 | - | `BrightColor.OFF` | - |
 
@@ -70,4 +71,4 @@ Enumerable class of all available standard bright text colors.
 
     How it appears in the terminal:
 
-    ![Example of white text mixed with cyan printed in a terminal window](../../assets/images/examples/bright_color_custom_text_cyan.png)
+    <pre><code>% I want <font color="cyan">cyan</font> color inside this paragraph</code></pre>
