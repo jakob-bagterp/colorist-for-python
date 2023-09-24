@@ -30,13 +30,13 @@ Or customize the styling of text and background with the `ColorHSL()` and `BgCol
 from colorist import ColorHSL, BgColorHSL
 
 mustard_green = ColorHSL(60, 56, 43)
-bg_steel_grey = BgColorHSL(190, 2, 49)
+bg_steel_gray = BgColorHSL(190, 2, 49)
 
 print(f"I want to use {mustard_green}mustard green{mustard_green.OFF}...")
-print(f"... and {bg_steel_grey}steel grey{bg_steel_grey.OFF} colors")
+print(f"... and {bg_steel_gray}steel gray{bg_steel_gray.OFF} colors")
 ```
 
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: hsl(60, 56%, 43%)">mustard green</span>...
-% ... <span style="background-color: hsl(190, 2%, 49%)">steel grey</span> colors</code></pre>
+% ... <span style="background-color: hsl(190, 2%, 49%)">steel gray</span> colors</code></pre>
