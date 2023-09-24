@@ -23,14 +23,14 @@ tags:
 
 | Color | Full Text Function | Example |
 | ----- | ------------------ | ------- |
-| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `bg_bright_green("text")` | <code><span style="background-color: green">This is GREEN background!</span></code> |
-| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `bg_bright_yellow("text")` | <code><span style="background-color: yellow">This is YELLOW background!</span></code> |
-| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `bg_bright_red("text")` | <code><span style="background-color: red">This is RED background!</span></code> |
-| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `bg_bright_magenta("text")` | <code><span style="background-color: magenta">This is MAGENTA background!</span></code> |
-| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `bg_bright_blue("text")` | <code><span style="background-color: blue">This is BLUE background!</span></code> |
-| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `bg_bright_cyan("text")` | <code><span style="background-color: cyan">This is CYAN background!</span></code> |
-| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `bg_bright_white("text")` | <code><span style="background-color: white">This is WHITE background!</span></code> |
-| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `bg_bright_black("text")` | <code><span style="background-color: black">This is BLACK background!</span></code> |
+| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `bg_bright_green("text")` | <code><span style="background-color: green">This is BRIGHT GREEN background!</span></code> |
+| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `bg_bright_yellow("text")` | <code><span style="background-color: yellow">This is BRIGHT YELLOW background!</span></code> |
+| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `bg_bright_red("text")` | <code><span style="background-color: red">This is BRIGHT RED background!</span></code> |
+| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `bg_bright_magenta("text")` | <code><span style="background-color: magenta">This is BRIGHT MAGENTA background!</span></code> |
+| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `bg_bright_blue("text")` | <code><span style="background-color: blue">This is BRIGHT BLUE background!</span></code> |
+| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `bg_bright_cyan("text")` | <code><span style="background-color: cyan">This is BRIGHT CYAN background!</span></code> |
+| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `bg_bright_white("text")` | <code><span style="background-color: white">This is BRIGHT WHITE background!</span></code> |
+| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `bg_bright_black("text")` | <code><span style="background-color: black">This is BRIGHT BLACK background!</span></code> |
 
 !!! note "Limited Support for Bright Colors"
     Note that bright colors are [supported by many terminals](../../user-guide/materials/terminal-support.md), but not all as bright colors aren't part of the standard set of ANSI colors.
