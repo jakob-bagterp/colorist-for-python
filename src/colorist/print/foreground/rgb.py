@@ -31,5 +31,5 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            ![Example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_full_text_foreground.png)
+            <pre><code>% <span style="color: rgb(0, 128, 255)">I want this text in blue RGB colors</span></code></pre>
         """
