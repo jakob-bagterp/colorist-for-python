@@ -12,14 +12,14 @@ Enumerable class of all available standard background colors.
 
 | Color | Custom | Example |
 | ----- | ------ | ------- |
-| ![Green](../../assets/images/colors/green_16x16.png) | `BgColor.GREEN` | ![Green background color in terminal](../../assets/images/examples/bg_color_map/green_full_text_194x16.png) |
-| ![Yellow](../../assets/images/colors/yellow_16x16.png) | `BgColor.YELLOW` | ![Yellow background color in terminal](../../assets/images/examples/bg_color_map/yellow_full_text_194x16.png) |
-| ![Red](../../assets/images/colors/red_16x16.png) | `BgColor.RED` | ![Red background color in terminal](../../assets/images/examples/bg_color_map/red_full_text_194x16.png) |
-| ![Magenta](../../assets/images/colors/magenta_16x16.png) | `BgColor.MAGENTA` | ![Magenta background color in terminal](../../assets/images/examples/bg_color_map/magenta_full_text_194x16.png) |
-| ![Blue](../../assets/images/colors/blue_16x16.png) | `BgColor.BLUE` | ![Blue background color in terminal](../../assets/images/examples/bg_color_map/blue_full_text_194x16.png) |
-| ![Cyan](../../assets/images/colors/cyan_16x16.png) | `BgColor.CYAN` | ![Cyan background color in terminal](../../assets/images/examples/bg_color_map/cyan_full_text_194x16.png) |
-| ![White](../../assets/images/colors/white_16x16.png) | `BgColor.WHITE` | ![White background color in terminal](../../assets/images/examples/bg_color_map/white_full_text_194x16.png) |
-| ![Black](../../assets/images/colors/black_16x16.png) | `BgColor.BLACK` | ![Black background color in terminal](../../assets/images/examples/bg_color_map/black_full_text_194x16.png) |
+| ![Green](../../assets/images/colors/green_16x16.png) | `BgColor.GREEN` | <code><span style="background-color: green">This is GREEN background!</span></code> |
+| ![Yellow](../../assets/images/colors/yellow_16x16.png) | `BgColor.YELLOW` | <code><span style="background-color: yellow">This is YELLOW background!</span></code> |
+| ![Red](../../assets/images/colors/red_16x16.png) | `BgColor.RED` | <code><span style="background-color: red">This is RED background!</span></code> |
+| ![Magenta](../../assets/images/colors/magenta_16x16.png) | `BgColor.MAGENTA` | <code><span style="background-color: magenta">This is MAGENTA background!</span></code> |
+| ![Blue](../../assets/images/colors/blue_16x16.png) | `BgColor.BLUE` | <code><span style="background-color: blue">This is BLUE background!</span></code>|
+| ![Cyan](../../assets/images/colors/cyan_16x16.png) | `BgColor.CYAN` | <code><span style="background-color: cyan">This is CYAN background!</span></code> |
+| ![White](../../assets/images/colors/white_16x16.png) | `BgColor.WHITE` | <code><span style="background-color: white">This is WHITE background!</span></code> |
+| ![Black](../../assets/images/colors/black_16x16.png) | `BgColor.BLACK` | <code><span style="background-color: black">This is BLACK background!</span></code> |
 | - | `BgColor.DEFAULT` | - |
 | - | `BgColor.OFF` | - |
 
@@ -36,7 +36,8 @@ Enumerable class of all available standard background colors.
 
     How it appears in the terminal:
 
-    ![Example of black, green, yellow, red background colors mixed inside paragraph printed in a terminal window](../../assets/images/examples/bg_color_custom_text_green_yellow_red.png)
+    <pre><code>% I want <span style="background-color: red">red</span> background color inside this paragraph
+    % Both <span style="background-color: green">green</span> and <span style="background-color: yellow">yellow</span> are nice background colors</code></pre>
 
 !!! tip
     Remember to turn off a color with `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -48,14 +49,14 @@ Enumerable class of all available standard bright background colors.
 
 | Color | Custom | Example |
 | ----- | ------ | ------- |
-| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BgBrightColor.GREEN` | ![Bright green background color in terminal](../../assets/images/examples/bg_color_map/bright_green_full_text_194x16.png) |
-| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BgBrightColor.YELLOW` | ![Bright yellow background color in terminal](../../assets/images/examples/bg_color_map/bright_yellow_full_text_194x16.png) |
-| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BgBrightColor.RED` | ![Bright red background color in terminal](../../assets/images/examples/bg_color_map/bright_red_full_text_194x16.png) |
-| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BgBrightColor.MAGENTA` | ![Bright magenta background color in terminal](../../assets/images/examples/bg_color_map/bright_magenta_full_text_194x16.png) |
-| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BgBrightColor.BLUE` | ![Bright blue background color in terminal](../../assets/images/examples/bg_color_map/bright_blue_full_text_194x16.png) |
-| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BgBrightColor.CYAN` | ![Bright cyan background color in terminal](../../assets/images/examples/bg_color_map/bright_cyan_full_text_194x16.png) |
-| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BgBrightColor.WHITE` | ![Bright white background color in terminal](../../assets/images/examples/bg_color_map/bright_white_full_text_194x16.png) |
-| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BgBrightColor.BLACK` | ![Bright black background color in terminal](../../assets/images/examples/bg_color_map/bright_black_full_text_194x16.png) |
+| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BgBrightColor.GREEN` | <code><span style="background-color: green">This is BRIGHT GREEN background!</span></code> |
+| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BgBrightColor.YELLOW` | <code><span style="background-color: yellow">This is BRIGHT YELLOW background!</span></code> |
+| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BgBrightColor.RED` | <code><span style="background-color: red">This is BRIGHT RED background!</span></code> |
+| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BgBrightColor.MAGENTA` | <code><span style="background-color: magenta">This is BRIGHT MAGENTA background!</span></code> |
+| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BgBrightColor.BLUE` | <code><span style="background-color: blue">This is BRIGHT BLUE background!</span></code> |
+| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BgBrightColor.CYAN` | <code><span style="background-color: cyan">This is BRIGHT CYAN background!</span></code> |
+| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BgBrightColor.WHITE` | <code><span style="background-color: white">This is BRIGHT WHITE background!</span></code> |
+| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BgBrightColor.BLACK` | <code><span style="background-color: black">This is BRIGHT BLACK background!</span></code> |
 | - | `BgBrightColor.DEFAULT` | - |
 | - | `BgBrightColor.OFF` | - |
 
@@ -70,4 +71,4 @@ Enumerable class of all available standard bright background colors.
 
     How it appears in the terminal:
 
-    ![Example of white text on a cyan background color printed in a terminal window](../../assets/images/examples/bg_bright_color_custom_text_cyan.png)
+    <pre><code>% I want <span style="background-color: cyan">cyan</span> background color inside this paragraph</code></pre>
