@@ -24,7 +24,9 @@ bg_red("This is RED background!")
 
 How it appears in the terminal:
 
-![Example of white text and colored backgrounds if green, yellow, red printed in a terminal window](../../assets/images/examples/bg_color_full_text_green_yellow_red.png)
+<pre><code>% <span style="background-color: green">This is GREEN background!</span>
+% <span style="background-color: yellow">This is YELLOW background!</span>
+% <span style="background-color: red">This is RED background!</span></code></pre>
 
 ## Print Mixed Colors in Text
 Background colors can also be mixed inside a paragraph:
@@ -32,14 +34,16 @@ Background colors can also be mixed inside a paragraph:
 ```python linenums="1"
 from colorist import BgColor
 
-print(f"I want {BgColor.RED}red{BgColor.OFF} background color inside this paragraph")
-
-print(f"Both {BgColor.GREEN}green{BgColor.OFF} and {BgColor.YELLOW}yellow{BgColor.OFF} are nice background colors")
+print(f"Put {BgColor.RED}red{BgColor.OFF} background color inside this paragraph")
+print(f"Both {BgColor.GREEN}green{BgColor.OFF}...")
+print(f"... and {BgColor.YELLOW}yellow{BgColor.OFF} are nice background colors")
 ```
 
 How it appears in the terminal:
 
-![Example of black, green, yellow, red background colors mixed inside paragraph printed in a terminal window](../../assets/images/examples/bg_color_custom_text_green_yellow_red.png)
+<pre><code>% Put <span style="background-color: red">red</span> background color inside this paragraph
+% Both <span style="background-color: green">green</span>...
+% ... and <span style="background-color: yellow">yellow</span> are nice background colors</code></pre>
 
 !!! tip
     Remember to turn off a color with `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -50,11 +54,11 @@ Most terminals support bright colors that stand more out:
 ```python linenums="1"
 from colorist import BgBrightColor
 
-print(f"I want {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color inside this paragraph")
+print(f"Add {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color")
 ```
 
 How it appears in the terminal:
 
-![Example of white text on a cyan background color printed in a terminal window](../../assets/images/examples/bg_bright_color_custom_text_cyan.png)
+<pre><code>% Add <span style="background-color: cyan">cyan</span> background color</code></pre>
 
 Refer to the documentation for a complete list of [full line text color functions](../../reference/background-colors/full-line.md) and [custom string styling](../../reference/background-colors/mixed.md).
