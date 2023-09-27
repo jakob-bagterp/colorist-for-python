@@ -35,9 +35,9 @@ How it appears in the terminal:
 ### Overview
 | Effect           | Full Text Function         | Example |
 | ---------------- | -------------------------- | ------- |
-| **Bold**         | `effect_bold("text")`      | ![Example of terminal message with bold text](../assets/images/examples/effect_map/bold_full_text_140x16.png) |
+| Bold             | `effect_bold("text")`      | <code>This is <strong>BOLD</strong></code> |
 | Dim              | `effect_dim("text")`       | ![Example of terminal message with dimmed text](../assets/images/examples/effect_map/dim_full_text_140x16.png) |
-| <u>Underline</u> | `effect_underline("text")` | ![Example of terminal message with underlined text](../assets/images/examples/effect_map/underline_full_text_140x16.png) |
+| Underline        | `effect_underline("text")` | <code>This is <u>UNDERLINED</u></code> |
 | Blink            | `effect_blink("text")`     | ![Example of terminal message with blinking text](../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
 | Reverse          | `effect_reverse("text")`   | ![Example of terminal message with reversed text color and background](../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
 | Hide             | `effect_hide("text")`      | ![Example of terminal message with hidden text](../assets/images/examples/effect_map/hide_full_text_140x16.png) |
@@ -56,7 +56,8 @@ print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF} inside this paragra
 
 How it appears in the terminal:
 
-![Example of terminal message with underline and bold text](../assets/images/examples/effect_custom_text_underline_bold.png)
+<pre><code>% I want <u>underlined text</u> inside this paragraph
+% I want <strong>emphasized text</strong> inside this paragraph</code></pre>
 
 ### Mixing Effects and Colors
 Effects can also be mixed with colors:
@@ -77,9 +78,9 @@ How it appears in the terminal:
 ### Overview
 | Effect           | Custom             | Reset                  | Example    |
 | ---------------- | ------------------ | ---------------------- | ---------- |
-| **Bold**         | `Effect.BOLD`      | `Effect.BOLD_OFF`      | ![Example of terminal message with bold text](../assets/images/examples/effect_map/bold_full_text_140x16.png) |
+| Bold             | `Effect.BOLD`      | `Effect.BOLD_OFF`      | <code>This is <strong>BOLD</strong></code> |
 | Dim              | `Effect.DIM`       | `Effect.DIM_OFF`       | ![Example of terminal message with dimmed text](../assets/images/examples/effect_map/dim_full_text_140x16.png) |
-| <u>Underline</u> | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | ![Example of terminal message with underlined text](../assets/images/examples/effect_map/underline_full_text_140x16.png) |
+| Underline        | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | <code>This is <u>UNDERLINED</u></code> |
 | Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | ![Example of terminal message with blinking text](../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
 | Reverse          | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | ![Example of terminal message with reversed text color and background](../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
 | Hide             | `Effect.HIDE`      | `Effect.HIDE_OFF`      | ![Example of terminal message with hidden text](../assets/images/examples/effect_map/hide_full_text_140x16.png) |
