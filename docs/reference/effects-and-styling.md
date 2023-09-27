@@ -6,13 +6,6 @@ tags:
 
 # Text Effects and Styling
 ## Full Text Functions
-
-::: colorist.print.effect.MkDocstringsWrapper
-    options:
-      show_category_heading: false
-      heading_level: 4
-      merge_init_into_class: true
-
 ### Examples
 | Effect           | Full Text Function         | Example |
 | ---------------- | -------------------------- | ------- |
@@ -22,6 +15,12 @@ tags:
 | Blink            | `effect_blink("text")`     | ![Example of terminal message with blinking text](../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
 | Reverse          | `effect_reverse("text")`   | ![Example of terminal message with reversed text color and background](../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
 | Hide             | `effect_hide("text")`      | ![Example of terminal message with hidden text](../assets/images/examples/effect_map/hide_full_text_140x16.png) |
+
+::: colorist.print.effect.MkDocstringsWrapper
+    options:
+      show_category_heading: false
+      heading_level: 3
+      merge_init_into_class: true
 
 ## Custom String Styling
 ### `Effect`
