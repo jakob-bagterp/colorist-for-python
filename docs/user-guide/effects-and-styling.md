@@ -49,15 +49,15 @@ How to customize terminal messages and change effect inside a paragraph:
 ```python
 from colorist import Effect
 
-print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF} inside this paragraph")
+print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF}")
 
-print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF} inside this paragraph")
+print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF}")
 ```
 
 How it appears in the terminal:
 
-<pre><code>% I want <u>underlined text</u> inside this paragraph
-% I want <strong>emphasized text</strong> inside this paragraph</code></pre>
+<pre><code>% I want <u>underlined text</u>
+% I want <strong>emphasized text</strong></code></pre>
 
 ### Mixing Effects and Colors
 Effects can also be mixed with colors:

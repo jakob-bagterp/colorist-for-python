@@ -26,14 +26,15 @@ Enumerable class of all available effects.
     ```python linenums="1"
     from colorist import Effect
 
-    print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF} inside this paragraph")
+    print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF}")
 
-    print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF} inside this paragraph")
+    print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF}")
     ```
 
     How it appears in the terminal:
 
-    ![Example of terminal message with underline and bold text](../../assets/images/examples/effect_custom_text_underline_bold.png)
+    <pre><code>% I want <u>underlined text</u>
+    % I want <strong>emphasized text</strong></code></pre>
 
 !!! tip
     Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
