@@ -12,14 +12,14 @@ Enumerable class of all available standard background colors.
 
 | Color | Custom | Example |
 | ----- | ------ | ------- |
-| ![Green](../../assets/images/colors/green_16x16.png) | `BgColor.GREEN` | <code><span style="background-color: green">This is GREEN background!</span></code> |
-| ![Yellow](../../assets/images/colors/yellow_16x16.png) | `BgColor.YELLOW` | <code><span style="background-color: yellow">This is YELLOW background!</span></code> |
-| ![Red](../../assets/images/colors/red_16x16.png) | `BgColor.RED` | <code><span style="background-color: red">This is RED background!</span></code> |
-| ![Magenta](../../assets/images/colors/magenta_16x16.png) | `BgColor.MAGENTA` | <code><span style="background-color: magenta">This is MAGENTA background!</span></code> |
-| ![Blue](../../assets/images/colors/blue_16x16.png) | `BgColor.BLUE` | <code><span style="background-color: blue">This is BLUE background!</span></code>|
-| ![Cyan](../../assets/images/colors/cyan_16x16.png) | `BgColor.CYAN` | <code><span style="background-color: cyan">This is CYAN background!</span></code> |
-| ![White](../../assets/images/colors/white_16x16.png) | `BgColor.WHITE` | <code><span style="background-color: white">This is WHITE background!</span></code> |
-| ![Black](../../assets/images/colors/black_16x16.png) | `BgColor.BLACK` | <code><span style="background-color: black">This is BLACK background!</span></code> |
+| ![Green](../../assets/images/colors/green_16x16.png) | `BgColor.GREEN` | <code><span class="bg-green">This is GREEN background!</span></code> |
+| ![Yellow](../../assets/images/colors/yellow_16x16.png) | `BgColor.YELLOW` | <code><span class="bg-yellow">This is YELLOW background!</span></code> |
+| ![Red](../../assets/images/colors/red_16x16.png) | `BgColor.RED` | <code><span class="bg-red">This is RED background!</span></code> |
+| ![Magenta](../../assets/images/colors/magenta_16x16.png) | `BgColor.MAGENTA` | <code><span class="bg-magenta">This is MAGENTA background!</span></code> |
+| ![Blue](../../assets/images/colors/blue_16x16.png) | `BgColor.BLUE` | <code><span class="bg-blue">This is BLUE background!</span></code>|
+| ![Cyan](../../assets/images/colors/cyan_16x16.png) | `BgColor.CYAN` | <code><span class="bg-cyan">This is CYAN background!</span></code> |
+| ![White](../../assets/images/colors/white_16x16.png) | `BgColor.WHITE` | <code><span class="bg-white">This is WHITE background!</span></code> |
+| ![Black](../../assets/images/colors/black_16x16.png) | `BgColor.BLACK` | <code><span class="bg-black">This is BLACK background!</span></code> |
 | - | `BgColor.DEFAULT` | - |
 | - | `BgColor.OFF` | - |
 
@@ -36,8 +36,8 @@ Enumerable class of all available standard background colors.
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span style="background-color: red">red</span> background color inside this paragraph
-    % Both <span style="background-color: green">green</span> and <span style="background-color: yellow">yellow</span> are nice background colors</code></pre>
+    <pre><code>% I want <span class="bg-red">red</span> background color inside this paragraph
+    % Both <span class="bg-green">green</span> and <span class="bg-yellow">yellow</span> are nice background colors</code></pre>
 
 !!! tip
     Remember to turn off a color with `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.

@@ -84,68 +84,84 @@
     color: var(--bright-black);
 }
 
-/* Background Colors */
+/* Background Colors and Their Default Text Color */
 
 .bg-green {
     background-color: var(--green);
+    color: var(--bright-white);
 }
 
 .bg-yellow {
     background-color: var(--yellow);
+    color: var(--bright-white);
 }
 
 .bg-red {
     background-color: var(--red);
+    color: var(--bright-white);
 }
 
 .bg-magenta {
     background-color: var(--magenta);
+    color: var(--bright-white);
 }
 
 .bg-blue {
     background-color: var(--blue);
+    color: var(--bright-white);
 }
 
 .bg-cyan {
     background-color: var(--cyan);
+    color: var(--bright-white);
 }
 
 .bg-white {
     background-color: var(--white);
+    color: var(--bright-white);
 }
 
 .bg-black {
     background-color: var(--black);
+    color: var(--bright-white);
 }
 
 .bg-bright-green {
     background-color: var(--bright-green);
+    color: var(--bright-white);
 }
 
 .bg-bright-yellow {
     background-color: var(--bright-yellow);
+    color: var(--bright-white);
 }
 
 .bg-bright-red {
     background-color: var(--bright-red);
+    color: var(--bright-white);
 }
 
 .bg-bright-magenta {
     background-color: var(--bright-magenta);
+    color: var(--bright-white);
 }
 
 .bg-bright-blue {
     background-color: var(--bright-blue);
+    color: var(--bright-white);
 }
 
 .bg-bright-cyan {
     background-color: var(--bright-cyan);
+    color: var(--bright-white);
 }
 
 .bg-bright-white {
     background-color: var(--bright-white);
+    color: var(--black);
 }
 
 .bg-bright-black {
     background-color: var(--bright-black);
+    color: var(--bright-white);
 }
