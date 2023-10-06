@@ -28,7 +28,7 @@ repos:
     -   id: trailing-whitespace
 
 -   repo: https://github.com/PyCQA/autoflake
-    rev: v2.2.0
+    rev: v2.2.1
     hooks:
     -   id: autoflake
         exclude: test/_mock_data
@@ -40,8 +40,8 @@ repos:
         -   --remove-duplicate-keys
         -   --remove-unused-variables
 
--   repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: v2.0.2
+-   repo: https://github.com/hhatto/autopep8
+    rev: v2.0.4
     hooks:
     -   id: autopep8
 
@@ -57,7 +57,7 @@ repos:
     -   id: isort
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.8.0
+    rev: v3.14.0
     hooks:
     -   id: pyupgrade
         exclude: ^test/
