@@ -18,69 +18,73 @@
     --bright-black: rgb(83, 85, 91);
 }
 
-.green {
+/* Foreground Colors */
+
+.fg-green {
     color: var(--green);
 }
 
-.yellow {
+.fg-yellow {
     color: var(--yellow);
 }
 
-.red {
+.fg-red {
     color: var(--red);
 }
 
-.magenta {
+.fg-magenta {
     color: var(--magenta);
 }
 
-.blue {
+.fg-blue {
     color: var(--blue);
 }
 
-.cyan {
+.fg-cyan {
     color: var(--cyan);
 }
 
-.white {
+.fg-white {
     color: var(--white);
 }
 
-.black {
+.fg-black {
     color: var(--black);
 }
 
-.bright-green {
+.fg-bright-green {
     color: var(--bright-green);
 }
 
-.bright-yellow {
+.fg-bright-yellow {
     color: var(--bright-yellow);
 }
 
-.bright-red {
+.fg-bright-red {
     color: var(--bright-red);
 }
 
-.bright-magenta {
+.fg-bright-magenta {
     color: var(--bright-magenta);
 }
 
-.bright-blue {
+.fg-bright-blue {
     color: var(--bright-blue);
 }
 
-.bright-cyan {
+.fg-bright-cyan {
     color: var(--bright-cyan);
 }
 
-.bright-white {
+.fg-bright-white {
     color: var(--bright-white);
 }
 
-.bright-black {
+.fg-bright-black {
     color: var(--bright-black);
 }
+
+/* Background Colors */
 
 .bg-green {
     background-color: var(--green);
