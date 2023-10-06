@@ -31,9 +31,9 @@ print(f"... and {Color.YELLOW}yellow{Color.OFF} are nice colors")
 
 How it appears in the terminal:
 
-<pre><code>% <font color="lawngreen">This is GREEN!</font>
-% Both <font color="red">red</font>...
-% ... and <font color="yellow">yellow</font> are nice colors</code></pre>
+<pre><code>% <span class="fg-green">This is GREEN!</span>
+% Both <span class="fg-red">red</span>...
+% ... and <span class="fg-yellow">yellow</span> are nice colors</code></pre>
 
 ## Next Steps
 Find more usage examples and tutorials in the [user guide](../user-guide/index.md) section.

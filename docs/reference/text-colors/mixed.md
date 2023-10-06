@@ -12,14 +12,14 @@ Enumerable class of all available standard text colors.
 
 | Color | Custom | Example |
 | ----- | ------ | ------- |
-| ![Green](../../assets/images/colors/green_16x16.png) | `Color.GREEN` | <code><font color="lawngreen">This is GREEN!</font></code> |
-| ![Yellow](../../assets/images/colors/yellow_16x16.png) | `Color.YELLOW` | <code><font color="yellow">This is YELLOW!</font></code> |
-| ![Red](../../assets/images/colors/red_16x16.png) | `Color.RED` | <code><font color="red">This is RED!</font></code> |
-| ![Magenta](../../assets/images/colors/magenta_16x16.png) | `Color.MAGENTA` | <code><font color="magenta">This is MAGENTA!</font></code> |
-| ![Blue](../../assets/images/colors/blue_16x16.png) | `Color.BLUE` | <code><font color="blue">This is BLUE!</font></code> |
-| ![Cyan](../../assets/images/colors/cyan_16x16.png) | `Color.CYAN` | <code><font color="cyan">This is CYAN!</font></code> |
-| ![White](../../assets/images/colors/white_16x16.png) | `Color.WHITE` | <code><font color="white">This is WHITE!</font></code> |
-| ![Black](../../assets/images/colors/black_16x16.png) | `Color.BLACK` | <code><font color="black">This is BLACK!</font></code> |
+| ![Green](../../assets/images/colors/green_16x16.png) | `Color.GREEN` | <code><span class="fg-green">This is GREEN!</span></code> |
+| ![Yellow](../../assets/images/colors/yellow_16x16.png) | `Color.YELLOW` | <code><span class="fg-yellow">This is YELLOW!</span></code> |
+| ![Red](../../assets/images/colors/red_16x16.png) | `Color.RED` | <code><span class="fg-red">This is RED!</span></code> |
+| ![Magenta](../../assets/images/colors/magenta_16x16.png) | `Color.MAGENTA` | <code><span class="fg-magenta">This is MAGENTA!</span></code> |
+| ![Blue](../../assets/images/colors/blue_16x16.png) | `Color.BLUE` | <code><span class="fg-blue">This is BLUE!</span></code> |
+| ![Cyan](../../assets/images/colors/cyan_16x16.png) | `Color.CYAN` | <code><span class="fg-cyan">This is CYAN!</span></code> |
+| ![White](../../assets/images/colors/white_16x16.png) | `Color.WHITE` | <code><span class="fg-white">This is WHITE!</span></code> |
+| ![Black](../../assets/images/colors/black_16x16.png) | `Color.BLACK` | <code><span class="fg-black">This is BLACK!</span></code> |
 | - | `Color.DEFAULT` | - |
 | - | `Color.OFF` | - |
 
@@ -36,8 +36,8 @@ Enumerable class of all available standard text colors.
 
     How it appears in the terminal:
 
-    <pre><code>% I want <font color="red">red</font> color inside this paragraph
-    % Both <font color="lawngreen">green</font> and <font color="yellow">yellow</font> are nice colors</code></pre>
+    <pre><code>% I want <span class="fg-red">red</span> color inside this paragraph
+    % Both <span class="fg-green">green</span> and <span class="fg-yellow">yellow</span> are nice colors</code></pre>
 
 !!! tip
     Remember to turn off a color with `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -49,14 +49,14 @@ Enumerable class of all available standard bright text colors.
 
 | Color | Custom | Example |
 | ----- | ------ | ------- |
-| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BrightColor.GREEN` | <code><font color="lawngreen">This is BRIGHT GREEN!</font></code> |
-| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BrightColor.YELLOW` | <code><font color="yellow">This is BRIGHT YELLOW!</font></code> |
-| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BrightColor.RED` | <code><font color="red">This is BRIGHT RED!</font></code> |
-| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BrightColor.MAGENTA` | <code><font color="magenta">This is BRIGHT MAGENTA!</font></code> |
-| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BrightColor.BLUE` | <code><font color="blue">This is BRIGHT BLUE!</font></code> |
-| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BrightColor.CYAN` | <code><font color="cyan">This is BRIGHT CYAN!</font></code> |
-| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BrightColor.WHITE` | <code><font color="white">This is BRIGHT WHITE!</font></code> |
-| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BrightColor.BLACK` | <code><font color="black">This is BRIGHT BLACK!</font></code> |
+| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BrightColor.GREEN` | <code><span class="fg-green">This is BRIGHT GREEN!</span></code> |
+| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BrightColor.YELLOW` | <code><span class="fg-yellow">This is BRIGHT YELLOW!</span></code> |
+| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BrightColor.RED` | <code><span class="fg-red">This is BRIGHT RED!</span></code> |
+| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BrightColor.MAGENTA` | <code><span class="fg-magenta">This is BRIGHT MAGENTA!</span></code> |
+| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BrightColor.BLUE` | <code><span class="fg-blue">This is BRIGHT BLUE!</span></code> |
+| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BrightColor.CYAN` | <code><span class="fg-cyan">This is BRIGHT CYAN!</span></code> |
+| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BrightColor.WHITE` | <code><span class="fg-white">This is BRIGHT WHITE!</span></code> |
+| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BrightColor.BLACK` | <code><span class="fg-black">This is BRIGHT BLACK!</span></code> |
 | - | `BrightColor.DEFAULT` | - |
 | - | `BrightColor.OFF` | - |
 
@@ -71,4 +71,4 @@ Enumerable class of all available standard bright text colors.
 
     How it appears in the terminal:
 
-    <pre><code>% I want <font color="cyan">cyan</font> color inside this paragraph</code></pre>
+    <pre><code>% I want <span class="fg-cyan">cyan</span> color inside this paragraph</code></pre>

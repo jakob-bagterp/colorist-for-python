@@ -8,7 +8,7 @@ tags:
 ## How to Apply String Formatting and Concatenation
 Imagine that you want this printed in the terminal:
 
-<pre><code>% I want <font color="red">red</font> color</code></pre>
+<pre><code>% I want <span class="fg-red">red</span> color</code></pre>
 
 It's often easier and more readable to use Colorist in combination with [f-strings](https://peps.python.org/pep-0498/):
 

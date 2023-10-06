@@ -25,7 +25,7 @@ print(f"I want \x1b[31mred\x1b[0m color inside this paragraph")
 
 And yet, the characters of the sequences are hidden in the terminal output apart from the color change:
 
-<pre><code>% I want <font color="red">red</font> color inside this paragraph</code></pre>
+<pre><code>% I want <span class="fg-red">red</span> color inside this paragraph</code></pre>
 
 ## Humanised Sequences
 This is also why it's [convenient to use Colorist](../standard-colors/text-foreground.md) instead of manually writing raw ANSI escape codes. The `Color` class will generate the ANSI escape sequences and keep the code readable. This example generates the same terminal output as above:
