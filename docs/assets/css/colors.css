@@ -1,0 +1,147 @@
+:root {
+    --green: rgb(80, 154, 6);
+    --yellow: rgb(196, 157, 0);
+    --red: rgb(202, 2, 2);
+    --magenta: rgb(117, 82, 125);
+    --blue: rgb(112, 159, 206);
+    --cyan: rgb(10, 153, 155);
+    --white: rgb(207, 211, 203);
+    --black: rgb(3, 5, 1);
+
+    --bright-green: rgb(171, 242, 56);
+    --bright-yellow: rgb(253, 245, 77);
+    --bright-red: rgb(251, 40, 40);
+    --bright-magenta: rgb(208, 164, 207);
+    --bright-blue: rgb(139, 223, 254);
+    --bright-cyan: rgb(56, 241, 242);
+    --bright-white: rgb(254, 254, 254);
+    --bright-black: rgb(83, 85, 91);
+}
+
+.green {
+    color: var(--green);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.red {
+    color: var(--red);
+}
+
+.magenta {
+    color: var(--magenta);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.cyan {
+    color: var(--cyan);
+}
+
+.white {
+    color: var(--white);
+}
+
+.black {
+    color: var(--black);
+}
+
+.bright-green {
+    color: var(--bright-green);
+}
+
+.bright-yellow {
+    color: var(--bright-yellow);
+}
+
+.bright-red {
+    color: var(--bright-red);
+}
+
+.bright-magenta {
+    color: var(--bright-magenta);
+}
+
+.bright-blue {
+    color: var(--bright-blue);
+}
+
+.bright-cyan {
+    color: var(--bright-cyan);
+}
+
+.bright-white {
+    color: var(--bright-white);
+}
+
+.bright-black {
+    color: var(--bright-black);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-magenta {
+    background-color: var(--magenta);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-cyan {
+    background-color: var(--cyan);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-bright-green {
+    background-color: var(--bright-green);
+}
+
+.bg-bright-yellow {
+    background-color: var(--bright-yellow);
+}
+
+.bg-bright-red {
+    background-color: var(--bright-red);
+}
+
+.bg-bright-magenta {
+    background-color: var(--bright-magenta);
+}
+
+.bg-bright-blue {
+    background-color: var(--bright-blue);
+}
+
+.bg-bright-cyan {
+    background-color: var(--bright-cyan);
+}
+
+.bg-bright-white {
+    background-color: var(--bright-white);
+}
+
+.bg-bright-black {
+    background-color: var(--bright-black);
+}

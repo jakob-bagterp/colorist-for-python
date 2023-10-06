@@ -144,6 +144,9 @@ extra:
   version:
     provider: mike
 
+extra_css:
+  - assets/css/colors.css
+
 plugins:
   - search:
       lang: en
