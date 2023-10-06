@@ -49,14 +49,14 @@ Enumerable class of all available standard bright background colors.
 
 | Color | Custom | Example |
 | ----- | ------ | ------- |
-| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BgBrightColor.GREEN` | <code><span style="background-color: green">This is BRIGHT GREEN background!</span></code> |
-| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BgBrightColor.YELLOW` | <code><span style="background-color: yellow">This is BRIGHT YELLOW background!</span></code> |
-| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BgBrightColor.RED` | <code><span style="background-color: red">This is BRIGHT RED background!</span></code> |
-| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BgBrightColor.MAGENTA` | <code><span style="background-color: magenta">This is BRIGHT MAGENTA background!</span></code> |
-| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BgBrightColor.BLUE` | <code><span style="background-color: blue">This is BRIGHT BLUE background!</span></code> |
-| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BgBrightColor.CYAN` | <code><span style="background-color: cyan">This is BRIGHT CYAN background!</span></code> |
-| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BgBrightColor.WHITE` | <code><span style="background-color: white">This is BRIGHT WHITE background!</span></code> |
-| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BgBrightColor.BLACK` | <code><span style="background-color: black">This is BRIGHT BLACK background!</span></code> |
+| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BgBrightColor.GREEN` | <code><span class="bg-bright-green">This is BRIGHT GREEN background!</span></code> |
+| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BgBrightColor.YELLOW` | <code><span class="bg-bright-yellow">This is BRIGHT YELLOW background!</span></code> |
+| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BgBrightColor.RED` | <code><span class="bg-bright-red">This is BRIGHT RED background!</span></code> |
+| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BgBrightColor.MAGENTA` | <code><span class="bg-bright-magenta">This is BRIGHT MAGENTA background!</span></code> |
+| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BgBrightColor.BLUE` | <code><span class="bg-bright-blue">This is BRIGHT BLUE background!</span></code> |
+| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BgBrightColor.CYAN` | <code><span class="bg-bright-cyan">This is BRIGHT CYAN background!</span></code> |
+| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BgBrightColor.WHITE` | <code><span class="bg-bright-white">This is BRIGHT WHITE background!</span></code> |
+| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BgBrightColor.BLACK` | <code><span class="bg-bright-black">This is BRIGHT BLACK background!</span></code> |
 | - | `BgBrightColor.DEFAULT` | - |
 | - | `BgBrightColor.OFF` | - |
 
@@ -71,4 +71,4 @@ Enumerable class of all available standard bright background colors.
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span style="background-color: cyan">cyan</span> background color inside this paragraph</code></pre>
+    <pre><code>% I want <span class="bg-bright-cyan">cyan</span> background color inside this paragraph</code></pre>
