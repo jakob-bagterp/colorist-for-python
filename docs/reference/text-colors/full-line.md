@@ -23,14 +23,14 @@ tags:
 
 | Color | Full Text Function | Example |
 | ----- | ------------------ | ------- |
-| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `bright_green("text")` | <code><span class="fg-green">This is BRIGHT GREEN!</span></code> |
-| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `bright_yellow("text")` | <code><span class="fg-yellow">This is BRIGHT YELLOW!</span></code> |
-| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `bright_red("text")` | <code><span class="fg-red">This is BRIGHT RED!</span></code> |
-| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `bright_magenta("text")` | <code><span class="fg-magenta">This is BRIGHT MAGENTA!</span></code> |
-| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `bright_blue("text")` | <code><span class="fg-blue">This is BRIGHT BLUE!</span></code> |
-| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `bright_cyan("text")` | <code><span class="fg-cyan">This is BRIGHT CYAN!</span></code> |
-| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `bright_white("text")` | <code><span class="fg-white">This is BRIGHT WHITE!</span></code> |
-| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `bright_black("text")` |  <code><span class="fg-black">This is BRIGHT BLACK!</span></code> |
+| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `bright_green("text")` | <code><span class="fg-bright-green">This is BRIGHT GREEN!</span></code> |
+| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `bright_yellow("text")` | <code><span class="fg-bright-yellow">This is BRIGHT YELLOW!</span></code> |
+| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `bright_red("text")` | <code><span class="fg-bright-red">This is BRIGHT RED!</span></code> |
+| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `bright_magenta("text")` | <code><span class="fg-bright-magenta">This is BRIGHT MAGENTA!</span></code> |
+| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `bright_blue("text")` | <code><span class="fg-bright-blue">This is BRIGHT BLUE!</span></code> |
+| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `bright_cyan("text")` | <code><span class="fg-bright-cyan">This is BRIGHT CYAN!</span></code> |
+| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `bright_white("text")` | <code><span class="fg-bright-white">This is BRIGHT WHITE!</span></code> |
+| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `bright_black("text")` |  <code><span class="fg-bright-black">This is BRIGHT BLACK!</span></code> |
 
 !!! note "Limited Support for Bright Colors"
     Note that bright colors are [supported by many terminals](../../user-guide/materials/terminal-support.md), but not all as bright colors aren't part of the standard set of ANSI colors.

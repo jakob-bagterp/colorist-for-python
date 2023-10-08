@@ -49,14 +49,14 @@ Enumerable class of all available standard bright text colors.
 
 | Color | Custom | Example |
 | ----- | ------ | ------- |
-| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BrightColor.GREEN` | <code><span class="fg-green">This is BRIGHT GREEN!</span></code> |
-| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BrightColor.YELLOW` | <code><span class="fg-yellow">This is BRIGHT YELLOW!</span></code> |
-| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BrightColor.RED` | <code><span class="fg-red">This is BRIGHT RED!</span></code> |
-| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BrightColor.MAGENTA` | <code><span class="fg-magenta">This is BRIGHT MAGENTA!</span></code> |
-| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BrightColor.BLUE` | <code><span class="fg-blue">This is BRIGHT BLUE!</span></code> |
-| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BrightColor.CYAN` | <code><span class="fg-cyan">This is BRIGHT CYAN!</span></code> |
-| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BrightColor.WHITE` | <code><span class="fg-white">This is BRIGHT WHITE!</span></code> |
-| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BrightColor.BLACK` | <code><span class="fg-black">This is BRIGHT BLACK!</span></code> |
+| ![Bright green](../../assets/images/colors/bright_green_16x16.png) | `BrightColor.GREEN` | <code><span class="fg-bright-green">This is BRIGHT GREEN!</span></code> |
+| ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png) | `BrightColor.YELLOW` | <code><span class="fg-bright-yellow">This is BRIGHT YELLOW!</span></code> |
+| ![Bright red](../../assets/images/colors/bright_red_16x16.png) | `BrightColor.RED` | <code><span class="fg-bright-red">This is BRIGHT RED!</span></code> |
+| ![Bright magenta](../../assets/images/colors/bright_magenta_16x16.png) | `BrightColor.MAGENTA` | <code><span class="fg-bright-magenta">This is BRIGHT MAGENTA!</span></code> |
+| ![Bright blue](../../assets/images/colors/bright_blue_16x16.png) | `BrightColor.BLUE` | <code><span class="fg-bright-blue">This is BRIGHT BLUE!</span></code> |
+| ![Bright cyan](../../assets/images/colors/bright_cyan_16x16.png) | `BrightColor.CYAN` | <code><span class="fg-bright-cyan">This is BRIGHT CYAN!</span></code> |
+| ![Bright white](../../assets/images/colors/bright_white_16x16.png) | `BrightColor.WHITE` | <code><span class="fg-bright-white">This is BRIGHT WHITE!</span></code> |
+| ![Bright black](../../assets/images/colors/bright_black_16x16.png) | `BrightColor.BLACK` | <code><span class="fg-bright-black">This is BRIGHT BLACK!</span></code> |
 | - | `BrightColor.DEFAULT` | - |
 | - | `BrightColor.OFF` | - |
 
@@ -71,4 +71,4 @@ Enumerable class of all available standard bright text colors.
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span class="fg-cyan">cyan</span> color inside this paragraph</code></pre>
+    <pre><code>% I want <span class="fg-bright-cyan">cyan</span> color inside this paragraph</code></pre>
