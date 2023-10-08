@@ -58,6 +58,6 @@ print(f"Put {BrightColor.CYAN}cyan{BrightColor.OFF} inside this paragraph")
 
 How it appears in the terminal:
 
-<pre><code>% Put <span class="fg-cyan">cyan</span> inside this paragraph</code></pre>
+<pre><code>% Put <span class="fg-bright-cyan">cyan</span> inside this paragraph</code></pre>
 
 Refer to the documentation for a complete list of [full line text color functions](../../reference/text-colors/full-line.md) and [custom string styling](../../reference/text-colors/mixed.md).

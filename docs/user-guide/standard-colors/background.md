@@ -59,6 +59,6 @@ print(f"Add {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color")
 
 How it appears in the terminal:
 
-<pre><code>% Add <span class="bg-cyan">cyan</span> background color</code></pre>
+<pre><code>% Add <span class="bg-bright-cyan">cyan</span> background color</code></pre>
 
 Refer to the documentation for a complete list of [full line text color functions](../../reference/background-colors/full-line.md) and [custom string styling](../../reference/background-colors/mixed.md).
