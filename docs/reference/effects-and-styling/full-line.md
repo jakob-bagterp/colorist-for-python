@@ -10,7 +10,7 @@ tags:
 | Effect           | Full Text Function         | Example |
 | ---------------- | -------------------------- | ------- |
 | Bold             | `effect_bold("text")`      | <code>This is <strong>BOLD</strong></code> |
-| Dim              | `effect_dim("text")`       | ![Example of terminal message with dimmed text](../../assets/images/examples/effect_map/dim_full_text_140x16.png) |
+| Dim              | `effect_dim("text")`       | <code><span class="effect-dimmed">This is DIMMED</span></code> |
 | Underline        | `effect_underline("text")` | <code>This is <u>UNDERLINED</u></code> |
 | Blink            | `effect_blink("text")`     | <code><span class="effect-blinking">This is BLINKING</span></code> |
 | Reverse          | `effect_reverse("text")`   | ![Example of terminal message with reversed text color and background](../../assets/images/examples/effect_map/reverse_full_text_140x16.png) |

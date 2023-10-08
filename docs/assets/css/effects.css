@@ -8,3 +8,7 @@
         opacity: 0;
     }
 }
+
+.effect-dimmed {
+    opacity: 50%;
+}
