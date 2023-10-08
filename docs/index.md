@@ -39,6 +39,6 @@ bright_yellow("This is BRIGHT YELLOW!")
 
 How it appears in the terminal:
 
-<pre><code>% <span class="fg-yellow">This is BRIGHT YELLOW!</span></code></pre>
+<pre><code>% <span class="fg-bright-yellow">This is BRIGHT YELLOW!</span></code></pre>
 
 Ready to try more options and features? [Let's get started](./getting-started/index.md).
