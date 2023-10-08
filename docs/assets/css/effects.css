@@ -1,0 +1,10 @@
+.effect-blinking {
+    opacity: 1;
+    animation: blinking 1s step-end infinite;
+}
+
+  @keyframes blinking {
+    50% {
+        opacity: 0;
+    }
+}

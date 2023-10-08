@@ -97,7 +97,7 @@ For effects, the codes are. And as before, replace the two underscores `__` in `
 | Bold      | 1   | 21  | <code>This is <strong>BOLD</strong></code> |
 | Dim       | 2   | 22  | ![Dim](../../assets/images/examples/effect_map/dim_full_text_140x16.png) |
 | Underline | 4   | 24  | <code>This is <u>UNDERLINED</u></code> |
-| Blink     | 5   | 25  | ![Blink](../../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
+| Blink     | 5   | 25  | <code><span class="effect-blinking">This is BLINKING</span></code> |
 | Reverse   | 7   | 27  | ![Reverse](../../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
 | Hide      | 8   | 28  | ![Hide](../../assets/images/examples/effect_map/hide_full_text_140x16.png) |
 

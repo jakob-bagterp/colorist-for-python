@@ -17,7 +17,7 @@ effect_blink("This is BLINKING!")
 
 How it appears in the terminal:
 
-![Example of terminal message with blinking text](../assets/images/examples/effect_full_text_blink_default.gif)
+<pre><code>% <span class="effect-blinking">This is BLINKING!</span></code></pre>
 
 ### Mixing Effects and Colors
 This can also be combined with an optional color:
@@ -25,12 +25,12 @@ This can also be combined with an optional color:
 ```python
 from colorist import Color, effect_blink
 
-effect_blink("This is BLINKING!", Color.CYAN)
+effect_blink("CYAN and BLINKING!", Color.CYAN)
 ```
 
 How it appears in the terminal:
 
-![Example of terminal message with blinking, cyan-colored text](../assets/images/examples/effect_full_text_blink_cyan.gif)
+<pre><code>% <span class="effect-blinking fg-cyan">CYAN and BLINKING!</span></code></pre>
 
 ### Overview
 | Effect           | Full Text Function         | Example |
@@ -38,7 +38,7 @@ How it appears in the terminal:
 | Bold             | `effect_bold("text")`      | <code>This is <strong>BOLD</strong></code> |
 | Dim              | `effect_dim("text")`       | ![Example of terminal message with dimmed text](../assets/images/examples/effect_map/dim_full_text_140x16.png) |
 | Underline        | `effect_underline("text")` | <code>This is <u>UNDERLINED</u></code> |
-| Blink            | `effect_blink("text")`     | ![Example of terminal message with blinking text](../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
+| Blink            | `effect_blink("text")`     | <code><span class="effect-blinking">This is BLINKING</span></code> |
 | Reverse          | `effect_reverse("text")`   | ![Example of terminal message with reversed text color and background](../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
 | Hide             | `effect_hide("text")`      | ![Example of terminal message with hidden text](../assets/images/examples/effect_map/hide_full_text_140x16.png) |
 
@@ -70,7 +70,7 @@ print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_O
 
 How it appears in the terminal:
 
-![Example of terminal message with red and blinking text](../assets/images/examples/effect_custom_text_blink_red.gif)
+<pre><code>% I want both <span class="fg-red">colored and <span class="effect-blinking">blinking</span> text</span> inside this paragraph</code></pre>
 
 !!! tip
     Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -81,7 +81,7 @@ How it appears in the terminal:
 | Bold             | `Effect.BOLD`      | `Effect.BOLD_OFF`      | <code>This is <strong>BOLD</strong></code> |
 | Dim              | `Effect.DIM`       | `Effect.DIM_OFF`       | ![Example of terminal message with dimmed text](../assets/images/examples/effect_map/dim_full_text_140x16.png) |
 | Underline        | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | <code>This is <u>UNDERLINED</u></code> |
-| Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | ![Example of terminal message with blinking text](../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
+| Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | <code><span class="effect-blinking">This is BLINKING</span></code> |
 | Reverse          | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | ![Example of terminal message with reversed text color and background](../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
 | Hide             | `Effect.HIDE`      | `Effect.HIDE_OFF`      | ![Example of terminal message with hidden text](../assets/images/examples/effect_map/hide_full_text_140x16.png) |
 | -                | -                  | `Effect.OFF`           | -          |

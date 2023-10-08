@@ -15,7 +15,7 @@ Enumerable class of all available effects.
 | Bold             | `Effect.BOLD`      | `Effect.BOLD_OFF`      | <code>This is <strong>BOLD</strong></code> |
 | Dim              | `Effect.DIM`       | `Effect.DIM_OFF`       | ![Example of terminal message with dimmed text](../../assets/images/examples/effect_map/dim_full_text_140x16.png) |
 | <u>Underline</u> | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | <code>This is <u>UNDERLINED</u></code> |
-| Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | ![Example of terminal message with blinking text](../../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
+| Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | <code><span class="effect-blinking">This is BLINKING</span></code> |
 | Reverse          | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | ![Example of terminal message with reversed text color and background](../../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
 | Hide             | `Effect.HIDE`      | `Effect.HIDE_OFF`      | ![Example of terminal message with hidden text](../../assets/images/examples/effect_map/hide_full_text_140x16.png) |
 | -                | -                  | `Effect.OFF`           | -          |
