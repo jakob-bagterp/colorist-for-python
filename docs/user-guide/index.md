@@ -5,7 +5,7 @@ tags:
 ---
 
 # User Guide 👨‍🔧
-Colorist is a lightweight package and intended to be easy to use. Find tutorials and background information in this section.
+Colorist is a lightweight package and is intended to be easy to use. Find tutorials and background information in this section.
 
 ## Quick Links
 ### ![Range of standard colors](../assets/images/colors/palette/rainbow_standard_96x16.png) &nbsp;&nbsp;Standard Colors
@@ -22,4 +22,8 @@ Apply [text styling and animations](./effects-and-styling.md) to your terminal o
 
 ### ![Range of RGB colors](../assets/images/colors/palette/rainbow_rgb_96x16.png) &nbsp;&nbsp;Extended Color Space
 
-If your terminal supports an extended color space, learn how to define colors as [RGB](./extended-colors/rgb.md), [HSL](./extended-colors/hsl.md), or [Hex](./extended-colors/hex.md).
+If your terminal supports an extended color space, learn how to define colors as:
+
+* [RGB](./extended-colors/rgb.md)
+* [HSL](./extended-colors/hsl.md)
+* [Hex](./extended-colors/hex.md)
