@@ -99,7 +99,7 @@ For effects, the codes are. And as before, replace the two underscores `__` in `
 | Underline | 4   | 24  | <code>This is <u>UNDERLINED</u></code> |
 | Blink     | 5   | 25  | <code><span class="effect-blinking">This is BLINKING</span></code> |
 | Reverse   | 7   | 27  | <code><span class="bg-bright-white">This is REVERSED</span></code> |
-| Hide      | 8   | 28  | ![Hide](../../assets/images/examples/effect_map/hide_full_text_140x16.png) |
+| Hide      | 8   | 28  | <code><span class="effect-hidden">This is HIDDEN</span></code> |
 
 !!! info "Different Color Schemes in Different Terminals"
     Most terminals apply different color schemes so `\x1b[31m` or `Color.RED` won't produce the exact same screen color of red. Some straight, others with an orange tint. For further reading, refer to this [list of common terminals and their color schemes](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit).

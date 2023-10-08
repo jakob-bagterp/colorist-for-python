@@ -17,7 +17,7 @@ Enumerable class of all available effects.
 | <u>Underline</u> | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | <code>This is <u>UNDERLINED</u></code> |
 | Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | <code><span class="effect-blinking">This is BLINKING</span></code> |
 | Reverse          | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | <code><span class="bg-bright-white">This is REVERSED</span></code> |
-| Hide             | `Effect.HIDE`      | `Effect.HIDE_OFF`      | ![Example of terminal message with hidden text](../../assets/images/examples/effect_map/hide_full_text_140x16.png) |
+| Hide             | `Effect.HIDE`      | `Effect.HIDE_OFF`      | <code><span class="effect-hidden">This is HIDDEN</span></code> |
 | -                | -                  | `Effect.OFF`           | -          |
 
 **Example:**

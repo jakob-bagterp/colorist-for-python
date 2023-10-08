@@ -12,3 +12,7 @@
 .effect-dimmed {
     opacity: 50%;
 }
+
+.effect-hidden {
+    opacity: 0%;
+}
