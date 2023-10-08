@@ -29,5 +29,5 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            ![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_full_text_background.png)
+            <pre><code>% <span style="background-color: #ff7f50">I want this background in coral Hex colors</span></code></pre>
         """
