@@ -98,7 +98,7 @@ For effects, the codes are. And as before, replace the two underscores `__` in `
 | Dim       | 2   | 22  | <code><span class="effect-dimmed">This is DIMMED</span></code> |
 | Underline | 4   | 24  | <code>This is <u>UNDERLINED</u></code> |
 | Blink     | 5   | 25  | <code><span class="effect-blinking">This is BLINKING</span></code> |
-| Reverse   | 7   | 27  | ![Reverse](../../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
+| Reverse   | 7   | 27  | <code><span class="bg-bright-white">This is REVERSED</span></code> |
 | Hide      | 8   | 28  | ![Hide](../../assets/images/examples/effect_map/hide_full_text_140x16.png) |
 
 !!! info "Different Color Schemes in Different Terminals"
