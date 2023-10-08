@@ -18,14 +18,14 @@ Lightweight Python package that makes it easy and fast to print colored text in 
 ### Basics
 Colorist is intended to be easy to use. Imagine you want to print a mix of colors in the terminal:
 
-<pre><code>% This is <span class="fg-cyan">CYAN</span>!</code></pre>
+<pre><code>% This is <span class="fg-red">RED</span>!</code></pre>
 
 Once [installed](./getting-started/installation.md), simply import the `colorist` module and start printing colored text with the `Color` class:
 
 ```python linenums="1"
 from colorist import Color
 
-print(f"This is {Color.CYAN}CYAN{Color.OFF}!")
+print(f"This is {Color.RED}RED{Color.OFF}!")
 ```
 
 ### Varied Color Palette
