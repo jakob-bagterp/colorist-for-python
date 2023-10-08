@@ -17,7 +17,7 @@ effect_blink("This is BLINKING!")
 
 How it appears in the terminal:
 
-![Example of terminal message with blinking text](../assets/images/examples/effect_full_text_blink_default.gif)
+<pre><code>% <span class="effect-blinking">This is BLINKING!</span></code></pre>
 
 ### Mixing Effects and Colors
 This can also be combined with an optional color:
@@ -25,22 +25,22 @@ This can also be combined with an optional color:
 ```python
 from colorist import Color, effect_blink
 
-effect_blink("This is BLINKING!", Color.CYAN)
+effect_blink("CYAN and BLINKING!", Color.CYAN)
 ```
 
 How it appears in the terminal:
 
-![Example of terminal message with blinking, cyan-colored text](../assets/images/examples/effect_full_text_blink_cyan.gif)
+<pre><code>% <span class="effect-blinking fg-cyan">CYAN and BLINKING!</span></code></pre>
 
 ### Overview
 | Effect           | Full Text Function         | Example |
 | ---------------- | -------------------------- | ------- |
-| **Bold**         | `effect_bold("text")`      | ![Example of terminal message with bold text](../assets/images/examples/effect_map/bold_full_text_140x16.png) |
-| Dim              | `effect_dim("text")`       | ![Example of terminal message with dimmed text](../assets/images/examples/effect_map/dim_full_text_140x16.png) |
-| <u>Underline</u> | `effect_underline("text")` | ![Example of terminal message with underlined text](../assets/images/examples/effect_map/underline_full_text_140x16.png) |
-| Blink            | `effect_blink("text")`     | ![Example of terminal message with blinking text](../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
-| Reverse          | `effect_reverse("text")`   | ![Example of terminal message with reversed text color and background](../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
-| Hide             | `effect_hide("text")`      | ![Example of terminal message with hidden text](../assets/images/examples/effect_map/hide_full_text_140x16.png) |
+| Bold             | `effect_bold("text")`      | <code>This is <strong>BOLD</strong></code> |
+| Dim              | `effect_dim("text")`       | <code>This is <span class="effect-dimmed">DIMMED</span></code> |
+| Underline        | `effect_underline("text")` | <code>This is <u>UNDERLINED</u></code> |
+| Blink            | `effect_blink("text")`     | <code>This is <span class="effect-blinking">BLINKING</span></code> |
+| Reverse          | `effect_reverse("text")`   | <code>This is <span class="bg-bright-white">REVERSED</span></code> |
+| Hide             | `effect_hide("text")`      | <code>This is <span class="effect-hidden">HIDDEN</span></code> |
 
 ## Custom String Styling
 ### Examples
@@ -49,14 +49,15 @@ How to customize terminal messages and change effect inside a paragraph:
 ```python
 from colorist import Effect
 
-print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF} inside this paragraph")
+print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF}")
 
-print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF} inside this paragraph")
+print(f"I want {Effect.BOLD}emphasized text{Effect.BOLD_OFF}")
 ```
 
 How it appears in the terminal:
 
-![Example of terminal message with underline and bold text](../assets/images/examples/effect_custom_text_underline_bold.png)
+<pre><code>% I want <u>underlined text</u>
+% I want <strong>emphasized text</strong></code></pre>
 
 ### Mixing Effects and Colors
 Effects can also be mixed with colors:
@@ -69,7 +70,7 @@ print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_O
 
 How it appears in the terminal:
 
-![Example of terminal message with red and blinking text](../assets/images/examples/effect_custom_text_blink_red.gif)
+<pre><code>% I want both <span class="fg-red">colored and <span class="effect-blinking">blinking</span> text</span> inside this paragraph</code></pre>
 
 !!! tip
     Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -77,10 +78,10 @@ How it appears in the terminal:
 ### Overview
 | Effect           | Custom             | Reset                  | Example    |
 | ---------------- | ------------------ | ---------------------- | ---------- |
-| **Bold**         | `Effect.BOLD`      | `Effect.BOLD_OFF`      | ![Example of terminal message with bold text](../assets/images/examples/effect_map/bold_full_text_140x16.png) |
-| Dim              | `Effect.DIM`       | `Effect.DIM_OFF`       | ![Example of terminal message with dimmed text](../assets/images/examples/effect_map/dim_full_text_140x16.png) |
-| <u>Underline</u> | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | ![Example of terminal message with underlined text](../assets/images/examples/effect_map/underline_full_text_140x16.png) |
-| Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | ![Example of terminal message with blinking text](../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
-| Reverse          | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | ![Example of terminal message with reversed text color and background](../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
-| Hide             | `Effect.HIDE`      | `Effect.HIDE_OFF`      | ![Example of terminal message with hidden text](../assets/images/examples/effect_map/hide_full_text_140x16.png) |
+| Bold             | `Effect.BOLD`      | `Effect.BOLD_OFF`      | <code>This is <strong>BOLD</strong></code> |
+| Dim              | `Effect.DIM`       | `Effect.DIM_OFF`       | <code>This is <span class="effect-dimmed">DIMMED</span></code> |
+| Underline        | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | <code>This is <u>UNDERLINED</u></code> |
+| Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | <code>This is <span class="effect-blinking">BLINKING</span></code> |
+| Reverse          | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | <code>This is <span class="bg-bright-white">REVERSED</span></code> |
+| Hide             | `Effect.HIDE`      | `Effect.HIDE_OFF`      | <code>This is <span class="effect-hidden">HIDDEN</span></code> |
 | -                | -                  | `Effect.OFF`           | -          |

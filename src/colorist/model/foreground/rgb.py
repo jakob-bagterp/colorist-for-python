@@ -26,7 +26,7 @@ class ColorRGB(RGB_ABC):
 
             How it appears in the terminal:
 
-            ![Example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_custom_text_foreground.png)
+            <pre><code>% I want to use <span style="color: rgb(194, 145, 164)">dusty pink</span> color inside this paragraph</code></pre>
         """
 
         super().__init__(red, green, blue)

@@ -19,12 +19,12 @@ class BgColorHex(Hex_ABC):
 
             bg_mint_green = BgColorHex("#99ff99")
 
-            print(f"I want to use {bg_mint_green}mint green{bg_mint_green.OFF} color inside this paragraph")
+            print(f"I want to use {bg_mint_green}mint green{bg_mint_green.OFF} background color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            ![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_custom_text_background.png)
+            <pre><code>% I want to use <span style="background-color: #99ff99">mint green</span> background color inside this paragraph</code></pre>
         """
 
         super().__init__(hex)

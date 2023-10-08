@@ -26,7 +26,7 @@ class ColorHSL(HSL_ABC):
 
             How it appears in the terminal:
 
-            ![Example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_custom_text_foreground.png)
+            <pre><code>% I want to use <span style="color: hsl(60, 56%, 43%)">mustard green</span> color inside this paragraph</code></pre>
         """
 
         super().__init__(hue, saturation, lightness)

@@ -21,12 +21,12 @@ class BgColorRGB(RGB_ABC):
 
             bg_steel_blue = BgColorRGB(70, 130, 180)
 
-            print(f"I want to use {bg_steel_blue}steel blue{bg_steel_blue.OFF} color inside this paragraph")
+            print(f"I want to use {bg_steel_blue}steel blue{bg_steel_blue.OFF} background color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            ![Example of text in RGB colors printed in a terminal window](../../assets/images/examples/rgb_custom_text_background.png)
+            <pre><code>% I want to use <span style="background-color: rgb(70, 130, 180)">steel blue</span> background color inside this paragraph</code></pre>
         """
 
         super().__init__(red, green, blue)

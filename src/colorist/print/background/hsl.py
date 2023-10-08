@@ -31,5 +31,5 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            ![Example of text in HSL colors printed in a terminal window](../../assets/images/examples/hsl_full_text_background.png)
+            <pre><code>% <span style="background-color: hsl(120, 50%, 50%)">I want this background in green HSL colors</span></code></pre>
         """
