@@ -25,7 +25,7 @@ print(f"I want \x1b[31mred\x1b[0m color inside this paragraph")
 
 And yet, the characters of the sequences are hidden in the terminal output apart from the color change:
 
-![Example of terminal message with red text color](../../assets/images/examples/color_custom_text_red.png)
+<pre><code>% I want <span class="fg-red">red</span> color inside this paragraph</code></pre>
 
 ## Humanised Sequences
 This is also why it's [convenient to use Colorist](../standard-colors/text-foreground.md) instead of manually writing raw ANSI escape codes. The `Color` class will generate the ANSI escape sequences and keep the code readable. This example generates the same terminal output as above:
@@ -94,12 +94,12 @@ For effects, the codes are. And as before, replace the two underscores `__` in `
 
 | Effect    | On  | Off | Example |
 | :-------: | :-: | :-: | :-----: |
-| Bold      | 1   | 21  | ![Bold](../../assets/images/examples/effect_map/bold_full_text_140x16.png) |
-| Dim       | 2   | 22  | ![Dim](../../assets/images/examples/effect_map/dim_full_text_140x16.png) |
-| Underline | 4   | 24  | ![Underline](../../assets/images/examples/effect_map/underline_full_text_140x16.png) |
-| Blink     | 5   | 25  | ![Blink](../../assets/images/examples/effect_map/blink_full_text_140x16.gif) |
-| Reverse   | 7   | 27  | ![Reverse](../../assets/images/examples/effect_map/reverse_full_text_140x16.png) |
-| Hide      | 8   | 28  | ![Hide](../../assets/images/examples/effect_map/hide_full_text_140x16.png) |
+| Bold      | 1   | 21  | <code>This is <strong>BOLD</strong></code> |
+| Dim       | 2   | 22  | <code>This is <span class="effect-dimmed">DIMMED</span></code> |
+| Underline | 4   | 24  | <code>This is <u>UNDERLINED</u></code> |
+| Blink     | 5   | 25  | <code>This is <span class="effect-blinking">BLINKING</span></code> |
+| Reverse   | 7   | 27  | <code>This is <span class="bg-bright-white">REVERSED</span></code> |
+| Hide      | 8   | 28  | <code>This is <span class="effect-hidden">HIDDEN</span></code> |
 
 !!! info "Different Color Schemes in Different Terminals"
     Most terminals apply different color schemes so `\x1b[31m` or `Color.RED` won't produce the exact same screen color of red. Some straight, others with an orange tint. For further reading, refer to this [list of common terminals and their color schemes](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit).

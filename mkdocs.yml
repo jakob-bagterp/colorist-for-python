@@ -40,7 +40,9 @@ nav:
     - Background Colors:
       - Full Line: reference/background-colors/full-line.md
       - Mixed: reference/background-colors/mixed.md
-    - Effects and Styling: reference/effects-and-styling.md
+    - Effects and Styling:
+      - Full Line: reference/effects-and-styling/full-line.md
+      - Mixed: reference/effects-and-styling/mixed.md
     - Extended Colors:
       - RGB: reference/extended-colors/rgb.md
       - HSL: reference/extended-colors/hsl.md
@@ -141,6 +143,10 @@ extra:
       make our documentation better.
   version:
     provider: mike
+
+extra_css:
+  - assets/css/colors.css
+  - assets/css/effects.css
 
 plugins:
   - search:

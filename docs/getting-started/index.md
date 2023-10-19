@@ -28,9 +28,12 @@ green("This is GREEN!")
 print(f"Both {Color.RED}red{Color.OFF}...")
 print(f"... and {Color.YELLOW}yellow{Color.OFF} are nice colors")
 ```
+
 How it appears in the terminal:
 
-![Example of mixed text functions (green, yellow, red) printed in a terminal window](../assets/images/examples/mixed_text_functions.png)
+<pre><code>% <span class="fg-green">This is GREEN!</span>
+% Both <span class="fg-red">red</span>...
+% ... and <span class="fg-yellow">yellow</span> are nice colors</code></pre>
 
 ## Next Steps
 Find more usage examples and tutorials in the [user guide](../user-guide/index.md) section.

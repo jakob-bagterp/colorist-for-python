@@ -20,7 +20,8 @@ bg_hex("I want this background in coral Hex colors", "#ff7f50")
 
 How it appears in the terminal:
 
-![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_full_text.png)
+<pre><code>% <span style="color: #ff7f50">I want this text in coral Hex colors</span>
+% <span style="background-color: #ff7f50">I want this background in coral Hex colors</span></code></pre>
 
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorHex()` and `BgColorHex()` classes:
@@ -28,12 +29,14 @@ Or customize the styling of text and background with the `ColorHex()` and `BgCol
 ```python
 from colorist import ColorHex, BgColorHex
 
-watermelon_pink = ColorHex("#ff5733")
+watermelon_red = ColorHex("#ff5733")
 bg_mint_green = BgColorHex("#99ff99")
 
-print(f"I want to use {watermelon_pink}watermelon pink{watermelon_pink.OFF} and {bg_mint_green}mint green{bg_mint_green.OFF} colors inside this paragraph")
+print(f"I want to use {watermelon_red}watermelon red{watermelon_red.OFF}...")
+print(f"... and {bg_mint_green}mint green{bg_mint_green.OFF} colors")
 ```
 
 How it appears in the terminal:
 
-![Example of text in Hex colors printed in a terminal window](../../assets/images/examples/hex_custom_text.png)
+<pre><code>% I want to use <span style="color: #ff5733">watermelon red</span>...
+% ... <span style="background-color: #99ff99">mint green</span> colors</code></pre>
