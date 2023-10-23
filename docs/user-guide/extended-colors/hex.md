@@ -11,6 +11,8 @@ tags:
 ## Full Text Functions
 Try the `hex()` and `bg_hex()` methods for a full line of colored text. Allowed Hex values are, for instance, `#00aaff` or `#0af`, alternatively without the hash sign as `00aaff` or `0af`.
 
+Example:
+
 ```python
 from colorist import hex, bg_hex
 
