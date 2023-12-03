@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - fix/missing-images-on-github-pages-documentation
 
 permissions:
   contents: write
