@@ -2,7 +2,7 @@ site_name: Colorist for Python 🌈
 site_url: https://jakob-bagterp.github.io/colorist-for-python/
 site_description: Lightweight Python package that makes it easy and fast to print colored text in the terminal
 site_author: Jakob Bagterp
-copyright: Copyright © 2022 - 2023, Jakob Bagterp. All Rights Reserved.
+copyright: Copyright © 2022 - 2024, Jakob Bagterp. All Rights Reserved.
 repo_url: https://github.com/jakob-bagterp/colorist-for-python
 
 nav:
