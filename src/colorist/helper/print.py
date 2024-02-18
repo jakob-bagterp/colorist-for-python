@@ -14,7 +14,7 @@ def color(text: str, color: FgColor_ABC | str = "", bg_color: BgColor_ABC | str 
     print(f"{bg_color}{color}{text}{RESET_ALL}")
 
 
-def effect(text: str, effect: Effect_ABC | str, color: FgColor_ABC | str = "") -> None:
+def effect(text: str, effect: Effect_ABC | str, color: FgColor_ABC | BgColor_ABC | str = "") -> None:
     """Helper function to print a full line of text with custom effect in the terminal."""
 
     print(f"{color}{effect}{text}{RESET_ALL}")
