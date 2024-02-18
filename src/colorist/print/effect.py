@@ -56,6 +56,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
         Args:
             text (str): Text to be printed with bold styling.
             color (Color | BrightColor | str | None, optional): Optionally add color to text.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import effect_bold
+
+            effect_bold("This is BOLD")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <strong>This is BOLD</strong></code></pre>
         """
 
     def effect_dim(self, text: str, color: Color | BrightColor | str | None = None) -> None:
@@ -64,6 +75,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
         Args:
             text (str): Text to be printed with dim effect.
             color (Color | BrightColor | str | None, optional): Optionally add color to text.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import effect_dim
+
+            effect_dim("This is DIMMED")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="effect-dimmed">This is DIMMED</span></code></pre>
         """
 
     def effect_underline(self, text: str, color: Color | BrightColor | str | None = None) -> None:
@@ -72,6 +94,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
         Args:
             text (str): Text to be printed with underline styling.
             color (Color | BrightColor | str | None, optional): Optionally add color to text.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import effect_underline
+
+            effect_underline("This is UNDERLINED")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <u>This is UNDERLINED</u></code></pre>
         """
 
     def effect_blink(self, text: str, color: Color | BrightColor | str | None = None) -> None:
@@ -80,6 +113,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
         Args:
             text (str): Text to be printed with blink effect.
             color (Color | BrightColor | str | None, optional): Optionally add color to text.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import effect_blink
+
+            effect_blink("This is BLINKING")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="effect-blinking">This is BLINKING</span></code></pre>
         """
 
     def effect_reverse(self, text: str, color: Color | BrightColor | str | None = None) -> None:
@@ -88,6 +132,18 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
         Args:
             text (str): Text to be printed with reverse effect.
             color (Color | BrightColor | str | None, optional): Optionally add color to text.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import effect_reverse
+
+            effect_reverse("This is REVERSED")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-bright-white">This is REVERSED</span></code></pre>
+
         """
 
     def effect_hide(self, text: str, color: Color | BrightColor | str | None = None) -> None:
@@ -96,4 +152,15 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
         Args:
             text (str): Text to be printed with hide effect.
             color (Color | BrightColor | str | None, optional): Optionally add color to text.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import effect_hide
+
+            effect_hide("This is HIDDEN")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="effect-hidden">This is HIDDEN</span></code></pre>
         """
