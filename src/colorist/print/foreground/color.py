@@ -59,6 +59,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with color.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import black
+
+            black("This is BLACK!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="fg-black">This is BLACK!</span></code></pre>
         """
 
     def red(self, text: str) -> None:
@@ -66,6 +77,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with color.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import red
+
+            red("This is RED!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="fg-red">This is RED!</span></code></pre>
         """
 
     def green(self, text: str) -> None:
@@ -73,6 +95,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with color.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import green
+
+            green("This is GREEN!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="fg-green">This is GREEN!</span></code></pre>
         """
 
     def yellow(self, text: str) -> None:
@@ -80,6 +113,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with color.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import yellow
+
+            yellow("This is YELLOW!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="fg-yellow">This is YELLOW!</span></code></pre>
         """
 
     def blue(self, text: str) -> None:
@@ -87,6 +131,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with color.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import blue
+
+            blue("This is BLUE!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="fg-blue">This is BLUE!</span></code></pre>
         """
 
     def magenta(self, text: str) -> None:
@@ -94,6 +149,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with color.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import magenta
+
+            magenta("This is MAGENTA!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="fg-magenta">This is MAGENTA!</span></code></pre>
         """
 
     def cyan(self, text: str) -> None:
@@ -101,6 +167,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with color.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import cyan
+
+            cyan("This is CYAN!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="fg-cyan">This is CYAN!</span></code></pre>
         """
 
     def white(self, text: str) -> None:
@@ -108,4 +185,15 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with color.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import white
+
+            white("This is WHITE!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="fg-white">This is WHITE!</span></code></pre>
         """
