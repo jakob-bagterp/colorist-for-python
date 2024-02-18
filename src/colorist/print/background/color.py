@@ -59,6 +59,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_black
+
+            bg_black("This is BLACK background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-black">This is BLACK background!</span></code></pre>
         """
 
     def bg_red(self, text: str) -> None:
@@ -66,6 +77,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_red
+
+            bg_red("This is RED background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-red">This is RED background!</span></code></pre>
         """
 
     def bg_green(self, text: str) -> None:
@@ -73,6 +95,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_green
+
+            bg_green("This is GREEN background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-green">This is GREEN background!</span></code></pre>
         """
 
     def bg_yellow(self, text: str) -> None:
@@ -80,6 +113,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_yellow
+
+            bg_yellow("This is YELLOW background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-yellow">This is YELLOW background!</span></code></pre>
         """
 
     def bg_blue(self, text: str) -> None:
@@ -87,6 +131,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_blue
+
+            bg_blue("This is BLUE background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-blue">This is BLUE background!</span></code></pre>
         """
 
     def bg_magenta(self, text: str) -> None:
@@ -94,6 +149,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_magenta
+
+            bg_magenta("This is MAGENTA background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-magenta">This is MAGENTA background!</span></code></pre>
         """
 
     def bg_cyan(self, text: str) -> None:
@@ -101,6 +167,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_cyan
+
+            bg_cyan("This is CYAN background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-cyan">This is CYAN background!</span></code></pre>
         """
 
     def bg_white(self, text: str) -> None:
@@ -108,4 +185,16 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+
+            from colorist import bg_white
+
+            bg_white("This is WHITE background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-white">This is WHITE background!</span></code></pre>
         """
