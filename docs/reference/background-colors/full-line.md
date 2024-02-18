@@ -51,6 +51,22 @@ tags:
 !!! note "Limited Support for Bright Colors"
     Note that bright colors are [supported by many terminals](../../user-guide/materials/terminal-support.md), yet not all as bright colors aren't part of the standard set of ANSI colors.
 
+???+ example
+
+    ```python linenums="1"
+    from colorist import bg_bright_green, bg_bright_yellow, bg_bright_red
+
+    bg_bright_green("This is BRIGHT GREEN background!")
+    bg_bright_yellow("This is BRIGHT YELLOW background!")
+    bg_bright_red("This is BRIGHT RED background!")
+    ```
+
+    How it appears in the terminal:
+
+    <pre><code>% <span class="bg-bright-green">This is BRIGHT GREEN background!</span>
+    % <span class="bg-bright-yellow">This is BRIGHT YELLOW background!</span>
+    % <span class="bg-bright-red">This is BRIGHT RED background!</span></code></pre>
+
 ## Functions
 
 ::: colorist.print.background.color.MkDocstringsWrapper
