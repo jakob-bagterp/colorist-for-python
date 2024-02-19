@@ -19,6 +19,21 @@ tags:
 | ![White](../../assets/images/colors/white_16x16.png) | `white("text")` | <code><span class="fg-white">This is WHITE!</span></code> |
 | ![Black](../../assets/images/colors/black_16x16.png) | `black("text")` | <code><span class="fg-black">This is BLACK!</span></code> |
 
+???+ example
+    ```python linenums="1"
+    from colorist import green, yellow, red
+
+    green("This is GREEN!")
+    yellow("This is YELLOW!")
+    red("This is RED!")
+    ```
+
+    How it appears in the terminal:
+
+    <pre><code>% <span class="fg-green">This is GREEN!</span>
+    % <span class="fg-yellow">This is YELLOW!</span>
+    % <span class="fg-red">This is RED!</span></code></pre>
+
 ### Bright Colors
 
 | Color | Full Text Function | Example |
@@ -35,6 +50,21 @@ tags:
 !!! note "Limited Support for Bright Colors"
     Note that bright colors are [supported by many terminals](../../user-guide/materials/terminal-support.md), yet not all as bright colors aren't part of the standard set of ANSI colors.
 
+???+ example
+    ```python linenums="1"
+    from colorist import bright_green, bright_yellow, bright_red
+
+    bright_green("This is BRIGHT GREEN!")
+    bright_yellow("This is BRIGHT YELLOW!")
+    bright_red("This is BRIGHT RED!")
+    ```
+
+    How it appears in the terminal:
+
+    <pre><code>% <span class="fg-bright-green">This is BRIGHT GREEN!</span>
+    % <span class="fg-bright-yellow">This is BRIGHT YELLOW!</span>
+    % <span class="fg-bright-red">This is BRIGHT RED!</span></code></pre>
+
 ## Functions
 
 ::: colorist.print.foreground.color.MkDocstringsWrapper
@@ -42,21 +72,6 @@ tags:
       show_category_heading: false
       heading_level: 3
       merge_init_into_class: true
-
-???+ example
-    ```python linenums="1"
-    from colorist import green, yellow, red
-
-    green("This is GREEN!")
-    yellow("This is YELLOW!")
-    red("This is RED!")
-    ```
-
-    How it appears in the terminal:
-
-    <pre><code>% <span class="fg-green">This is GREEN!</span>
-    % <span class="fg-yellow">This is YELLOW!</span>
-    % <span class="fg-red">This is RED!</span></code></pre>
 
 ::: colorist.print.foreground.bright_color.MkDocstringsWrapper
     options:

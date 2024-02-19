@@ -19,6 +19,22 @@ tags:
 | ![White](../../assets/images/colors/white_16x16.png) | `bg_white("text")` | <code><span class="bg-white">This is WHITE background!</span></code> |
 | ![Black](../../assets/images/colors/black_16x16.png) | `bg_black("text")` | <code><span class="bg-black">This is BLACK background!</span></code> |
 
+???+ example
+
+    ```python linenums="1"
+    from colorist import bg_green, bg_yellow, bg_red
+
+    bg_green("This is GREEN background!")
+    bg_yellow("This is YELLOW background!")
+    bg_red("This is RED background!")
+    ```
+
+    How it appears in the terminal:
+
+    <pre><code>% <span class="bg-green">This is GREEN background!</span>
+    % <span class="bg-yellow">This is YELLOW background!</span>
+    % <span class="bg-red">This is RED background!</span></code></pre>
+
 ### Bright Colors
 
 | Color | Full Text Function | Example |
@@ -35,6 +51,22 @@ tags:
 !!! note "Limited Support for Bright Colors"
     Note that bright colors are [supported by many terminals](../../user-guide/materials/terminal-support.md), yet not all as bright colors aren't part of the standard set of ANSI colors.
 
+???+ example
+
+    ```python linenums="1"
+    from colorist import bg_bright_green, bg_bright_yellow, bg_bright_red
+
+    bg_bright_green("This is BRIGHT GREEN background!")
+    bg_bright_yellow("This is BRIGHT YELLOW background!")
+    bg_bright_red("This is BRIGHT RED background!")
+    ```
+
+    How it appears in the terminal:
+
+    <pre><code>% <span class="bg-bright-green">This is BRIGHT GREEN background!</span>
+    % <span class="bg-bright-yellow">This is BRIGHT YELLOW background!</span>
+    % <span class="bg-bright-red">This is BRIGHT RED background!</span></code></pre>
+
 ## Functions
 
 ::: colorist.print.background.color.MkDocstringsWrapper
@@ -42,22 +74,6 @@ tags:
       show_category_heading: false
       heading_level: 3
       merge_init_into_class: true
-
-???+ example
-
-    ```python linenums="1"
-    from colorist import bg_green, bg_yellow, bg_red
-
-    bg_green("This is GREEN background!")
-    bg_yellow("This is YELLOW background!")
-    bg_red("This is RED background!")
-    ```
-
-    How it appears in the terminal:
-
-    <pre><code>% <span class="bg-green">This is GREEN background!</span>
-    % <span class="bg-yellow">This is YELLOW background!</span>
-    % <span class="bg-red">This is RED background!</span></code></pre>
 
 ::: colorist.print.background.bright_color.MkDocstringsWrapper
     options:

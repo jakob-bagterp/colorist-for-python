@@ -59,6 +59,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_bright_black
+
+            bg_bright_black("This is BRIGHT BLACK background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-bright-black">This is BRIGHT BLACK background!</span></code></pre>
         """
 
     def bg_bright_red(self, text: str) -> None:
@@ -66,6 +77,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_bright_red
+
+            bg_bright_red("This is BRIGHT RED background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-bright-red">This is BRIGHT RED background!</span></code></pre>
         """
 
     def bg_bright_green(self, text: str) -> None:
@@ -73,6 +95,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_bright_green
+
+            bg_bright_green("This is BRIGHT GREEN background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-bright-green">This is BRIGHT GREEN background!</span></code></pre>
         """
 
     def bg_bright_yellow(self, text: str) -> None:
@@ -80,6 +113,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_bright_yellow
+
+            bg_bright_yellow("This is BRIGHT YELLOW background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-bright-yellow">This is BRIGHT YELLOW background!</span></code></pre>
         """
 
     def bg_bright_blue(self, text: str) -> None:
@@ -87,6 +131,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_bright_blue
+
+            bg_bright_blue("This is BRIGHT BLUE background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-bright-blue">This is BRIGHT BLUE background!</span></code></pre>
         """
 
     def bg_bright_magenta(self, text: str) -> None:
@@ -94,6 +149,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_bright_magenta
+
+            bg_bright_magenta("This is BRIGHT MAGENTA background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-bright-magenta">This is BRIGHT MAGENTA background!</span></code></pre>
         """
 
     def bg_bright_cyan(self, text: str) -> None:
@@ -101,6 +167,17 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_bright_cyan
+
+            bg_bright_cyan("This is BRIGHT CYAN background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-bright-cyan">This is BRIGHT CYAN background!</span></code></pre>
         """
 
     def bg_bright_white(self, text: str) -> None:
@@ -108,4 +185,15 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
+
+        Example:
+            ```python title="" linenums="1"
+            from colorist import bg_bright_white
+
+            bg_bright_white("This is BRIGHT WHITE background!")
+            ```
+
+            How it appears in the terminal:
+
+            <pre><code>% <span class="bg-bright-white">This is BRIGHT WHITE background!</span></code></pre>
         """
