@@ -57,7 +57,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with bold styling.
-            color (Color | BrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
         """
 
     def effect_dim(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
@@ -65,7 +65,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with dim effect.
-            color (Color | BrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
         """
 
     def effect_underline(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
@@ -73,7 +73,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with underline styling.
-            color (Color | BrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
         """
 
     def effect_blink(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
@@ -81,7 +81,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with blink effect.
-            color (Color | BrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
         """
 
     def effect_reverse(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
@@ -89,7 +89,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with reverse effect.
-            color (Color | BrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
         """
 
     def effect_hide(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
@@ -97,5 +97,5 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with hide effect.
-            color (Color | BrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
         """
