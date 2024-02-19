@@ -4,8 +4,8 @@ import pytest
 import terminal
 from _config.callables import PrintEffectCallable, PrintEffectWithColorCallable
 
-from colorist import (BrightColor, Color, effect_blink, effect_bold,
-                      effect_dim, effect_hide, effect_reverse,
+from colorist import (BgBrightColor, BgColor, BrightColor, Color, effect_blink,
+                      effect_bold, effect_dim, effect_hide, effect_reverse,
                       effect_underline)
 from colorist.model.abc.color import BgColor_ABC, FgColor_ABC
 
@@ -29,6 +29,8 @@ def test_full_text_with_effect(print_function: PrintEffectCallable, text: str, e
     (effect_underline, "bright red and underline", BrightColor.RED, "\033[91m\033[4mbright red and underline\033[0m\n"),
     (effect_underline, "only underline", None, "\033[4monly underline\033[0m\n"),
     (effect_underline, "only underline", "", "\033[4monly underline\033[0m\n"),
+    (effect_bold, "red background and bold", BgColor.RED, "\033[41m\033[1mred background and bold\033[0m\n"),
+    (effect_dim, "bright blue background and dimmed", BgBrightColor.BLUE, "\033[104m\033[2mbright blue background and dimmed\033[0m\n"),
 ])
 def test_blink_full_text_effect_with_color(print_function: PrintEffectWithColorCallable, text: str, color: FgColor_ABC | BgColor_ABC, expected: str, capfd: object) -> None:
     print_function(text, color)
