@@ -28,7 +28,7 @@ repos:
     -   id: trailing-whitespace
 
 -   repo: https://github.com/PyCQA/autoflake
-    rev: v2.2.1
+    rev: v2.3.1
     hooks:
     -   id: autoflake
         exclude: test/_mock_data
@@ -41,12 +41,12 @@ repos:
         -   --remove-unused-variables
 
 -   repo: https://github.com/hhatto/autopep8
-    rev: v2.0.4
+    rev: v2.1.0
     hooks:
     -   id: autopep8
 
 -   repo: https://github.com/PyCQA/flake8
-    rev: 6.1.0
+    rev: 7.0.0
     hooks:
     -   id: flake8
         language_version: python3
@@ -57,7 +57,7 @@ repos:
     -   id: isort
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.0
+    rev: v3.15.2
     hooks:
     -   id: pyupgrade
         exclude: ^test/
