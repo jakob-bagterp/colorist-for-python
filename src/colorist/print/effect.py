@@ -4,47 +4,53 @@ from .. import helper
 from ..model.abc.mkdocstrings import MkDocstringsWrapper_ABC
 from ..model.background.bright_color import BgBrightColor
 from ..model.background.color import BgColor
+from ..model.background.hex import BgColorHex
+from ..model.background.hsl import BgColorHSL
+from ..model.background.rgb import BgColorRGB
 from ..model.effect import Effect
 from ..model.foreground.bright_color import BrightColor
 from ..model.foreground.color import Color
+from ..model.foreground.hex import ColorHex
+from ..model.foreground.hsl import ColorHSL
+from ..model.foreground.rgb import ColorRGB
 
 
-def effect_bold(text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+def effect_bold(text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
     """Prints full line of text with bold styling."""
 
     color = helper.print.normalize_input(color)
     helper.print.effect(text, Effect.BOLD, color)
 
 
-def effect_dim(text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+def effect_dim(text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
     """Prints full line of text with dim styling."""
 
     color = helper.print.normalize_input(color)
     helper.print.effect(text, Effect.DIM, color)
 
 
-def effect_underline(text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+def effect_underline(text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
     """Prints full line of text with underline styling."""
 
     color = helper.print.normalize_input(color)
     helper.print.effect(text, Effect.UNDERLINE, color)
 
 
-def effect_blink(text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+def effect_blink(text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
     """Prints full line of text with blink effect."""
 
     color = helper.print.normalize_input(color)
     helper.print.effect(text, Effect.BLINK, color)
 
 
-def effect_reverse(text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+def effect_reverse(text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
     """Prints full line of text with reversed foreground and background color effect."""
 
     color = helper.print.normalize_input(color)
     helper.print.effect(text, Effect.REVERSE, color)
 
 
-def effect_hide(text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+def effect_hide(text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
     """Prints full line of text with hide effect."""
 
     color = helper.print.normalize_input(color)
@@ -52,7 +58,7 @@ def effect_hide(text: str, color: Color | BrightColor | BgColor | BgBrightColor 
 
 
 class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
-    def effect_bold(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+    def effect_bold(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
         """Prints full line of text with bold styling.
 
         Args:
@@ -75,7 +81,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             % <span class="bg-red"><strong>This is BOLD</strong></span></code></pre>
         """
 
-    def effect_dim(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+    def effect_dim(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
         """Prints full line of text with dim styling.
 
         Args:
@@ -98,7 +104,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             % <span class="effect-dimmed bg-magenta">This is DIMMED</span></code></pre>
         """
 
-    def effect_underline(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+    def effect_underline(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
         """Prints full line of text with underline styling.
 
         Args:
@@ -121,7 +127,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             % <span class="bg-bright-blue"><u>This is UNDERLINED</u></span></code></pre>
         """
 
-    def effect_blink(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+    def effect_blink(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
         """Prints full line of text with blink effect.
 
         Args:
@@ -144,7 +150,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             % <span class="effect-blinking bg-green">This is BLINKING</span></code></pre>
         """
 
-    def effect_reverse(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+    def effect_reverse(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
         """Prints full line of text with reversed foreground and background color effect.
 
         Args:
@@ -167,7 +173,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             % <span class="bg-bright-white"><span class="fg-red">This is REVERSED</span></span></code></pre>
         """
 
-    def effect_hide(self, text: str, color: Color | BrightColor | BgColor | BgBrightColor | str | None = None) -> None:
+    def effect_hide(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
         """Prints full line of text with hide effect.
 
         Args:
