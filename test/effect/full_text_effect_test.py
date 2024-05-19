@@ -38,6 +38,8 @@ def test_full_text_with_effect(print_function: PrintEffectCallable, text: str, e
     (effect_dim, "bright blue background and dimmed", BgBrightColor.BLUE, "\033[104m\033[2mbright blue background and dimmed\033[0m\n"),
     (effect_dim, "watermelon red and dimmed", ColorHex("#ff5733"), "\033[38;2;255;87;51m\033[2mwatermelon red and dimmed\033[0m\n"),
     (effect_dim, "mint green background and dimmed", BgColorHex("#99ff99"), "\033[48;2;153;255;153m\033[2mmint green background and dimmed\033[0m\n"),
+    (effect_reverse, "yellow background and reverse", BgColor.YELLOW, "\033[43m\033[7myellow background and reverse\033[0m\n"),
+    (effect_hide, "green and hide", Color.GREEN, "\033[32m\033[8mgreen and hide\033[0m\n"),
 ])
 def test_blink_full_text_effect_with_color(print_function: PrintEffectWithColorCallable, text: str, color: FgColor_ABC | BgColor_ABC, expected: str, capfd: object) -> None:
     print_function(text, color)
