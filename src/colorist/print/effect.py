@@ -63,7 +63,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with bold styling.
-            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
             ```python title="" linenums="1"
@@ -72,13 +72,15 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             effect_bold("This is BOLD")
             effect_bold("This is BOLD", Color.BLUE)
             effect_bold("This is BOLD", BgColor.RED)
+            effect_bold("This is BOLD", BgColorHSL(190, 2, 49))
             ```
 
             How it appears in the terminal:
 
             <pre><code>% <strong>This is BOLD</strong>
             % <span class="fg-blue"><strong>This is BOLD</strong></span>
-            % <span class="bg-red"><strong>This is BOLD</strong></span></code></pre>
+            % <span class="bg-red"><strong>This is BOLD</strong></span>
+            % <span style="background-color: hsl(190, 2%, 49%)"><strong>This is BOLD</strong></span></code></pre>
         """
 
     def effect_dim(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
@@ -86,7 +88,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with dim effect.
-            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
             ```python title="" linenums="1"
@@ -95,13 +97,15 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             effect_dim("This is DIMMED")
             effect_dim("This is DIMMED", BrightColor.GREEN)
             effect_dim("This is DIMMED", BgColor.MAGENTA)
+            effect_dim("This is DIMMED", ColorHex("#ff5733"))
             ```
 
             How it appears in the terminal:
 
             <pre><code>% <span class="effect-dimmed">This is DIMMED</span>
             % <span class="effect-dimmed fg-bright-green">This is DIMMED</span>
-            % <span class="effect-dimmed bg-magenta">This is DIMMED</span></code></pre>
+            % <span class="effect-dimmed bg-magenta">This is DIMMED</span>
+            % <span class="effect-dimmed" style="color: #ff5733">This is DIMMED</span></code></pre>
         """
 
     def effect_underline(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
@@ -109,7 +113,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with underline styling.
-            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
             ```python title="" linenums="1"
@@ -118,13 +122,15 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             effect_underline("This is UNDERLINED")
             effect_underline("This is UNDERLINED", Color.CYAN)
             effect_underline("This is UNDERLINED", BgBrightColor.BLUE)
+            effect_underline("This is UNDERLINED", ColorHSL(60, 56, 43))
             ```
 
             How it appears in the terminal:
 
             <pre><code>% <u>This is UNDERLINED</u>
             % <span class="fg-cyan"><u>This is UNDERLINED</u></span>
-            % <span class="bg-bright-blue"><u>This is UNDERLINED</u></span></code></pre>
+            % <span class="bg-bright-blue"><u>This is UNDERLINED</u></span>
+            % <span style="color: hsl(60, 56%, 43%)"><u>This is UNDERLINED</u></span></code></pre>
         """
 
     def effect_blink(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
@@ -132,7 +138,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with blink effect.
-            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
             ```python title="" linenums="1"
@@ -141,13 +147,15 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             effect_blink("This is BLINKING")
             effect_blink("This is BLINKING", BrightColor.YELLOW)
             effect_blink("This is BLINKING", BgColor.GREEN)
+            effect_blink("This is BLINKING", BgColorRGB(70, 130, 180))
             ```
 
             How it appears in the terminal:
 
             <pre><code>% <span class="effect-blinking">This is BLINKING</span>
             % <span class="effect-blinking fg-bright-yellow">This is BLINKING</span>
-            % <span class="effect-blinking bg-green">This is BLINKING</span></code></pre>
+            % <span class="effect-blinking bg-green">This is BLINKING</span>
+            % <span class="effect-blinking" style="background-color: rgb(70, 130, 180)">This is BLINKING</span></code></pre>
         """
 
     def effect_reverse(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
@@ -155,7 +163,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with reverse effect.
-            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
             ```python title="" linenums="1"
@@ -164,13 +172,15 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             effect_reverse("This is REVERSED")
             effect_reverse("This is REVERSED", Color.CYAN)
             effect_reverse("This is REVERSED", BgColor.RED)
+            effect_reverse("This is REVERSED", ColorRGB(194, 145, 164))
             ```
 
             How it appears in the terminal:
 
             <pre><code>% <span class="bg-bright-white">This is REVERSED</span>
             % <span class="bg-bright-cyan">This is REVERSED</span>
-            % <span class="bg-bright-white"><span class="fg-red">This is REVERSED</span></span></code></pre>
+            % <span class="bg-bright-white"><span class="fg-red">This is REVERSED</span></span>
+            % <span class="fg-bright-white" style="background-color: rgb(194, 145, 164)">This is REVERSED</span></code></pre>
         """
 
     def effect_hide(self, text: str, color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
@@ -178,7 +188,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed with hide effect.
-            color (Color | BrightColor | BgColor | BgBrightColor | str | None, optional): Optionally add color to text.
+            color (Color | BrightColor | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
             ```python title="" linenums="1"
@@ -187,11 +197,13 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             effect_hide("This is HIDDEN")
             effect_hide("This is HIDDEN", Color.BLUE)
             effect_hide("This is HIDDEN", BgColor.RED)
+            effect_hide("This is HIDDEN", BgColorHex("#99ff99"))
             ```
 
             How it appears in the terminal:
 
             <pre><code>% <span class="effect-hidden">This is HIDDEN</span>
             % <span class="effect-hidden fg-blue">This is HIDDEN</span>
-            % <span class="bg-red"><span class="effect-hidden">This is HIDDEN</span></span></code></pre>
+            % <span class="bg-red"><span class="effect-hidden">This is HIDDEN</span></span>
+            % <span style="background-color: #99ff99"><span class="effect-hidden">This is HIDDEN</span></span></code></pre>
         """
