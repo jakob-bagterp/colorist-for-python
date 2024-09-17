@@ -40,14 +40,14 @@ To apply different color and styling options, simply replace the two underscores
 
 | Color   | Example | Text | Background | Bright Example | Bright Text | Bright Background |
 | :-----: | :-----: | :--: | :--------: | :------------: | :---------: | :---------------: |
-| Black   | ![Black](../assets/images/colors/black_16x16.png) | 30 | 40 | ![Bright black](../assets/images/colors/bright_black_16x16.png) | 90 | 100 |
-| Red     | ![Red](../assets/images/colors/red_16x16.png) | 31 | 41 | ![Bright red](../assets/images/colors/bright_red_16x16.png) | 91 | 101 |
-| Green   | ![Green](../assets/images/colors/green_16x16.png) | 32 | 42 | ![Bright green](../assets/images/colors/bright_green_16x16.png) | 92 | 102 |
-| Yellow  | ![Yellow](../assets/images/colors/yellow_16x16.png) | 33 | 43 | ![Bright yellow](../assets/images/colors/bright_yellow_16x16.png) | 93 | 103 |
-| Blue    | ![Blue](../assets/images/colors/blue_16x16.png) | 34 | 44 | ![Bright blue](../assets/images/colors/bright_blue_16x16.png) | 94 | 104 |
+| Black   | ![Black](../assets/images/colors/black_16x16.png)     | 30 | 40 | ![Bright black](../assets/images/colors/bright_black_16x16.png)     | 90 | 100 |
+| Red     | ![Red](../assets/images/colors/red_16x16.png)         | 31 | 41 | ![Bright red](../assets/images/colors/bright_red_16x16.png)         | 91 | 101 |
+| Green   | ![Green](../assets/images/colors/green_16x16.png)     | 32 | 42 | ![Bright green](../assets/images/colors/bright_green_16x16.png)     | 92 | 102 |
+| Yellow  | ![Yellow](../assets/images/colors/yellow_16x16.png)   | 33 | 43 | ![Bright yellow](../assets/images/colors/bright_yellow_16x16.png)   | 93 | 103 |
+| Blue    | ![Blue](../assets/images/colors/blue_16x16.png)       | 34 | 44 | ![Bright blue](../assets/images/colors/bright_blue_16x16.png)       | 94 | 104 |
 | Magenta | ![Magenta](../assets/images/colors/magenta_16x16.png) | 35 | 45 | ![Bright magenta](../assets/images/colors/bright_magenta_16x16.png) | 95 | 105 |
-| Cyan    | ![Cyan](../assets/images/colors/cyan_16x16.png) | 36 | 46 | ![Bright cyan](../assets/images/colors/bright_cyan_16x16.png) | 96 | 106 |
-| White   | ![White](../assets/images/colors/white_16x16.png) | 37 | 47 | ![Bright white](../assets/images/colors/bright_white_16x16.png) | 97 | 107 |
+| Cyan    | ![Cyan](../assets/images/colors/cyan_16x16.png)       | 36 | 46 | ![Bright cyan](../assets/images/colors/bright_cyan_16x16.png)       | 96 | 106 |
+| White   | ![White](../assets/images/colors/white_16x16.png)     | 37 | 47 | ![Bright white](../assets/images/colors/bright_white_16x16.png)     | 97 | 107 |
 | Default | | 39 | 49 | |  99 | 109 |
 | Reset   | | 0 | 0 | | 0 | 0 |
 
