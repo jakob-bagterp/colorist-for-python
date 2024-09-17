@@ -31,7 +31,6 @@ nav:
     - Materials:
       - Other String Formats: user-guide/materials/other-string-formats.md
       - Supported Colors and Styles by Terminals: user-guide/materials/terminal-support.md
-      - ANSI Escape Codes: user-guide/materials/ansi-escape-codes.md
   - Reference:
     - reference/index.md
     - Text Colors:
@@ -47,6 +46,12 @@ nav:
       - RGB: reference/extended-colors/rgb.md
       - HSL: reference/extended-colors/hsl.md
       - Hex: reference/extended-colors/hex.md
+  - ANSI Escape Codes:
+    - ansi-escape-codes/index.md
+    - Standard Colors: ansi-escape-codes/standard-colors.md
+    - Extended 256 Colors: ansi-escape-codes/extended-256-colors.md
+    - RGB Colors: ansi-escape-codes/rgb-colors.md
+    - Effects: ansi-escape-codes/effects.md
 
 theme:
   name: material
