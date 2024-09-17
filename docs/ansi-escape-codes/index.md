@@ -22,7 +22,7 @@ They always start with `\x1b`, `\033`, `\u001b`, or `\e` or depending on the ope
 | `\e`             | Escape in C |
 | `27`             | Decimal     |
 
-For convenience, we will use `\x1b` in this documentation.
+For convenience, we will use `\x1b` as escape character in this documentation.
 
 All ANSI escape sequences follow the same pattern. For example, the sequence `\x1b[31m` can be broken down into:
 

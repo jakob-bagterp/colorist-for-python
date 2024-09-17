@@ -10,7 +10,6 @@ tags:
 ---
 
 # Standard Colors in ANSI Escape Codes
-## Color Codes
 There are 8 standard colors and 8 bright colors – 16 in total. The bright colors are the same as the standard colors, yet with a higher intensity, and each color can be in the foreground (i.e. as text) or background.
 
 The 8 colors are simply black and white, plus the 6 colors of the rainbow. Firstly, the three primary colors red, green, and blue. Then the secondary colors yellow, magenta, and cyan:
@@ -55,6 +54,23 @@ To apply different color and styling options, simply replace the two underscores
     Remember to use `\x1b[0m` every time you want to revert back to the default terminal text style. Otherwise, any color or styling may spill over and into other terminal messages.
 
     When using Colorist, you can for example use `Color.OFF` to reset the terminal text style.
+
+### Examples
+How to apply the escape color codes:
+
+```python
+print("This is \x1b[31mRED\x1b[0m text")
+print("This is \x1b[41mRED\x1b[0m background")
+print("This is \x1b[91mBRIGHT RED\x1b[0m text")
+print("This is \x1b[101mBRIGHT RED\x1b[0m background")
+```
+
+How it appears in the terminal:
+
+<pre><code>% This is <span class="fg-red">red</span> text
+% This is <span class="bg-red">red</span> background
+% This is <span class="fg-bright-red">BRIGHT RED</span> text
+% This is <span class="bg-bright-red">BRIGHT RED</span> background</code></pre>
 
 ## Cheat Sheets
 ### Foreground Text Colors
