@@ -10,13 +10,7 @@ tags:
 ---
 
 # Standard Colors in ANSI Escape Codes
-## Color Codes and Building Blocks
-All ANSI escape sequences follow the same pattern. For example, the sequence `\x1b[31m` can be broken down into:
-
-* `\x1b[`: Starts sequence, also called the Control Sequence Introducer (CSI)
-* `31`: The color code
-* `m`: Ends sequence, also called the Select Graphic Rendition (SGR)
-
+## Color Codes
 There are 8 standard colors and 8 bright colors – 16 in total. The bright colors are the same as the standard colors, yet with a higher intensity, and each color can be in the foreground (i.e. as text) or background.
 
 The 8 colors are simply black and white, plus the 6 colors of the rainbow. Firstly, the three primary colors red, green, and blue. Then the secondary colors yellow, magenta, and cyan:
