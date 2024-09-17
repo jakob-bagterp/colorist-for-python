@@ -6,7 +6,7 @@ tags:
 ---
 
 # Introduction to ANSI Escape Codes
-Colorist uses ANSI escape codes to style text in the terminal. This page explains how ANSI escape codes work, and how to use them in your own code.
+Colorist uses ANSI escape codes to style text in the terminal. This section explains how ANSI escape codes work, and how to use them in your own code.
 
 ## What Are ANSI Escape Codes?
 ANSI escape sequences were introduced in the 1970s as a standard to style text terminals with color, font styling, and other options. They are supported by most modern terminals in operating systems like Windows, macOS, and Linux.
@@ -28,11 +28,17 @@ And yet, the characters of the sequences are hidden in the terminal output apart
 
 <pre><code>% I want <span class="fg-red">red</span> color inside this paragraph</code></pre>
 
-## Humanised Sequences
-This is also why it's [convenient to use Colorist](../user-guide/standard-colors/text-foreground.md) instead of manually writing raw ANSI escape codes. The `Color` class will generate the ANSI escape sequences and keep the code readable. This example generates the same terminal output as above:
+## Humanised Sequences Are Easier to Read
+This is also why it's [convenient to use Colorist](../user-guide/standard-colors/text-foreground.md) instead of manually writing raw ANSI escape codes.
+
+The `Color` class will generate the ANSI escape sequences and keep the code readable. For example:
 
 ```python
 from colorist import Color
 
 print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
 ```
+
+The result in the terminal output is the same as before:
+
+<pre><code>% I want <span class="fg-red">red</span> color inside this paragraph</code></pre>
