@@ -153,6 +153,7 @@ extra:
 extra_css:
   - assets/css/colors.css
   - assets/css/effects.css
+  - assets/css/extended-colors.css
 
 plugins:
   - search:
