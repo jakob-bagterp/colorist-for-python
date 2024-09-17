@@ -190,6 +190,9 @@ plugins:
       css_files:
           - css/timeago.css
           - assets/_mkdocstrings.css
+  - redirects:
+      redirect_maps:
+        user-guide/materials/ansi-escape-codes.md: ansi-escape-codes/index.md
 
 watch:
   - src
