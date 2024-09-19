@@ -2,6 +2,9 @@
 tags:
     - Documentation
     - Tutorial
+    - Text Colors
+    - Foreground Colors
+    - Standard Colors
 ---
 
 # Custom String Styling for Foreground Text Colors

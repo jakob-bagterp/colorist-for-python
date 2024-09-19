@@ -2,6 +2,8 @@
 tags:
     - Documentation
     - Tutorial
+    - Extended Colors
+    - RGB Colors
 ---
 
 # RGB Colors

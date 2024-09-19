@@ -2,6 +2,8 @@
 tags:
     - Features
     - Tutorial
+    - Background Colors
+    - Standard Colors
 ---
 
 # Background Colors

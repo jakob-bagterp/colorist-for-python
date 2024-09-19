@@ -2,6 +2,7 @@
 tags:
     - Documentation
     - Tutorial
+    - Effects
 ---
 
 # Custom Text Effects and Styling

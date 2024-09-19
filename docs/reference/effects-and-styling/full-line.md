@@ -2,6 +2,7 @@
 tags:
     - Documentation
     - Tutorial
+    - Effects
 ---
 
 # Full Text Functions for Text Effects and Styling

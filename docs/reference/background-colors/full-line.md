@@ -2,6 +2,8 @@
 tags:
     - Documentation
     - Tutorial
+    - Background Colors
+    - Standard Colors
 ---
 
 # Full Text Functions for Background Colors

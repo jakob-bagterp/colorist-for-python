@@ -2,6 +2,7 @@
 tags:
     - Features
     - Tutorial
+    - Effects
 ---
 
 # Text Effects and Styling

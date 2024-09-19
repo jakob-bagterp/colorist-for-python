@@ -2,6 +2,8 @@
 tags:
     - Documentation
     - Tutorial
+    - Background Colors
+    - Standard Colors
 ---
 
 # Custom String Styling for Background Colors

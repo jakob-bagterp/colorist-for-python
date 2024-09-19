@@ -2,6 +2,8 @@
 tags:
     - Documentation
     - Tutorial
+    - Extended Colors
+    - Hex Colors
 ---
 
 # Hex Colors

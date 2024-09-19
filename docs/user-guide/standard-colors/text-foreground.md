@@ -2,6 +2,9 @@
 tags:
     - Features
     - Tutorial
+    - Standard Colors
+    - Text Colors
+    - Foreground Colors
 ---
 
 # Text Foreground Colors
