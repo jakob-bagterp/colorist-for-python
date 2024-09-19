@@ -2,6 +2,8 @@
 tags:
     - Documentation
     - Tutorial
+    - Extended Colors
+    - HSL Colors
 ---
 
 # HSL Colors

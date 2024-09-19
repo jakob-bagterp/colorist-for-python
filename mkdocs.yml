@@ -31,7 +31,6 @@ nav:
     - Materials:
       - Other String Formats: user-guide/materials/other-string-formats.md
       - Supported Colors and Styles by Terminals: user-guide/materials/terminal-support.md
-      - ANSI Escape Codes: user-guide/materials/ansi-escape-codes.md
   - Reference:
     - reference/index.md
     - Text Colors:
@@ -47,6 +46,13 @@ nav:
       - RGB: reference/extended-colors/rgb.md
       - HSL: reference/extended-colors/hsl.md
       - Hex: reference/extended-colors/hex.md
+  - ANSI Escape Codes:
+    - ansi-escape-codes/index.md
+    - Introduction: ansi-escape-codes/introduction.md
+    - Standard 16 Colors: ansi-escape-codes/standard-16-colors.md
+    - Extended 256 Colors: ansi-escape-codes/extended-256-colors.md
+    - RGB Colors: ansi-escape-codes/rgb-colors.md
+    - Effects: ansi-escape-codes/effects.md
 
 theme:
   name: material
@@ -149,6 +155,9 @@ extra_css:
   - assets/css/colors.css
   - assets/css/effects.css
 
+extra_javascript:
+  - assets/scripts/extended-colors.js
+
 plugins:
   - search:
       lang: en
@@ -185,6 +194,9 @@ plugins:
       css_files:
           - css/timeago.css
           - assets/_mkdocstrings.css
+  - redirects:
+      redirect_maps:
+        user-guide/materials/ansi-escape-codes.md: ansi-escape-codes/index.md
 
 watch:
   - src

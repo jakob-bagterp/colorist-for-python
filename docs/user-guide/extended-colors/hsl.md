@@ -2,6 +2,8 @@
 tags:
     - Features
     - Tutorial
+    - Extended Colors
+    - HSL Colors
 ---
 
 # HSL Colors
@@ -41,4 +43,4 @@ print(f"... and {bg_steel_gray}steel gray{bg_steel_gray.OFF} colors")
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: hsl(60, 56%, 43%)">mustard green</span>...
-% ... <span style="background-color: hsl(190, 2%, 49%)">steel gray</span> colors</code></pre>
+% ... and <span style="background-color: hsl(190, 2%, 49%)">steel gray</span> colors</code></pre>

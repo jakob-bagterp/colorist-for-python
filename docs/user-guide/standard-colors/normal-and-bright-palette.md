@@ -2,6 +2,10 @@
 tags:
     - Features
     - Tutorial
+    - Standard Colors
+    - Background Colors
+    - Text Colors
+    - Foreground Colors
 ---
 
 # Palette of Normal and Bright Colors

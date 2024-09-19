@@ -2,6 +2,9 @@
 tags:
     - Documentation
     - Tutorial
+    - Text Colors
+    - Foreground Colors
+    - Standard Colors
 ---
 
 # Full Text Functions for Foreground Colors
