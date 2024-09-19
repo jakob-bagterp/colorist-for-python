@@ -15,6 +15,9 @@ The RGB color space represents a much broader array of colors. Simply use any nu
 | `\x1b[38;2;r;g;bm` | Text       |
 | `\x1b[48;2;r;g;bm` | Background |
 
+!!! info "Disclaimer"
+    Not all [terminals support](../../user-guide/materials/terminal-support.md) RGB, HSL, or Hex colors. If your terminal does support such advanced colors, read on.
+
 ## Examples
 For example, `\x1b[38;2;142;194;21m` is a lime green foreground text color, and `\x1b[48;2;194,21,139m` is a rosa background color. When wrapped with `\x1b[0m` to reset the color, you can write this:
 
