@@ -16,7 +16,18 @@ It works both with foreground text and background colors. Simply replace the thr
 | `\x1b[38;5;___m` | Text       |
 | `\x1b[48;5;___m` | Background |
 
-For example, `\x1b[38;5;243m` is a light gray foreground text color, and `\x1b[48;5;243m` is a light gray background color.
+For example, `\x1b[38;5;166m` is an orage foreground text color, and `\x1b[48;5;243m` is a light gray background color. When wrapped with `\x1b[0m` to reset the color, you can write this:
+
+```python
+print("This is \x1b[38;5;166morange\x1b[0m text")
+print("This is \x1b[48;5;243mlight gray\x1b[0m background")
+```
+
+How it looks in the terminal:
+
+<pre><code>% This is <span class="extended-colors" style="--fg-color: #d75f00;">orange</span> text
+% This is <span class="extended-colors" style="--bg-color: #767676;">light gray</span> background</code></pre>
+
 
 ## Cheat Sheets
 ### Standard Palette
