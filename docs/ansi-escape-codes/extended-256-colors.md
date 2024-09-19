@@ -30,7 +30,6 @@ How it looks in the terminal:
 <pre><code>% This is <span class="extended-colors" style="--fg-color: #d75f00;">orange</span> text
 % This is <span class="extended-colors" style="--bg-color: #767676;">light gray</span> background</code></pre>
 
-
 ## Cheat Sheets
 ### Standard Palette
 
