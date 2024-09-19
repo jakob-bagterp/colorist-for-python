@@ -9,7 +9,7 @@ tags:
     - Foreground Colors
 ---
 
-# Standard Colors in ANSI Escape Codes
+# Standard 16 Colors in ANSI Escape Codes
 There are 8 standard colors and 8 bright colors – 16 in total. The bright colors are the same as the standard colors, yet with a higher intensity, and each color can be in the foreground (i.e. as text) or background.
 
 The 8 colors are simply black and white, plus the 6 colors of the rainbow. Firstly, the three primary colors red, green, and blue. Then the secondary colors yellow, magenta, and cyan:

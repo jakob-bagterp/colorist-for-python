@@ -48,7 +48,7 @@ nav:
       - Hex: reference/extended-colors/hex.md
   - ANSI Escape Codes:
     - ansi-escape-codes/index.md
-    - Standard Colors: ansi-escape-codes/standard-colors.md
+    - Standard 16 Colors: ansi-escape-codes/standard-16-colors.md
     - Extended 256 Colors: ansi-escape-codes/extended-256-colors.md
     - RGB Colors: ansi-escape-codes/rgb-colors.md
     - Effects: ansi-escape-codes/effects.md
