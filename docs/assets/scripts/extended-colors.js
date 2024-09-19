@@ -30,4 +30,6 @@ function setTextColorForTableCells() {
     });
 }
 
-setTextColorForTableCells();
+document$.subscribe(function() {
+    setTextColorForTableCells();
+})
