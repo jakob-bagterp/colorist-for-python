@@ -68,8 +68,8 @@ print("This is \x1b[101mBRIGHT RED\x1b[0m background")
 
 How it appears in the terminal:
 
-<pre><code>% This is <span class="fg-red">red</span> text
-% This is <span class="bg-red">red</span> background
+<pre><code>% This is <span class="fg-red">RED</span> text
+% This is <span class="bg-red">RED</span> background
 % This is <span class="fg-bright-red">BRIGHT RED</span> text
 % This is <span class="bg-bright-red">BRIGHT RED</span> background</code></pre>
 

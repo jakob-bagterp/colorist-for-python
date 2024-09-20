@@ -39,14 +39,14 @@ Though ANSI escape sequences appear in a string as multiple characters, they are
 
 Imagine that we want to achieve the following terminal output:
 
-<pre><code>% I want <span class="fg-red">red</span> color</code></pre>
+<pre><code>% I want <span class="fg-red">RED</span> color</code></pre>
 
-We simply wrap the word `red` with the ANSI escape sequences `\x1b[31m` to set the color and `\x1b[0m` to reset the color. The terminal will then interpret this as a single command while the characters of the escape sequences are hidden in the terminal output. The user only sees the changed color.
+We simply wrap the word `RED` with the ANSI escape sequences `\x1b[31m` to set the color and `\x1b[0m` to reset the color. The terminal will then interpret this as a single command while the characters of the escape sequences are hidden in the terminal output. The user only sees the changed color.
 
 How to apply this in a print command:
 
 ```python
-print(f"I want \x1b[31mred\x1b[0m color")
+print(f"I want \x1b[31mRED\x1b[0m color")
 ```
 
 ## Humanised Sequence Is Easier to Read
@@ -57,9 +57,9 @@ The `Color` class will generate the ANSI escape sequences and keep the code read
 ```python
 from colorist import Color
 
-print(f"I want {Color.RED}red{Color.OFF} color")
+print(f"I want {Color.RED}RED{Color.OFF} color")
 ```
 
 The result in the terminal output is the same as before:
 
-<pre><code>% I want <span class="fg-red">red</span> color</code></pre>
+<pre><code>% I want <span class="fg-red">RED</span> color</code></pre>

@@ -23,22 +23,22 @@ For effects, the codes are. And as before, replace the two underscores `__` in `
     Most terminals apply different color schemes so `\x1b[31m` or `Color.RED` won't produce the exact same screen color of red. Some straight, others with an orange tint. For further reading, refer to this [list of common terminals and their color schemes](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit).
 
 ## Examples
-For example, `\x1b[4m` is undelined text, and `\x1b[24m` turns off the underline effect. When wrapped in a print statement, you can write this:
+For example, `\x1b[4m` is underlined text, and `\x1b[24m` turns off the underline effect. When wrapped in a print statement, you can write this:
 
 ```python
-print("This is \x1b[1munderlined\x1b[21m text")
+print("This is \x1b[1mUNDERLINED\x1b[21m text")
 ```
 
 How it looks in the terminal:
 
-<pre><code>% This is <u>underlined</u> text</code></pre>
+<pre><code>% This is <u>UNDERLINED</u> text</code></pre>
 
 Another example with blinking text:
 
 ```python
-print("This is \x1b[5mblinking\x1b[25m text")
+print("This is \x1b[5mBLINKING\x1b[25m text")
 ```
 
 How it looks in the terminal:
 
-<pre><code>% This is <span class="effect-blinking">blinking</span> text</code></pre>
+<pre><code>% This is <span class="effect-blinking">BLINKING</span> text</code></pre>
