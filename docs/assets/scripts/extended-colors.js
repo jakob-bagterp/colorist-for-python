@@ -1,3 +1,7 @@
+// Palette from colors.css converted from RGB to Hex:
+const BLACK = '#030501';
+const BRIGHT_WHITE = '#fefefe';
+
 class RgbaColor {
     constructor(rgba) {
         this.rgba = rgba;
@@ -10,16 +14,12 @@ class RgbaColor {
 }
 
 function getTextHexColorInContrastToBackgroundColor(rgbaColor) {
-    // Palette from colors.css converted from RGB to Hex:
-    const _black = '#030501';
-    const _brightWhite = '#fefefe';
-
     function getYiqRatio(rgbaColor) {
         return ((rgbaColor.red * 299) + (rgbaColor.green * 587) + (rgbaColor.blue * 114)) / 1000;
     }
 
 	let yiqRatio = getYiqRatio(rgbaColor);
-	return (yiqRatio >= 128) ? _black : _brightWhite;
+	return (yiqRatio >= 128) ? BLACK : BRIGHT_WHITE;
 };
 
 function setTextColorForTableCells() {
