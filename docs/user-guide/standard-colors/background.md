@@ -6,7 +6,7 @@ tags:
     - Standard Colors
 ---
 
-# Background Colors
+# How to Print Background Colors in Python
 ## Introduction
 When you want to print colored backgrounds in the terminal, Colorist offers two ways of doing so:
 

@@ -5,7 +5,7 @@ tags:
     - Effects
 ---
 
-# Text Effects and Styling
+# How to Print Text Effects and Text Styling in Python
 ## Full Text Functions
 ### Examples
 In addition to colors, Colorist can also add effects when you print text in the terminal. How to print a full line of text with effects:

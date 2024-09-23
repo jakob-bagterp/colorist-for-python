@@ -7,7 +7,7 @@ tags:
     - Foreground Colors
 ---
 
-# Text Foreground Colors
+# How to Print Text Foreground Colors in Python
 ## Introduction
 When you want to print colored text in the terminal, Colorist offers two ways of doing so:
 
