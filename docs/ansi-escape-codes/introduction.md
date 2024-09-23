@@ -46,7 +46,7 @@ We simply wrap the word `RED` with the ANSI escape sequences `\x1b[31m` to set t
 How to apply this in a print command:
 
 ```python
-print(f"I want \x1b[31mRED\x1b[0m color")
+print("I want \x1b[31mRED\x1b[0m color")
 ```
 
 ## Humanised Sequence Is Easier to Read
