@@ -1,8 +1,8 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
-from ..abc.vga import VGA_ABC
 from ... import helper
 from ...constants.ansi import AnsiVgaColorSelector
+from ..abc.vga import VGA_ABC
 
 
 class BgColorVGA(VGA_ABC):

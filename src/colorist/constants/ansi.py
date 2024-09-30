@@ -44,6 +44,7 @@ class AnsiColorSelector(Enum):
     def __str__(self) -> str:
         return str(self.value)
 
+
 @unique
 class AnsiVgaColorSelector(Enum):
     """ANSI VGA color selector with 8-bit color palette."""

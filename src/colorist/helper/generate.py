@@ -1,10 +1,11 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
-from ..model.abc.vga import VGA_ABC
 from ..constants.ansi import (AnsiColor, AnsiColorSelector, AnsiEffect,
-                              AnsiEffectSelector, AnsiRgbColorSelector, AnsiVgaColorSelector)
+                              AnsiEffectSelector, AnsiRgbColorSelector,
+                              AnsiVgaColorSelector)
 from ..constants.ascii import AsciiEscapeCode
 from ..model.abc.rgb import RGB_ABC
+from ..model.abc.vga import VGA_ABC
 
 
 def control_sequence_inducer(ascii_escape_code: AsciiEscapeCode) -> str:
