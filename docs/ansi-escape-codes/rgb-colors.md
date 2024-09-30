@@ -6,9 +6,9 @@ tags:
     - RGB Colors
 ---
 
-# RGB Colors in ANSI Escape Codes
+# 24-Bit RGB Colors in ANSI Escape Codes
 ## Structure
-The RGB color space represents a much broader array of colors. Simply use any number from `0` to `255` to set each of the red `r`, green `g`, and blue `b` colors in the sequences `38;2;r;g;b` for text color and `38;2;r;g;b` for background color:
+The 24-bit RGB color space represents a much broader array of colors. Simply use any number from `0` to `255` to set each of the red `r`, green `g`, and blue `b` colors in the sequences `38;2;r;g;b` for text color and `38;2;r;g;b` for background color:
 
 | Code               | Placement  |
 | :----------------: | :--------: |
