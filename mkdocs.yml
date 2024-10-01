@@ -25,6 +25,7 @@ nav:
       - Normal and Bright Palette: user-guide/standard-colors/normal-and-bright-palette.md
     - Effects and Styling: user-guide/effects-and-styling.md
     - Extended Colors:
+      - VGA: user-guide/extended-colors/vga.md
       - RGB: user-guide/extended-colors/rgb.md
       - HSL: user-guide/extended-colors/hsl.md
       - Hex: user-guide/extended-colors/hex.md
