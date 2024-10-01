@@ -43,6 +43,7 @@ nav:
       - Full Line: reference/effects-and-styling/full-line.md
       - Mixed: reference/effects-and-styling/mixed.md
     - Extended Colors:
+      - VGA: reference/extended-colors/vga.md
       - RGB: reference/extended-colors/rgb.md
       - HSL: reference/extended-colors/hsl.md
       - Hex: reference/extended-colors/hex.md
