@@ -8,7 +8,7 @@ tags:
 
 # Hex Colors
 !!! info "Disclaimer"
-    Not all [terminals support](../../user-guide/materials/terminal-support.md) RGB, HSL, or Hex colors. If your terminal does support such advanced colors, read on.
+    Not all [terminals support](../../user-guide/materials/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
 
 ## Full Text Functions
 
