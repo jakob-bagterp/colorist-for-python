@@ -61,6 +61,19 @@ How it looks in the terminal:
     </tbody>
 </table>
 
+#### Examples
+Let's use color `11` for yellow text and color `14` for cyan background:
+
+```python
+print("This is \x1b[38;5;11mYELLOW\x1b[0m text")
+print("This is \x1b[48;5;14CYAN\x1b[0m background")
+```
+
+How it looks in the terminal:
+
+<pre><code>% This is <span class="extended-colors" style="--fg-color: #ffff00;">YELLOW</span> text
+% This is <span class="extended-colors" style="--bg-color: #00ffff;">CYAN</span> background</code></pre>
+
 ### Gray Scale
 
 <table>
