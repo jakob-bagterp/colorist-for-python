@@ -418,3 +418,16 @@ How it looks in the terminal:
         </tr>
     </tbody>
 </table>
+
+#### Examples
+Let's use color `19` for royal blue text and color `201` for pink background:
+
+```python
+print("This is \x1b[38;5;19mROYAL BLUE\x1b[0m text")
+print("This is \x1b[48;5;201mPINK\x1b[0m background")
+```
+
+How it looks in the terminal:
+
+<pre><code>% This is <span class="extended-colors" style="--fg-color: #0000af;">ROYAL BLUE</span> text
+% This is <span class="extended-colors" style="--bg-color: #ff00ff;">PINK</span> background</code></pre>
