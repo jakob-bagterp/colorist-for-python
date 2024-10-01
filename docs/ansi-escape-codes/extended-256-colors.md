@@ -111,6 +111,19 @@ How it looks in the terminal:
         </tbody>
 </table>
 
+#### Examples
+Let's use color `244` for light gray text and color `234` for dark gray background:
+
+```python
+print("This is \x1b[38;5;244mLIGHT GRAY\x1b[0m text")
+print("This is \x1b[48;5;234mDARK GRAY\x1b[0m background")
+```
+
+How it looks in the terminal:
+
+<pre><code>% This is <span class="extended-colors" style="--fg-color: #808080;">LIGHT GRAY</span> text
+% This is <span class="extended-colors" style="--bg-color: #1c1c1c;">DARK GRAY</span> background</code></pre>
+
 ### Extended Palette
 
 <table>
