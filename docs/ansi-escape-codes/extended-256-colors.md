@@ -8,7 +8,10 @@ tags:
 
 # Extended VGA Palette with 256 Colors in ANSI Escape Codes
 ## Structure
-The extended palette is based on a 6x6x6 color cube of red, green, and blue with 216 colors. Plus 24 shades of gray. 256 colors in total and also called 8-bit VGA colors.
+The VGA color palette was introduced with the IBM VGA display adapter in 1987. The 8-bit color space has 256 colors in total, covering:
+
+* 216 colors in a 6x6x6 color cube of red, green, and blue
+* 24 shades of gray
 
 It works both with foreground text and background colors. Simply replace the three underscores `___` with any number from `000` to `255`:
 
