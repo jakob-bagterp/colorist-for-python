@@ -6,7 +6,7 @@ from ..abc.rgb import RGB_ABC
 
 
 class ColorRGB(RGB_ABC):
-    """Class for custom RGB foreground text color."""
+    """Class for custom 16-bit RGB foreground text color."""
 
     def __init__(self, red: int, green: int, blue: int) -> None:
         """

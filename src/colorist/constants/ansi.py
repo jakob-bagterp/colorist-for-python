@@ -61,7 +61,7 @@ class AnsiVgaColorSelector(Enum):
 
 @unique
 class AnsiRgbColorSelector(Enum):
-    """ANSI RGB color selector to be mixed with values for red, green, blue."""
+    """ANSI 24-bit RGB color selector to be mixed with values for red, green, blue."""
 
     FOREGROUND = "38;2"
     """Parameter for RGB foreground color sequence: 38;2;r;g;b."""

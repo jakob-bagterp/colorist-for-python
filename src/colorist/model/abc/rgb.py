@@ -8,7 +8,7 @@ from ...helper.validate import is_valid_rgb_value
 
 
 class RGB_ABC(ABC):
-    """Abstract base class for custom RGB color instances."""
+    """Abstract base class for custom 16-bit RGB color instances."""
 
     OFF = RESET_ALL
 
