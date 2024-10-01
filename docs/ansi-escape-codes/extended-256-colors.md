@@ -61,6 +61,19 @@ How it looks in the terminal:
     </tbody>
 </table>
 
+#### Examples
+Let's use color `11` for yellow text and color `14` for cyan background:
+
+```python
+print("This is \x1b[38;5;11mYELLOW\x1b[0m text")
+print("This is \x1b[48;5;14CYAN\x1b[0m background")
+```
+
+How it looks in the terminal:
+
+<pre><code>% This is <span class="extended-colors" style="--fg-color: #ffff00;">YELLOW</span> text
+% This is <span class="extended-colors" style="--bg-color: #00ffff;">CYAN</span> background</code></pre>
+
 ### Gray Scale
 
 <table>
@@ -97,6 +110,19 @@ How it looks in the terminal:
         </tr>
         </tbody>
 </table>
+
+#### Examples
+Let's use color `244` for light gray text and color `234` for dark gray background:
+
+```python
+print("This is \x1b[38;5;244mLIGHT GRAY\x1b[0m text")
+print("This is \x1b[48;5;234mDARK GRAY\x1b[0m background")
+```
+
+How it looks in the terminal:
+
+<pre><code>% This is <span class="extended-colors" style="--fg-color: #808080;">LIGHT GRAY</span> text
+% This is <span class="extended-colors" style="--bg-color: #1c1c1c;">DARK GRAY</span> background</code></pre>
 
 ### Extended Palette
 
@@ -392,3 +418,16 @@ How it looks in the terminal:
         </tr>
     </tbody>
 </table>
+
+#### Examples
+Let's use color `19` for royal blue text and color `201` for pink background:
+
+```python
+print("This is \x1b[38;5;19mROYAL BLUE\x1b[0m text")
+print("This is \x1b[48;5;201mPINK\x1b[0m background")
+```
+
+How it looks in the terminal:
+
+<pre><code>% This is <span class="extended-colors" style="--fg-color: #0000af;">ROYAL BLUE</span> text
+% This is <span class="extended-colors" style="--bg-color: #ff00ff;">PINK</span> background</code></pre>
