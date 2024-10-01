@@ -15,8 +15,8 @@ The VGA color palette was introduced with the IBM VGA display adapter in 1987. T
 
 It works both with foreground text and background colors. Simply replace the three underscores `___` with any number from `000` to `255`:
 
-| Code            | Placement  |
-| :-------------: | :--------: |
+| Code             | Placement  |
+| :--------------: | :--------: |
 | `\x1b[38;5;___m` | Text       |
 | `\x1b[48;5;___m` | Background |
 
