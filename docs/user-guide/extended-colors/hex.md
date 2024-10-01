@@ -7,6 +7,14 @@ tags:
 ---
 
 # Hex Colors
+The 24-bit Hex color model covers over 16 million colors, and each color can be defined with a code in hexadecimal, for instance `#00aaff`, that can be broken down into a [RGB value](rgb.md):
+
+| Hex Code | RGB Value | Color |
+| -------- | --------- | ----- |
+| `00`     | `0`       | Red   |
+| `aa`     | `170`     | Green |
+| `ff`     | `255`     | Blue  |
+
 !!! info "Disclaimer"
     Not all [terminals support](../materials/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
 
