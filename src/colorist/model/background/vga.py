@@ -6,7 +6,7 @@ from ..abc.vga import VGA_ABC
 
 
 class BgColorVGA(VGA_ABC):
-    """Class for custom 16-bit RGB background color instances."""
+    """Class for custom 8-bit VGA background color instances."""
 
     def __init__(self, vga: int) -> None:
         """
