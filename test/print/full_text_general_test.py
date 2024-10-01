@@ -4,8 +4,8 @@ import pytest
 import terminal
 
 from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
-                      BgColorRGB, BrightColor, Color, ColorHex, ColorHSL,
-                      ColorRGB, Effect, print_color)
+                      BgColorRGB, BgColorVGA, BrightColor, Color, ColorHex,
+                      ColorHSL, ColorRGB, ColorVGA, Effect, print_color)
 
 
 @pytest.mark.parametrize("text, color, bg_color, effect, expected", [
@@ -22,10 +22,12 @@ from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
     ("random text", None, BgColorHex("aB3"), None, "\033[48;2;170;187;51mrandom text\033[0m\n"),
     ("random text", None, None, Effect.BOLD, "\033[1mrandom text\033[0m\n"),
     ("random text", ColorRGB(57, 33, 253), BgColor.CYAN, Effect.BLINK, "\033[38;2;57;33;253m\033[46m\033[5mrandom text\033[0m\n"),
+    ("random text", ColorVGA(57), BgColor.CYAN, Effect.BLINK, "\033[38;5;57m\033[46m\033[5mrandom text\033[0m\n"),
+    ("random text", None, BgColorVGA(251), None, "\033[48;5;251mrandom text\033[0m\n"),
 ])
 def test_full_text_general_print_color(text: str,
-                                       color: Color | BrightColor | ColorRGB | ColorHSL | ColorHex | None,
-                                       bg_color: BgColor | BgBrightColor | BgColorRGB | BgColorHSL | BgColorHex | None,
+                                       color: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | None,
+                                       bg_color: BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | None,
                                        effect: Effect | None,
                                        expected: str,
                                        capfd: object
