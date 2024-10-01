@@ -24,6 +24,7 @@ Apply [text styling and animations](./effects-and-styling.md) to your terminal o
 
 If your terminal supports an extended color space, learn how to define colors as:
 
+* [VGA](./extended-colors/vga.md)
 * [RGB](./extended-colors/rgb.md)
 * [HSL](./extended-colors/hsl.md)
 * [Hex](./extended-colors/hex.md)

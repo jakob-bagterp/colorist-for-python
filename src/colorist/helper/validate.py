@@ -3,6 +3,10 @@
 import re
 
 
+def is_valid_vga_value(value: int) -> bool:
+    return 0 <= value <= 255
+
+
 def is_valid_rgb_value(value: int) -> bool:
     return 0 <= value <= 255
 

@@ -46,8 +46,22 @@ class AnsiColorSelector(Enum):
 
 
 @unique
+class AnsiVgaColorSelector(Enum):
+    """ANSI VGA color selector with 8-bit color palette."""
+
+    FOREGROUND = "38;5"
+    """Parameter for RGB foreground color sequence: 38;2;r;g;b."""
+
+    BACKGROUND = "48;5"
+    """Parameter for RGB background color sequence: 48;2;r;g;b."""
+
+    def __str__(self) -> str:
+        return str(self.value)
+
+
+@unique
 class AnsiRgbColorSelector(Enum):
-    """ANSI RGB color selector to be mixed with values for red, green, blue."""
+    """ANSI 24-bit RGB color selector to be mixed with values for red, green, blue."""
 
     FOREGROUND = "38;2"
     """Parameter for RGB foreground color sequence: 38;2;r;g;b."""

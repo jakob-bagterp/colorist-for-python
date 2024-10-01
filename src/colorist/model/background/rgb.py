@@ -6,7 +6,7 @@ from ..abc.rgb import RGB_ABC
 
 
 class BgColorRGB(RGB_ABC):
-    """Class for custom RGB background color."""
+    """Class for custom 16-bit RGB background color instances."""
 
     def __init__(self, red: int, green: int, blue: int) -> None:
         """

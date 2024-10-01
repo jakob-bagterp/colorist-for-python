@@ -58,6 +58,23 @@ class Effect
 Effect_ABC <|-- Effect
 ```
 
+## VGA Color Classes
+```mermaid
+classDiagram
+class VGA_ABC {
+    <<abstract>>
+    +int vga
+    +str _ansi_code
+    +str OFF
+    +generate_ansi_code()
+}
+class ColorVGA
+class BgColorVGA
+
+VGA_ABC <|-- ColorVGA
+VGA_ABC <|-- BgColorVGA
+```
+
 ## RGB Color Classes
 ```mermaid
 classDiagram

@@ -1,5 +1,9 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
+def message_for_vga_value_error(value: int) -> str:
+    return f"Value is {value}, but should be integer between 0 and 255."
+
+
 def message_for_rgb_value_error(color: str, value: int) -> str:
     return f"Value for \"{color}\" is {value}, but should be integer between 0 and 255."
 

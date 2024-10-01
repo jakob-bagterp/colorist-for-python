@@ -15,6 +15,7 @@ Find details about all methods in this section.
 * [Mixed](effects-and-styling/mixed.md)
 
 ### ![Range of RGB colors](../assets/images/colors/palette/rainbow_rgb_96x16.png) &nbsp;&nbsp;Extended Colors
+* [VGA](extended-colors/vga.md)
 * [RGB](extended-colors/rgb.md)
 * [HSL](extended-colors/hsl.md)
 * [Hex](extended-colors/hex.md)

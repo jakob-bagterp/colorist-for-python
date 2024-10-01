@@ -6,14 +6,17 @@ tags:
     - Extended 256 Colors
 ---
 
-# Extended 8-Bit Palette with 256 Colors in ANSI Escape Codes
+# Extended VGA Palette with 256 Colors in ANSI Escape Codes
 ## Structure
-The [extended palette of 8-bit colors](https://commons.wikimedia.org/wiki/File:Xterm_256color_chart.svg) is based on a 6x6x6 color cube of red, green, and blue with 216 colors. Plus 24 shades of gray. 256 colors in total.
+The VGA color palette was introduced with the IBM VGA display adapter in 1987. The 8-bit color space has 256 colors in total, covering:
+
+* 216 colors in a 6x6x6 color cube of red, green, and blue
+* 24 shades of gray
 
 It works both with foreground text and background colors. Simply replace the three underscores `___` with any number from `000` to `255`:
 
-| Code            | Placement  |
-| :-------------: | :--------: |
+| Code             | Placement  |
+| :--------------: | :--------: |
 | `\x1b[38;5;___m` | Text       |
 | `\x1b[48;5;___m` | Background |
 
@@ -316,35 +319,35 @@ How it looks in the terminal:
             <td class="extended-colors" style="--bg-color: #d787ff;">177</td>
         </tr>
         <tr>
-            <td class="extended-colors" style="--bg-color: #d7af00;">178</td>
-            <td class="extended-colors" style="--bg-color: #d7af5f;">179</td>
-            <td class="extended-colors" style="--bg-color: #d7af87;">180</td>
-            <td class="extended-colors" style="--bg-color: #d7afaf;">181</td>
-            <td class="extended-colors" style="--bg-color: #d7afd7;">182</td>
-            <td class="extended-colors" style="--bg-color: #d7afff;">183</td>
+            <td class="extended-colors" style="--bg-color: #dfaf00;">178</td>
+            <td class="extended-colors" style="--bg-color: #dfaf5f;">179</td>
+            <td class="extended-colors" style="--bg-color: #dfaf87;">180</td>
+            <td class="extended-colors" style="--bg-color: #dfafaf;">181</td>
+            <td class="extended-colors" style="--bg-color: #dfafdf;">182</td>
+            <td class="extended-colors" style="--bg-color: #dfafff;">183</td>
         </tr>
         <tr>
-            <td class="extended-colors" style="--bg-color: #d7d700;">184</td>
-            <td class="extended-colors" style="--bg-color: #d7d75f;">185</td>
-            <td class="extended-colors" style="--bg-color: #d7d787;">186</td>
-            <td class="extended-colors" style="--bg-color: #d7d7af;">187</td>
-            <td class="extended-colors" style="--bg-color: #d7d7d7;">188</td>
-            <td class="extended-colors" style="--bg-color: #d7d7ff;">189</td>
+            <td class="extended-colors" style="--bg-color: #dfdf00;">184</td>
+            <td class="extended-colors" style="--bg-color: #dfdf5f;">185</td>
+            <td class="extended-colors" style="--bg-color: #dfdf87;">186</td>
+            <td class="extended-colors" style="--bg-color: #dfdfaf;">187</td>
+            <td class="extended-colors" style="--bg-color: #dfdfdf;">188</td>
+            <td class="extended-colors" style="--bg-color: #dfdfff;">189</td>
         </tr>
         <tr>
-            <td class="extended-colors" style="--bg-color: #d7ff00;">190</td>
-            <td class="extended-colors" style="--bg-color: #d7ff5f;">191</td>
-            <td class="extended-colors" style="--bg-color: #d7ff87;">192</td>
-            <td class="extended-colors" style="--bg-color: #d7ffaf;">193</td>
-            <td class="extended-colors" style="--bg-color: #d7ffd7;">194</td>
-            <td class="extended-colors" style="--bg-color: #d7ffff;">195</td>
+            <td class="extended-colors" style="--bg-color: #dfff00;">190</td>
+            <td class="extended-colors" style="--bg-color: #dfff5f;">191</td>
+            <td class="extended-colors" style="--bg-color: #dfff87;">192</td>
+            <td class="extended-colors" style="--bg-color: #dfffaf;">193</td>
+            <td class="extended-colors" style="--bg-color: #dfffdf;">194</td>
+            <td class="extended-colors" style="--bg-color: #dfffff;">195</td>
         </tr>
         <tr>
             <td class="extended-colors" style="--bg-color: #ff0000;">196</td>
             <td class="extended-colors" style="--bg-color: #ff005f;">197</td>
             <td class="extended-colors" style="--bg-color: #ff0087;">198</td>
             <td class="extended-colors" style="--bg-color: #ff00af;">199</td>
-            <td class="extended-colors" style="--bg-color: #ff00d7;">200</td>
+            <td class="extended-colors" style="--bg-color: #ff00df;">200</td>
             <td class="extended-colors" style="--bg-color: #ff00ff;">201</td>
         </tr>
         <tr>
@@ -352,7 +355,7 @@ How it looks in the terminal:
             <td class="extended-colors" style="--bg-color: #ff5f5f;">203</td>
             <td class="extended-colors" style="--bg-color: #ff5f87;">204</td>
             <td class="extended-colors" style="--bg-color: #ff5faf;">205</td>
-            <td class="extended-colors" style="--bg-color: #ff5fd7;">206</td>
+            <td class="extended-colors" style="--bg-color: #ff5fdf;">206</td>
             <td class="extended-colors" style="--bg-color: #ff5fff;">207</td>
         </tr>
         <tr>
@@ -360,7 +363,7 @@ How it looks in the terminal:
             <td class="extended-colors" style="--bg-color: #ff875f;">209</td>
             <td class="extended-colors" style="--bg-color: #ff8787;">210</td>
             <td class="extended-colors" style="--bg-color: #ff87af;">211</td>
-            <td class="extended-colors" style="--bg-color: #ff87d7;">212</td>
+            <td class="extended-colors" style="--bg-color: #ff87df;">212</td>
             <td class="extended-colors" style="--bg-color: #ff87ff;">213</td>
         </tr>
         <tr>
@@ -368,23 +371,23 @@ How it looks in the terminal:
             <td class="extended-colors" style="--bg-color: #ffaf5f;">215</td>
             <td class="extended-colors" style="--bg-color: #ffaf87;">216</td>
             <td class="extended-colors" style="--bg-color: #ffafaf;">217</td>
-            <td class="extended-colors" style="--bg-color: #ffafd7;">218</td>
+            <td class="extended-colors" style="--bg-color: #ffafdf;">218</td>
             <td class="extended-colors" style="--bg-color: #ffafff;">219</td>
         </tr>
         <tr>
-            <td class="extended-colors" style="--bg-color: #ffd700;">220</td>
-            <td class="extended-colors" style="--bg-color: #ffd75f;">221</td>
-            <td class="extended-colors" style="--bg-color: #ffd787;">222</td>
-            <td class="extended-colors" style="--bg-color: #ffd7af;">223</td>
-            <td class="extended-colors" style="--bg-color: #ffd7d7;">224</td>
-            <td class="extended-colors" style="--bg-color: #ffd7ff;">225</td>
+            <td class="extended-colors" style="--bg-color: #ffdf00;">220</td>
+            <td class="extended-colors" style="--bg-color: #ffdf5f;">221</td>
+            <td class="extended-colors" style="--bg-color: #ffdf87;">222</td>
+            <td class="extended-colors" style="--bg-color: #ffdfaf;">223</td>
+            <td class="extended-colors" style="--bg-color: #ffdfdf;">224</td>
+            <td class="extended-colors" style="--bg-color: #ffdfff;">225</td>
         </tr>
         <tr>
             <td class="extended-colors" style="--bg-color: #ffff00;">226</td>
             <td class="extended-colors" style="--bg-color: #ffff5f;">227</td>
             <td class="extended-colors" style="--bg-color: #ffff87;">228</td>
             <td class="extended-colors" style="--bg-color: #ffffaf;">229</td>
-            <td class="extended-colors" style="--bg-color: #ffffd7;">230</td>
+            <td class="extended-colors" style="--bg-color: #ffffdf;">230</td>
             <td class="extended-colors" style="--bg-color: #ffffff;">231</td>
         </tr>
     </tbody>

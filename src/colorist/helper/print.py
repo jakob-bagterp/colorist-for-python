@@ -6,6 +6,7 @@ from ..model.abc.effect import Effect_ABC
 from ..model.abc.hex import Hex_ABC
 from ..model.abc.hsl import HSL_ABC
 from ..model.abc.rgb import RGB_ABC
+from ..model.abc.vga import VGA_ABC
 
 
 def color(text: str, color: FgColor_ABC | str = "", bg_color: BgColor_ABC | str = "") -> None:
@@ -20,7 +21,7 @@ def effect(text: str, effect: Effect_ABC | str, color: FgColor_ABC | BgColor_ABC
     print(f"{color}{effect}{text}{RESET_ALL}")
 
 
-def normalize_input(input: FgColor_ABC | BgColor_ABC | RGB_ABC | HSL_ABC | Hex_ABC | Effect_ABC | str | None) -> str:
+def normalize_input(input: FgColor_ABC | BgColor_ABC | VGA_ABC | RGB_ABC | HSL_ABC | Hex_ABC | Effect_ABC | str | None) -> str:
     """Normalize and convert color classes to string of ANSI escape code for print methods, especially converting None values to empty string."""
 
     return str(input) if input is not None else ""
