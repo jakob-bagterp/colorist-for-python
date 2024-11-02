@@ -2,69 +2,69 @@
 # See https://pre-commit.com/hooks.html for more hooks
 
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
-    -   id: check-added-large-files
-    -   id: check-ast
-    -   id: check-docstring-first
-    -   id: check-executables-have-shebangs
-    -   id: check-json
-    -   id: check-merge-conflict
-    -   id: check-shebang-scripts-are-executable
-    -   id: check-symlinks
-    -   id: check-toml
-    -   id: check-xml
-    -   id: check-yaml
+      - id: check-added-large-files
+      - id: check-ast
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
         args:
-        -   --unsafe
-    -   id: debug-statements
-    -   id: destroyed-symlinks
-    -   id: detect-private-key
-    -   id: end-of-file-fixer
-    -   id: pretty-format-json
-    -   id: requirements-txt-fixer
-    -   id: sort-simple-yaml
-    -   id: trailing-whitespace
+          - --unsafe
+      - id: debug-statements
+      - id: destroyed-symlinks
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: pretty-format-json
+      - id: requirements-txt-fixer
+      - id: sort-simple-yaml
+      - id: trailing-whitespace
 
--   repo: https://github.com/PyCQA/autoflake
+  - repo: https://github.com/PyCQA/autoflake
     rev: v2.3.1
     hooks:
-    -   id: autoflake
+      - id: autoflake
         exclude: test/_mock_data
         args:
-        -   --expand-star-imports
-        -   --ignore-init-module-imports
-        -   --in-place
-        -   --remove-all-unused-imports
-        -   --remove-duplicate-keys
-        -   --remove-unused-variables
+          - --expand-star-imports
+          - --ignore-init-module-imports
+          - --in-place
+          - --remove-all-unused-imports
+          - --remove-duplicate-keys
+          - --remove-unused-variables
 
--   repo: https://github.com/hhatto/autopep8
+  - repo: https://github.com/hhatto/autopep8
     rev: v2.3.1
     hooks:
-    -   id: autopep8
+      - id: autopep8
 
--   repo: https://github.com/PyCQA/flake8
+  - repo: https://github.com/PyCQA/flake8
     rev: 7.1.0
     hooks:
-    -   id: flake8
+      - id: flake8
         language_version: python3
 
--   repo: https://github.com/PyCQA/isort
+  - repo: https://github.com/PyCQA/isort
     rev: 5.13.2
     hooks:
-    -   id: isort
+      - id: isort
 
--   repo: https://github.com/asottile/pyupgrade
+  - repo: https://github.com/asottile/pyupgrade
     rev: v3.16.0
     hooks:
-    -   id: pyupgrade
+      - id: pyupgrade
         exclude: ^test/
         args:
-        -   --py310-plus
+          - --py310-plus
 
 ci:
-    autofix_prs: true
-    autoupdate_schedule: quarterly
-    submodules: false
+  autofix_prs: true
+  autoupdate_schedule: quarterly
+  submodules: false
