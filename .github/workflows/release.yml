@@ -3,7 +3,7 @@ name: Release
 # Preparation steps before triggering the workflow by pushing a version tag (e.g. v1.2.3):
 # 1. Update the version number in the following files:
 #    - /setup.cfg                (update the version in the [metadata] section)
-#    - /src/timer/version.py     (update the __version_info__ tuple)
+#    - /src/<package>/version.py (update the __version_info__ tuple)
 #    - /README.md                (update the version in the badge)
 #    - /docs/index.md            (update the version in the badge)
 # 2. Commit the changes.
