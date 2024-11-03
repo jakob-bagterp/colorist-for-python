@@ -1,5 +1,3 @@
-name: Release
-
 # Preparation steps before triggering the workflow by pushing a version tag (e.g. v1.2.3):
 # 1. Update the version number in the following files:
 #    - /setup.cfg                (update the version in the [metadata] section)
@@ -12,6 +10,8 @@ name: Release
 # 5. Check that the release workflow is completed successfully.
 # 6. As this workflow triggers an update of the Homebrew tap formula, check that the formula is updated and that tests are comppleted successfully:
 # 7. Check the latest release notes on GitHub and edit if necessary.
+
+name: Release
 
 on:
   push:
@@ -149,7 +149,7 @@ jobs:
       - name: Wait for PyPI to update
         run: |
           echo "Waiting for PyPI to update..."
-          sleep 10
+          sleep 5
 
       - name: Install package from PyPI and verify that it matches the new version
         run: |
