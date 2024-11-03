@@ -1,0 +1,234 @@
+name: Release
+
+# Preparation steps before triggering the workflow by pushing a version tag (e.g. v1.2.3):
+# 1. Update the version number in the following files:
+#    - /setup.cfg                (update the version in the [metadata] section)
+#    - /src/timer/version.py     (update the __version_info__ tuple)
+#    - /README.md                (update the version in the badge)
+#    - /docs/index.md            (update the version in the badge)
+# 2. Commit the changes.
+# 3. Add a tag with the version number (e.g. v1.2.3) to the commit.
+# 4. Push the commit including the tag to the master branch, which triggers the release workflow.
+# 5. Check that the release workflow is completed successfully.
+# 6. As this workflow triggers an update of the Homebrew tap formula, check that the formula is updated and that tests are comppleted successfully:
+# 7. Check the latest release notes on GitHub and edit if necessary.
+
+on:
+  push:
+    tags: # Naming convention for release tags: v1.2.3 (or v1.2.3a1, v1.2.3b1, v1.2.3rc1)
+      - "v[0-9]+.[0-9]+.[0-9]+"
+      - "v[0-9]+.[0-9]+.[0-9]+a[0-9]+"
+      - "v[0-9]+.[0-9]+.[0-9]+b[0-9]+"
+      - "v[0-9]+.[0-9]+.[0-9]+rc[0-9]+"
+
+env:
+  PACKAGE_NAME: timer-for-python
+
+jobs:
+  details:
+    name: Get details
+    runs-on: ubuntu-latest
+    outputs:
+      previous_version: ${{ steps.release.outputs.previous_version }}
+      new_version: ${{ steps.release.outputs.new_version }}
+      suffix: ${{ steps.release.outputs.suffix }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Extract tag and details
+        id: release
+        run: |
+          if [[ "${{ github.ref }}" =~ refs/tags/v* ]]; then
+            PREVIOUS_TAG_NAME=$(git tag -l | grep '^v' | sort -V | tail -n 2 | head -n 1 || echo "v0.0.0")
+            PREVIOUS_VERSION=$(echo $PREVIOUS_TAG_NAME | sed 's/^v//' | awk -F'-' '{print $1}')
+            NEW_TAG_NAME=${GITHUB_REF#refs/tags/}
+            NEW_VERSION=$(echo $NEW_TAG_NAME | sed 's/^v//' | awk -F'-' '{print $1}')
+            SUFFIX=$(echo $NEW_TAG_NAME | grep -oP '(?:a|b|rc)[0-9]+$' || echo "")
+
+            echo "previous_version=$PREVIOUS_VERSION" >> "$GITHUB_OUTPUT"
+            echo "new_version=$NEW_VERSION" >> "$GITHUB_OUTPUT"
+            echo "suffix=$SUFFIX" >> "$GITHUB_OUTPUT"
+            echo "tag_name=$NEW_TAG_NAME" >> "$GITHUB_OUTPUT"
+
+            echo "Previous tag name was: $PREVIOUS_TAG_NAME"
+            echo "Previous version was: $PREVIOUS_VERSION"
+            echo "New tag name is: $NEW_TAG_NAME"
+            echo "New version is: $NEW_VERSION"
+            echo "Suffix is: $SUFFIX"
+          else
+            echo "No tag found"
+            exit 1
+          fi
+
+  check_pypi:
+    name: Check PyPI for existing version
+    needs: details
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch information from PyPI
+        run: |
+          response=$(curl -s https://pypi.org/pypi/${{ env.PACKAGE_NAME }}/json || echo "{}")
+          latest_previous_version=$(echo $response | grep -oP '"releases":\{"\K[^"]+' | sort -rV | head -n 1)
+          if [ -z "$latest_previous_version" ]; then
+            echo "Package not found on PyPI."
+            latest_previous_version="0.0.0"
+          fi
+          echo "Latest version on PyPI: $latest_previous_version"
+          echo "latest_previous_version=$latest_previous_version" >> $GITHUB_ENV
+
+      - name: Compare versions and exit if not newer
+        run: |
+          NEW_VERSION=${{ needs.details.outputs.new_version }}
+          LATEST_VERSION=$latest_previous_version
+          if [ "$(printf '%s\n' "$LATEST_VERSION" "$NEW_VERSION" | sort -rV | head -n 1)" != "$NEW_VERSION" ] || [ "$NEW_VERSION" == "$LATEST_VERSION" ]; then
+            echo "The new version $NEW_VERSION is not greater than the latest version $LATEST_VERSION on PyPI."
+            exit 1
+          else
+            echo "The new version $NEW_VERSION is greater than the latest version $LATEST_VERSION on PyPI."
+          fi
+
+  setup_and_build:
+    name: Build source and wheel distribution
+    needs: [details, check_pypi]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install build
+
+      - name: Build source and wheel distribution
+        run: python -m build
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/
+
+  pypi_publish:
+    name: Upload release to PyPI
+    needs: [setup_and_build, details]
+    runs-on: ubuntu-latest
+    environment:
+      name: release
+    permissions:
+      id-token: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist/
+
+      - name: Publish distribution to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+
+  test_pypi_installation:
+    name: Test PyPI installation
+    needs: [pypi_publish, details]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Wait for PyPI to update
+        run: |
+          echo "Waiting for PyPI to update..."
+          sleep 10
+
+      - name: Install package from PyPI and verify that it matches the new version
+        run: |
+          python -m pip install --upgrade pip
+
+          MAX_ATTEMPTS=10
+          ATTEMPT=1
+          WAIT_SECONDS=30
+
+          while [ $ATTEMPT -le $MAX_ATTEMPTS ]
+          do
+            echo "Attempt $ATTEMPT of $MAX_ATTEMPTS to install and verify package version from PyPI..."
+            if ! pip install --upgrade "${{ env.PACKAGE_NAME }}" --timeout $WAIT_SECONDS; then
+              echo "Installation failed. Waiting for $WAIT_SECONDS seconds before retrying..."
+              sleep $WAIT_SECONDS
+              continue
+            fi
+            INSTALLED_VERSION=$(pip show ${{ env.PACKAGE_NAME }} | grep Version | cut -d ' ' -f 2)
+            echo "New version: ${{ needs.details.outputs.new_version }}"
+            echo "Installed version: $INSTALLED_VERSION"
+            if [ "$INSTALLED_VERSION" = "${{ needs.details.outputs.new_version }}" ]; then
+              echo "Version from PyPI matched the new version and was successfully installed."
+              exit 0
+            fi
+            echo "New version not yet available on PyPI. Waiting for $WAIT_SECONDS seconds before retrying..."
+            sleep $WAIT_SECONDS
+            ATTEMPT=$((ATTEMPT + 1))
+          done
+
+          echo "Failed to verify package from PyPI after $MAX_ATTEMPTS attempts."
+          exit 1
+
+  github_release:
+    name: Create GitHub release
+    needs: [setup_and_build, details]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist/
+
+      - name: Create GitHub release
+        id: create_release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create ${{ needs.details.outputs.tag_name }} dist/* --title ${{ needs.details.outputs.tag_name }} --generate-notes
+
+  trigger_bump_in_homebrew_formula:
+    name: Dispatch event to Homebrew tap repository
+    needs: [details, github_release, pypi_publish, test_pypi_installation]
+    runs-on: ubuntu-latest
+    environment:
+      name: release
+    steps:
+      - name: Dispatch repository dispatch event
+        uses: peter-evans/repository-dispatch@v2
+        env:
+          FORMULA_NEW_VERSION: ${{ needs.details.outputs.new_version }}
+          FORMULA_NAME: ${{ env.PACKAGE_NAME }}
+          FORMULA_URL: https://github.com/${{ github.repository_owner }}/${{env.PACKAGE_NAME}}/releases/download/v${{ needs.details.outputs.new_version }}/${{ env.PACKAGE_NAME }}-${{ needs.details.outputs.new_version }}.tar.gz
+          FORMULA_HOMEBREW_TAP: ${{ github.repository }}
+        with:
+          token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+          repository: ${{ github.repository_owner }}/homebrew-${{ env.PACKAGE_NAME }}
+          event-type: update-formula
+          client-payload: |-
+            {
+              "formula_new_version": "${{ env.FORMULA_NEW_VERSION }}",
+              "formula_url": "${{ env.FORMULA_URL }}",
+              "formula_name": "${{ env.FORMULA_NAME }}",
+              "formula_homebrew_tap": "${{ env.FORMULA_HOMEBREW_TAP }}"
+            }
