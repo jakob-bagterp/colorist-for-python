@@ -26,7 +26,7 @@ env:
 
 jobs:
   details:
-    name: Get details
+    name: Get version details
     runs-on: ubuntu-latest
     outputs:
       previous_version: ${{ steps.release.outputs.previous_version }}
@@ -38,7 +38,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Extract tag and details
+      - name: Extract tag and version details
         id: release
         run: |
           if [[ "${{ github.ref }}" =~ refs/tags/v* ]]; then
