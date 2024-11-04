@@ -215,7 +215,7 @@ jobs:
       name: release
     steps:
       - name: Dispatch repository dispatch event
-        uses: peter-evans/repository-dispatch@v2
+        uses: peter-evans/repository-dispatch@v3
         env:
           FORMULA_NEW_VERSION: ${{ needs.details.outputs.new_version }}
           FORMULA_NAME: ${{ env.PACKAGE_NAME }}
