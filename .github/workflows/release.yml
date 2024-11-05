@@ -8,7 +8,7 @@
 # 3. Add a tag with the version number (e.g. v1.2.3) to the commit.
 # 4. Push the commit including the tag to the master branch, which triggers the release workflow.
 # 5. Check that the release workflow is completed successfully.
-# 6. As this workflow triggers an update of the Homebrew tap formula, check that the formula is updated and that tests are comppleted successfully:
+# 6. As this workflow triggers an update of the Homebrew tap formula, check that the formula is updated and that tests are comppleted successfully.
 # 7. Check the latest release notes on GitHub and edit if necessary.
 
 name: Release
