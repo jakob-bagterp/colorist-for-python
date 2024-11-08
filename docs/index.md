@@ -41,4 +41,12 @@ How it appears in the terminal:
 
 <pre><code>% <span class="fg-bright-yellow">This is BRIGHT YELLOW!</span></code></pre>
 
+## Next Steps
 Ready to try more options and features? [Let's get started](./getting-started/index.md).
+
+!!! tip "Become a Sponsor"
+    If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution, no matter the size, makes a difference.
+
+    [Donate on GitHub Sponsors](https://github.com/sponsors/jakob-bagterp){ .md-button .md-button--primary }
+
+    Thank you for your support! 🙌
