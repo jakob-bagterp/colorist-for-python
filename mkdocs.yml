@@ -8,12 +8,14 @@ repo_url: https://github.com/jakob-bagterp/colorist-for-python
 nav:
   - Home:
     - index.md
-    - Donate: donate.md
-    - Support and Contribution: support-and-contribution.md
-    - License 🔗: https://github.com/jakob-bagterp/colorist-for-python/blob/master/LICENSE.md
-    - Release Notes 🔗: https://github.com/jakob-bagterp/colorist-for-python/releases
-    - Source Code 🔗: https://github.com/jakob-bagterp/colorist-for-python
-    - Tags: tags.md
+    - Project:
+      - Donate: project/donate.md
+      - Support and Contribution: project/support-and-contribution.md
+      - License 🔗: https://github.com/jakob-bagterp/colorist-for-python/blob/master/LICENSE.md
+      - Release Notes 🔗: https://github.com/jakob-bagterp/colorist-for-python/releases
+      - Source Code 🔗: https://github.com/jakob-bagterp/colorist-for-python
+    - Index:
+      - Tags: index/tags.md
   - Getting Started:
     - getting-started/index.md
     - Installation: getting-started/installation.md
@@ -164,7 +166,7 @@ plugins:
   - search:
       lang: en
   - tags:
-      tags_file: tags.md
+      tags_file: index/tags.md
   - mkdocstrings:
       default_handler: python
       handlers:
@@ -199,6 +201,9 @@ plugins:
   - redirects:
       redirect_maps:
         user-guide/materials/ansi-escape-codes.md: ansi-escape-codes/index.md
+        donate.md: project/donate.md
+        support-and-contribution.md: project/support-and-contribution.md
+        tags.md: index/tags.md
 
 watch:
   - src
