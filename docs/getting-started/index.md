@@ -5,7 +5,7 @@ tags:
     - PyPI
 ---
 
-# Get Started in 2 Easy Steps 🚀
+# Get Started with Colorist in 2 Easy Steps 🚀
 Ready to try? Let's get started:
 
 ## 1. Install Colorist for Python Package
