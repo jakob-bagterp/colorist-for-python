@@ -1,4 +1,6 @@
 ---
+title: Get Started in 2 Easy Steps
+description: Quick guide to installing and using Colorist for Python to add color to your terminal output in just 2 easy steps. Includes code examples.
 tags:
     - Tutorial
     - Installation

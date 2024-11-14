@@ -1,4 +1,6 @@
 ---
+title: How to Install
+description: Learn how to install Colorist for Python using PyPI or Homebrew package managers. Quick installation guide and step-by-step instructions.
 tags:
     - Installation
     - PyPI
