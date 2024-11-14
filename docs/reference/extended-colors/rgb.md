@@ -1,4 +1,6 @@
 ---
+title: Print Text with RGB Colors
+description: The easiest way to print text with 24-bit RGB colors in terminal output using Colorist for Python. This documentation includes code examples.
 tags:
     - Documentation
     - Tutorial

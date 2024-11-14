@@ -1,3 +1,8 @@
+---
+title: Documentation
+description: Colorist is the easiest way to print colored text in terminal output with Python. This comprehensive documentation section includes color maps and code examples.
+---
+
 # Documentation 📚
 Find details about all methods in this section.
 

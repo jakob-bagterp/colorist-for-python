@@ -1,4 +1,6 @@
 ---
+title: Print Text with Effects and Styling
+description: The easiest way to print text with effects and styling in terminal output using Colorist for Python. This documentation includes code examples.
 tags:
     - Documentation
     - Tutorial

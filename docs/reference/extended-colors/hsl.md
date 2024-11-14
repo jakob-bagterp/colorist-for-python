@@ -1,4 +1,6 @@
 ---
+title: Print Text with HSL Colors
+description: The easiest way to print text with 24-bit RGB colors in terminal output using HSL and Colorist for Python. The documentation includes code examples.
 tags:
     - Documentation
     - Tutorial
