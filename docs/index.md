@@ -1,5 +1,6 @@
 ---
 title: Home
+description: Colorist is a lightweight Python package that makes it easy and fast to print colored text in the terminal.
 ---
 
 [![Latest version](https://img.shields.io/static/v1?label=version&message=1.8.3&color=yellowgreen)](https://github.com/jakob-bagterp/colorist-for-python/releases/latest)
