@@ -1,4 +1,6 @@
 ---
+title: Guide to RGB Colors
+description: The easiest way to print text with 24-bit RGB colors in terminal output using Colorist for Python. Includes code examples.
 tags:
     - Features
     - Tutorial

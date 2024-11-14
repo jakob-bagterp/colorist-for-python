@@ -1,4 +1,6 @@
 ---
+title: Guide to VGA Colors
+description: The easiest way to print text with 8-bit VGA colors in terminal output using Colorist for Python. Includes code examples.
 tags:
     - Features
     - Tutorial

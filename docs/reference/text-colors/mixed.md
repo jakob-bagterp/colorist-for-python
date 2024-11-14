@@ -1,4 +1,6 @@
 ---
+title: Print Text with Custom Colors
+description: The easiest way to print foreground text with custom colors in terminal output using Colorist for Python. This documentation includes color maps and code examples.
 tags:
     - Documentation
     - Tutorial

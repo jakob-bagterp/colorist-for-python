@@ -1,6 +1,6 @@
 ---
 title: Effects and Styling
-description: Learn how to add effects and text styling to your terminal output with Colorist for Python. Includes examples of full text functions and custom string styling.
+description: Learn how to add effects and text styling to your terminal output with Colorist for Python. Includes code examples.
 tags:
     - Features
     - Tutorial

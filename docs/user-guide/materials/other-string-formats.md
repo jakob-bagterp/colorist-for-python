@@ -1,4 +1,6 @@
 ---
+title: Guide to Other String Formats
+description: How Colorist for Python is backwards compatible with string formatting and concatenation. Includes code examples.
 tags:
     - Features
     - Tutorial
