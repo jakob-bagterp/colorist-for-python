@@ -1,4 +1,6 @@
 ---
+title: Standard 16 Colors in ANSI Escape Codes
+description: Learn how to print colored text in terminal output using Python and ANSI escape codes. Includes color maps and code examples.
 tags:
     - Documentation
     - Tutorial

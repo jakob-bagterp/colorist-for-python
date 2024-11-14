@@ -1,4 +1,6 @@
 ---
+title: How to Use ANSI Escape Codes
+description: Learn how to use ANSI escape codes to add colors, effects, and styling to terminal output with Python. Comprehensive guide with code examples and color maps.
 tags:
     - Documentation
     - Tutorial

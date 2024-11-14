@@ -1,4 +1,6 @@
 ---
+title: Extended VGA Palette with 256 Colors in ANSI Escape Codes
+description: Learn how to use the extended 8-bit VGA palette with 256 colors in terminal output using Python and ANSI escape codes. Includes color maps and code examples.
 tags:
     - Documentation
     - Tutorial
