@@ -1,5 +1,5 @@
 ---
-title: Introduction to ANSI Escape Codes
+title: Ultimate Guide to ANSI Escape Codes
 description: If you want to print colored text in your terminal with Python, here's how to use ANSI escape codes to style your text. Includes a beginner's guide and code examples.
 tags:
     - Documentation
