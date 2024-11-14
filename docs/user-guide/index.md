@@ -1,4 +1,6 @@
 ---
+title: User Guide
+description: Learn how to use Colorist for Python with tutorials and examples to add color, effects, and styling to your terminal output. Includes standard colors, bright colors, animations, and extended color spaces.
 tags:
     - Features
     - Tutorial
