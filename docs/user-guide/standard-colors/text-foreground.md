@@ -1,4 +1,6 @@
 ---
+title: Guide to Text Colors
+description: The easiest way to print colored foreground text in terminal output using Colorist for Python. Includes code examples.
 tags:
     - Features
     - Tutorial

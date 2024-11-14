@@ -1,4 +1,6 @@
 ---
+title: Guide to Normal and Bright Colors
+description: The easiest way to print colored text in terminal output using Colorist for Python. Includes color maps and code examples.
 tags:
     - Features
     - Tutorial

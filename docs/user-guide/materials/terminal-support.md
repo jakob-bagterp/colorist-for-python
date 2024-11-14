@@ -1,3 +1,10 @@
+---
+title: Supported Colors and Styles by Terminals
+description: Not all terminals support all types of ANSI escape codes. Get a list of which Colorist methods are supported by which terminals.
+tags:
+    - Documentation
+---
+
 # Supported Colors and Styles by Terminals
 ## Limited Support for ANSI Escape Codes
 Colorist is based on [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code), a standard that defines colors, styling, and effects for text in terminal windows. Note that most terminals support all color options, but not all.

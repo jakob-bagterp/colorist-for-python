@@ -1,4 +1,6 @@
 ---
+title: Guide to Background Colors
+description: The easiest way to print colored background text in terminal output using Colorist for Python. Includes code examples.
 tags:
     - Features
     - Tutorial
