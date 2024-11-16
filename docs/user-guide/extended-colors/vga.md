@@ -50,7 +50,7 @@ How it appears in the terminal:
 <pre><code>% I want to use <span style="color: #ffdf00">honey yellow</span>...
 % ... and <span style="background-color: #0000af">navy blue</span> colors</code></pre>
 
-## Palette Options
+## Palette Options and Color Maps
 ### Standard Colors
 
 <table>
