@@ -1,5 +1,5 @@
 ---
-title: Guide to VGA Colors
+title: How to Add VGA Colors to Text
 description: The easiest way to print text with 8-bit VGA colors in terminal output using Colorist for Python. Includes code examples.
 tags:
     - Features
@@ -9,6 +9,7 @@ tags:
 ---
 
 # VGA Colors
+## What are VGA Colors?
 The VGA palette is based on a 8-bit color space of 216 colors and 24 shades of gray. 256 color options in total.
 
 !!! info "Disclaimer"

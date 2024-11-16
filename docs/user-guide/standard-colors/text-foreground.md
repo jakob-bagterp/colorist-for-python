@@ -1,5 +1,5 @@
 ---
-title: Guide to Text Colors
+title: How to Add Foreground Colors to Text
 description: The easiest way to print colored foreground text in terminal output using Colorist for Python. Includes code examples.
 tags:
     - Features
@@ -9,7 +9,7 @@ tags:
     - Foreground Colors
 ---
 
-# How to Print Text Foreground Colors in Python
+# How to Print Foreground Text Colors
 ## Introduction
 When you want to print colored text in the terminal, Colorist offers two ways of doing so:
 

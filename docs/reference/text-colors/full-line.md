@@ -10,7 +10,7 @@ tags:
 ---
 
 # Full Text Functions for Foreground Colors
-## Examples
+## Color Maps
 ### Normal Colors
 
 | Color | Full Text Function | Example |

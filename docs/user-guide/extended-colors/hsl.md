@@ -1,5 +1,5 @@
 ---
-title: Guide to HSL Colors
+title: How to Add HSL Colors to Text
 description: The easiest way to print text with 24-bit RGB colors in terminal output using HSL and Colorist for Python. Includes code examples.
 tags:
     - Features
@@ -9,6 +9,7 @@ tags:
 ---
 
 # HSL Colors
+## What are HSL Colors?
 The 24-bit HSL color model covers over 16 million colors, and each color can be defined with these parameters:
 
 * Hue

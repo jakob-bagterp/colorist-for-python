@@ -1,5 +1,5 @@
 ---
-title: Guide to RGB Colors
+title: How to Add RGB Colors to Text
 description: The easiest way to print text with 24-bit RGB colors in terminal output using Colorist for Python. Includes code examples.
 tags:
     - Features
@@ -9,6 +9,7 @@ tags:
 ---
 
 # RGB Colors
+## What are RGB Colors?
 The 24-bit RGB color model covers over 16 million colors, and each color can be defined with these parameters:
 
 * Red

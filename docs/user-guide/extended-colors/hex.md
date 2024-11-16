@@ -1,5 +1,5 @@
 ---
-title: Guide to Hex Colors
+title: How to Add Hex Colors to Text
 description: The easiest way to print text with 24-bit RGB colors in terminal output using Hex codes and Colorist for Python. Includes code examples.
 tags:
     - Features
@@ -9,7 +9,8 @@ tags:
 ---
 
 # Hex Colors
-The 24-bit Hex color model covers over 16 million colors, and each color can be defined with a code in hexadecimal, for instance `#00aaff`, that can be broken down into a [RGB value](rgb.md):
+## What are Hex Colors?
+The 24-bit Hex color model covers over 16 million colors, and each color can be defined with a code in hexadecimal, for instance `#00aaff` or sometimes shortened to `#0af`, that can be broken down into a [RGB value](rgb.md):
 
 | Hex Code | RGB Value | Color |
 | -------- | --------- | ----- |

@@ -9,7 +9,7 @@ tags:
 ---
 
 # Full Text Functions for Background Colors
-## Examples
+## Color Maps
 ### Normal Colors
 
 | Color | Full Text Function | Example |
