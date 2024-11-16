@@ -1,5 +1,5 @@
 ---
-title: Effects in ANSI Escape Codes
+title: How to Use Effects in ANSI Escape Codes
 description: Learn how to use ANSI escape codes for text effects and styling like bold, underline, blink, dim, etc. in terminal output with Python. Includes code examples.
 tags:
     - Documentation

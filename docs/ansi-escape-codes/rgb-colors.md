@@ -1,5 +1,5 @@
 ---
-title: RGB Colors in ANSI Escape Codes
+title: How to Use RGB Colors in ANSI Escape Codes
 description: Learn how to use 24-bit RGB colors in terminal output using Python and ANSI escape codes. Includes code examples.
 tags:
     - Documentation
