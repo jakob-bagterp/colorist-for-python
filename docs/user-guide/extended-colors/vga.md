@@ -42,13 +42,13 @@ honey_yellow = ColorVGA(220)
 bg_navy_blue = BgColorVGA(19)
 
 print(f"I want to use {honey_yellow}honey yellow{honey_yellow.OFF}...")
-print(f"... {bg_steel_blue}navy blue{bg_steel_blue.OFF} colors")
+print(f"... and {bg_steel_blue}navy blue{bg_steel_blue.OFF} colors")
 ```
 
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: #ffdf00">honey yellow</span>...
-% ... <span style="background-color: #0000af">navy blue</span> colors</code></pre>
+% ... and <span style="background-color: #0000af">navy blue</span> colors</code></pre>
 
 ## Palette Options
 ### Standard Colors

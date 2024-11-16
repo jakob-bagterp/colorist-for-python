@@ -46,10 +46,10 @@ dusty_pink = ColorRGB(194, 145, 164)
 bg_steel_blue = BgColorRGB(70, 130, 180)
 
 print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF}...")
-print(f"... {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors")
+print(f"... and {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors")
 ```
 
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: rgb(194, 145, 164)">dusty pink</span>...
-% ... <span style="background-color: rgb(70, 130, 180)">steel blue</span> colors</code></pre>
+% ... and <span style="background-color: rgb(70, 130, 180)">steel blue</span> colors</code></pre>

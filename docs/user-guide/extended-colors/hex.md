@@ -53,4 +53,4 @@ print(f"... and {bg_mint_green}mint green{bg_mint_green.OFF} colors")
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: #ff5733">watermelon red</span>...
-% ... <span style="background-color: #99ff99">mint green</span> colors</code></pre>
+% ... and <span style="background-color: #99ff99">mint green</span> colors</code></pre>
