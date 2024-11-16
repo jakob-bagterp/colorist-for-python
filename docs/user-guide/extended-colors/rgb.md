@@ -1,5 +1,5 @@
 ---
-title: Guide to RGB Colors
+title: How to Add RGB Colors to Text
 description: The easiest way to print text with 24-bit RGB colors in terminal output using Colorist for Python. Includes code examples.
 tags:
     - Features
@@ -9,11 +9,12 @@ tags:
 ---
 
 # RGB Colors
-The 24-bit RGB color model covers over 16 million colors, and each color can be defined with these parameters:
+## What are RGB Colors?
+The 24-bit RGB color model covers over 16 million colors, and each color can be defined as red, green, and blue:
 
-* Red
-* Green
-* Blue
+| Channel        | Red     | Green   | Blue    |
+| -------------- | :-----: | :-----: | :-----: |
+| Allowed values | `0-255` | `0-255` | `0-255` |
 
 !!! info "Disclaimer"
     Not all [terminals support](../materials/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
@@ -45,10 +46,10 @@ dusty_pink = ColorRGB(194, 145, 164)
 bg_steel_blue = BgColorRGB(70, 130, 180)
 
 print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF}...")
-print(f"... {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors")
+print(f"... and {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors")
 ```
 
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: rgb(194, 145, 164)">dusty pink</span>...
-% ... <span style="background-color: rgb(70, 130, 180)">steel blue</span> colors</code></pre>
+% ... and <span style="background-color: rgb(70, 130, 180)">steel blue</span> colors</code></pre>

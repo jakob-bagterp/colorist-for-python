@@ -1,5 +1,5 @@
 ---
-title: Guide to Hex Colors
+title: How to Add Hex Colors to Text
 description: The easiest way to print text with 24-bit RGB colors in terminal output using Hex codes and Colorist for Python. Includes code examples.
 tags:
     - Features
@@ -9,13 +9,13 @@ tags:
 ---
 
 # Hex Colors
-The 24-bit Hex color model covers over 16 million colors, and each color can be defined with a code in hexadecimal, for instance `#00aaff`, that can be broken down into a [RGB value](rgb.md):
+## What are Hex Colors?
+The 24-bit Hex color model covers over 16 million colors, and each color can be defined with a code in hexadecimal, for instance `#00aaff` or sometimes shortened to `#0af`, that can be broken down into a [RGB value](rgb.md):
 
-| Hex Code | RGB Value | Color |
-| -------- | --------- | ----- |
-| `00`     | `0`       | Red   |
-| `aa`     | `170`     | Green |
-| `ff`     | `255`     | Blue  |
+| Hex Code  | `00`  | `aa`  | `ff`  |
+| --------- | :---: | :---: | :---: |
+| RGB Value | `0`   | `170` | `255` |
+| Channel   | Red   | Green | Blue  |
 
 !!! info "Disclaimer"
     Not all [terminals support](../materials/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
@@ -53,4 +53,4 @@ print(f"... and {bg_mint_green}mint green{bg_mint_green.OFF} colors")
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: #ff5733">watermelon red</span>...
-% ... <span style="background-color: #99ff99">mint green</span> colors</code></pre>
+% ... and <span style="background-color: #99ff99">mint green</span> colors</code></pre>

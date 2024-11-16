@@ -1,5 +1,5 @@
 ---
-title: How to Use Effects and Styling
+title: How to Add Effects and Styling to Text
 description: The easiest way to add effects and text styling to terminal output using Colorist for Python. Includes code examples.
 tags:
     - Features
@@ -7,7 +7,7 @@ tags:
     - Effects
 ---
 
-# How to Print Text Effects and Text Styling in Python
+# How to Add Effects and Styling to Text
 ## Full Text Functions
 ### Examples
 In addition to colors, Colorist can also add effects when you print text in the terminal. How to print a full line of text with effects:

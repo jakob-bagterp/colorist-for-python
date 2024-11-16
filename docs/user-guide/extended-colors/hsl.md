@@ -1,5 +1,5 @@
 ---
-title: Guide to HSL Colors
+title: How to Add HSL Colors to Text
 description: The easiest way to print text with 24-bit RGB colors in terminal output using HSL and Colorist for Python. Includes code examples.
 tags:
     - Features
@@ -9,17 +9,19 @@ tags:
 ---
 
 # HSL Colors
-The 24-bit HSL color model covers over 16 million colors, and each color can be defined with these parameters:
+## What are HSL Colors?
+The 24-bit HSL color model covers over 16 million colors, and each color can be defined as hue, saturation, and lightness:
 
-* Hue
-* Saturation
-* Lightness
+| Parameter      | Hue                         | Saturation              | Lightness                |
+| -------------- | :-------------------------: | :---------------------: | :----------------------: |
+| Allowed values | `0-360` degrees             | `0-100` %               | `0-100` %                |
+| Description    | Deegree on the color wheel. | Intensity of the color. | Brightness of the color. |
 
 !!! info "Disclaimer"
     Not all [terminals support](../../user-guide/materials/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
 
 ## Full Text Functions
-You can output colors in HSL with the `hsl()` and `bg_hsl()` methods. The value for hue can be between `0-360` degrees, while saturation and lightness can be a percentage between `0-100`%:
+You can output colors in HSL with the `hsl()` and `bg_hsl()` methods. The value for hue can be between `0-360` degrees, while saturation and lightness can be a percentage between `0-100` %:
 
 Example:
 

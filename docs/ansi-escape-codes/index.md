@@ -7,7 +7,7 @@ tags:
     - ANSI Escape Codes
 ---
 
-# How to Use ANSI Escape Codes
+# How to Use ANSI Escape Codes 🎨
 Colorist uses ANSI escape codes to style text in the terminal. This section explains how ANSI escape codes work, and how to use them in your own code.
 
 If you're new to ANSI escape codes, start with the [introduction](introduction.md) to learn the basics.
