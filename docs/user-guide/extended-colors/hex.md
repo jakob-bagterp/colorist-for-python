@@ -14,7 +14,7 @@ The 24-bit Hex color model covers over 16 million colors, and each color can be 
 
 | Hex Code  | `00`  | `aa`  | `ff`  |
 | --------- | :---: | :---: | :---: |
-| RGB Value | `0`   | `170` | `255` |
+| RGB value | `0`   | `170` | `255` |
 | Channel   | Red   | Green | Blue  |
 
 !!! info "Disclaimer"
