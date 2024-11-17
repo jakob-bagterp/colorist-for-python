@@ -25,7 +25,7 @@ tags:
 | ![Black](../../assets/images/colors/black_16x16.png) | `black("text")` | <code><span class="fg-black">This is BLACK!</span></code> |
 
 ???+ example
-    ```python linenums="1"
+    ```python linenums="1" hl_lines="3-5"
     from colorist import green, yellow, red
 
     green("This is GREEN!")
@@ -56,7 +56,7 @@ tags:
     Note that bright colors are [supported by many terminals](../../user-guide/materials/terminal-support.md), yet not all as bright colors aren't part of the standard set of ANSI colors.
 
 ???+ example
-    ```python linenums="1"
+    ```python linenums="1" hl_lines="3-5"
     from colorist import bright_green, bright_yellow, bright_red
 
     bright_green("This is BRIGHT GREEN!")

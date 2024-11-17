@@ -23,7 +23,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             blue (int): Number between `0` and `255`.
 
         Example:
-            ```python linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import rgb
 
             rgb("I want this text in blue RGB colors", 0, 128, 255)

@@ -26,7 +26,7 @@ Enumerable class of all available effects.
 **Example:**
 
 ???+ example
-    ```python linenums="1"
+    ```python linenums="1" hl_lines="3 5"
     from colorist import Effect
 
     print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF}")

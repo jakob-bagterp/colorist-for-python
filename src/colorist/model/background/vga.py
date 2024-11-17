@@ -14,7 +14,7 @@ class BgColorVGA(VGA_ABC):
             vga (int): Number between `0` and `255`.
 
         Example:
-            ```python linenums="1"
+            ```python title="" linenums="1" hl_lines="5"
             from colorist import BgColorVGA
 
             bg_lime_green = BgColorVGA(120)

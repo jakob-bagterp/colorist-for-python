@@ -30,7 +30,7 @@ Enumerable class of all available standard background colors.
 **Example:**
 
 ???+ example
-    ```python linenums="1"
+    ```python linenums="1" hl_lines="3 5"
     from colorist import BgColor
 
     print(f"I want {BgColor.RED}red{BgColor.OFF} background color inside this paragraph")
@@ -67,7 +67,7 @@ Enumerable class of all available standard bright background colors.
 **Example:**
 
 ???+ example
-    ```python linenums="1"
+    ```python linenums="1" hl_lines="3"
     from colorist import BgBrightColor
 
     print(f"I want {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color inside this paragraph")

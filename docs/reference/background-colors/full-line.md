@@ -25,7 +25,7 @@ tags:
 
 ???+ example
 
-    ```python linenums="1"
+    ```python linenums="1" hl_lines="3-5"
     from colorist import bg_green, bg_yellow, bg_red
 
     bg_green("This is GREEN background!")
@@ -57,7 +57,7 @@ tags:
 
 ???+ example
 
-    ```python linenums="1"
+    ```python linenums="1" hl_lines="3-5"
     from colorist import bg_bright_green, bg_bright_yellow, bg_bright_red
 
     bg_bright_green("This is BRIGHT GREEN background!")

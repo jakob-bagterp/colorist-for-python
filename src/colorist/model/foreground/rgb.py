@@ -16,7 +16,7 @@ class ColorRGB(RGB_ABC):
             blue (int): Number between `0` and `255`.
 
         Example:
-            ```python linenums="1"
+            ```python title="" linenums="1" hl_lines="5"
             from colorist import ColorRGB
 
             dusty_pink = ColorRGB(194, 145, 164)
