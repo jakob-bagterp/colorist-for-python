@@ -12,7 +12,7 @@ tags:
 ### Examples
 In addition to colors, Colorist can also add effects when you print text in the terminal. How to print a full line of text with effects:
 
-```python
+```python linenums="1" hl_lines="3"
 from colorist import effect_blink
 
 effect_blink("This is BLINKING!")
@@ -25,7 +25,7 @@ How it appears in the terminal:
 ### Mixing Effects and Colors
 This can also be combined with an optional color:
 
-```python
+```python linenums="1" hl_lines="3"
 from colorist import Color, effect_blink
 
 effect_blink("CYAN and BLINKING!", Color.CYAN)
@@ -49,7 +49,7 @@ How it appears in the terminal:
 ### Examples
 How to customize terminal messages and change effect inside a paragraph:
 
-```python
+```python linenums="1" hl_lines="3 5"
 from colorist import Effect
 
 print(f"I want {Effect.UNDERLINE}underlined text{Effect.UNDERLINE_OFF}")
@@ -65,7 +65,7 @@ How it appears in the terminal:
 ### Mixing Effects and Colors
 Effects can also be mixed with colors:
 
-```python
+```python linenums="1" hl_lines="3"
 from colorist import Color, Effect
 
 print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph")

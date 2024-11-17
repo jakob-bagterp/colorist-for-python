@@ -18,7 +18,7 @@ When you want to print colored backgrounds in the terminal, Colorist offers two 
 ## Print Line of Text with Background Color
 How to print a full line of colored text in the terminal:
 
-```python linenums="1"
+```python linenums="1" hl_lines="3-5"
 from colorist import bg_green, bg_yellow, bg_red
 
 bg_green("This is GREEN background!")
@@ -35,7 +35,7 @@ How it appears in the terminal:
 ## Print Mixed Colors in Text
 Background colors can also be mixed inside a paragraph:
 
-```python linenums="1"
+```python linenums="1" hl_lines="3-5"
 from colorist import BgColor
 
 print(f"Put {BgColor.RED}red{BgColor.OFF} background color inside this paragraph")
@@ -55,7 +55,7 @@ How it appears in the terminal:
 ## Bright Colors
 Most terminals support bright colors that stand more out:
 
-```python linenums="1"
+```python linenums="1" hl_lines="3"
 from colorist import BgBrightColor
 
 print(f"Add {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color")
