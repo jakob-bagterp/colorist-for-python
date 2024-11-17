@@ -8,7 +8,7 @@ tags:
 ---
 
 # Get Started with Colorist in 2 Easy Steps 🚀
-Ready to try? Let's get started:
+Ready to try the easy way to add color to your Python code? Let's get started:
 
 ## 1. Install Colorist for Python Package
 Assuming that [Python](https://www.python.org/) is already installed, execute this command in the terminal to install the Colorist package:
