@@ -54,7 +54,7 @@ This is also why it's [convenient to use Colorist](../user-guide/standard-colors
 
 The `Color` class will generate the ANSI escape sequences and keep the code readable. For example:
 
-```python
+```python linenums="1" hl_lines="3"
 from colorist import Color
 
 print(f"I want {Color.RED}RED{Color.OFF} color")

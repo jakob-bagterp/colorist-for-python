@@ -61,7 +61,7 @@ To apply different color and styling options, simply replace the two underscores
 ### Examples
 How to apply the escape color codes:
 
-```python
+```python linenums="1"
 print("This is \x1b[31mRED\x1b[0m text")
 print("This is \x1b[41mRED\x1b[0m background")
 print("This is \x1b[91mBRIGHT RED\x1b[0m text")
