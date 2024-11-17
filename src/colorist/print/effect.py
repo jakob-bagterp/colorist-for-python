@@ -68,7 +68,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             color (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3-6"
             from colorist import effect_bold, Color, BgColor
 
             effect_bold("This is BOLD")
@@ -93,7 +93,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             color (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3-6"
             from colorist import effect_dim, BrightColor, BgColor
 
             effect_dim("This is DIMMED")
@@ -118,7 +118,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             color (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3-6"
             from colorist import effect_underline, Color, BgBrightColor
 
             effect_underline("This is UNDERLINED")
@@ -143,7 +143,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             color (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3-6"
             from colorist import effect_blink, BrightColor, BgColor
 
             effect_blink("This is BLINKING")
@@ -168,7 +168,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             color (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3-6"
             from colorist import effect_reverse, Color, BgColor
 
             effect_reverse("This is REVERSED")
@@ -193,7 +193,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             color (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | str | None, optional): Optionally add color to text.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3-6"
             from colorist import effect_hide, Color, BgColor
 
             effect_hide("This is HIDDEN")

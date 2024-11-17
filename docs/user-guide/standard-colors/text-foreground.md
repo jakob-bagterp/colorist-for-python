@@ -19,7 +19,7 @@ When you want to print colored text in the terminal, Colorist offers two ways of
 ## Print Line of Colored Text
 How to print a full line of colored text in the terminal:
 
-```python linenums="1"
+```python linenums="1" hl_lines="3-5"
 from colorist import green, yellow, red
 
 green("This is GREEN!")
@@ -36,7 +36,7 @@ How it appears in the terminal:
 ## Print Mixed Colors in Text
 How to customize colors inside a paragraph and print it in the terminal:
 
-```python linenums="1"
+```python linenums="1" hl_lines="3 5"
 from colorist import Color
 
 print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
@@ -55,7 +55,7 @@ How it appears in the terminal:
 ## Bright Colors
 Most terminals support bright colors that stand more out:
 
-```python linenums="1"
+```python linenums="1" hl_lines="3"
 from colorist import BrightColor
 
 print(f"Put {BrightColor.CYAN}cyan{BrightColor.OFF} inside this paragraph")

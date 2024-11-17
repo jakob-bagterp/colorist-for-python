@@ -23,7 +23,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             lightness (float): Percentage between `0` and `100` %.
 
         Example:
-            ```python linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import hsl
 
             hsl("I want this text in green HSL colors", 120, 50, 50)

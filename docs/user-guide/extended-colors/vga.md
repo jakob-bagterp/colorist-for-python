@@ -20,7 +20,7 @@ Try the `vga()` and `bg_vga()` methods for a full line of colored text. The valu
 
 Example:
 
-```python
+```python linenums="1" hl_lines="3-4"
 from colorist import vga, bg_vga
 
 vga("I want this text in purple VGA colors", 57)
@@ -35,7 +35,7 @@ How it appears in the terminal:
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorVGA()` and `BgColorVGA()` classes:
 
-```python
+```python linenums="1" hl_lines="6-7"
 from colorist import ColorVGA, BgColorVGA
 
 honey_yellow = ColorVGA(220)

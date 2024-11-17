@@ -25,7 +25,7 @@ Try the `hex()` and `bg_hex()` methods for a full line of colored text. Allowed 
 
 Example:
 
-```python
+```python linenums="1" hl_lines="3-4"
 from colorist import hex, bg_hex
 
 hex("I want this text in coral Hex colors", "#ff7f50")
@@ -40,7 +40,7 @@ How it appears in the terminal:
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorHex()` and `BgColorHex()` classes:
 
-```python
+```python linenums="1" hl_lines="6-7"
 from colorist import ColorHex, BgColorHex
 
 watermelon_red = ColorHex("#ff5733")

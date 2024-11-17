@@ -14,7 +14,7 @@ Imagine that you want this printed in the terminal:
 
 It's often easier and more readable to use Colorist in combination with [f-strings](https://peps.python.org/pep-0498/):
 
-```python
+```python linenums="1" hl_lines="3"
 from colorist import Color
 
 print(f"I want {Color.RED}red{Color.OFF} color")
@@ -22,7 +22,7 @@ print(f"I want {Color.RED}red{Color.OFF} color")
 
 But as f-strings aren't supported in some earlier versions of Python, you can instead use string formatting with `str.format()` or concatenation with `+`. All variations yield the same result as above:
 
-```python
+```python linenums="1" hl_lines="3 5"
 from colorist import Color
 
 print("I want {0}red{1} color".format(Color.RED, Color.OFF))

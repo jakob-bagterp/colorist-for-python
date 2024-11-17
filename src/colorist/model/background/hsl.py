@@ -16,7 +16,7 @@ class BgColorHSL(HSL_ABC):
             lightness (float): Percentage between `0` and `100` %.
 
         Example:
-            ```python linenums="1"
+            ```python title="" linenums="1" hl_lines="5"
             from colorist import BgColorHSL
 
             bg_steel_gray = BgColorHSL(190, 2, 49)

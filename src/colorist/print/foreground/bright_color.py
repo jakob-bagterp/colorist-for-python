@@ -61,7 +61,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed with color.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bright_black
 
             bright_black("This is BRIGHT BLACK!")
@@ -79,7 +79,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed with color.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bright_red
 
             bright_red("This is BRIGHT RED!")
@@ -97,7 +97,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed with color.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
 
             from colorist import bright_green
 
@@ -116,7 +116,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed with color.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bright_yellow
 
             bright_yellow("This is BRIGHT YELLOW!")
@@ -134,7 +134,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed with color.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3""
             from colorist import bright_blue
 
             bright_blue("This is BRIGHT BLUE!")
@@ -152,7 +152,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed with color.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bright_magenta
 
             bright_magenta("This is BRIGHT MAGENTA!")
@@ -170,7 +170,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed with color.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bright_cyan
 
             bright_cyan("This is BRIGHT CYAN!")
@@ -188,7 +188,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed with color.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bright_white
 
             bright_white("This is BRIGHT WHITE!")

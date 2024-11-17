@@ -23,7 +23,7 @@ Colorist is intended to be easy to use. Imagine you want to print a mix of color
 
 Once [installed](./getting-started/installation.md), simply import the `colorist` module and start printing colored text with the `Color` class:
 
-```python linenums="1"
+```python linenums="1" hl_lines="3"
 from colorist import Color
 
 print(f"This is {Color.RED}RED{Color.OFF}!")
@@ -32,7 +32,7 @@ print(f"This is {Color.RED}RED{Color.OFF}!")
 ### Varied Color Palette
 Or simply print a full line of colored text from a varied [palette of color](./user-guide/standard-colors/text-foreground.md#print-line-of-colored-text):
 
-```python linenums="1"
+```python linenums="1" hl_lines="3"
 from colorist import bright_yellow
 
 bright_yellow("This is BRIGHT YELLOW!")

@@ -23,7 +23,7 @@ The 24-bit RGB color space represents a much broader array of colors. Simply use
 ## Examples
 For example, `\x1b[38;2;142;194;21m` is a lime green foreground text color, and `\x1b[48;2;194,21,139m` is a rosa background color. When wrapped with `\x1b[0m` to reset the color, you can write this:
 
-```python
+```python linenums="1"
 print("This is \x1b[38;2;142;194;21mLIME GREEN\x1b[0m text")
 print("This is \x1b[48;2;194,21,139mROSA\x1b[0m background")
 ```

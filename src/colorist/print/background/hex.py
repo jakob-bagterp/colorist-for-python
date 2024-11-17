@@ -21,7 +21,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             hex (str): Hex color value with or without hashtag, for instance `#B4FBB8` or `B4FBB8`, `#B4F` or `B4F`.
 
         Example:
-            ```python linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bg_hex
 
             bg_hex("I want this background in coral Hex colors", "#ff7f50")

@@ -25,7 +25,7 @@ You can output colors in HSL with the `hsl()` and `bg_hsl()` methods. The value 
 
 Example:
 
-```python
+```python linenums="1" hl_lines="3-4"
 from colorist import hsl, bg_hsl
 
 hsl("I want this text in green HSL colors", 120, 50, 50)
@@ -40,7 +40,7 @@ How it appears in the terminal:
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorHSL()` and `BgColorHSL()` classes:
 
-```python
+```python linenums="1" hl_lines="6-7"
 from colorist import ColorHSL, BgColorHSL
 
 mustard_green = ColorHSL(60, 56, 43)

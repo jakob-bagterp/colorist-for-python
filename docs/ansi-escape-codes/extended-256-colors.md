@@ -25,7 +25,7 @@ It works both with foreground text and background colors. Simply replace the thr
 ## Examples
 For example, `\x1b[38;5;166m` is an orange foreground text color, and `\x1b[48;5;243m` is a light gray background color. When wrapped with `\x1b[0m` to reset the color, you can write this:
 
-```python
+```python linenums="1"
 print("This is \x1b[38;5;166mORANGE\x1b[0m text")
 print("This is \x1b[48;5;243mLIGHT GRAY\x1b[0m background")
 ```
@@ -66,7 +66,7 @@ How it looks in the terminal:
 #### Examples
 Let's use color `11` for yellow text and color `14` for cyan background:
 
-```python
+```python linenums="1"
 print("This is \x1b[38;5;11mYELLOW\x1b[0m text")
 print("This is \x1b[48;5;14CYAN\x1b[0m background")
 ```
@@ -116,7 +116,7 @@ How it looks in the terminal:
 #### Examples
 Let's use color `244` for light gray text and color `234` for dark gray background:
 
-```python
+```python linenums="1"
 print("This is \x1b[38;5;244mLIGHT GRAY\x1b[0m text")
 print("This is \x1b[48;5;234mDARK GRAY\x1b[0m background")
 ```
@@ -424,7 +424,7 @@ How it looks in the terminal:
 #### Examples
 Let's use color `19` for royal blue text and color `201` for pink background:
 
-```python
+```python linenums="1"
 print("This is \x1b[38;5;19mROYAL BLUE\x1b[0m text")
 print("This is \x1b[48;5;201mPINK\x1b[0m background")
 ```

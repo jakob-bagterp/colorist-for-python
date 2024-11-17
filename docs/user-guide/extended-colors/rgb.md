@@ -24,7 +24,7 @@ Try the `rgb()` and `bg_rgb()` methods for a full line of colored text. The valu
 
 Example:
 
-```python
+```python linenums="1" hl_lines="3-4"
 from colorist import rgb, bg_rgb
 
 rgb("I want this text in blue RGB colors", 0, 128, 255)
@@ -39,7 +39,7 @@ How it appears in the terminal:
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorRGB()` and `BgColorRGB()` classes:
 
-```python
+```python linenums="1" hl_lines="6-7"
 from colorist import ColorRGB, BgColorRGB
 
 dusty_pink = ColorRGB(194, 145, 164)

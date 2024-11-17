@@ -61,7 +61,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed on colored background.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bg_black
 
             bg_black("This is BLACK background!")
@@ -79,7 +79,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed on colored background.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bg_red
 
             bg_red("This is RED background!")
@@ -97,7 +97,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed on colored background.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bg_green
 
             bg_green("This is GREEN background!")
@@ -115,7 +115,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed on colored background.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bg_yellow
 
             bg_yellow("This is YELLOW background!")
@@ -133,7 +133,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed on colored background.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bg_blue
 
             bg_blue("This is BLUE background!")
@@ -151,7 +151,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed on colored background.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bg_magenta
 
             bg_magenta("This is MAGENTA background!")
@@ -169,7 +169,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed on colored background.
 
         Example:
-            ```python title="" linenums="1"
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bg_cyan
 
             bg_cyan("This is CYAN background!")
@@ -187,8 +187,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             text (str): Text to be printed on colored background.
 
         Example:
-            ```python title="" linenums="1"
-
+            ```python title="" linenums="1" hl_lines="3"
             from colorist import bg_white
 
             bg_white("This is WHITE background!")

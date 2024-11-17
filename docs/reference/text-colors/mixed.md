@@ -31,7 +31,7 @@ Enumerable class of all available standard text colors.
 **Example:**
 
 ???+ example
-    ```python linenums="1"
+    ```python linenums="1" hl_lines="3 5"
     from colorist import Color
 
     print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
@@ -68,7 +68,7 @@ Enumerable class of all available standard bright text colors.
 **Example:**
 
 ???+ example
-    ```python linenums="1"
+    ```python linenums="1" hl_lines="3"
     from colorist import BrightColor
 
     print(f"I want {BrightColor.CYAN}cyan{BrightColor.OFF} color inside this paragraph")
