@@ -12,11 +12,11 @@ description: Colorist is a lightweight Python package that makes it easy and fas
 [![Downloads](https://static.pepy.tech/badge/colorist)](https://pepy.tech/project/colorist)
 
 # Colorist for Python 🌈
-## Introduction
+## What Is Colorist?
 Lightweight Python package that makes it easy and fast to print colored text in the terminal.
 
 ## How It Works
-### Basics
+### Basic Usage
 Colorist is intended to be easy to use. Imagine you want to print a mix of colors in the terminal:
 
 <pre><code>% This is <span class="fg-red">RED</span>!</code></pre>
@@ -43,7 +43,7 @@ How it appears in the terminal:
 <pre><code>% <span class="fg-bright-yellow">This is BRIGHT YELLOW!</span></code></pre>
 
 ## Next Steps
-Ready to try more options and features? [Let's get started](./getting-started/index.md).
+Ready to try more options and features? Let's get started with the [installation](getting-started/index.md) or check out the [user guide](user-guide/index.md).
 
 !!! tip "Become a Sponsor"
     If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution, no matter the size, makes a difference.
