@@ -22,6 +22,13 @@ It works both with foreground text and background colors. Simply replace the thr
 | `\x1b[38;5;___m` | Text       |
 | `\x1b[48;5;___m` | Background |
 
+### Sequence Parts
+For example, the sequences `\x1b[38;5;201m` for pink foreground text and `\x1b[48;5;201m` for pink background can be broken down into the following parts:
+
+| Part        | `\x1b[` | `38;5;`<br>`48;5;` | `201` | `m` |
+| ----------- | :-----: | :----------------: | :---: | :-: |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text or background color. | Color code between 0-255. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
+
 ## Examples
 For example, `\x1b[38;5;166m` is an orange foreground text color, and `\x1b[48;5;243m` is a light gray background color. When wrapped with `\x1b[0m` to reset the color, you can write this:
 
