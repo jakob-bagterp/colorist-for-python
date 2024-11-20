@@ -11,6 +11,7 @@ tags:
 ANSI escape sequences were introduced in the 1970s as a standard to style text terminals with color, font styling, and other options. They are supported by most modern terminals in operating systems like Windows, macOS, and Linux.
 
 ## Building Blocks
+### Escape Character
 They always start with `\x1b`, `\033`, `\u001b`, or `\e` or depending on the operating system or programming language. Technically this inserts byte 27 into a string, which is equivalent to `0x1b` and the `ESC` key when you look at an [ASCII table](https://www.asciitable.com). Hence the name.
 
 | Escape Character | Description |
@@ -21,12 +22,13 @@ They always start with `\x1b`, `\033`, `\u001b`, or `\e` or depending on the ope
 | `\e`             | Escape in C |
 | `27`             | Decimal     |
 
-For convenience, we will use `\x1b` as escape character in this documentation.
+Also known as the Control Sequence Introducer (CSI), whichever option you use. For convenience, we will use `\x1b` as the escape character in this documentation.
 
+### Sequence Parts
 All ANSI escape sequences follow the same pattern. For example, the sequence `\x1b[31m` can be broken down into:
 
-| Part        | `\x1b[` | `31`    | `m`     |
-| ----------- | :-----: | :-----: | :-----: |
+| Part        | `\x1b[` | `31` | `m` |
+| ----------- | :-----: | :--: | :-: |
 | Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Color code for various text and background colors, e.g. between 30-49 or 90-109. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
 ## Example

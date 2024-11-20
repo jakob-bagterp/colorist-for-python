@@ -10,7 +10,15 @@ tags:
 
 # Effects in ANSI Escape Codes
 ## Structure
-For effects, the codes are. And as before, replace the two underscores `__` in `\x1b[__m` with any of the following color codes:
+For effects and text styling, the escape codes are similar to the [standard colors](standard-16-colors.md).
+
+For example, the sequence `\x1b[4m` for underlined styling can be broken down into the following parts:
+
+| Part        | `\x1b[` | `4` | `m` |
+| ----------- | :-----: | :-: | :-: |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Effect on or off, respectively between 1-8 or 21-28. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
+
+## Cheat Sheet
 
 | Effect    | On  | Escape Code | Off | Escape Code | Output Example |
 | :-------: | :-: | :---------: | :-: | :---------: | :------------- |
