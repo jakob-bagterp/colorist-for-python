@@ -27,8 +27,8 @@ Also known as the Control Sequence Introducer (CSI), whichever option you use. F
 ### Sequence Parts
 All ANSI escape sequences follow the same pattern. For example, the sequence `\x1b[31m` can be broken down into:
 
-| Part        | `\x1b[` | `31`    | `m`     |
-| ----------- | :-----: | :-----: | :-----: |
+| Part        | `\x1b[` | `31` | `m` |
+| ----------- | :-----: | :--: | :-: |
 | Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Color code for various text and background colors, e.g. between 30-49 or 90-109. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
 ## Example
