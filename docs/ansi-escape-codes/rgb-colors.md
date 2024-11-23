@@ -40,5 +40,5 @@ How it looks in the terminal:
 <pre><code>% This is <span class="extended-colors" style="--fg-color: #8ec215;">LIME GREEN</span> text
 % This is <span class="extended-colors" style="--bg-color: #c2158b;">ROSA</span> background</code></pre>
 
-## How to Use RGB Colors in Colorist
+## How to Use RGB Colors with Colorist
 In Colorist, the [RGB color space](../user-guide/extended-colors/rgb.md) is used to furthermore support definition of colors as [HSL](../user-guide/extended-colors/hsl.md) or [Hex](../user-guide/extended-colors/hex.md).
