@@ -140,3 +140,20 @@ How it appears in the terminal:
 | ![Bright magenta](../assets/images/colors/bright_magenta_16x16.png) | Magenta | 105 | `\x1b[105m` | <code>This is <span class="bg-bright-magenta">BRIGHT MAGENTA</span></code> |
 | ![Bright cyan](../assets/images/colors/bright_cyan_16x16.png)       | Cyan    | 106 | `\x1b[106m` | <code>This is <span class="bg-bright-cyan">BRIGHT CYAN</span></code> |
 | ![Bright white](../assets/images/colors/bright_white_16x16.png)     | White   | 107 | `\x1b[107m` | <code>This is <span class="bg-bright-white">BRIGHT WHITE</span></code> |
+
+## Humanised Sequence Is Easier to Read
+Instead of using raw ANSI escape codes, it's [convenient to use Colorist](../user-guide/index.md) to generate the escape codes while keeping the code readable.
+
+Simply use the `Color` or `BrightColor` classes for [foreground text colors](../user-guide/standard-colors/text-foreground.md), or the `BgColor` or `BgBrightColor` classes for [background colors](../user-guide/standard-colors/background.md). For example:
+
+```python linenums="1" hl_lines="3-4"
+from colorist import Color
+
+print(f"I want {Color.RED}RED{Color.OFF} color")
+print(f"I want {BgColor.RED}RED{Color.OFF} background color")
+```
+
+How it appears in the terminal:
+
+<pre><code>% I want <span class="fg-red">RED</span> color
+% I want <span class="bg-red">RED</span> background color</code></pre>
