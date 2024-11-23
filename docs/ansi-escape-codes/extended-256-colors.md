@@ -42,6 +42,27 @@ How it looks in the terminal:
 <pre><code>% This is <span class="extended-colors" style="--fg-color: #d75f00;">ORANGE</span> text
 % This is <span class="extended-colors" style="--bg-color: #767676;">LIGHT GRAY</span> background</code></pre>
 
+
+!!! tip "How to Use VGA Colors with Colorist"
+    Instead of using raw ANSI escape codes, it's [convenient to use Colorist](../user-guide/index.md) to generate them while keeping the code readable.
+
+    Simply use the `ColorVGA` class for [foreground text colors](../user-guide/extended-colors/vga.md) or the `BgColorVGA` class for [background colors](../user-guide/extended-colors/vga.md). For example:
+
+    ```python linenums="1" hl_lines="3-4"
+    from colorist import ColorVGA, BgColorVGA
+
+    purple = ColorVGA(93)
+    light_blue = BgColorVGA(33)
+
+    print(f"I want {purple}PURPLE{purple.OFF} color")
+    print(f"I want {light_blue}LIGHT BLUE{light_blue.OFF} background color")
+    ```
+
+    How it appears in the terminal:
+
+    <pre><code>% I want <span style="color: #8700ff">PURPLE</span> color
+    % I want <span style="background-color: #0087ff">LIGHT BLUE</span> background color</code></pre>
+
 ## Cheat Sheets
 ### Standard Palette
 
