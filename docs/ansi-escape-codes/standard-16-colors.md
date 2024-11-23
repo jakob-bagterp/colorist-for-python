@@ -96,7 +96,7 @@ How it appears in the terminal:
     Simply use the `Color` or `BrightColor` classes for [foreground text colors](../user-guide/standard-colors/text-foreground.md), or the `BgColor` or `BgBrightColor` classes for [background colors](../user-guide/standard-colors/background.md). For example:
 
     ```python linenums="1" hl_lines="3-4"
-    from colorist import Color
+    from colorist import Color, BgColor
 
     print(f"I want {Color.RED}RED{Color.OFF} color")
     print(f"I want {BgColor.RED}RED{Color.OFF} background color")
