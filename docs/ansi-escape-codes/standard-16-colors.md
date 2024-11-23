@@ -12,9 +12,9 @@ tags:
 ---
 
 # Standard 16 Colors in ANSI Escape Codes
-## Structure
 There are 8 standard colors and 8 bright colors – 16 in total. The bright colors are the same as the standard colors, yet with a higher intensity, and each color can be in the foreground (i.e. as text) or background.
 
+## Structure
 The 8 colors are simply black and white, plus the 6 colors of the rainbow. Firstly, the three primary colors red, green, and blue. Then the secondary colors yellow, magenta, and cyan:
 
 | Code | Color   | Example |
@@ -36,6 +36,21 @@ Each color then needs to be prepended by a foreground or background option. When
 | 4_   | Background | Standard  |
 | 9_   | Text       | Bright    |
 | 10_  | Background | Bright    |
+
+### Sequence Parts
+#### Normal Colors
+For example, the sequences `\x1b[31m` for red foreground text and `\x1b[41m` for red background can be broken down into the following parts:
+
+| Part        | `\x1b[` | `3`<br>`4` | `1` | `m` |
+| ----------- | :-----: | :----------------: | :---: | :-: |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text or background color. | Color code between 0-7. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
+
+#### Bright Colors
+For example, the sequences `\x1b[92m` for bright green foreground text and `\x1b[102m` for bright green background can be broken down into the following parts:
+
+| Part        | `\x1b[` | `9`<br>`10` | `2` | `m` |
+| ----------- | :-----: | :----------------: | :---: | :-: |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text or background color. | Color code between 0-7. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
 ## Foreground Text and Background Colors
 To apply different color and styling options, simply replace the two underscores `__` in `\x1b[__m` with any of the following color codes:
