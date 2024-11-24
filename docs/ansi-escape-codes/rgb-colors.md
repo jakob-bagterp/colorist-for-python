@@ -40,5 +40,24 @@ How it looks in the terminal:
 <pre><code>% This is <span class="extended-colors" style="--fg-color: #8ec215;">LIME GREEN</span> text
 % This is <span class="extended-colors" style="--bg-color: #c2158b;">ROSA</span> background</code></pre>
 
-## How to Use RGB Colors with Colorist
-In Colorist, the [RGB color space](../user-guide/extended-colors/rgb.md) is used to furthermore support definition of colors as [HSL](../user-guide/extended-colors/hsl.md) or [Hex](../user-guide/extended-colors/hex.md).
+!!! tip "How to Use RGB Colors with Colorist"
+    Instead of using raw ANSI escape codes, it's [convenient to use Colorist](../user-guide/index.md) to generate them while keeping the code readable.
+
+    Simply use the `ColorRGB` class for [foreground text colors](../user-guide/extended-colors/rgb.md) or the `BgColorRGB` class for [background colors](../user-guide/extended-colors/rgb.md). For example:
+
+    ```python linenums="1" hl_lines="3-4"
+    from colorist import ColorRGB, BgColorRGB
+
+    lime_green = ColorRGB(142, 194, 21)
+    rosa = BgColorRGB(194, 21, 139)
+
+    print(f"I want {lime_green}LIME GREEN{lime_green.OFF} text")
+    print(f"I want {rosa}ROSA{rosa.OFF} background")
+    ```
+
+    How it appears in the terminal:
+
+    <pre><code>% This is <span class="extended-colors" style="--fg-color: #8ec215;">LIME GREEN</span> text
+    % This is <span class="extended-colors" style="--bg-color: #c2158b;">ROSA</span> background</code></pre>
+
+    In Colorist, the [RGB color space](../user-guide/extended-colors/rgb.md) is used to furthermore support definition of colors as [HSL](../user-guide/extended-colors/hsl.md) or [Hex](../user-guide/extended-colors/hex.md).
