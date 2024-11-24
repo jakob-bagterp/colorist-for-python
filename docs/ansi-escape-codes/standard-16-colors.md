@@ -98,14 +98,14 @@ How it appears in the terminal:
     ```python linenums="1" hl_lines="3-4"
     from colorist import Color, BgColor
 
-    print(f"I want {Color.RED}RED{Color.OFF} text")
-    print(f"I want {BgColor.RED}RED{Color.OFF} background")
+    print(f"This is {Color.RED}RED{Color.OFF} text")
+    print(f"This is {BgColor.RED}RED{Color.OFF} background")
     ```
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span class="fg-red">RED</span> text
-    % I want <span class="bg-red">RED</span> background</code></pre>
+    <pre><code>% This is <span class="fg-red">RED</span> text
+    % This is <span class="bg-red">RED</span> background</code></pre>
 
 ## Cheat Sheets
 ### Foreground Text Colors

@@ -54,14 +54,14 @@ How it looks in the terminal:
     purple = ColorVGA(166)
     light_gray = BgColorVGA(243)
 
-    print(f"I want {purple}ORANGE{purple.OFF} color")
-    print(f"I want {light_gray}LIGHT GRAY{light_gray.OFF} background color")
+    print(f"This is {purple}ORANGE{purple.OFF} text")
+    print(f"This is {light_gray}LIGHT GRAY{light_gray.OFF} background")
     ```
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span style="color: #d75f00">ORANGE</span> color
-    % I want <span style="background-color: #767676">LIGHT GRAY</span> background color</code></pre>
+    <pre><code>% This is <span class="extended-colors" style="--fg-color: #d75f00;">ORANGE</span> text
+    % This is <span class="extended-colors" style="--bg-color: #767676;">LIGHT GRAY</span> background</code></pre>
 
 ## Cheat Sheets
 ### Standard Palette

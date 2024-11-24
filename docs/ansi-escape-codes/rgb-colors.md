@@ -51,8 +51,8 @@ How it looks in the terminal:
     lime_green = ColorRGB(142, 194, 21)
     rosa = BgColorRGB(194, 21, 139)
 
-    print(f"I want {lime_green}LIME GREEN{lime_green.OFF} text")
-    print(f"I want {rosa}ROSA{rosa.OFF} background")
+    print(f"This is {lime_green}LIME GREEN{lime_green.OFF} text")
+    print(f"This is {rosa}ROSA{rosa.OFF} background")
     ```
 
     How it appears in the terminal:
