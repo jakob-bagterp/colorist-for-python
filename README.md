@@ -98,6 +98,7 @@ How it appears in the terminal:
 As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the color may spill over and into other terminal messages.
 
 ## Foreground Text
+
 | Color | Full Text Function | Color Code | Example |
 | ----- | ------------------ | ---------- | ------- |
 | ![Green](/docs/assets/images/colors/green_16x16.png) | `green("text")` | `Color.GREEN` | ![Green text color in terminal](/docs/assets/images/examples/color_map/green_full_text_167x16.png) |
@@ -122,6 +123,7 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
 | - | - | `BrightColor.OFF` | - |
 
 ## Background
+
 | Color | Full Text Function | Color Code | Example |
 | ----- | ------------------ | ---------- | ------- |
 | ![Green](/docs/assets/images/colors/green_16x16.png) | `bg_green("text")` | `BgColor.GREEN` | ![Green background color in terminal](/docs/assets/images/examples/bg_color_map/green_full_text_194x16.png) |
