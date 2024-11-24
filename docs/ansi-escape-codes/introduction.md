@@ -31,7 +31,7 @@ All ANSI escape sequences follow the same pattern. For example, the sequence `\x
 | ----------- | :-----: | :--: | :-: |
 | Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Color code for various text and background colors, e.g. between 30-49 or 90-109. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
-## Example
+## Examples
 Though ANSI escape sequences appear in a string as multiple characters, they are in reality interpreted by the terminal as a single command. For example:
 
 | Sequence   | Description             |
@@ -51,17 +51,17 @@ How to apply this in a print command:
 print("I want \x1b[31mRED\x1b[0m color")
 ```
 
-## Humanised Sequence Is Easier to Read
-This is also why it's [convenient to use Colorist](../user-guide/standard-colors/text-foreground.md) instead of manually writing raw ANSI escape codes.
+!!! tip "Humanised Sequence Is Easier to Read"
+    This is also why it's [convenient to use Colorist](../user-guide/standard-colors/text-foreground.md) instead of manually writing raw ANSI escape codes.
 
-The `Color` class will generate the ANSI escape sequences and keep the code readable. For example:
+    The `Color` class will generate the ANSI escape sequences and keep the code readable. For example:
 
-```python linenums="1" hl_lines="3"
-from colorist import Color
+    ```python linenums="1" hl_lines="3"
+    from colorist import Color
 
-print(f"I want {Color.RED}RED{Color.OFF} color")
-```
+    print(f"I want {Color.RED}RED{Color.OFF} color")
+    ```
 
-The result in the terminal output is the same as before:
+    The result in the terminal output is the same as before:
 
-<pre><code>% I want <span class="fg-red">RED</span> color</code></pre>
+    <pre><code>% I want <span class="fg-red">RED</span> color</code></pre>

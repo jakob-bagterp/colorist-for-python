@@ -73,7 +73,7 @@ To apply different color and styling options, simply replace the two underscores
 
     When using Colorist, you can for example use `Color.OFF` to reset the terminal text style.
 
-### Examples
+## Examples
 How to apply the escape color codes:
 
 ```python linenums="1"
@@ -89,6 +89,23 @@ How it appears in the terminal:
 % This is <span class="bg-red">RED</span> background
 % This is <span class="fg-bright-red">BRIGHT RED</span> text
 % This is <span class="bg-bright-red">BRIGHT RED</span> background</code></pre>
+
+!!! tip "How to Use Colors with Colorist"
+    Instead of using raw ANSI escape codes, it's [convenient to use Colorist](../user-guide/index.md) to generate the them while keeping the code readable.
+
+    Simply use the `Color` or `BrightColor` classes for [foreground text colors](../user-guide/standard-colors/text-foreground.md), or the `BgColor` or `BgBrightColor` classes for [background colors](../user-guide/standard-colors/background.md). For example:
+
+    ```python linenums="1" hl_lines="3-4"
+    from colorist import Color, BgColor
+
+    print(f"I want {Color.RED}RED{Color.OFF} text")
+    print(f"I want {BgColor.RED}RED{Color.OFF} background")
+    ```
+
+    How it appears in the terminal:
+
+    <pre><code>% I want <span class="fg-red">RED</span> text
+    % I want <span class="bg-red">RED</span> background</code></pre>
 
 ## Cheat Sheets
 ### Foreground Text Colors
