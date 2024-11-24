@@ -16,6 +16,12 @@
     --bright-cyan: rgb(56, 241, 242);
     --bright-white: rgb(254, 254, 254);
     --bright-black: rgb(83, 85, 91);
+
+    /* Extra Colors from MkDocs Material: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/ */
+
+    --material-teal: rgb(0, 148, 133);
+    --material-green: rgb(76, 174, 79);
+    --material-light-green: rgb(139, 195, 75);
 }
 
 /* Foreground Colors */
@@ -169,12 +175,13 @@
 /* Extended Colors Tables */
 
 td.extended-colors {
-    background-color: var(--bg-color); /* Get the background color from the markup as variable. */
+    background-color: var(--bg-color);  /* Get the background color from the markup as variable. */
     color: var(--bright-white);  /* Default text color, which may be changed based on the background color. */
 }
 
 /* Extended Colors Examples */
+
 span.extended-colors {
-    background-color: var(--bg-color); /* Get the background color from the markup as variable. */
+    background-color: var(--bg-color);  /* Get the background color from the markup as variable. */
     color: var(--fg-color);  /* Get the foreground color from the markup as variable. */
 }
