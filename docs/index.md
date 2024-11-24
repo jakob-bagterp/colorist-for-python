@@ -29,6 +29,8 @@ from colorist import Color
 print(f"This is {Color.RED}RED{Color.OFF}!")
 ```
 
+You can use the same method to apply other colors to [text](user-guide/standard-colors/text-foreground.md) or [backgrounds](user-guide/standard-colors/background.md).
+
 ### Varied Color Palette
 Or simply print a full line of colored text from a varied [palette of color](./user-guide/standard-colors/text-foreground.md#print-line-of-colored-text):
 
