@@ -35,7 +35,7 @@ print("This is \x1b[38;2;142;194;21mLIME GREEN\x1b[0m text")
 print("This is \x1b[48;2;194;21;139mROSA\x1b[0m background")
 ```
 
-How it looks in the terminal:
+How it appears in the terminal:
 
 <pre><code>% This is <span class="extended-colors" style="--fg-color: #8ec215;">LIME GREEN</span> text
 % This is <span class="extended-colors" style="--bg-color: #c2158b;">ROSA</span> background</code></pre>

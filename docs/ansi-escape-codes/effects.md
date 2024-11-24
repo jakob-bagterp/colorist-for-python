@@ -39,7 +39,7 @@ For example, `\x1b[4m` is underlined text, and `\x1b[24m` turns off the underlin
 print("This is \x1b[1mUNDERLINED\x1b[21m text")
 ```
 
-How it looks in the terminal:
+How it appears in the terminal:
 
 <pre><code>% This is <u>UNDERLINED</u> text</code></pre>
 
@@ -49,7 +49,7 @@ Another example with blinking text:
 print("This is \x1b[5mBLINKING\x1b[25m text")
 ```
 
-How it looks in the terminal:
+How it appears in the terminal:
 
 <pre><code>% This is <span class="effect-blinking">BLINKING</span> text</code></pre>
 

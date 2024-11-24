@@ -37,7 +37,7 @@ print("This is \x1b[38;5;166mORANGE\x1b[0m text")
 print("This is \x1b[48;5;243mLIGHT GRAY\x1b[0m background")
 ```
 
-How it looks in the terminal:
+How it appears in the terminal:
 
 <pre><code>% This is <span class="extended-colors" style="--fg-color: #d75f00;">ORANGE</span> text
 % This is <span class="extended-colors" style="--bg-color: #767676;">LIGHT GRAY</span> background</code></pre>
@@ -99,7 +99,7 @@ print("This is \x1b[38;5;11mYELLOW\x1b[0m text")
 print("This is \x1b[48;5;14CYAN\x1b[0m background")
 ```
 
-How it looks in the terminal:
+How it appears in the terminal:
 
 <pre><code>% This is <span class="extended-colors" style="--fg-color: #ffff00;">YELLOW</span> text
 % This is <span class="extended-colors" style="--bg-color: #00ffff;">CYAN</span> background</code></pre>
@@ -149,7 +149,7 @@ print("This is \x1b[38;5;244mLIGHT GRAY\x1b[0m text")
 print("This is \x1b[48;5;234mDARK GRAY\x1b[0m background")
 ```
 
-How it looks in the terminal:
+How it appears in the terminal:
 
 <pre><code>% This is <span class="extended-colors" style="--fg-color: #808080;">LIGHT GRAY</span> text
 % This is <span class="extended-colors" style="--bg-color: #1c1c1c;">DARK GRAY</span> background</code></pre>
@@ -457,7 +457,7 @@ print("This is \x1b[38;5;19mROYAL BLUE\x1b[0m text")
 print("This is \x1b[48;5;201mPINK\x1b[0m background")
 ```
 
-How it looks in the terminal:
+How it appears in the terminal:
 
 <pre><code>% This is <span class="extended-colors" style="--fg-color: #0000af;">ROYAL BLUE</span> text
 % This is <span class="extended-colors" style="--bg-color: #ff00ff;">PINK</span> background</code></pre>
