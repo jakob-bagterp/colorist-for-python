@@ -13,7 +13,7 @@ Enumerable class of all available effects.
 
 **Options:**
 
-| Effect           | Apply Code         | Reset Code             | Example                                                            |
+| Effect           | Reset Code         | Reset Code             | Example                                                            |
 | ---------------- | ------------------ | ---------------------- | ------------------------------------------------------------------ |
 | Bold             | `Effect.BOLD`      | `Effect.BOLD_OFF`      | <code>This is <strong>BOLD</strong></code>                         |
 | Dim              | `Effect.DIM`       | `Effect.DIM_OFF`       | <code>This is <span class="effect-dimmed">DIMMED</span></code>     |
