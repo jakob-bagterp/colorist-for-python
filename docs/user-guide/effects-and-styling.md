@@ -35,7 +35,8 @@ How it appears in the terminal:
 
 <pre><code>% <span class="effect-blinking fg-cyan">CYAN and BLINKING!</span></code></pre>
 
-### Overview
+### Cheat Sheet
+
 | Effect           | Full Text Function         | Example |
 | ---------------- | -------------------------- | ------- |
 | Bold             | `effect_bold("text")`      | <code>This is <strong>BOLD</strong></code> |
@@ -78,7 +79,8 @@ How it appears in the terminal:
 !!! tip
     Similar to `Color.OFF`, remember to turn off an effect with the relevant reset option (e.g `Effect.BOLD_OFF`, `Effect.DIM_OFF`, etc. or even just `Effect.OFF`) every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
 
-### Overview
+### Cheat Sheet
+
 | Effect           | Custom             | Reset                  | Example    |
 | ---------------- | ------------------ | ---------------------- | ---------- |
 | Bold             | `Effect.BOLD`      | `Effect.BOLD_OFF`      | <code>This is <strong>BOLD</strong></code> |
