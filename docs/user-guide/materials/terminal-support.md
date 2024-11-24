@@ -20,4 +20,4 @@ Generally, the features of Colorist are supported in these categories:
 
 Refer to the terminal's documentation to see if it supports extended color palettes.
 
-[^1]: Only custom string styling methods are mentioned in this overview. However, this similarly applies to the respective full text functions. For instance `rgb()` for `ColorRGB`, `bg_rgb()` for `BgColorRGB`, etc..
+[^1]: Only custom string styling methods are mentioned in this overview. However, this similarly applies to the respective full text functions. For instance `rgb()` for `ColorRGB`, `bg_rgb()` for `BgColorRGB`, etc.
