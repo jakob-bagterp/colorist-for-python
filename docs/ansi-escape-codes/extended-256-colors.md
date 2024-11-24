@@ -51,17 +51,17 @@ How it looks in the terminal:
     ```python linenums="1" hl_lines="3-4"
     from colorist import ColorVGA, BgColorVGA
 
-    purple = ColorVGA(93)
-    light_blue = BgColorVGA(33)
+    purple = ColorVGA(166)
+    light_gray = BgColorVGA(243)
 
-    print(f"I want {purple}PURPLE{purple.OFF} color")
-    print(f"I want {light_blue}LIGHT BLUE{light_blue.OFF} background color")
+    print(f"I want {purple}ORANGE{purple.OFF} color")
+    print(f"I want {light_gray}LIGHT GRAY{light_gray.OFF} background color")
     ```
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span style="color: #8700ff">PURPLE</span> color
-    % I want <span style="background-color: #0087ff">LIGHT BLUE</span> background color</code></pre>
+    <pre><code>% I want <span style="color: #d75f00">ORANGE</span> color
+    % I want <span style="background-color: #767676">LIGHT GRAY</span> background color</code></pre>
 
 ## Cheat Sheets
 ### Standard Palette
