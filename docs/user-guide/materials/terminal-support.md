@@ -12,11 +12,13 @@ Colorist is based on [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_esca
 ## Overview
 Generally, the features of Colorist are supported in these categories:
 
-| Category                  | Supported By         | Colorist Options[^1]                                                         |
-| ------------------------- | -------------------- | ---------------------------------------------------------------------------- |
-| Standard ANSI colors      | Almost all terminals | `Color`, `BgColor`, `Effect`                                                 |
-| Non-standard ANSI colors  | Most terminals       | `BrightColor`, `BgBrightColor`, `ColorVGA`, `BgColorVGA`                     |
-| Advanced ANSI colors only | Some terminals       | `ColorRGB`, `BgColorRGB`, `ColorHSL`, `BgColorHSL`, `ColorHex`, `BgColorHex` |
+<div id="terminals-color-support-table"></div>
+
+| Category                  | Supported By                                  | Colorist Options[^1]                                                         |
+| ------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------- |
+| Standard ANSI colors      | :material-check-all: Almost all terminals     | `Color`, `BgColor`, `Effect`                                                 |
+| Non-standard ANSI colors  | :material-check: Most terminals               | `BrightColor`, `BgBrightColor`, `ColorVGA`, `BgColorVGA`                     |
+| Advanced ANSI colors only | :material-help-circle-outline: Some terminals | `ColorRGB`, `BgColorRGB`, `ColorHSL`, `BgColorHSL`, `ColorHex`, `BgColorHex` |
 
 Refer to the terminal's documentation to see if it supports extended color palettes.
 
