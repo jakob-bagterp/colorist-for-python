@@ -52,3 +52,20 @@ print("This is \x1b[5mBLINKING\x1b[25m text")
 How it looks in the terminal:
 
 <pre><code>% This is <span class="effect-blinking">BLINKING</span> text</code></pre>
+
+!!! tip "How to Use Effects with Colorist"
+    Instead of using raw ANSI escape codes, it's [convenient to use Colorist](../user-guide/index.md) to generate them while keeping the code readable.
+
+    Simply use the `Effect` class for [effects and styling](../user-guide/effects-and-styling.md). For example:
+
+    ```python linenums="1" hl_lines="3-4"
+    from colorist import Effect
+
+    print(f"This is {Effect.UNDERLINE}UNDERLINED{Effect.OFF} text")
+    print(f"This is {Effect.BLINK}BLINKING{Effect.BLINK} text")
+    ```
+
+    How it appears in the terminal:
+
+    <pre><code>% This is <u>UNDERLINED</u> text
+    % This is <span class="effect-blinking">BLINKING</span> text</code></pre>
