@@ -51,6 +51,8 @@ How to apply this in a print command:
 print("I want \x1b[31mRED\x1b[0m color")
 ```
 
+You use the same method to apply [other colors to text or backgrounds](standard-16-colors.md).
+
 !!! tip "Humanised Sequence Is Easier to Read"
     This is also why it's [convenient to use Colorist](../user-guide/standard-colors/text-foreground.md) instead of manually writing raw ANSI escape codes.
 
