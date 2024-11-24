@@ -70,7 +70,7 @@ Refer to the documentation for a complete list of [full line text color function
 ## Cheat Sheets
 ### Normal Colors
 
-| Color                                                    | Custom          | Example                                                       |
+| Color                                                    | Color Code      | Example                                                       |
 | -------------------------------------------------------- | --------------- | ------------------------------------------------------------- |
 | ![Green](../../assets/images/colors/green_16x16.png)     | `Color.GREEN`   | <code><span class="fg-green">This is GREEN!</span></code>     |
 | ![Yellow](../../assets/images/colors/yellow_16x16.png)   | `Color.YELLOW`  | <code><span class="fg-yellow">This is YELLOW!</span></code>   |
@@ -85,7 +85,7 @@ Refer to the documentation for a complete list of [full line text color function
 
 ### Bright Colors
 
-| Color                                                                  | Custom                | Example                                                                     |
+| Color                                                                  | Color Code            | Example                                                                     |
 | ---------------------------------------------------------------------- | --------------------- | --------------------------------------------------------------------------- |
 | ![Bright green](../../assets/images/colors/bright_green_16x16.png)     | `BrightColor.GREEN`   | <code><span class="fg-bright-green">This is BRIGHT GREEN!</span></code>     |
 | ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png)   | `BrightColor.YELLOW`  | <code><span class="fg-bright-yellow">This is BRIGHT YELLOW!</span></code>   |

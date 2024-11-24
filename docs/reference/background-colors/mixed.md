@@ -14,7 +14,7 @@ Enumerable class of all available standard background colors.
 
 **Options:**
 
-| Color                                                    | Custom            | Example                                                                  |
+| Color                                                    | Color Code        | Example                                                                  |
 | -------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------ |
 | ![Green](../../assets/images/colors/green_16x16.png)     | `BgColor.GREEN`   | <code><span class="bg-green">This is GREEN background!</span></code>     |
 | ![Yellow](../../assets/images/colors/yellow_16x16.png)   | `BgColor.YELLOW`  | <code><span class="bg-yellow">This is YELLOW background!</span></code>   |
@@ -51,7 +51,7 @@ Enumerable class of all available standard bright background colors.
 
 **Options:**
 
-| Color                                                                  | Custom                  | Example                                                                                |
+| Color                                                                  | Color Code              | Example                                                                                |
 | ---------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------------------- |
 | ![Bright green](../../assets/images/colors/bright_green_16x16.png)     | `BgBrightColor.GREEN`   | <code><span class="bg-bright-green">This is BRIGHT GREEN background!</span></code>     |
 | ![Bright yellow](../../assets/images/colors/bright_yellow_16x16.png)   | `BgBrightColor.YELLOW`  | <code><span class="bg-bright-yellow">This is BRIGHT YELLOW background!</span></code>   |
