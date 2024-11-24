@@ -81,7 +81,7 @@ How it appears in the terminal:
 
 ### Cheat Sheet
 
-| Effect           | Reset Code         | Reset Code             | Example                                                            |
+| Effect           | Apply Code         | Reset Code             | Example                                                            |
 | ---------------- | ------------------ | ---------------------- | ------------------------------------------------------------------ |
 | Bold             | `Effect.BOLD`      | `Effect.BOLD_OFF`      | <code>This is <strong>BOLD</strong></code>                         |
 | Dim              | `Effect.DIM`       | `Effect.DIM_OFF`       | <code>This is <span class="effect-dimmed">DIMMED</span></code>     |
