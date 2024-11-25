@@ -32,6 +32,8 @@ How it appears in the terminal:
 % <span class="bg-yellow">This is YELLOW background!</span>
 % <span class="bg-red">This is RED background!</span></code></pre>
 
+Refer to the documetation for a [complete list of color options](../../reference/background-colors/full-line.md).
+
 ## Print Mixed Colors in Text
 Background colors can also be mixed inside a paragraph:
 
@@ -65,7 +67,7 @@ How it appears in the terminal:
 
 <pre><code>% Add <span class="bg-bright-cyan">cyan</span> background color</code></pre>
 
-Refer to the documentation for a complete list of [full line text color functions](../../reference/background-colors/full-line.md) and [custom string styling](../../reference/background-colors/mixed.md).
+Refer to the documetation for a [complete list of color options for custom background styling](../../reference/background-colors/mixed.md).
 
 ## Cheat Sheets
 ### Normal Colors
