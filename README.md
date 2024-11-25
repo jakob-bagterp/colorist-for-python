@@ -147,9 +147,12 @@ As with text colors, remember to use `BgColor.OFF` or `BgBrightColor.OFF` every 
 | - | - | `BgBrightColor.DEFAULT` | - |
 | - | - | `BgBrightColor.OFF` | - |
 
-# Thank You for Supporting
-## Donate
-This module is free to use. And if you like it, feel free to [buy me a coffee](https://github.com/sponsors/jakob-bagterp).
+## Become a Sponsor 🏅
+If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution, no matter the size, makes a difference.
+
+[Donate on GitHub Sponsors](https://github.com/sponsors/jakob-bagterp)
+
+Thank you for your support! 🙌
 
 ## Contribute
 If you have suggestions or changes to the module, feel free to add to the code and create a [pull request](https://github.com/jakob-bagterp/colorist-for-python/pulls).
