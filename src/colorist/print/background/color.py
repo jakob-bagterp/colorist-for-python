@@ -69,7 +69,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="bg-black">This is BLACK background!</span></code></pre>
+            <pre><code>% <span class="bg-black text-contrast">This is BLACK background!</span></code></pre>
         """
 
     def bg_red(self, text: str) -> None:
@@ -87,7 +87,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="bg-red">This is RED background!</span></code></pre>
+            <pre><code>% <span class="bg-red text-contrast">This is RED background!</span></code></pre>
         """
 
     def bg_green(self, text: str) -> None:
@@ -105,7 +105,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="bg-green">This is GREEN background!</span></code></pre>
+            <pre><code>% <span class="bg-green text-contrast">This is GREEN background!</span></code></pre>
         """
 
     def bg_yellow(self, text: str) -> None:
@@ -123,7 +123,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="bg-yellow">This is YELLOW background!</span></code></pre>
+            <pre><code>% <span class="bg-yellow text-contrast">This is YELLOW background!</span></code></pre>
         """
 
     def bg_blue(self, text: str) -> None:
@@ -141,7 +141,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="bg-blue">This is BLUE background!</span></code></pre>
+            <pre><code>% <span class="bg-blue text-contrast">This is BLUE background!</span></code></pre>
         """
 
     def bg_magenta(self, text: str) -> None:
@@ -159,7 +159,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="bg-magenta">This is MAGENTA background!</span></code></pre>
+            <pre><code>% <span class="bg-magenta text-contrast">This is MAGENTA background!</span></code></pre>
         """
 
     def bg_cyan(self, text: str) -> None:
@@ -177,7 +177,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="bg-cyan">This is CYAN background!</span></code></pre>
+            <pre><code>% <span class="bg-cyan text-contrast">This is CYAN background!</span></code></pre>
         """
 
     def bg_white(self, text: str) -> None:
@@ -195,5 +195,5 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="bg-white">This is WHITE background!</span></code></pre>
+            <pre><code>% <span class="bg-white text-contrast">This is WHITE background!</span></code></pre>
         """

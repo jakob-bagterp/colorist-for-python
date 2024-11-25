@@ -81,8 +81,8 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             <pre><code>% <strong>This is BOLD</strong>
             % <span class="fg-blue"><strong>This is BOLD</strong></span>
-            % <span class="bg-red"><strong>This is BOLD</strong></span>
-            % <span style="background-color: hsl(190, 2%, 49%)"><strong>This is BOLD</strong></span></code></pre>
+            % <span class="bg-red text-contrast"><strong>This is BOLD</strong></span>
+            % <span class="text-contrast" style="background-color: hsl(190, 2%, 49%)"><strong>This is BOLD</strong></span></code></pre>
         """
 
     def effect_dim(self, text: str, color: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | str | None = None) -> None:
@@ -131,7 +131,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             <pre><code>% <u>This is UNDERLINED</u>
             % <span class="fg-cyan"><u>This is UNDERLINED</u></span>
-            % <span class="bg-bright-blue"><u>This is UNDERLINED</u></span>
+            % <span class="bg-bright-blue text-contrast"><u>This is UNDERLINED</u></span>
             % <span style="color: hsl(60, 56%, 43%)"><u>This is UNDERLINED</u></span></code></pre>
         """
 
@@ -179,9 +179,9 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="bg-bright-white">This is REVERSED</span>
-            % <span class="bg-bright-cyan">This is REVERSED</span>
-            % <span class="bg-bright-white"><span class="fg-red">This is REVERSED</span></span>
+            <pre><code>% <span class="bg-bright-white text-contrast">This is REVERSED</span>
+            % <span class="bg-bright-cyan text-contrast">This is REVERSED</span>
+            % <span class="bg-bright-white text-contrast"><span class="fg-red">This is REVERSED</span></span>
             % <span class="fg-bright-white" style="background-color: rgb(194, 145, 164)">This is REVERSED</span></code></pre>
         """
 
@@ -206,6 +206,6 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             <pre><code>% <span class="effect-hidden">This is HIDDEN</span>
             % <span class="effect-hidden fg-blue">This is HIDDEN</span>
-            % <span class="bg-red"><span class="effect-hidden">This is HIDDEN</span></span>
-            % <span style="background-color: #99ff99"><span class="effect-hidden">This is HIDDEN</span></span></code></pre>
+            % <span class="bg-red text-contrast"><span class="effect-hidden">This is HIDDEN</span></span>
+            % <span class="text-contrast" style="background-color: #99ff99"><span class="effect-hidden">This is HIDDEN</span></span></code></pre>
         """

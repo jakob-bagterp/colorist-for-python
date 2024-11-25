@@ -26,7 +26,7 @@ class BgColorRGB(RGB_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% I want to use <span style="background-color: rgb(70, 130, 180)">steel blue</span> background color inside this paragraph</code></pre>
+            <pre><code>% I want to use <span class="text-contrast" style="background-color: rgb(70, 130, 180)">steel blue</span> background color inside this paragraph</code></pre>
         """
 
         super().__init__(red, green, blue)

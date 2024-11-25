@@ -13,15 +13,15 @@ Enumerable class of all available effects.
 
 **Options:**
 
-| Effect           | Effect Code        | Reset Code             | Example                                                            |
-| ---------------- | ------------------ | ---------------------- | ------------------------------------------------------------------ |
-| Bold             | `Effect.BOLD`      | `Effect.BOLD_OFF`      | <code>This is <strong>BOLD</strong></code>                         |
-| Dim              | `Effect.DIM`       | `Effect.DIM_OFF`       | <code>This is <span class="effect-dimmed">DIMMED</span></code>     |
-| Underline        | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | <code>This is <u>UNDERLINED</u></code>                             |
-| Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | <code>This is <span class="effect-blinking">BLINKING</span></code> |
-| Reverse          | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | <code>This is <span class="bg-bright-white">REVERSED</span></code> |
-| Hide             | `Effect.HIDE`      | `Effect.HIDE_OFF`      | <code>This is <span class="effect-hidden">HIDDEN</span></code>     |
-| -                | -                  | `Effect.OFF`           | -                                                                  |
+| Effect           | Effect Code        | Reset Code             | Example                                                                          |
+| ---------------- | ------------------ | ---------------------- | -------------------------------------------------------------------------------- |
+| Bold             | `Effect.BOLD`      | `Effect.BOLD_OFF`      | <code>This is <strong>BOLD</strong></code>                                       |
+| Dim              | `Effect.DIM`       | `Effect.DIM_OFF`       | <code>This is <span class="effect-dimmed">DIMMED</span></code>                   |
+| Underline        | `Effect.UNDERLINE` | `Effect.UNDERLINE_OFF` | <code>This is <u>UNDERLINED</u></code>                                           |
+| Blink            | `Effect.BLINK`     | `Effect.BLINK_OFF`     | <code>This is <span class="effect-blinking">BLINKING</span></code>               |
+| Reverse          | `Effect.REVERSE`   | `Effect.REVERSE_OFF`   | <code>This is <span class="bg-bright-white text-contrast">REVERSED</span></code> |
+| Hide             | `Effect.HIDE`      | `Effect.HIDE_OFF`      | <code>This is <span class="effect-hidden">HIDDEN</span></code>                   |
+| -                | -                  | `Effect.OFF`           | -                                                                                |
 
 **Example:**
 

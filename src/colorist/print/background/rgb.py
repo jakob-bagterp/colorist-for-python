@@ -31,5 +31,5 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span style="background-color: rgb(0, 128, 255)">I want this background in blue RGB colors</span></code></pre>
+            <pre><code>% <span class="text-contrast" style="background-color: rgb(0, 128, 255)">I want this background in blue RGB colors</span></code></pre>
         """

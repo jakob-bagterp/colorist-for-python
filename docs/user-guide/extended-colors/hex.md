@@ -35,7 +35,7 @@ bg_hex("I want this background in coral Hex colors", "#ff7f50")
 How it appears in the terminal:
 
 <pre><code>% <span style="color: #ff7f50">I want this text in coral Hex colors</span>
-% <span style="background-color: #ff7f50">I want this background in coral Hex colors</span></code></pre>
+% <span class="text-contrast" style="background-color: #ff7f50">I want this background in coral Hex colors</span></code></pre>
 
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorHex()` and `BgColorHex()` classes:
@@ -53,4 +53,4 @@ print(f"... and {bg_mint_green}mint green{bg_mint_green.OFF} colors")
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: #ff5733">watermelon red</span>...
-% ... and <span style="background-color: #99ff99">mint green</span> colors</code></pre>
+% ... and <span class="text-contrast" style="background-color: #99ff99">mint green</span> colors</code></pre>

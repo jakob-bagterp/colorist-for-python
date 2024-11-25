@@ -31,5 +31,5 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% <span style="background-color: hsl(120, 50%, 50%)">I want this background in green HSL colors</span></code></pre>
+            <pre><code>% <span class="text-contrast" style="background-color: hsl(120, 50%, 50%)">I want this background in green HSL colors</span></code></pre>
         """

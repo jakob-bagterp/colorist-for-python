@@ -35,7 +35,7 @@ bg_hsl("I want this background in green HSL colors", 120, 50, 50)
 How it appears in the terminal:
 
 <pre><code>% <span style="color: hsl(120, 50%, 50%)">I want this text in green HSL colors</span>
-% <span style="background-color: hsl(120, 50%, 50%)">I want this background in green HSL colors</span></code></pre>
+% <span class="text-contrast" style="background-color: hsl(120, 50%, 50%)">I want this background in green HSL colors</span></code></pre>
 
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorHSL()` and `BgColorHSL()` classes:
@@ -53,4 +53,4 @@ print(f"... and {bg_steel_gray}steel gray{bg_steel_gray.OFF} colors")
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: hsl(60, 56%, 43%)">mustard green</span>...
-% ... and <span style="background-color: hsl(190, 2%, 49%)">steel gray</span> colors</code></pre>
+% ... and <span class="text-contrast" style="background-color: hsl(190, 2%, 49%)">steel gray</span> colors</code></pre>

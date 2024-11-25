@@ -30,7 +30,7 @@ bg_vga("I want this background in purple VGA colors", 57)
 How it appears in the terminal:
 
 <pre><code>% <span style="color: #5f00ff">I want this text in purple VGA colors</span>
-% <span style="background-color: #5f00ff">I want this background in purple VGA colors</span></code></pre>
+% <span class="text-contrast" style="background-color: #5f00ff">I want this background in purple VGA colors</span></code></pre>
 
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorVGA()` and `BgColorVGA()` classes:
@@ -48,7 +48,7 @@ print(f"... and {bg_steel_blue}navy blue{bg_steel_blue.OFF} colors")
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: #ffdf00">honey yellow</span>...
-% ... and <span style="background-color: #0000af">navy blue</span> colors</code></pre>
+% ... and <span class="text-contrast" style="background-color: #0000af">navy blue</span> colors</code></pre>
 
 ## Palette Options and Color Maps
 ### Standard Colors
