@@ -14,11 +14,11 @@ Generally, the features of Colorist are supported in these categories:
 
 <div id="terminals-color-support-table"></div>
 
-| Category                  | Supported By                                  | Colorist Options[^1]                                                         |
-| ------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------- |
-| Standard ANSI colors      | :material-check-all: Almost all terminals     | `Color`, `BgColor`, `Effect`                                                 |
-| Non-standard ANSI colors  | :material-check: Most terminals               | `BrightColor`, `BgBrightColor`, `ColorVGA`, `BgColorVGA`                     |
-| Advanced ANSI colors only | :material-help-circle-outline: Some terminals | `ColorRGB`, `BgColorRGB`, `ColorHSL`, `BgColorHSL`, `ColorHex`, `BgColorHex` |
+| Category                  | Color Space                 | Supported By                                  | Colorist Options[^1]                                                         |
+| ------------------------- | --------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------- |
+| Standard ANSI colors      | Normal colors and effects   | :material-check-all: Almost all terminals     | `Color`, `BgColor`, `Effect`                                                 |
+| Non-standard ANSI colors  | 8-bit VGA and bright colors | :material-check: Most terminals               | `BrightColor`, `BgBrightColor`, `ColorVGA`, `BgColorVGA`                     |
+| Advanced ANSI colors only | 24-bit colors               | :material-help-circle-outline: Some terminals | `ColorRGB`, `BgColorRGB`, `ColorHSL`, `BgColorHSL`, `ColorHex`, `BgColorHex` |
 
 Refer to the terminal's documentation to see if it supports extended color palettes.
 

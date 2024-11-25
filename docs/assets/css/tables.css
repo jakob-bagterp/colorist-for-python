@@ -1,11 +1,11 @@
-#terminals-color-support-table + div > div table > tbody > tr:nth-child(1) > td:nth-child(2) {
+#terminals-color-support-table + div > div table > tbody > tr:nth-child(1) > td:nth-child(3) {
     color: var(--material-teal);
 }
 
-#terminals-color-support-table + div > div table > tbody > tr:nth-child(2) > td:nth-child(2) {
+#terminals-color-support-table + div > div table > tbody > tr:nth-child(2) > td:nth-child(3) {
     color: var(--material-green);
 }
 
-#terminals-color-support-table + div > div table > tbody > tr:nth-child(3) > td:nth-child(2) {
+#terminals-color-support-table + div > div table > tbody > tr:nth-child(3) > td:nth-child(3) {
     color: var(--material-light-green);
 }
