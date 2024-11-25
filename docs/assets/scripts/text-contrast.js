@@ -23,14 +23,14 @@ function getTextHexColorInContrastToBackgroundColor(rgbaColor) {
 	return (yiqRatio >= 128) ? BLACK : BRIGHT_WHITE;
 };
 
-function setTextColorForTableCells() {
-    document.querySelectorAll('*[class*="text-contrast"]').forEach(function(tdCell) {
-        let backgroundColor = new RgbaColor(window.getComputedStyle(tdCell).backgroundColor);
+function setTextContrastColor() {
+    document.querySelectorAll('*[class*="text-contrast"]').forEach(function(element) {
+        let backgroundColor = new RgbaColor(window.getComputedStyle(element).backgroundColor);
         let textColorHex = getTextHexColorInContrastToBackgroundColor(backgroundColor);
-        tdCell.style.color = textColorHex;
+        element.style.color = textColorHex;
     });
 }
 
 document$.subscribe(function() {
-    setTextColorForTableCells();
+    setTextContrastColor();
 })

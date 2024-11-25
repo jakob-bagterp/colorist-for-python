@@ -162,7 +162,7 @@ extra_css:
   - assets/css/tables.css
 
 extra_javascript:
-  - assets/scripts/extended-colors.js
+  - assets/scripts/text-contrast.js
 
 plugins:
   - search:
