@@ -24,7 +24,7 @@ function getTextHexColorInContrastToBackgroundColor(rgbaColor) {
 };
 
 function setTextColorForTableCells() {
-    document.querySelectorAll('td.extended-colors').forEach(function(tdCell) {
+    document.querySelectorAll('*[class*="text-contrast"]').forEach(function(tdCell) {
         let backgroundColor = new RgbaColor(window.getComputedStyle(tdCell).backgroundColor);
         let textColorHex = getTextHexColorInContrastToBackgroundColor(backgroundColor);
         tdCell.style.color = textColorHex;
