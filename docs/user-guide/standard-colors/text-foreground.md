@@ -33,6 +33,8 @@ How it appears in the terminal:
 % <span class="fg-yellow">This is YELLOW!</span>
 % <span class="fg-red">This is RED!</span></code></pre>
 
+Refer to the documetation for a [complete list of full line functions](../../reference/text-colors/full-line.md) for more color options.
+
 ## Print Mixed Colors in Text
 How to customize colors inside a paragraph and print it in the terminal:
 
