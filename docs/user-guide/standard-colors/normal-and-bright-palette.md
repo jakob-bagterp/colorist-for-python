@@ -12,7 +12,7 @@ tags:
 
 # Palette of Normal and Bright Colors
 ## What's the Difference?
-![Range of standard colors](../../assets/images/colors/palette/rainbow_standard_96x16.png)
+![Range of normal colors](../../assets/images/colors/palette/rainbow_standard_96x16.png)
 
 Normal colors are slight dimmed and more easy on the eye than bright colors.
 

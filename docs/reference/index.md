@@ -7,7 +7,7 @@ description: Colorist is the easiest way to print colored text in terminal outpu
 Find details about all methods in this section.
 
 ## Quick Links
-### ![Range of standard colors](../assets/images/colors/palette/rainbow_standard_96x16.png) &nbsp;&nbsp;Text Colors
+### ![Range of normal colors](../assets/images/colors/palette/rainbow_standard_96x16.png) &nbsp;&nbsp;Text Colors
 * [Full line](text-colors/full-line.md)
 * [Mixed](text-colors/mixed.md)
 

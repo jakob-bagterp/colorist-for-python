@@ -10,7 +10,7 @@ tags:
 Colorist is a lightweight package and is intended to be easy to use. Find tutorials and background information in this section.
 
 ## Quick Links
-### ![Range of standard colors](../assets/images/colors/palette/rainbow_standard_96x16.png) &nbsp;&nbsp;Standard Colors
+### ![Range of normal colors](../assets/images/colors/palette/rainbow_standard_96x16.png) &nbsp;&nbsp;Normal Colors
 
 Use the standard palette to add color to both [text](./standard-colors/text-foreground.md) and [background](./standard-colors/background.md).
 

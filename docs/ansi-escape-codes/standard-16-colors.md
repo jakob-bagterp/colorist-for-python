@@ -12,7 +12,7 @@ tags:
 ---
 
 # Standard 16 Colors in ANSI Escape Codes
-There are 8 standard colors and 8 bright colors – 16 in total. The bright colors are the same as the standard colors, yet with a higher intensity, and each color can be in the foreground (i.e. as text) or background.
+There are 8 normal colors and 8 bright colors – 16 in total. The bright colors are the same as the normal colors, yet with a higher intensity, and each color can be in the foreground (i.e. as text) or background.
 
 ## Structure
 The 8 colors are simply black and white, plus the 6 colors of the rainbow. Firstly, the three primary colors red, green, and blue. Then the secondary colors yellow, magenta, and cyan:
@@ -109,7 +109,7 @@ How it appears in the terminal:
 
 ## Cheat Sheets
 ### Foreground Text Colors
-#### Standard Colors
+#### Normal Colors
 | Example                                               | Color | Code | Escape Code | Output Example                                               |
 | :---------------------------------------------------: | :-----: | :-: | :--------: | :----------------------------------------------------------- |
 | ![Black](../assets/images/colors/black_16x16.png)     | Black   | 30  | `\x1b[30m` | <code>This is <span class="fg-black">BLACK</span></code>     |
@@ -134,7 +134,7 @@ How it appears in the terminal:
 | ![Bright white](../assets/images/colors/bright_white_16x16.png)     | White   | 97  | `\x1b[97m` | <code>This is <span class="fg-bright-white">BRIGHT WHITE</span></code>     |
 
 ### Background Colors
-#### Standard Colors
+#### Normal Colors
 | Example                                               | Color | Code | Escape Code | Output Example                                                             |
 | :---------------------------------------------------: | :-----: | :-: | :--------: | :------------------------------------------------------------------------- |
 | ![Black](../assets/images/colors/black_16x16.png)     | Black   | 40  | `\x1b[40m` | <code>This is <span class="bg-black text-contrast">BLACK</span></code>     |
