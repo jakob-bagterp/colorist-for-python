@@ -26,7 +26,7 @@ class BgColorHSL(HSL_ABC):
 
             How it appears in the terminal:
 
-            <pre><code>% I want to use <span style="background-color: hsl(190, 2%, 49%)">steel gray</span> background color inside this paragraph</code></pre>
+            <pre><code>% I want to use <span class="text-contrast" style="background-color: hsl(190, 2%, 49%)">steel gray</span> background color inside this paragraph</code></pre>
         """
 
         super().__init__(hue, saturation, lightness)

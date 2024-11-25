@@ -34,7 +34,7 @@ bg_rgb("I want this background in blue RGB colors", 0, 128, 255)
 How it appears in the terminal:
 
 <pre><code>% <span style="color: rgb(0, 128, 255)">I want this text in blue RGB colors</span>
-% <span style="background-color: rgb(0, 128, 255)">I want this background in blue RGB colors</span></code></pre>
+% <span class="text-contrast" style="background-color: rgb(0, 128, 255)">I want this background in blue RGB colors</span></code></pre>
 
 ## Custom String Styling
 Or customize the styling of text and background with the `ColorRGB()` and `BgColorRGB()` classes:
@@ -52,4 +52,4 @@ print(f"... and {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors")
 How it appears in the terminal:
 
 <pre><code>% I want to use <span style="color: rgb(194, 145, 164)">dusty pink</span>...
-% ... and <span style="background-color: rgb(70, 130, 180)">steel blue</span> colors</code></pre>
+% ... and <span class="text-contrast" style="background-color: rgb(70, 130, 180)">steel blue</span> colors</code></pre>

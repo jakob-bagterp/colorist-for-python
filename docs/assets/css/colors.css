@@ -172,16 +172,16 @@
     color: var(--bright-white);
 }
 
-/* Extended Colors Tables */
+/* Extended Colors in Color Map Tables */
 
-td.extended-colors {
+td[class*="extended-colors"] {
     background-color: var(--bg-color);  /* Get the background color from the markup as variable. */
     color: var(--bright-white);  /* Default text color, which may be changed based on the background color. */
 }
 
-/* Extended Colors Examples */
+/* Extended Colors in Code Examples */
 
-span.extended-colors {
+pre code span[class*="extended-colors"]  {
     background-color: var(--bg-color);  /* Get the background color from the markup as variable. */
     color: var(--fg-color);  /* Get the foreground color from the markup as variable. */
 }

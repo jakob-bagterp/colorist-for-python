@@ -37,8 +37,8 @@ print("This is \x1b[48;2;194;21;139mROSA\x1b[0m background")
 
 How it appears in the terminal:
 
-<pre><code>% This is <span class="extended-colors" style="--fg-color: #8ec215;">LIME GREEN</span> text
-% This is <span class="extended-colors" style="--bg-color: #c2158b;">ROSA</span> background</code></pre>
+<pre><code>% This is <span style="color: #8ec215;">LIME GREEN</span> text
+% This is <span class="text-contrast" style="background-color: #c2158b;">ROSA</span> background</code></pre>
 
 !!! tip "How to Use RGB Colors with Colorist"
     Instead of using raw ANSI escape codes, it's [convenient to use Colorist](../user-guide/index.md) to generate them while keeping the code readable.
@@ -57,7 +57,7 @@ How it appears in the terminal:
 
     How it appears in the terminal:
 
-    <pre><code>% This is <span class="extended-colors" style="--fg-color: #8ec215;">LIME GREEN</span> text
-    % This is <span class="extended-colors" style="--bg-color: #c2158b;">ROSA</span> background</code></pre>
+    <pre><code>% This is <span style="color: #8ec215;">LIME GREEN</span> text
+    % This is <span class="text-contrast" style="background-color: #c2158b;">ROSA</span> background</code></pre>
 
     In Colorist, the [RGB color space](../user-guide/extended-colors/rgb.md) is used to furthermore support definition of colors as [HSL](../user-guide/extended-colors/hsl.md) or [Hex](../user-guide/extended-colors/hex.md).
