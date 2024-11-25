@@ -12,7 +12,7 @@ tags:
 !!! info "Disclaimer"
     Not all [terminals support](../../user-guide/materials/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
 
-## Full Text Functions
+## Full Line Text Functions
 
 ::: colorist.print.foreground.rgb.MkDocstringsWrapper
     options:

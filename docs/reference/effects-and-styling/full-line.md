@@ -7,7 +7,7 @@ tags:
     - Effects
 ---
 
-# Full Text Functions for Text Effects and Styling
+# Full Line Text Functions for Effects and Styling
 ## Examples
 
 | Effect           | Full Text Function         | Example                                                            |

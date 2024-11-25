@@ -9,7 +9,7 @@ tags:
     - Standard Colors
 ---
 
-# Full Text Functions for Foreground Colors
+# Full Line Text Functions for Foreground Colors
 ## Color Maps
 ### Normal Colors
 

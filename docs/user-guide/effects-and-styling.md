@@ -8,7 +8,7 @@ tags:
 ---
 
 # How to Add Effects and Styling to Text
-## Full Text Functions
+## Full Line Text Functions
 ### Examples
 In addition to colors, Colorist can also add effects when you print text in the terminal. How to print a full line of text with effects:
 

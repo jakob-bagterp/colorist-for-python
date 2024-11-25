@@ -8,7 +8,7 @@ tags:
     - Standard Colors
 ---
 
-# Full Text Functions for Background Colors
+# Full Line Text Functions for Background Colors
 ## Color Maps
 ### Normal Colors
 

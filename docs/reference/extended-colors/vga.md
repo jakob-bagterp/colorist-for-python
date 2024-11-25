@@ -12,7 +12,7 @@ tags:
 !!! info "Disclaimer"
     Not all [terminals support](../../user-guide/materials/terminal-support.md) 8-bit VGA colors. If your terminal does support such advanced colors, read on.
 
-## Full Text Functions
+## Full Line Text Functions
 
 ::: colorist.print.foreground.vga.MkDocstringsWrapper
     options:

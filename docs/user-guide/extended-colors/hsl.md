@@ -20,7 +20,7 @@ The 24-bit HSL color model covers over 16 million colors, and each color can be 
 !!! info "Disclaimer"
     Not all [terminals support](../../user-guide/materials/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
 
-## Full Text Functions
+## Full Line Text Functions
 You can output colors in HSL with the `hsl()` and `bg_hsl()` methods. The value for hue can be between `0-360` degrees, while saturation and lightness can be a percentage between `0-100` %:
 
 Example:

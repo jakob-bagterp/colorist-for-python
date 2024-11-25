@@ -20,7 +20,7 @@ The 24-bit Hex color model covers over 16 million colors, and each color can be 
 !!! info "Disclaimer"
     Not all [terminals support](../materials/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
 
-## Full Text Functions
+## Full Line Text Functions
 Try the `hex()` and `bg_hex()` methods for a full line of colored text. Allowed Hex values are, for instance, `#00aaff` or `#0af`, alternatively without the hash sign as `00aaff` or `0af`.
 
 Example:
