@@ -7,7 +7,7 @@ tags:
 ---
 
 # How to Use Backwards Compatible String Formatting
-## F-Strings
+## F-Strings Sometimes Are Not Supported
 Imagine that you want this printed in the terminal:
 
 <pre><code>% I want <span class="fg-red">RED</span> color</code></pre>
