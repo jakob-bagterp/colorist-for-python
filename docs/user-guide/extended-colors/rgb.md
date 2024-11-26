@@ -17,7 +17,7 @@ The 24-bit RGB color model covers over 16 million colors, and each color can be 
 | Allowed values | `0-255` | `0-255` | `0-255` |
 
 !!! info "Disclaimer"
-    Not all [terminals support](../materials/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
+    Not all [terminals support](../compatibility/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
 
 ## Full Line Text Functions
 Try the `rgb()` and `bg_rgb()` methods for a full line of colored text. The values for red, green, blue can be an integer between `0-255`.

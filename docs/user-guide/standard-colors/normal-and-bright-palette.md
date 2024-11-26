@@ -38,4 +38,4 @@ Bright colors have higher intensity that stand more out than normal colors.
 | Black   | ![Black](../../assets/images/colors/black_16x16.png)     | ![Bright black](../../assets/images/colors/bright_black_16x16.png)     |
 
 !!! note "Limited Support for Bright Colors"
-    Note that bright colors are [supported by many terminals](../materials/terminal-support.md), yet not all as bright colors aren't part of the standard set of ANSI colors.
+    Note that bright colors are [supported by many terminals](../compatibility/terminal-support.md), yet not all as bright colors aren't part of the standard set of ANSI colors.

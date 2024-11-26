@@ -53,7 +53,7 @@ tags:
 | ![Bright black](../../assets/images/colors/bright_black_16x16.png)     | `bg_bright_black("text")`   | <code><span class="bg-bright-black text-contrast">This is BRIGHT BLACK background!</span></code>     |
 
 !!! note "Limited Support for Bright Colors"
-    Note that bright colors are [supported by many terminals](../../user-guide/materials/terminal-support.md), yet not all as bright colors aren't part of the standard set of ANSI colors.
+    Note that bright colors are [supported by many terminals](../../user-guide/compatibility/terminal-support.md), yet not all as bright colors aren't part of the standard set of ANSI colors.
 
 ???+ example
 

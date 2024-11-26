@@ -31,9 +31,9 @@ nav:
       - RGB: user-guide/extended-colors/rgb.md
       - HSL: user-guide/extended-colors/hsl.md
       - Hex: user-guide/extended-colors/hex.md
-    - Materials:
-      - Backwards Compatible String Formats: user-guide/materials/other-string-formats.md
-      - Supported Colors and Styles by Terminals: user-guide/materials/terminal-support.md
+    - Compatibility:
+      - Backwards Compatible String Formats: user-guide/compatibility/backwards-compatible-string-formats.md
+      - Supported Colors and Styles by Terminals: user-guide/compatibility/terminal-support.md
   - Reference:
     - reference/index.md
     - Text Colors:
@@ -206,7 +206,8 @@ plugins:
         donate.md: project/donate.md
         support-and-contribution.md: project/support-and-contribution.md
         tags.md: index/tags.md
-        user-guide/materials/other-string-formats.md: user-guide/materials/backwards-compatible-string-formats.md
+        user-guide/materials/other-string-formats.md: user-guide/compatibility/backwards-compatible-string-formats.md
+        user-guide/materials/terminal-support.md: user-guide/compatibility/terminal-support.md
 
 watch:
   - src
