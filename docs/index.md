@@ -29,7 +29,7 @@ from colorist import Color
 print(f"This is {Color.RED}RED{Color.OFF}!")
 ```
 
-You can use the same method to apply other colors to [text](user-guide/standard-colors/text-foreground.md) or [backgrounds](user-guide/standard-colors/background.md).
+You can use the same method to [apply other colors to text](user-guide/standard-colors/text-foreground.md).
 
 ### Varied Color Palette
 Or simply print a full line of colored text from a varied [palette of colors](./user-guide/standard-colors/text-foreground.md#print-line-of-colored-text):
@@ -43,6 +43,21 @@ bright_yellow("This is BRIGHT YELLOW!")
 How it appears in the terminal:
 
 <pre><code>% <span class="fg-bright-yellow">This is BRIGHT YELLOW!</span></code></pre>
+
+### Background Colors
+It's also possible to apply [background colors](user-guide/standard-colors/background.md) to text:
+
+```python linenums="1" hl_lines="3"
+from colorist import BgColor
+
+print(f"This is {BgColor.RED}RED{BgColor.OFF}!")
+```
+
+How it appears in the terminal:
+
+<pre><code>% This is <span class="bg-red text-contrast">RED</span>!</code></pre>
+
+You can use the same method to [apply other colors to text](user-guide/standard-colors/background.md)).
 
 ## Next Steps
 Ready to try more options and features? Let's get started with the [installation](getting-started/index.md) or check out the [user guide](user-guide/index.md).
