@@ -10,7 +10,7 @@ tags:
 
 # VGA Colors
 !!! info "Disclaimer"
-    Not all [terminals support](../../user-guide/materials/terminal-support.md) 8-bit VGA colors. If your terminal does support such advanced colors, read on.
+    Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 8-bit VGA colors. If your terminal does support such advanced colors, read on.
 
 ## Full Line Text Functions
 
