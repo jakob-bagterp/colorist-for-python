@@ -67,8 +67,6 @@ How it appears in the terminal:
 
 <pre><code>% Put <span class="fg-bright-cyan">cyan</span> inside this paragraph</code></pre>
 
-Refer to the documentation for a complete list of [full line text color functions](../../reference/text-colors/full-line.md) and [custom string styling]().
-
 Refer to the documetation for a [complete list of color options for custom text styling](../../reference/text-colors/mixed.md).
 
 ## Cheat Sheets
