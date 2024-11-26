@@ -12,7 +12,7 @@ Imagine that you want this printed in the terminal:
 
 <pre><code>% I want <span class="fg-red">RED</span> color</code></pre>
 
-It's often easier and more readable to use Colorist in combination with [f-strings](https://peps.python.org/pep-0498/):
+Now that Colorist is designed to support Python 3.10 and later versions, it's often easier and more readable to use [f-strings](https://peps.python.org/pep-0498/) to add color to your text:
 
 ```python linenums="1" hl_lines="3"
 from colorist import Color
@@ -20,8 +20,10 @@ from colorist import Color
 print(f"I want {Color.RED}RED{Color.OFF} color")
 ```
 
+But as [f-strings were introduced in Python 3.6](https://docs.python.org/3.6/whatsnew/3.6.html#pep-498-formatted-string-literals) and therefore aren't supported in earlier versions, what are the alternatives?
+
 ## Backwards Compatible Alternatives
-But as f-strings aren't supported in some earlier versions of Python, you can instead use string formatting with `str.format()` or concatenation with `+`. All variations yield the same result as before:
+Instead, you can use string formatting with `str.format()` or concatenation with `+`. All variations yield the same result as before:
 
 <pre><code>% I want <span class="fg-red">RED</span> color</code></pre>
 
