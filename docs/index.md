@@ -21,7 +21,7 @@ Colorist is intended to be easy to use. Imagine you want to print a mix of color
 
 <pre><code>% This is <span class="fg-red">RED</span>!</code></pre>
 
-Once [installed](./getting-started/installation.md), simply import the `colorist` module and start printing colored text with the `Color` class:
+Once [installed](getting-started/installation.md), simply import the `colorist` module and start printing colored text with the `Color` class:
 
 ```python linenums="1" hl_lines="3"
 from colorist import Color
@@ -32,7 +32,7 @@ print(f"This is {Color.RED}RED{Color.OFF}!")
 You can use the same method to [apply other colors to text](user-guide/standard-colors/text-foreground.md).
 
 ### Varied Color Palette
-Or simply print a full line of colored text from a varied [palette of colors](./user-guide/standard-colors/text-foreground.md#print-line-of-colored-text):
+Or simply print a full line of colored text from a varied [palette of colors](user-guide/standard-colors/text-foreground.md#print-line-of-colored-text):
 
 ```python linenums="1" hl_lines="3"
 from colorist import bright_yellow

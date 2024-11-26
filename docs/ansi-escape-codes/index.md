@@ -14,7 +14,7 @@ If you're new to ANSI escape codes, start with the [introduction](introduction.m
 
 ## ![Range of standard colors](../assets/images/colors/palette/rainbow_standard_96x16.png) &nbsp;&nbsp;Standard 16 Colors
 
-Use the [standard palette of 16 colors](./standard-16-colors.md) to add color to both text and background with ANSI escape codes.
+Use the [standard palette of 16 colors](standard-16-colors.md) to add color to both text and background with ANSI escape codes.
 
 ## ![Range of RGB colors](../assets/images/colors/palette/rainbow_rgb_96x16.png) &nbsp;&nbsp;Extended 256 and RGB Colors
 
