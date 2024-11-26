@@ -57,7 +57,7 @@ How it appears in the terminal:
 
 <pre><code>% This is <span class="bg-red text-contrast">RED</span>!</code></pre>
 
-You can use the same method to [apply other colors to text](user-guide/standard-colors/background.md)).
+You can use the same method to [apply other background colors](user-guide/standard-colors/background.md) to text.
 
 ## Next Steps
 Ready to try more options and features? Let's get started with the [installation](getting-started/index.md) or check out the [user guide](user-guide/index.md).
