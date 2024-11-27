@@ -1,5 +1,5 @@
 ---
-title: How to Use Backwards Compatible String Formatting
+title: How to Use Backwards Compatible String Format
 description: How Colorist for Python is backwards compatible with string formatting and concatenation. Includes code examples.
 tags:
     - Features
