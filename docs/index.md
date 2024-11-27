@@ -34,15 +34,21 @@ You can use the same method to [apply other colors to text](user-guide/standard-
 ### Varied Color Palette
 Or simply print a full line of colored text from a varied [palette of colors](user-guide/standard-colors/text-foreground.md#print-line-of-colored-text):
 
-```python linenums="1" hl_lines="3"
-from colorist import bright_yellow
+```python linenums="1" hl_lines="3-6"
+from colorist import bright_magenta, bright_yellow, blue, green
 
+cyan("This is BLUE!")
+green("This is GREEN!")
+bright_magenta("This is BRIGHT MAGENTA!")
 bright_yellow("This is BRIGHT YELLOW!")
 ```
 
 How it appears in the terminal:
 
-<pre><code>% <span class="fg-bright-yellow">This is BRIGHT YELLOW!</span></code></pre>
+<pre><code>% <span class="fg-blue">This is BLUE!</span>
+% <span class="fg-green">This is GREEN!</span>
+% <span class="fg-bright-magenta">This is BRIGHT MAGENTA!</span>
+% <span class="fg-bright-yellow">This is BRIGHT YELLOW!</span></code></pre>
 
 ### Background Colors
 It's also possible to apply [background colors](user-guide/standard-colors/background.md) to text:
