@@ -51,10 +51,10 @@ How it appears in the terminal:
     ```python linenums="1" hl_lines="3-4"
     from colorist import ColorVGA, BgColorVGA
 
-    purple = ColorVGA(166)
+    orange = ColorVGA(166)
     light_gray = BgColorVGA(243)
 
-    print(f"This is {purple}ORANGE{purple.OFF} text")
+    print(f"This is {orange}ORANGE{orange.OFF} text")
     print(f"This is {light_gray}LIGHT GRAY{light_gray.OFF} background")
     ```
 
