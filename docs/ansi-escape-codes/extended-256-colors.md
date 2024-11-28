@@ -27,7 +27,7 @@ For example, the sequences `\x1b[38;5;123m` for turquoise foreground text and `\
 
 | Part        | `\x1b[` | `38;5;`<br>`48;5;` | `123` | `m` |
 | ----------- | :-----: | :----------------: | :---: | :-: |
-| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text or background color. | Color code between 0-255. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text (`38;5;`) or background color (`48;5;`). | Color code between `0`-`255`. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
 ## Examples
 For example, `\x1b[38;5;166m` is an orange foreground text color, and `\x1b[48;5;243m` is a light gray background color. When wrapped with `\x1b[0m` to reset the color, you can write this:

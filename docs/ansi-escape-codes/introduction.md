@@ -29,7 +29,7 @@ All ANSI escape sequences follow the same pattern. For example, the sequence `\x
 
 | Part        | `\x1b[` | `31` | `m` |
 | ----------- | :-----: | :--: | :-: |
-| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Color code for various text and background colors, e.g. between 30-49 or 90-109. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Color code for various text and background colors, e.g. between `30`-`49` or `90`-`109`. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
 ## Examples
 Though ANSI escape sequences appear in a string as multiple characters, they are in reality interpreted by the terminal as a single command. For example:

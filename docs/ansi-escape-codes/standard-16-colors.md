@@ -43,14 +43,14 @@ For example, the sequences `\x1b[31m` for red foreground text and `\x1b[41m` for
 
 | Part        | `\x1b[` | `3`<br>`4` | `1` | `m` |
 | ----------- | :-----: | :--------: | :-: | :-: |
-| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text or background color. | Color code between 0-7. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text (`3`) or background color (`4`). | Color code between `0`-`7`. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
 #### Bright Colors
 For example, the sequences `\x1b[92m` for bright green foreground text and `\x1b[102m` for bright green background can be broken down into the following parts:
 
 | Part        | `\x1b[` | `9`<br>`10` | `2` | `m` |
 | ----------- | :-----: | :---------: | :-: | :-: |
-| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text or background color. | Color code between 0-7. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text (`9`) or background color (`10`). | Color code between `0`-`7`. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
 ## Foreground Text and Background Colors
 To apply different color and styling options, simply replace the two underscores `__` in `\x1b[__m` with any of the following color codes:

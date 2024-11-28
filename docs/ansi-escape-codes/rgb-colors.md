@@ -22,7 +22,7 @@ For example, the color code for light blue `rgb(173, 216, 230)` can be broken do
 
 | Part        | `\x1b[` | `38;2;`<br>`48;2;` | `173;216;230` | `m` |
 | ----------- | :-----: | :----------------: | :-----------: | :-: |
-| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text or background color. | RGB color code where each number is between 0-255. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text (`38;2;`) or background color (`48;2;`). | RGB color code where each number is between `0`-`255`. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
 !!! info "Disclaimer"
     Not all [terminals support](../user-guide/compatibility/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.

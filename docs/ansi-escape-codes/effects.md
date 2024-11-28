@@ -16,7 +16,7 @@ For example, the sequence `\x1b[4m` for underlined styling can be broken down in
 
 | Part        | `\x1b[` | `4` | `m` |
 | ----------- | :-----: | :-: | :-: |
-| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Effect on or off, respectively between 1-8 or 21-28. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
+| Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Effect on or off, respectively between `1`-`8` or `21`-`28`. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
 ## Cheat Sheet
 
