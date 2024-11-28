@@ -453,8 +453,8 @@ How it appears in the terminal:
 Let's use color `201` for pink text and color `21` for royal blue background:
 
 ```python linenums="1"
-print("This is \x1b[38;5;21mPINK\x1b[0m text")
-print("This is \x1b[48;5;201mROYAL BLUE\x1b[0m background")
+print("This is \x1b[38;5;201mPINK\x1b[0m text")
+print("This is \x1b[48;5;21mROYAL BLUE\x1b[0m background")
 ```
 
 How it appears in the terminal:
