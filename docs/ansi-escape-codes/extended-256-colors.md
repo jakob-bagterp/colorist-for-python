@@ -23,9 +23,9 @@ It works both with foreground text and background colors. Simply replace the thr
 | `\x1b[48;5;___m` | Background |
 
 ### Sequence Parts
-For example, the sequences `\x1b[38;5;201m` for pink foreground text and `\x1b[48;5;201m` for pink background can be broken down into the following parts:
+For example, the sequences `\x1b[38;5;123m` for turquoise foreground text and `\x1b[48;5;123m` for turquoise background can be broken down into the following parts:
 
-| Part        | `\x1b[` | `38;5;`<br>`48;5;` | `201` | `m` |
+| Part        | `\x1b[` | `38;5;`<br>`48;5;` | `123` | `m` |
 | ----------- | :-----: | :----------------: | :---: | :-: |
 | Description | Starts sequence, also called the Control Sequence Introducer (CSI). | Select foreground text or background color. | Color code between 0-255. | Ends sequence and calls the graphics function Select Graphic Rendition (SGR). |
 
