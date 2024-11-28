@@ -23,3 +23,10 @@ If your terminal supports an extended color space, you can use [256 extended col
 ## ![Animated effects](../assets/images/colors/palette/rainbow_effects_96x16.gif) &nbsp;&nbsp;Effects
 
 ANSI escape codes can also be used to apply [effects and styling](effects.md) to your terminal output.
+
+!!! tip "Become a Sponsor"
+    If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution, no matter the size, makes a difference.
+
+    [Donate on GitHub Sponsors](https://github.com/sponsors/jakob-bagterp){ .md-button .md-button--primary }
+
+    Thank you for your support! 🙌
