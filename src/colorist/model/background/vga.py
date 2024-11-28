@@ -19,12 +19,12 @@ class BgColorVGA(VGA_ABC):
 
             bg_lime_green = BgColorVGA(120)
 
-            print(f"I want to use {bg_lime_green}lime green{bg_lime_green.OFF} background color inside this paragraph")
+            print(f"I want to use {bg_lime_green}LIME GREEN{bg_lime_green.OFF} background color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            <pre><code>% I want to use <span class="text-contrast" style="background-color: #87ff87">lime green</span> background color inside this paragraph</code></pre>
+            <pre><code>% I want to use <span class="text-contrast" style="background-color: #87ff87">LIME GREEN</span> background color inside this paragraph</code></pre>
         """
 
         super().__init__(vga)

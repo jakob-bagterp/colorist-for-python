@@ -70,9 +70,9 @@ Enumerable class of all available standard bright background colors.
     ```python linenums="1" hl_lines="3"
     from colorist import BgBrightColor
 
-    print(f"I want {BgBrightColor.CYAN}cyan{BgBrightColor.OFF} background color inside this paragraph")
+    print(f"I want {BgBrightColor.CYAN}CYAN{BgBrightColor.OFF} background color inside this paragraph")
     ```
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span class="bg-bright-cyan text-contrast">cyan</span> background color inside this paragraph</code></pre>
+    <pre><code>% I want <span class="bg-bright-cyan text-contrast">CYAN</span> background color inside this paragraph</code></pre>

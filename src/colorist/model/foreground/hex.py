@@ -19,12 +19,12 @@ class ColorHex(Hex_ABC):
 
             watermelon_red = ColorHex("#ff5733")
 
-            print(f"I want to use {watermelon_red}watermelon red{watermelon_red.OFF} color inside this paragraph")
+            print(f"I want to use {watermelon_red}WATERMELON RED{watermelon_red.OFF} color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            <pre><code>% I want to use <span style="color: #ff5733">watermelon red</span> color inside this paragraph</code></pre>
+            <pre><code>% I want to use <span style="color: #ff5733">WATERMELON RED</span> color inside this paragraph</code></pre>
         """
 
         super().__init__(hex)

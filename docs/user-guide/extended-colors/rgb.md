@@ -45,11 +45,11 @@ from colorist import ColorRGB, BgColorRGB
 dusty_pink = ColorRGB(194, 145, 164)
 bg_steel_blue = BgColorRGB(70, 130, 180)
 
-print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF}...")
-print(f"... and {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors")
+print(f"I want to use {dusty_pink}DUSTY PINK{dusty_pink.OFF}...")
+print(f"... and {bg_steel_blue}STEEL BLUE{bg_steel_blue.OFF} colors")
 ```
 
 How it appears in the terminal:
 
-<pre><code>% I want to use <span style="color: rgb(194, 145, 164)">dusty pink</span>...
-% ... and <span class="text-contrast" style="background-color: rgb(70, 130, 180)">steel blue</span> colors</code></pre>
+<pre><code>% I want to use <span style="color: rgb(194, 145, 164)">DUSTY PINK</span>...
+% ... and <span class="text-contrast" style="background-color: rgb(70, 130, 180)">STEEL BLUE</span> colors</code></pre>

@@ -21,12 +21,12 @@ class ColorRGB(RGB_ABC):
 
             dusty_pink = ColorRGB(194, 145, 164)
 
-            print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF} color inside this paragraph")
+            print(f"I want to use {dusty_pink}DUSTY PINK{dusty_pink.OFF} color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            <pre><code>% I want to use <span style="color: rgb(194, 145, 164)">dusty pink</span> color inside this paragraph</code></pre>
+            <pre><code>% I want to use <span style="color: rgb(194, 145, 164)">DUSTY PINK</span> color inside this paragraph</code></pre>
         """
 
         super().__init__(red, green, blue)

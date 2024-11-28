@@ -46,11 +46,11 @@ from colorist import ColorHSL, BgColorHSL
 mustard_green = ColorHSL(60, 56, 43)
 bg_steel_gray = BgColorHSL(190, 2, 49)
 
-print(f"I want to use {mustard_green}mustard green{mustard_green.OFF}...")
-print(f"... and {bg_steel_gray}steel gray{bg_steel_gray.OFF} colors")
+print(f"I want to use {mustard_green}MUSTARD GREEN{mustard_green.OFF}...")
+print(f"... and {bg_steel_gray}STEEL GRAY{bg_steel_gray.OFF} colors")
 ```
 
 How it appears in the terminal:
 
-<pre><code>% I want to use <span style="color: hsl(60, 56%, 43%)">mustard green</span>...
-% ... and <span class="text-contrast" style="background-color: hsl(190, 2%, 49%)">steel gray</span> colors</code></pre>
+<pre><code>% I want to use <span style="color: hsl(60, 56%, 43%)">MUSTARD GREEN</span>...
+% ... and <span class="text-contrast" style="background-color: hsl(190, 2%, 49%)">STEEL GRAY</span> colors</code></pre>

@@ -21,12 +21,12 @@ class BgColorHSL(HSL_ABC):
 
             bg_steel_gray = BgColorHSL(190, 2, 49)
 
-            print(f"I want to use {bg_steel_gray}steel gray{bg_steel_gray.OFF} background color inside this paragraph")
+            print(f"I want to use {bg_steel_gray}STEEL GRAY{bg_steel_gray.OFF} background color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            <pre><code>% I want to use <span class="text-contrast" style="background-color: hsl(190, 2%, 49%)">steel gray</span> background color inside this paragraph</code></pre>
+            <pre><code>% I want to use <span class="text-contrast" style="background-color: hsl(190, 2%, 49%)">STEEL GRAY</span> background color inside this paragraph</code></pre>
         """
 
         super().__init__(hue, saturation, lightness)

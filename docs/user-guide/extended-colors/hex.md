@@ -46,11 +46,11 @@ from colorist import ColorHex, BgColorHex
 watermelon_red = ColorHex("#ff5733")
 bg_mint_green = BgColorHex("#99ff99")
 
-print(f"I want to use {watermelon_red}watermelon red{watermelon_red.OFF}...")
-print(f"... and {bg_mint_green}mint green{bg_mint_green.OFF} colors")
+print(f"I want to use {watermelon_red}WATERMELON RED{watermelon_red.OFF}...")
+print(f"... and {bg_mint_green}MINT GREEN{bg_mint_green.OFF} colors")
 ```
 
 How it appears in the terminal:
 
-<pre><code>% I want to use <span style="color: #ff5733">watermelon red</span>...
-% ... and <span class="text-contrast" style="background-color: #99ff99">mint green</span> colors</code></pre>
+<pre><code>% I want to use <span style="color: #ff5733">WATERMELON RED</span>...
+% ... and <span class="text-contrast" style="background-color: #99ff99">MINT GREEN</span> colors</code></pre>

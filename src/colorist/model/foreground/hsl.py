@@ -21,12 +21,12 @@ class ColorHSL(HSL_ABC):
 
             mustard_green = ColorHSL(60, 56, 43)
 
-            print(f"I want to use {mustard_green}mustard green{mustard_green.OFF} color inside this paragraph")
+            print(f"I want to use {mustard_green}MUSTARD GREEN{mustard_green.OFF} color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            <pre><code>% I want to use <span style="color: hsl(60, 56%, 43%)">mustard green</span> color inside this paragraph</code></pre>
+            <pre><code>% I want to use <span style="color: hsl(60, 56%, 43%)">MUSTARD GREEN</span> color inside this paragraph</code></pre>
         """
 
         super().__init__(hue, saturation, lightness)

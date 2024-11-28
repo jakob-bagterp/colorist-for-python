@@ -41,15 +41,15 @@ How to customize colors inside a paragraph and print it in the terminal:
 ```python linenums="1" hl_lines="3 5"
 from colorist import Color
 
-print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
+print(f"I want {Color.RED}RED{Color.OFF} color inside this paragraph")
 
-print(f"Both {Color.GREEN}green{Color.OFF} and {Color.YELLOW}yellow{Color.OFF} are nice colors")
+print(f"Both {Color.GREEN}GREEN{Color.OFF} and {Color.YELLOW}YELLOW{Color.OFF} are nice colors")
 ```
 
 How it appears in the terminal:
 
-<pre><code>% I want <span class="fg-red">red</span> color inside this paragraph
-% Both <span class="fg-green">green</span> and <span class="fg-yellow">yellow</span> are nice colors</code></pre>
+<pre><code>% I want <span class="fg-red">RED</span> color inside this paragraph
+% Both <span class="fg-green">GREEN</span> and <span class="fg-yellow">YELLOW</span> are nice colors</code></pre>
 
 !!! tip
     Remember to turn off a color with `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -60,12 +60,12 @@ Most terminals support bright colors that stand more out:
 ```python linenums="1" hl_lines="3"
 from colorist import BrightColor
 
-print(f"Put {BrightColor.CYAN}cyan{BrightColor.OFF} inside this paragraph")
+print(f"Put {BrightColor.CYAN}CYAN{BrightColor.OFF} inside this paragraph")
 ```
 
 How it appears in the terminal:
 
-<pre><code>% Put <span class="fg-bright-cyan">cyan</span> inside this paragraph</code></pre>
+<pre><code>% Put <span class="fg-bright-cyan">CYAN</span> inside this paragraph</code></pre>
 
 Refer to the documetation for a [complete list of color options for custom text styling](../../reference/text-colors/mixed.md).
 

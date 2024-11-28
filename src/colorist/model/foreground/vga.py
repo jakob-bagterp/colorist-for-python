@@ -19,12 +19,12 @@ class ColorVGA(VGA_ABC):
 
             lime_green = ColorVGA(120)
 
-            print(f"I want to use {lime_green}lime green{lime_green.OFF} color inside this paragraph")
+            print(f"I want to use {lime_green}LIME GREEN{lime_green.OFF} color inside this paragraph")
             ```
 
             How it appears in the terminal:
 
-            <pre><code>% I want to use <span style="color: #87ff87">lime green</span> color inside this paragraph</code></pre>
+            <pre><code>% I want to use <span style="color: #87ff87">LIME GREEN</span> color inside this paragraph</code></pre>
         """
 
         super().__init__(vga)
