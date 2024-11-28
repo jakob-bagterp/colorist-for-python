@@ -450,14 +450,14 @@ How it appears in the terminal:
 </table>
 
 #### Examples
-Let's use color `21` for royal blue text and color `201` for pink background:
+Let's use color `201` for pink text and color `21` for royal blue background:
 
 ```python linenums="1"
-print("This is \x1b[38;5;21mROYAL BLUE\x1b[0m text")
-print("This is \x1b[48;5;201mPINK\x1b[0m background")
+print("This is \x1b[38;5;21mPINK\x1b[0m text")
+print("This is \x1b[48;5;201mROYAL BLUE\x1b[0m background")
 ```
 
 How it appears in the terminal:
 
-<pre><code>% This is <span style="color: #0000ff;">ROYAL BLUE</span> text
-% This is <span class="text-contrast" style="background-color: #ff00ff;">PINK</span> background</code></pre>
+<pre><code>% This is <span style="color: #ff00ff;">PINK</span> text
+% This is <span class="text-contrast" style="background-color: #0000ff;">ROYAL BLUE</span> background</code></pre>
