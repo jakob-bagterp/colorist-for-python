@@ -22,20 +22,19 @@ Find more details and options in the [installation guide](installation.md).
 ## 2. First Script
 You're now ready to go:
 
-```python linenums="1" hl_lines="3 5-6"
+```python linenums="1" hl_lines="3-5"
 from colorist import Color, green
 
 green("This is GREEN!")
-
-print(f"Both {Color.RED}red{Color.OFF}...")
-print(f"... and {Color.YELLOW}yellow{Color.OFF} are nice colors")
+print(f"Both {Color.RED}RED{Color.OFF}...")
+print(f"... and {Color.YELLOW}YELLOW{Color.OFF} are nice colors")
 ```
 
 How it appears in the terminal:
 
 <pre><code>% <span class="fg-green">This is GREEN!</span>
-% Both <span class="fg-red">red</span>...
-% ... and <span class="fg-yellow">yellow</span> are nice colors</code></pre>
+% Both <span class="fg-red">RED</span>...
+% ... and <span class="fg-yellow">YELLOW</span> are nice colors</code></pre>
 
 ## Next Steps
 Find more usage examples and tutorials in the [user guide](../user-guide/index.md) section.
