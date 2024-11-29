@@ -33,15 +33,15 @@ Enumerable class of all available standard background colors.
     ```python linenums="1" hl_lines="3 5"
     from colorist import BgColor
 
-    print(f"I want {BgColor.RED}red{BgColor.OFF} background color inside this paragraph")
+    print(f"I want {BgColor.RED}RED{BgColor.OFF} background color inside this paragraph")
 
-    print(f"Both {BgColor.GREEN}green{BgColor.OFF} and {BgColor.YELLOW}yellow{BgColor.OFF} are nice background colors")
+    print(f"Both {BgColor.GREEN}GREEN{BgColor.OFF} and {BgColor.YELLOW}YELLOW{BgColor.OFF} are nice background colors")
     ```
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span class="bg-red text-contrast">red</span> background color inside this paragraph
-    % Both <span class="bg-green text-contrast">green</span> and <span class="bg-yellow text-contrast">yellow</span> are nice background colors</code></pre>
+    <pre><code>% I want <span class="bg-red text-contrast">RED</span> background color inside this paragraph
+    % Both <span class="bg-green text-contrast">GREEN</span> and <span class="bg-yellow text-contrast">YELLOW</span> are nice background colors</code></pre>
 
 !!! tip
     Remember to turn off a color with `BgColor.OFF` or `BgBrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.

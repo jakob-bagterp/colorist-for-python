@@ -34,15 +34,15 @@ Enumerable class of all available standard text colors.
     ```python linenums="1" hl_lines="3 5"
     from colorist import Color
 
-    print(f"I want {Color.RED}red{Color.OFF} color inside this paragraph")
+    print(f"I want {Color.RED}RED{Color.OFF} color inside this paragraph")
 
-    print(f"Both {Color.GREEN}green{Color.OFF} and {Color.YELLOW}yellow{Color.OFF} are nice colors")
+    print(f"Both {Color.GREEN}GREEN{Color.OFF} and {Color.YELLOW}YELLOW{Color.OFF} are nice colors")
     ```
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span class="fg-red">red</span> color inside this paragraph
-    % Both <span class="fg-green">green</span> and <span class="fg-yellow">yellow</span> are nice colors</code></pre>
+    <pre><code>% I want <span class="fg-red">RED</span> color inside this paragraph
+    % Both <span class="fg-green">GREEN</span> and <span class="fg-yellow">YELLOW</span> are nice colors</code></pre>
 
 !!! tip
     Remember to turn off a color with `Color.OFF` or `BrightColor.OFF` every time you want to revert back to the default terminal text style. Otherwise, the effect may spill over and into other terminal messages.
@@ -71,9 +71,9 @@ Enumerable class of all available standard bright text colors.
     ```python linenums="1" hl_lines="3"
     from colorist import BrightColor
 
-    print(f"I want {BrightColor.CYAN}cyan{BrightColor.OFF} color inside this paragraph")
+    print(f"I want {BrightColor.CYAN}CYAN{BrightColor.OFF} color inside this paragraph")
     ```
 
     How it appears in the terminal:
 
-    <pre><code>% I want <span class="fg-bright-cyan">cyan</span> color inside this paragraph</code></pre>
+    <pre><code>% I want <span class="fg-bright-cyan">CYAN</span> color inside this paragraph</code></pre>
