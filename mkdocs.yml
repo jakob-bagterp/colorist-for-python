@@ -157,9 +157,9 @@ extra:
     provider: mike
 
 extra_css:
-  - assets/css/colors.css
-  - assets/css/effects.css
-  - assets/css/tables.css
+  - assets/stylesheets/colors.css
+  - assets/stylesheets/effects.css
+  - assets/stylesheets/tables.css
 
 extra_javascript:
   - assets/scripts/text-contrast.js
