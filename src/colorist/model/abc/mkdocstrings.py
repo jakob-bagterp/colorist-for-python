@@ -9,4 +9,4 @@ class MkDocstringsWrapper_ABC(ABC):
     Should not used for other purposes than documentation."""
 
     def __init__(self) -> None:
-        pass
+        pass  # pragma: no cover
