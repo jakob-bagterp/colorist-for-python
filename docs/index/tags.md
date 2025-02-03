@@ -7,4 +7,4 @@ description: List of all tags and relevant pages for Colorist for Python, coveri
 
 List of all tags and relevant pages:
 
-[TAGS]
+<!-- material/tags -->
