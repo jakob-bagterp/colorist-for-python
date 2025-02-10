@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jakob-bagterp.github.io/colorist-for-python/sitemap.xml
