@@ -24,4 +24,5 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install -r ./docs/requirements.txt
+      - run: pip install .
       - run: mkdocs build --strict --verbose
