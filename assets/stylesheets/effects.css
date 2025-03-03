@@ -1,0 +1,18 @@
+.effect-blinking {
+    opacity: 1;
+    animation: blinking 1s step-end infinite;
+}
+
+  @keyframes blinking {
+    50% {
+        opacity: 0;
+    }
+}
+
+.effect-dimmed {
+    opacity: 50%;
+}
+
+.effect-hidden {
+    opacity: 0%;
+}
