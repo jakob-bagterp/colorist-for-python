@@ -208,6 +208,9 @@ plugins:
         user-guide/materials/other-string-formats.md: user-guide/compatibility/backwards-compatible-string-formats.md
         user-guide/materials/terminal-support.md: user-guide/compatibility/terminal-support.md
 
+exclude_docs: |
+  /requirements.txt
+
 watch:
   - src
 
