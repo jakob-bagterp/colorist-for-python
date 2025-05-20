@@ -11,21 +11,29 @@ permissions:
 jobs:
   deploy-docs:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           lfs: true
           fetch-depth: 0
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+          python-version: "3.13"
+      - name: Set up cached packages
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install -r ./docs/requirements.txt
-      - run: pip install .
-      - run: mkdocs gh-deploy --force
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r ./docs/requirements.txt
+          pip install .
+      - name: Build and deploy MkDocs website to GitHub Pages
+        run: mkdocs gh-deploy --force
