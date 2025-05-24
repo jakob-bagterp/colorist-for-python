@@ -10,20 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.13"
-    - name: Install dependencies
-      run: |
-        pip install --upgrade pip
-        pip install -r ./requirements.txt
-        pip install -r ./requirements_dev.txt
-    - name: Generate coverage report
-      run: pytest --cov=./ --cov-report=xml
-    - name: Upload coverage report to CodeCov
-      uses: codecov/codecov-action@v5
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r ./requirements.txt
+          pip install -r ./requirements_dev.txt
+      - name: Generate coverage report
+        run: pytest --cov=./ --cov-report=xml
+      - name: Upload coverage report to CodeCov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
