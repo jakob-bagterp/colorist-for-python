@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Submit sitemap URLs to IndexNow
-        uses: jakob-bagterp/index-now-submit-sitemap-action@v1
+        uses: jakob-bagterp/index-now-submit-sitemap-urls-action@v1
         with:
           host: jakob-bagterp.github.io
           api_key: 6d71a14ac15c4c41a0c19e641f659208
