@@ -212,6 +212,7 @@ plugins:
 
 exclude_docs: |
   /requirements.txt
+  /README.md
 
 watch:
   - src
