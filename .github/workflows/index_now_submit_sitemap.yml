@@ -18,5 +18,5 @@ jobs:
           host: jakob-bagterp.github.io
           api_key: 6d71a14ac15c4c41a0c19e641f659208
           api_key_location: https://jakob-bagterp.github.io/index-now-api-key.txt
-          sitemap_location: https://jakob-bagterp.github.io/colorist-for-python/sitemap.xml
+          sitemap_locations: https://jakob-bagterp.github.io/colorist-for-python/sitemap.xml
           endpoint: yandex
