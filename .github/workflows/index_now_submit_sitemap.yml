@@ -1,9 +1,8 @@
 name: Submit Sitemap to IndexNow
 
 on:
-  workflow_run:
-    workflows: [pages-build-deployment]
-    types: [completed]
+  schedule:
+    - cron: 0 0 1 * *  # Run at midnight UTC on the 1st day of each month.
 
 permissions: read-all
 
