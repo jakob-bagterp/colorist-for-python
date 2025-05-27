@@ -29,6 +29,8 @@ jobs:
   details:
     name: Get version details
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
       previous_version: ${{ steps.release.outputs.previous_version }}
       new_version: ${{ steps.release.outputs.new_version }}
@@ -70,6 +72,9 @@ jobs:
     name: Check PyPI for existing version
     needs: details
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
     steps:
       - name: Fetch information from PyPI
         run: |
@@ -97,6 +102,9 @@ jobs:
     name: Build source and wheel distribution
     needs: [details, check_pypi]
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
     steps:
       - uses: actions/checkout@v4
 
@@ -127,6 +135,7 @@ jobs:
       name: release
     permissions:
       id-token: write
+
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
@@ -141,6 +150,9 @@ jobs:
     name: Test PyPI installation
     needs: [pypi_publish, details]
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
     steps:
       - uses: actions/checkout@v4
 
@@ -191,6 +203,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -216,6 +229,9 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: release
+    permissions:
+      contents: write
+
     steps:
       - name: Dispatch repository dispatch event
         uses: peter-evans/repository-dispatch@v3
