@@ -198,9 +198,11 @@ plugins:
           remove_comments: true
       js_files:
           - js/timeago_mkdocs_material.js
+          - assets/scripts/text-contrast.js
       css_files:
           - css/timeago.css
           - assets/_mkdocstrings.css
+          - assets/stylesheets/colors.css
   - redirects:
       redirect_maps:
         user-guide/materials/ansi-escape-codes.md: ansi-escape-codes/index.md
