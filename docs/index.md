@@ -1,5 +1,5 @@
 ---
-title: Add Color to Your Terminal with Colorist for Python 🌈
+title: Add Color to Your Terminal
 description: Colorist is a lightweight Python package that makes it easy and fast to print colored text in the terminal.
 ---
 
