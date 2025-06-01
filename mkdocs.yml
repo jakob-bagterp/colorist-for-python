@@ -101,7 +101,7 @@ markdown_extensions:
   - toc:
       permalink: "#"
   - pymdownx.highlight:
-      anchor_linenums: true
+      anchor_linenums: false
       line_spans: __span
       use_pygments: true
       pygments_lang_class: true
