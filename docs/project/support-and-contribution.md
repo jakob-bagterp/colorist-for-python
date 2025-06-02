@@ -4,6 +4,10 @@ description: How to contribute to Colorist for Python, including how to report b
 ---
 
 # Support and Contribution
+This open-source project welcomes contributions from the community. Your support is vital for maintaining and improving it.
+
+Before contributing or reporting issues, please ensure that you ruled out issues that are not related to Browserist.
+
 ## Contribute
 If you have suggestions or changes to the module, feel free to add to the code and create a [pull request](https://github.com/jakob-bagterp/colorist-for-python/pulls).
 
