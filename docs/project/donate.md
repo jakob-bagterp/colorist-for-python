@@ -4,10 +4,12 @@ description: If you find Colorist for Python helpful, please consider supporting
 ---
 
 # Donations
+## Open-Source and Community-Driven
 This project is a community-driven open-source initiative, developed without commercial interests and shared freely for anyone to use, improve, and build upon. What began as a simple idea has grown beyond expectations, with downloads far surpassing our initial goals:
 
 [![Downloads](https://static.pepy.tech/badge/colorist)](https://pepy.tech/project/colorist)
 
+## How to Support
 Your support – whether through contributions, feedback, or simply spreading the word – is vital to help us maintain and continue enhancing the project for everyone.
 
 !!! tip "Become a Sponsor"
