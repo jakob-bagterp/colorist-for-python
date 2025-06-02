@@ -14,6 +14,9 @@ If you have suggestions or changes to the module, feel free to add to the code a
 ## Report Bugs
 If you encounter any issues, you can [report them as bugs or raise issues](https://github.com/jakob-bagterp/colorist-for-python/issues).
 
+## Support the Project
+If you have already downloaded and tried the package, perhaps you would like to support its development?
+
 !!! tip "Become a Sponsor"
     If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution, no matter the size, makes a difference.
 

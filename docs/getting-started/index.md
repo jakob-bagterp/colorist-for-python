@@ -39,6 +39,9 @@ How it appears in the terminal:
 ## Next Steps
 Find more usage examples and tutorials in the [user guide](../user-guide/index.md) section.
 
+## Support the Project
+If you have already downloaded and tried the package, perhaps you would like to support its development?
+
 !!! tip "Become a Sponsor"
     If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution, no matter the size, makes a difference.
 
