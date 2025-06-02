@@ -69,7 +69,7 @@ You can use the same method to [apply other background colors](user-guide/standa
 Ready to try more options and features? Let's get started with the [installation](getting-started/index.md) or check out the [user guide](user-guide/index.md).
 
 ## Support the Project
-If you have already downloaded and tried the package, perhaps you would like to support its development?
+If you have already downloaded and tried the package – maybe even used it in a production environment – perhaps you would like to support its development?
 
 !!! tip "Become a Sponsor"
     If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution, no matter the size, makes a difference.
