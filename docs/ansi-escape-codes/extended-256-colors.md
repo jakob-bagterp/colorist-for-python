@@ -22,7 +22,7 @@ It works both with foreground text and background colors. Simply replace the thr
 | `\x1b[38;5;___m` | Text       |
 | `\x1b[48;5;___m` | Background |
 
-<div class="cubes">
+<div class="color-cubes">
     <img src="../../assets/images/cube/cube_bright.svg" alt="Color cube bright">
     <img src="../../assets/images/cube/cube_dark.svg" alt="Color cube dark">
 </div>
