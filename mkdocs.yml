@@ -97,6 +97,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   logo: assets/images/cube/cube_bright.svg
+  favicon: assets/images/cube/cube_bright.svg
 
 markdown_extensions:
   - toc:
