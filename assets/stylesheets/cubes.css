@@ -1,4 +1,4 @@
-.cubes {
+.color-cubes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -6,7 +6,7 @@
   gap: 2rem;
 }
 
-.cubes img {
+.color-cubes img {
   width: 100%;
   max-width: 300px;
   height: auto;
