@@ -1,0 +1,13 @@
+.cubes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cubes img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}

@@ -15,6 +15,11 @@ The VGA palette is based on a 8-bit color space of 216 colors and 24 shades of g
 !!! info "Disclaimer"
     Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 8-bit VGA colors. If your terminal does support such advanced colors, read on.
 
+<div class="cubes">
+    <img src="../../../assets/images/cube/cube_bright.svg" alt="Color cube bright">
+    <img src="../../../assets/images/cube/cube_dark.svg" alt="Color cube dark">
+</div>
+
 ## Full Line Text Functions
 Try the `vga()` and `bg_vga()` methods for a full line of colored text. The value can be an integer between `0`-`255`.
 

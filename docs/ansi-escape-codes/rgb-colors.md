@@ -17,6 +17,11 @@ The 24-bit RGB color space represents a much broader array of colors. Simply use
 | `\x1b[38;2;r;g;bm` | Text       |
 | `\x1b[48;2;r;g;bm` | Background |
 
+<div class="cubes">
+    <img src="../../assets/images/cube/cube_bright.svg" alt="Color cube bright">
+    <img src="../../assets/images/cube/cube_dark.svg" alt="Color cube dark">
+</div>
+
 ### Sequence Parts
 For example, the color code for light blue `rgb(173, 216, 230)` can be broken down into the following parts:
 
