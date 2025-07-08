@@ -11,8 +11,10 @@ Lightweight Python package that makes it easy and fast to print colored text in 
 
 Ready to try? See [how to install](https://jakob-bagterp.github.io/colorist-for-python/getting-started/installation/).
 
-![Color cube bright](/docs/assets/images/cube/cube_bright.svg){: style="height: 250px; margin-right: 10px;"}
-![Color cube dark](/docs/assets/images/cube/cube_dark.svg){: style="height: 250px;"}
+<p align="left">
+    <img src="/docs/assets/images/cube/cube_bright.svg" alt="Color cube bright" height="250" style="margin-right: 10px;">
+    <img src="/docs/assets/images/cube/cube_dark.svg" alt="Color cube dark" height="250">
+</p>
 
 ## Getting Started
 ### Print Line of Colored Text
