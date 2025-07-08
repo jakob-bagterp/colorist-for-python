@@ -20,6 +20,11 @@ The 24-bit Hex color model covers over 16 million colors, and each color can be 
 !!! info "Disclaimer"
     Not all [terminals support](../compatibility/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
 
+<div class="cubes">
+    <img src="../../../assets/images/cube/cube_bright.svg" alt="Color cube bright">
+    <img src="../../../assets/images/cube/cube_dark.svg" alt="Color cube dark">
+</div>
+
 ## Full Line Text Functions
 Try the `hex()` and `bg_hex()` methods for a full line of colored text. Allowed Hex values are, for instance, `#00aaff` or `#0af`, alternatively without the hash sign as `00aaff` or `0af`.
 

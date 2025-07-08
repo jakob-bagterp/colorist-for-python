@@ -96,6 +96,8 @@ theme:
         name: Switch to light mode
   icon:
     repo: fontawesome/brands/github
+  logo: assets/images/cube/cube_bright.svg
+  favicon: assets/images/cube/cube_bright.svg
 
 markdown_extensions:
   - toc:
@@ -158,6 +160,7 @@ extra:
 
 extra_css:
   - assets/stylesheets/colors.css
+  - assets/stylesheets/cubes.css
   - assets/stylesheets/effects.css
   - assets/stylesheets/tables.css
 
