@@ -15,6 +15,11 @@ description: Colorist is a lightweight Python package that makes it easy and fas
 ## What Is Colorist?
 Lightweight Python package that makes it easy and fast to print colored text in the terminal.
 
+<div class="cubes">
+    <img src="../../../assets/images/cube/cube_bright.svg" alt="Color cube bright">
+    <img src="../../../assets/images/cube/cube_dark.svg" alt="Color cube dark">
+</div>
+
 ## How It Works
 ### Basic Usage
 Colorist is intended to be easy to use. Imagine you want to print a mix of colors in the terminal:
