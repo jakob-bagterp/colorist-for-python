@@ -33,3 +33,8 @@ If you have already downloaded and tried the package – maybe even used it in a
     [Donate on GitHub Sponsors](https://github.com/sponsors/jakob-bagterp){ .md-button .md-button--primary }
 
     Thank you for your support! 🙌
+
+<div class="color-cubes">
+    <img src="../assets/images/cube/cube_bright.svg" alt="Color cube bright">
+    <img src="../assets/images/cube/cube_dark.svg" alt="Color cube dark">
+</div>
