@@ -8,7 +8,13 @@ tags:
 ---
 
 # What Are ANSI Escape Codes?
-ANSI escape sequences were introduced in the 1970s as a standard to style text terminals with color, font styling, and other options. They are supported by most modern terminals in operating systems like Windows, macOS, and Linux.
+ANSI escape sequences were introduced in the 1970s as a standard for styling text terminals with color and font options. Supported by most modern operating systems, including Windows, macOS, and Linux, they allow you to add [colors](standard-16-colors.md) and [effects](effects.md) to your terminal output.
+
+For example:
+
+<pre><code>% I want <span class="fg-red">RED</span>, <span class="fg-green">GREEN</span>, <span class="fg-blue">BLUE</span> text...
+% ... or <span class="bg-red">RED</span>, <span class="bg-green">GREEN</span>, <span class="bg-blue">BLUE</span> background...
+% ... and I want <span class="effect-blinking">BLINKING</span> text.</code></pre>
 
 ## Building Blocks
 ### Escape Character
