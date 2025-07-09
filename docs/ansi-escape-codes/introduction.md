@@ -57,8 +57,6 @@ How to apply this in a print command:
 print("I want \x1b[31mRED\x1b[0m color")
 ```
 
-You can use the same method to apply [other colors to text or backgrounds](standard-16-colors.md).
-
 !!! tip "Humanised Sequence Is Easier to Read"
     This is also why it's [convenient to use Colorist](../user-guide/standard-colors/text-foreground.md) instead of manually writing raw ANSI escape codes.
 
@@ -73,3 +71,16 @@ You can use the same method to apply [other colors to text or backgrounds](stand
     The result in the terminal output is the same as before:
 
     <pre><code>% I want <span class="fg-red">RED</span> color</code></pre>
+
+## Color and Effects Options
+You can use the same method to apply other colors and effects to text or backgrounds:
+
+* [Standard 16 colors](standard-16-colors.md)
+* [Extended 256 colors](extended-256-colors.md)
+* [RGB colors](rgb-colors.md)
+* [Effects](effects.md)
+
+<div class="color-cubes">
+    <img src="../../assets/images/cubes/cube_bright.svg" alt="Color cube bright">
+    <img src="../../assets/images/cubes/cube_dark.svg" alt="Color cube dark">
+</div>
