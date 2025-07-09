@@ -35,6 +35,6 @@ If you have already downloaded and tried the package – maybe even used it in a
     Thank you for your support! 🙌
 
 <div class="color-cubes">
-    <img src="../assets/images/cube/cube_bright.svg" alt="Color cube bright">
-    <img src="../assets/images/cube/cube_dark.svg" alt="Color cube dark">
+    <img src="../assets/images/cubes/cube_bright.svg" alt="Color cube bright">
+    <img src="../assets/images/cubes/cube_dark.svg" alt="Color cube dark">
 </div>

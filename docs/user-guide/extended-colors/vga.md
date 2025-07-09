@@ -16,8 +16,8 @@ The VGA palette is based on a 8-bit color space of 216 colors and 24 shades of g
     Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 8-bit VGA colors. If your terminal does support such advanced colors, read on.
 
 <div class="color-cubes">
-    <img src="../../../assets/images/cube/cube_bright.svg" alt="Color cube bright">
-    <img src="../../../assets/images/cube/cube_dark.svg" alt="Color cube dark">
+    <img src="../../../assets/images/cubes/cube_bright.svg" alt="Color cube bright">
+    <img src="../../../assets/images/cubes/cube_dark.svg" alt="Color cube dark">
 </div>
 
 ## Full Line Text Functions

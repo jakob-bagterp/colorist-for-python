@@ -23,8 +23,8 @@ It works both with foreground text and background colors. Simply replace the thr
 | `\x1b[48;5;___m` | Background |
 
 <div class="color-cubes">
-    <img src="../../assets/images/cube/cube_bright.svg" alt="Color cube bright">
-    <img src="../../assets/images/cube/cube_dark.svg" alt="Color cube dark">
+    <img src="../../assets/images/cubes/cube_bright.svg" alt="Color cube bright">
+    <img src="../../assets/images/cubes/cube_dark.svg" alt="Color cube dark">
 </div>
 
 ### Sequence Parts

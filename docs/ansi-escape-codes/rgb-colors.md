@@ -18,8 +18,8 @@ The 24-bit RGB color space represents a much broader array of colors. Simply use
 | `\x1b[48;2;r;g;bm` | Background |
 
 <div class="color-cubes">
-    <img src="../../assets/images/cube/cube_bright.svg" alt="Color cube bright">
-    <img src="../../assets/images/cube/cube_dark.svg" alt="Color cube dark">
+    <img src="../../assets/images/cubes/cube_bright.svg" alt="Color cube bright">
+    <img src="../../assets/images/cubes/cube_dark.svg" alt="Color cube dark">
 </div>
 
 ### Sequence Parts
