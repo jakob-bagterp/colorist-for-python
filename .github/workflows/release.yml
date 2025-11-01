@@ -234,7 +234,7 @@ jobs:
 
     steps:
       - name: Dispatch repository dispatch event
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         env:
           FORMULA_NEW_VERSION: ${{ needs.details.outputs.new_version }}
           FORMULA_NAME: ${{ env.PACKAGE_NAME }}
