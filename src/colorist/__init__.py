@@ -2,7 +2,7 @@
 
 __all__ = [
     "Color", "BrightColor", "BgColor", "BgBrightColor", "ColorHex", "BgColorHex", "ColorRGB", "BgColorRGB", "ColorHSL", "BgColorHSL", "ColorVGA", "BgColorVGA", "Effect",
-    "print_color",
+    "print_color", "style_text",
     "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white",
     "bright_black", "bright_red", "bright_green", "bright_yellow", "bright_blue", "bright_magenta", "bright_cyan", "bright_white",
     "bg_black", "bg_red", "bg_green", "bg_yellow", "bg_blue", "bg_magenta", "bg_cyan", "bg_white",
@@ -12,9 +12,6 @@ __all__ = [
     "bg_hex", "bg_rgb", "bg_hsl", "bg_vga"
 ]
 
-from .constants.ansi import RESET_ALL
-from .model.abc.color import Color_ABC
-from .model.abc.hex import Hex_ABC
 from .model.background.bright_color import BgBrightColor
 from .model.background.color import BgColor
 from .model.background.hex import BgColorHex
@@ -50,24 +47,5 @@ from .print.foreground.hex import hex
 from .print.foreground.hsl import hsl
 from .print.foreground.rgb import rgb
 from .print.foreground.vga import vga
-from .print.general import print_color
+from .print.general import print_color, style_text
 from .version import __version__  # noqa
-
-def style_text(text: str,
-               *args: Color_ABC | Hex_ABC | Effect | str
-               ) -> str:
-    """Applies arbitrary text and background color, styling and/or effects to a given string.
-
-    Args:
-        text (str): The text to be styled.
-        *args (Color_ABC | Hex_ABC | Effect | str): Arbitrary number of optional effect parameters.
-
-    Returns:
-        str: The new string wrapped in the appropriate ANSI escape codes.
-
-    ## Example
-    ```python
-    text = f"{style_text("WARNING", Color.YELLOW, Effect.BOLD)}: This is an example."
-    ```
-    """
-    return "".join(map(str, args)) + text + RESET_ALL
