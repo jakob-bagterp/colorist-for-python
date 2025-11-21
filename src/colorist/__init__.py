@@ -12,6 +12,9 @@ __all__ = [
     "bg_hex", "bg_rgb", "bg_hsl", "bg_vga"
 ]
 
+from .constants.ansi import RESET_ALL
+from .model.abc.color import Color_ABC
+from .model.abc.hex import Hex_ABC
 from .model.background.bright_color import BgBrightColor
 from .model.background.color import BgColor
 from .model.background.hex import BgColorHex
@@ -49,3 +52,22 @@ from .print.foreground.rgb import rgb
 from .print.foreground.vga import vga
 from .print.general import print_color
 from .version import __version__  # noqa
+
+def style_text(text: str,
+               *args: Color_ABC | Hex_ABC | Effect | str
+               ) -> str:
+    """Applies arbitrary text and background color, styling and/or effects to a given string.
+
+    Args:
+        text (str): The text to be styled.
+        *args (Color_ABC | Hex_ABC | Effect | str): Arbitrary number of optional effect parameters.
+
+    Returns:
+        str: The new string wrapped in the appropriate ANSI escape codes.
+
+    ## Example
+    ```python
+    text = f"{style_text("WARNING", Color.YELLOW, Effect.BOLD)}: This is an example."
+    ```
+    """
+    return "".join(map(str, args)) + text + RESET_ALL
