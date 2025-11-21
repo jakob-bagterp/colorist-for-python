@@ -2,6 +2,11 @@
 
 from .. import helper
 from ..constants.ansi import RESET_ALL
+from ..model.abc.color import Color_ABC
+from ..model.abc.hex import Hex_ABC
+from ..model.abc.hsl import HSL_ABC
+from ..model.abc.rgb import RGB_ABC
+from ..model.abc.vga import VGA_ABC
 from ..model.background.bright_color import BgBrightColor
 from ..model.background.color import BgColor
 from ..model.background.hex import BgColorHex
@@ -16,12 +21,6 @@ from ..model.foreground.hsl import ColorHSL
 from ..model.foreground.rgb import ColorRGB
 from ..model.foreground.vga import ColorVGA
 
-from ..model.abc.color import Color_ABC
-from ..model.abc.hex import Hex_ABC
-from ..model.abc.hsl import HSL_ABC
-from ..model.abc.rgb import RGB_ABC
-from ..model.abc.vga import VGA_ABC
-
 
 def print_color(text: str,
                 color: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | str | None = None,
@@ -35,6 +34,7 @@ def print_color(text: str,
     effect_str = helper.print.normalize_input(effect)
 
     print(f"{color_str}{bg_color_str}{effect_str}{text}{RESET_ALL}")
+
 
 def style_text(text: str,
                *args: Color_ABC | Hex_ABC | RGB_ABC | HSL_ABC | VGA_ABC | Effect | str
