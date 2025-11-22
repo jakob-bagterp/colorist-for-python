@@ -1,6 +1,7 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
 from enum import Enum
+
 from ..constants.ansi import RESET_ALL
 from ..model.background.bright_color import BgBrightColor
 from ..model.background.color import BgColor
@@ -15,6 +16,7 @@ from ..model.foreground.hex import ColorHex
 from ..model.foreground.hsl import ColorHSL
 from ..model.foreground.rgb import ColorRGB
 from ..model.foreground.vga import ColorVGA
+
 
 def style_text(text: str,
                *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None

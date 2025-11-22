@@ -1,7 +1,6 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
 import pytest
-import terminal
 
 from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
                       BgColorRGB, BgColorVGA, BrightColor, Color, ColorHex,
