@@ -26,7 +26,7 @@ The 24-bit HSL color model covers over 16 million colors, and each color can be 
 </div>
 
 ## Full Line Text Functions
-You can output colors in HSL with the `hsl()` and `bg_hsl()` methods. The value for hue can be between `0`-`360` degrees, while saturation and lightness can be a percentage between `0`-`100` %:
+You can output colors in HSL with the [`hsl()`](../../reference/extended-colors/hsl.md#colorist.print.foreground.hsl.MkDocstringsWrapper.hsl) and [`bg_hsl()`](../../reference/extended-colors/hsl.md#colorist.print.background.hsl.MkDocstringsWrapper.bg_hsl) methods. The value for hue can be between `0`-`360` degrees, while saturation and lightness can be a percentage between `0`-`100` %:
 
 Example:
 
@@ -43,7 +43,7 @@ How it appears in the terminal:
 % <span class="text-contrast" style="background-color: hsl(120, 50%, 50%)">I want this background in green HSL colors</span></code></pre>
 
 ## Custom String Styling
-Or customize the styling of text and background with the `ColorHSL()` and `BgColorHSL()` classes:
+Or customize the styling of text and background with the [`ColorHSL()`](../../reference/extended-colors/hsl.md#colorhslhue-saturation-lightness) and [`BgColorHSL()`](../../reference/extended-colors/hsl.md#bgcolorhslhue-saturation-lightness) classes:
 
 ```python linenums="1" hl_lines="6-7"
 from colorist import ColorHSL, BgColorHSL
