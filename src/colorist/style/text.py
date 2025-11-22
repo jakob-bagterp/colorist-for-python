@@ -1,6 +1,5 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
-from enum import Enum
 
 from ..constants.ansi import RESET_ALL
 from ..model.abc.mkdocstrings import MkDocstringsWrapper_ABC
@@ -24,14 +23,7 @@ def style_text(text: str,
                ) -> str:
     """Style text with various options for text and background colors, styling and effects."""
 
-    def _get_style_value(style: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None) -> str:
-        if style is None:
-            return ""
-        if isinstance(style, Enum):
-            return str(style.value)
-        return str(style)
-
-    return f"{''.join(_get_style_value(style) for style in styles)}{text}{RESET_ALL}"
+    return f"{''.join('' if style is None else str(style) for style in styles)}{text}{RESET_ALL}"
 
 
 class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
