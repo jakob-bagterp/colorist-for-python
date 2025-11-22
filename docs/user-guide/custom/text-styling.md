@@ -16,10 +16,10 @@ tags:
 ---
 
 # How to Customize Text Styling and Colors
-Instead of printing statements directly to the terminal, you can also customize and combine various colors and styling to text strings before printing them. This gives you more flexibility to create complex messages with different styles.
+Instead of printing statements directly to the terminal, you can also customize and combine various colors and styling to text strings before printing them. This gives you more flexibility to create complex patterns with different styles.
 
 ## How it Works
-When you using the [`style_text()`](../../reference/custom/text-styling.md#colorist.style.text.MkDocstringsWrapper.style_text) method to apply colors and styling to a text string...
+When using the [`style_text()`](../../reference/custom/text-styling.md#colorist.style.text.MkDocstringsWrapper.style_text) method to apply colors and styling to a text string...
 
 ```python linenums="1" hl_lines="3"
 from colorist import style_text, Color
