@@ -17,13 +17,13 @@ from ..model.foreground.vga import ColorVGA
 
 
 def style_text(text: str,
-               *args: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None
+               *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None
                ) -> str:
     """Style text with various options for text and background color, styling and effects.
 
     Args:
         text (str): The text to be styled.
-        *args (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None, optional): The text and/or background colors, styling and/or effects to be applied to the text.
+        *styles (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None, optional): The text and/or background colors, styling and/or effects to be applied to the text.
 
     Returns:
         str: A new text string wrapped in the appropriate ANSI escape codes.
@@ -34,4 +34,4 @@ def style_text(text: str,
         ```
     """
 
-    return f"{''.join(map(str, args))}{text}{RESET_ALL}"
+    return f"{''.join(map(str, styles))}{text}{RESET_ALL}"
