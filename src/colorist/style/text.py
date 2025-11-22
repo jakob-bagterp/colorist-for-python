@@ -19,19 +19,24 @@ from ..model.foreground.vga import ColorVGA
 def style_text(text: str,
                *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None
                ) -> str:
-    """Style text with various options for text and background color, styling and effects.
+    """Style text with various options for text and background colors, styling and effects.
 
     Args:
         text (str): The text to be styled.
         *styles (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None, optional): The text and/or background colors, styling and/or effects to be applied to the text.
 
     Returns:
-        str: A new text string wrapped in the appropriate ANSI escape codes.
+        A new string with the text wrapped in the relevant ANSI escape codes, e.g. `style_text("APPROVED", Color.GREEN)` yields `\\033[32mAPPROVED\\033[0m`.
 
     Example:
         ```python
-        text = f"{style_text("WARNING", Color.YELLOW, Effect.BOLD)}: This is an example."
+        text = style_text("WARNING", Color.YELLOW, Effect.BOLD)
+        print(text)
         ```
+
+        How it appears in the terminal:
+
+        <pre><code>% <span class="fg-yellow"><strong>WARNING</strong></span></code></pre>
     """
 
     return f"{''.join(map(str, styles))}{text}{RESET_ALL}"

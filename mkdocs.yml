@@ -36,6 +36,7 @@ nav:
       - Supported Colors and Styles by Terminals: user-guide/compatibility/terminal-support.md
   - Reference:
     - reference/index.md
+    - Text Styling: reference/text-styling.md
     - Text Colors:
       - Full Line: reference/text-colors/full-line.md
       - Mixed: reference/text-colors/mixed.md
