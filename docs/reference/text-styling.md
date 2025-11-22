@@ -17,6 +17,9 @@ tags:
 ---
 
 # Custom Styling of Text with ANSI Escape Codes
-## `style_text(text, *styles)`
 
-::: colorist.style.text.style_text
+::: colorist.style.text.MkDocstringsWrapper
+    options:
+      show_category_heading: false
+      heading_level: 2
+      merge_init_into_class: true
