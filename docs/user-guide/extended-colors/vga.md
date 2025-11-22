@@ -21,7 +21,7 @@ The VGA palette is based on a 8-bit color space of 216 colors and 24 shades of g
 </div>
 
 ## Full Line Text Functions
-Try the `vga()` and `bg_vga()` methods for a full line of colored text. The value can be an integer between `0`-`255`.
+Try the [`vga()`](../../reference/extended-colors/vga.md#colorist.print.foreground.vga.MkDocstringsWrapper.vga) and [`bg_vga()`](../../reference/extended-colors/vga.md#colorist.print.foreground.vga.MkDocstringsWrapper.bg_vga) methods for a full line of colored text. The value can be an integer between `0`-`255`.
 
 Example:
 
@@ -38,7 +38,7 @@ How it appears in the terminal:
 % <span class="text-contrast" style="background-color: #5f00ff">I want this background in purple VGA colors</span></code></pre>
 
 ## Custom String Styling
-Or customize the styling of text and background with the `ColorVGA()` and `BgColorVGA()` classes:
+Or customize the styling of text and background with the [`ColorVGA()`](../../reference/extended-colors/vga.md#colorvgavga) and [`BgColorVGA()`](../../reference/extended-colors/vga.md#bgcolorvgavga) classes:
 
 ```python linenums="1" hl_lines="6-7"
 from colorist import ColorVGA, BgColorVGA

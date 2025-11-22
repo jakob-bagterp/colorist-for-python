@@ -12,8 +12,8 @@ tags:
 ## Introduction
 When you want to print colored backgrounds in the terminal, Colorist offers two ways of doing so:
 
-* **Full text functions:** Print a full line of colored text with the `bg_green()`, `bg_yellow()`, `bg_red()`, etc. functions.
-* **Custom string styling:** Mix colors to any part of a string with the `BgColor` and `BgBrightColor` classes.
+* **Full text functions:** Print a full line of colored text with the [`bg_green()`](../../reference/background-colors/full-line.md#colorist.print.background.color.MkDocstringsWrapper.bg_green), [`bg_yellow()`](../../reference/background-colors/full-line.md#colorist.print.background.color.MkDocstringsWrapper.bg_yellow), [`bg_red()`](../../reference/background-colors/full-line.md#colorist.print.background.color.MkDocstringsWrapper.bg_red), etc. functions.
+* **Custom string styling:** Mix colors to any part of a string with the [`BgColor`](../../reference/background-colors/mixed.md#bgcolor) and [`BgBrightColor`](../../reference/background-colors/mixed.md#bgbrightcolor) classes.
 
 ## Print Line of Text with Background Color
 How to print a full line of colored text in the terminal:

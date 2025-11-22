@@ -48,7 +48,7 @@ How it appears in the terminal:
 
 ## Custom String Styling
 ### Examples
-How to customize terminal messages and change effect inside a paragraph:
+How to customize terminal messages and change effect inside a paragraph using the [`Effect`](../reference/effects-and-styling/mixed.md#effect) class:
 
 ```python linenums="1" hl_lines="3 5"
 from colorist import Effect

@@ -26,7 +26,7 @@ The 24-bit Hex color model covers over 16 million colors, and each color can be 
 </div>
 
 ## Full Line Text Functions
-Try the `hex()` and `bg_hex()` methods for a full line of colored text. Allowed Hex values are, for instance, `#00aaff` or `#0af`, alternatively without the hash sign as `00aaff` or `0af`.
+Try the [`hex()`](../../reference/extended-colors/hex.md#colorist.print.foreground.hex.MkDocstringsWrapper.hex) and [`bg_hex()`](../../reference/extended-colors/hex.md#colorist.print.background.hex.MkDocstringsWrapper.bg_hex) methods for a full line of colored text. Allowed Hex values are, for instance, `#00aaff` or `#0af`, alternatively without the hash sign as `00aaff` or `0af`.
 
 Example:
 
@@ -43,7 +43,7 @@ How it appears in the terminal:
 % <span class="text-contrast" style="background-color: #ff7f50">I want this background in coral Hex colors</span></code></pre>
 
 ## Custom String Styling
-Or customize the styling of text and background with the `ColorHex()` and `BgColorHex()` classes:
+Or customize the styling of text and background with the [`ColorHex()`](../../reference/extended-colors/hex.md#colorhexhex) and [`BgColorHex()`](../../reference/extended-colors/hex.md#bgcolorhexhex) classes:
 
 ```python linenums="1" hl_lines="6-7"
 from colorist import ColorHex, BgColorHex

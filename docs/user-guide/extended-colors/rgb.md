@@ -25,7 +25,7 @@ The 24-bit RGB color model covers over 16 million colors, and each color can be 
 </div>
 
 ## Full Line Text Functions
-Try the `rgb()` and `bg_rgb()` methods for a full line of colored text. The values for red, green, blue can be an integer between `0`-`255`.
+Try the [`rgb()`](../../reference/extended-colors/rgb.md#colorist.print.foreground.rgb.MkDocstringsWrapper.rgb) and [`bg_rgb()`](../../reference/extended-colors/rgb.md#colorist.print.background.rgb.MkDocstringsWrapper.bg_rgb) methods for a full line of colored text. The values for red, green, blue can be an integer between `0`-`255`.
 
 Example:
 
@@ -42,7 +42,7 @@ How it appears in the terminal:
 % <span class="text-contrast" style="background-color: rgb(0, 128, 255)">I want this background in blue RGB colors</span></code></pre>
 
 ## Custom String Styling
-Or customize the styling of text and background with the `ColorRGB()` and `BgColorRGB()` classes:
+Or customize the styling of text and background with the [`ColorRGB()`](../../reference/extended-colors/rgb.md#colorrgbred-green-blue) and [`BgColorRGB()`](../../reference/extended-colors/rgb.md#bgcolorrgbred-green-blue) classes:
 
 ```python linenums="1" hl_lines="6-7"
 from colorist import ColorRGB, BgColorRGB

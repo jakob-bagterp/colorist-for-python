@@ -13,8 +13,8 @@ tags:
 ## Introduction
 When you want to print colored text in the terminal, Colorist offers two ways of doing so:
 
-* **Full text functions:** Print a full line of colored text with the `green()`, `yellow()`, `red()`, etc. functions.
-* **Custom string styling:** Mix colors to any part of a string with the `Color` and `BrightColor` classes.
+* **Full text functions:** Print a full line of colored text with the [`green()`](../../reference/text-colors/full-line.md#colorist.print.foreground.color.MkDocstringsWrapper.green), [`yellow()`](../../reference/text-colors/full-line.md#colorist.print.foreground.color.MkDocstringsWrapper.yellow), [`red()`](../../reference/text-colors/full-line.md#colorist.print.foreground.color.MkDocstringsWrapper.red), etc. functions.
+* **Custom string styling:** Mix colors to any part of a string with the [`Color`](../../reference/text-colors/mixed.md#color) and [`BrightColor`](../../reference/text-colors/mixed.md#brightcolor) classes.
 
 ## Print Line of Colored Text
 How to print a full line of colored text in the terminal:
