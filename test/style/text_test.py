@@ -8,6 +8,7 @@ from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
 
 
 @pytest.mark.parametrize("text, styles, expected", [
+    ("random text", [], "random text\033[0m"),
     ("random text", [None], "random text\033[0m"),
     ("random text", [Color.BLACK], "\033[30mrandom text\033[0m"),
     ("random text", [BrightColor.YELLOW], "\033[93mrandom text\033[0m"),
