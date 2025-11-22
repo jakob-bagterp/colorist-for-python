@@ -35,7 +35,7 @@ def style_text(text: str,
 
 
 class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
-    def style_text(text: str,
+    def style_text(self, text: str,
                    *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None
                    ) -> str:
         """Style text with various options for text and background colors, styling and effects.
