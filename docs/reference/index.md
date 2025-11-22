@@ -8,7 +8,7 @@ Find details about all methods in this section.
 
 ## Quick Links
 ### ![Custom text on range of normal and bright colors](../assets/images/colors/palette/rainbow_custom_96x16.png) &nbsp;&nbsp;Custom Text Styling
-* [Custom styling of text](text-styling.md)
+* [Custom styling of text](custom/text-styling.md)
 
 ### ![Range of normal colors](../assets/images/colors/palette/rainbow_standard_96x16.png) &nbsp;&nbsp;Text Colors
 * [Full line](text-colors/full-line.md)

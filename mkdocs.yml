@@ -36,7 +36,6 @@ nav:
       - Supported Colors and Styles by Terminals: user-guide/compatibility/terminal-support.md
   - Reference:
     - reference/index.md
-    - Text Styling: reference/text-styling.md
     - Text Colors:
       - Full Line: reference/text-colors/full-line.md
       - Mixed: reference/text-colors/mixed.md
@@ -51,6 +50,8 @@ nav:
       - RGB: reference/extended-colors/rgb.md
       - HSL: reference/extended-colors/hsl.md
       - Hex: reference/extended-colors/hex.md
+    - Custom:
+      - Text Styling: reference/custom/text-styling.md
   - ANSI Escape Codes:
     - ansi-escape-codes/index.md
     - Introduction: ansi-escape-codes/introduction.md
