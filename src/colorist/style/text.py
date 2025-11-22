@@ -1,5 +1,6 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
+from enum import Enum
 from ..constants.ansi import RESET_ALL
 from ..model.background.bright_color import BgBrightColor
 from ..model.background.color import BgColor
@@ -14,7 +15,6 @@ from ..model.foreground.hex import ColorHex
 from ..model.foreground.hsl import ColorHSL
 from ..model.foreground.rgb import ColorRGB
 from ..model.foreground.vga import ColorVGA
-
 
 def style_text(text: str,
                *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None
@@ -39,4 +39,11 @@ def style_text(text: str,
         <pre><code>% <span class="fg-yellow"><strong>WARNING</strong></span></code></pre>
     """
 
-    return f"{''.join(map(str, styles))}{text}{RESET_ALL}"
+    def _get_style_value(style: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None) -> str:
+        if style is None:
+            return ""
+        if isinstance(style, Enum):
+            return str(style.value)
+        return str(style)
+
+    return f"{''.join(_get_style_value(style) for style in styles)}{text}{RESET_ALL}"
