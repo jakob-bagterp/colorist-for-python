@@ -48,7 +48,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             A new string with the text wrapped in the relevant ANSI escape codes, e.g. `style_text("APPROVED", Color.GREEN)` yields `\\033[32mAPPROVED\\033[0m`.
 
         Example:
-            ```python
+            ```python linenums="1" hl_lines="3"
             from colorist import style_text, Color, Effect
 
             text = style_text("WARNING", Color.YELLOW, Effect.BOLD, Effect.BLINK)
