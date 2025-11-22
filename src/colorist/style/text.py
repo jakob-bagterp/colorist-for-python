@@ -51,11 +51,11 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
             ```python
             from colorist import style_text, Color, Effect
 
-            text = style_text("WARNING", Color.YELLOW, Effect.BOLD)
+            text = style_text("WARNING", Color.YELLOW, Effect.BOLD, Effect.BLINK)
             print(text)
             ```
 
             How it appears in the terminal:
 
-            <pre><code>% <span class="fg-yellow"><strong>WARNING</strong></span></code></pre>
+            <pre><code>% <span class="fg-yellow effect-blinking"><strong>WARNING</strong></span></code></pre>
         """
