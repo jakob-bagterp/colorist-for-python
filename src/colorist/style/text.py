@@ -32,6 +32,8 @@ def style_text(text: str,
 
     Example:
         ```python
+        from colorist import style_text, Color, Effect
+
         text = style_text("WARNING", Color.YELLOW, Effect.BOLD)
         print(text)
         ```
