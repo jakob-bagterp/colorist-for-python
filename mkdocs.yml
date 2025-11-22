@@ -31,6 +31,8 @@ nav:
       - RGB: user-guide/extended-colors/rgb.md
       - HSL: user-guide/extended-colors/hsl.md
       - Hex: user-guide/extended-colors/hex.md
+    - Custom:
+      - Text Styling: user-guide/custom/text-styling.md
     - Compatibility:
       - Backwards Compatible String Formats: user-guide/compatibility/backwards-compatible-string-formats.md
       - Supported Colors and Styles by Terminals: user-guide/compatibility/terminal-support.md
