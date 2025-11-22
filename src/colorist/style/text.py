@@ -59,3 +59,5 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
             <pre><code>% <span class="fg-yellow effect-blinking"><strong>WARNING</strong></span></code></pre>
         """
+
+        return style_text(text, *styles)
