@@ -10,9 +10,6 @@ tags:
 Colorist is a lightweight package and is intended to be easy to use. Find tutorials and background information in this section.
 
 ## Quick Links
-### ![Custom text on range of normal and bright colors](../assets/images/colors/palette/rainbow_custom_96x16.png) &nbsp;&nbsp;Custom Text Styling
-Learn how to [customize various colors and stylings](custom/text-styling.md) to text strings before printing them.
-
 ### ![Range of normal colors](../assets/images/colors/palette/rainbow_standard_96x16.png) &nbsp;&nbsp;Normal Colors
 
 Use the standard palette to add color to both [text](standard-colors/text-foreground.md) and [background](standard-colors/background.md).
@@ -33,6 +30,9 @@ If your terminal supports an extended color space, learn how to define colors as
 * [RGB](extended-colors/rgb.md)
 * [HSL](extended-colors/hsl.md)
 * [Hex](extended-colors/hex.md)
+
+### ![Custom text on range of normal and bright colors](../assets/images/colors/palette/rainbow_custom_96x16.png) &nbsp;&nbsp;Custom Text Styling
+Learn how to [customize various colors and stylings](custom/text-styling.md) to text strings before printing them.
 
 ## Support the Project
 If you have already downloaded and tried the package – maybe even used it in a production environment – perhaps you would like to support its development?
