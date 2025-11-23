@@ -27,7 +27,7 @@ from colorist import style_text, Color
 text = style_text("APPROVED", Color.GREEN)
 ```
 
-... this wraps the text in the relevant [ANSI escape codes](../../ansi-escape-codes/introduction.md), e.g. `\033[32mAPPROVED\033[0m`.
+... this then wraps the text in the relevant [ANSI escape codes](../../ansi-escape-codes/introduction.md), e.g. `\033[32mAPPROVED\033[0m`.
 
 If you print the newly styled text...
 
@@ -65,10 +65,23 @@ You can also combine several styles by adding multiple styling arguments to the 
 ```python linenums="1" hl_lines="3"
 from colorist import style_text, Color, Effect
 
-text = style_text("WARNING", Color.YELLOW, Effect.BOLD, Effect.BLINK)
-print(text)
+warning = style_text("WARNING", Color.YELLOW, Effect.BOLD, Effect.BLINK)
+print(warning)
 ```
 
 How it appears in the terminal:
 
 <pre><code>% <span class="fg-yellow effect-blinking"><strong>WARNING</strong></span></code></pre>
+
+This also enables you to combine text strings with different styles before printing them to the terminal. Extending the previous example:
+
+```python linenums="1" hl_lines="4"
+from colorist import style_text, Color, Effect
+
+warning = style_text("WARNING", Color.YELLOW, Effect.BOLD, Effect.BLINK)
+print(f"This is a {warning}. Be careful!")
+```
+
+How it appears in the terminal:
+
+<pre><code>% This is a <span class="fg-yellow effect-blinking"><strong>WARNING</strong></span>. Be careful!</code></pre>
