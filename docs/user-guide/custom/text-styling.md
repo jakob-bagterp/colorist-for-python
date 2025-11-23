@@ -27,7 +27,7 @@ from colorist import style_text, Color
 text = style_text("APPROVED", Color.GREEN)
 ```
 
-... this wraps the text in the relevant [ANSI escape codes](../../ansi-escape-codes/introduction.md), e.g. `\033[32mAPPROVED\033[0m`.
+... this then wraps the text in the relevant [ANSI escape codes](../../ansi-escape-codes/introduction.md), e.g. `\033[32mAPPROVED\033[0m`.
 
 If you print the newly styled text...
 
