@@ -32,7 +32,7 @@ Find details about all methods in this section.
 If you have already downloaded and tried the package – maybe even used it in a production environment – perhaps you would like to support its development?
 
 !!! tip "Become a Sponsor"
-    If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution, no matter the size, makes a difference.
+    If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution makes a difference, whether you buy a coffee or support with a monthly donation. Find your tier here:
 
     [Donate on GitHub Sponsors](https://github.com/sponsors/jakob-bagterp){ .md-button .md-button--primary }
 
