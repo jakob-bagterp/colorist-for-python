@@ -67,6 +67,8 @@ How it appears in the terminal:
 
     In Colorist, the [RGB color space](../user-guide/extended-colors/rgb.md) is used to furthermore support definition of colors as [HSL](../user-guide/extended-colors/hsl.md) or [Hex](../user-guide/extended-colors/hex.md).
 
+    Try it and learn [how to get started with Colorist in 2 easy steps](../getting-started/index.md).
+
 ## Support the Project
 If you have already downloaded and tried the package – maybe even used it in a production environment – perhaps you would like to support its development?
 

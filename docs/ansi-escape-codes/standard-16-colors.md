@@ -107,6 +107,8 @@ How it appears in the terminal:
     <pre><code>% This is <span class="fg-red">RED</span> text
     % This is <span class="bg-red text-contrast">RED</span> background</code></pre>
 
+    Try it and learn [how to get started with Colorist in 2 easy steps](../getting-started/index.md).
+
 ## Cheat Sheets
 ### Foreground Text Colors
 #### Normal Colors

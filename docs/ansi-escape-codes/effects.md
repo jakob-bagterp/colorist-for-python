@@ -70,6 +70,8 @@ How it appears in the terminal:
     <pre><code>% This is <u>UNDERLINED</u> text
     % This is <span class="effect-blinking">BLINKING</span> text</code></pre>
 
+    Try it and learn [how to get started with Colorist in 2 easy steps](../getting-started/index.md).
+
 ## Support the Project
 If you have already downloaded and tried the package – maybe even used it in a production environment – perhaps you would like to support its development?
 
