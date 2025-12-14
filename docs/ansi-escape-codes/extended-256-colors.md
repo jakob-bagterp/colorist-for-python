@@ -68,6 +68,8 @@ How it appears in the terminal:
     <pre><code>% This is <span style="color: #d75f00;">ORANGE</span> text
     % This is <span class="text-contrast" style="background-color: #767676;">LIGHT GRAY</span> background</code></pre>
 
+    Try it and learn [how to get started with Colorist in 2 easy steps](../getting-started/index.md).
+
 ## Cheat Sheets
 ### Standard Palette
 
