@@ -84,3 +84,18 @@ You can use the same method to apply other colors and effects to text or backgro
     <img src="../../assets/images/cubes/cube_bright.svg" alt="Color cube bright">
     <img src="../../assets/images/cubes/cube_dark.svg" alt="Color cube dark">
 </div>
+
+## Support the Project
+If you have already downloaded and tried the package – maybe even used it in a production environment – perhaps you would like to support its development?
+
+!!! tip "Become a Sponsor"
+    If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution makes a difference, whether you buy a coffee or support with a monthly donation. Find your tier here:
+
+    [Donate on GitHub Sponsors](https://github.com/sponsors/jakob-bagterp){ .md-button .md-button--primary }
+
+    Thank you for your support! 🙌
+
+<div class="color-cubes">
+    <img src="../assets/images/cubes/cube_bright.svg" alt="Color cube bright">
+    <img src="../assets/images/cubes/cube_dark.svg" alt="Color cube dark">
+</div>

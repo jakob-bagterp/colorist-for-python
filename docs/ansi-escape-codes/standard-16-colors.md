@@ -157,3 +157,18 @@ How it appears in the terminal:
 | ![Bright magenta](../assets/images/colors/bright_magenta_16x16.png) | Magenta | 105 | `\x1b[105m` | <code>This is <span class="bg-bright-magenta text-contrast">BRIGHT MAGENTA</span></code> |
 | ![Bright cyan](../assets/images/colors/bright_cyan_16x16.png)       | Cyan    | 106 | `\x1b[106m` | <code>This is <span class="bg-bright-cyan text-contrast">BRIGHT CYAN</span></code>       |
 | ![Bright white](../assets/images/colors/bright_white_16x16.png)     | White   | 107 | `\x1b[107m` | <code>This is <span class="bg-bright-white text-contrast">BRIGHT WHITE</span></code>     |
+
+## Support the Project
+If you have already downloaded and tried the package – maybe even used it in a production environment – perhaps you would like to support its development?
+
+!!! tip "Become a Sponsor"
+    If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution makes a difference, whether you buy a coffee or support with a monthly donation. Find your tier here:
+
+    [Donate on GitHub Sponsors](https://github.com/sponsors/jakob-bagterp){ .md-button .md-button--primary }
+
+    Thank you for your support! 🙌
+
+<div class="color-cubes">
+    <img src="../assets/images/cubes/cube_bright.svg" alt="Color cube bright">
+    <img src="../assets/images/cubes/cube_dark.svg" alt="Color cube dark">
+</div>
