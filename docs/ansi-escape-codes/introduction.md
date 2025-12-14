@@ -72,6 +72,8 @@ print("I want \x1b[31mRED\x1b[0m color")
 
     <pre><code>% I want <span class="fg-red">RED</span> color</code></pre>
 
+    Try it and learn [how to get started with Colorist in 3 easy steps](../getting-started/index.md).
+
 ## Color and Effects Options
 You can use the same method to apply other colors and effects to text or backgrounds:
 
