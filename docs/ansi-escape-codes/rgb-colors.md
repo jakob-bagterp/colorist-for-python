@@ -66,3 +66,15 @@ How it appears in the terminal:
     % This is <span class="text-contrast" style="background-color: #c2158b;">ROSA</span> background</code></pre>
 
     In Colorist, the [RGB color space](../user-guide/extended-colors/rgb.md) is used to furthermore support definition of colors as [HSL](../user-guide/extended-colors/hsl.md) or [Hex](../user-guide/extended-colors/hex.md).
+
+    Try it and learn [how to get started with Colorist in 2 easy steps](../getting-started/index.md).
+
+## Support the Project
+If you have already downloaded and tried the package – maybe even used it in a production environment – perhaps you would like to support its development?
+
+!!! tip "Become a Sponsor"
+    If you find this project helpful, please consider supporting its development. Your donations will help keep it alive and growing. Every contribution makes a difference, whether you buy a coffee or support with a monthly donation. Find your tier here:
+
+    [Donate on GitHub Sponsors](https://github.com/sponsors/jakob-bagterp){ .md-button .md-button--primary }
+
+    Thank you for your support! 🙌
