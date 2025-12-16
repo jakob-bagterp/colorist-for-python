@@ -27,7 +27,7 @@ For example, the sequence `\x1b[4m` for underlined styling can be broken down in
 | Underline | 4   | `\x1b[4m`   | 24  | `\x1b[24m`  | <code>This is <u>UNDERLINED</u></code>                                           |
 | Blink     | 5   | `\x1b[5m`   | 25  | `\x1b[25m`  | <code>This is <span class="effect-blinking">BLINKING</span></code>               |
 | Reverse   | 7   | `\x1b[7m`   | 27  | `\x1b[27m`  | <code>This is <span class="bg-bright-white text-contrast">REVERSED</span></code> |
-| Hide      | 8   | `\x1b[7m`   | 28  | `\x1b[28m`  | <code>This is <span class="effect-hidden">HIDDEN</span></code>                   |
+| Hide      | 8   | `\x1b[8m`   | 28  | `\x1b[28m`  | <code>This is <span class="effect-hidden">HIDDEN</span></code>                   |
 
 !!! info "Different Color Schemes in Different Terminals"
     Most terminals apply different color schemes so `\x1b[31m` or `Color.RED` won't produce the exact same screen color of red. Some straight, others with an orange tint. For further reading, refer to this [list of common terminals and their color schemes](https://en.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit).
