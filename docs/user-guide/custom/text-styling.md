@@ -1,5 +1,5 @@
 ---
-title: How to Customize Text with ANSI Escape Codes for Colors and Effects
+title: How to Customize Text with ANSI Escape Codes
 description: Learn how to apply custom colors, effects and styling to text and background, even without knowing ANSI escape codes. Includes code examples.
 tags:
     - Tutorial
@@ -15,7 +15,7 @@ tags:
     - Effects
 ---
 
-# How to Customize Text Styling and Colors
+# How to Customize Text Styling and Colors with ANSI Escape Codes
 Instead of printing statements directly to the terminal, you can also customize and combine various colors and styling to text strings before printing them. This gives you more flexibility to create complex patterns with different styles.
 
 ## How it Works
