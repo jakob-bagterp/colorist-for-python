@@ -1,5 +1,5 @@
 ---
-title: Style Text with ANSI Escape Codes for Colors and Effects
+title: Style Text with ANSI Escape Codes
 description: The easiest way to apply ANSI escape codes for text and background colors, effects and styling using Colorist for Python. This documentation includes code examples.
 tags:
     - Documentation
@@ -16,7 +16,7 @@ tags:
     - Effects
 ---
 
-# Custom Styling of Text with ANSI Escape Codes
+# Custom Styling of Text with ANSI Escape Codes for Colors and Effects
 
 ::: colorist.style.text.MkDocstringsWrapper
     options:
