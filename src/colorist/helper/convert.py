@@ -44,3 +44,11 @@ def hex_to_rgb(hex: str) -> tuple[int, int, int]:
         return red, green, blue
     else:
         raise ValueError(message_for_hex_value_error(hex))
+
+
+def oklch_to_rgb(lightness: float, chroma: float, hue: float) -> tuple[int, int, int]:
+    """Convert OKLCH to RGB. Converts from OKLCH color space (lightness, chroma, hue) to RGB. Expects lightness between `0` and `100`, chroma between `0` and `0.4`, and hue between `0` and `360` degrees."""
+
+    # TODO: Implement this properly
+    red, green, blue = 0, 0, 0
+    return red, green, blue
