@@ -18,3 +18,7 @@ def message_for_percentage_value_error(param: str, value: float) -> str:
 
 def message_for_hex_value_error(value: str) -> str:
     return f"Value {value} isn't valid Hex color code, and should be for instance `#B4FBB8` or `B4FBB8`, `#B4F` or `B4F`."
+
+
+def message_for_oklch_chroma_value_error(value: float) -> str:
+    return f"Value for \"chroma\" is {value}, but should be number between `0` and `0.4`."

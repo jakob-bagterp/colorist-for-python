@@ -15,6 +15,10 @@ def is_valid_hue_value(hue: float) -> bool:
     return 0 <= hue <= 360
 
 
+def is_valid_oklch_chroma_value(hue: float) -> bool:
+    return 0 <= hue <= 0.4  # The maximum 0.4 can be higher, but this is a reasonable limit for most use cases as well as defined in the CSS specification.
+
+
 def is_valid_percentage(value: float) -> bool:
     return 0 <= value <= 100
 

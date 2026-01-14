@@ -4,8 +4,8 @@ from abc import ABC, abstractmethod
 
 from ... import helper
 from ...constants.ansi import RESET_ALL
-# TODO: from ...helper.error import (message_for_hsl_hue_value_error, message_for_hsl_percentage_value_error)
-# TODO: from ...helper.validate import is_valid_hsl_hue, is_valid_percentage
+from ...helper.error import (message_for_oklch_chroma_value_error, message_for_hue_value_error, message_for_percentage_value_error)
+from ...helper.validate import is_valid_percentage, is_valid_oklch_chroma_value
 from ..foreground.rgb import ColorRGB
 from .rgb import RGB_ABC
 
@@ -18,15 +18,12 @@ class OKLCH_ABC(ABC):
     __slots__ = ["chroma", "hue", "lightness", "_rgb", "_ansi_code"]
 
     def __init__(self, lightness: float, chroma: float, hue: float):
-        # TODO: Validate input.
-        """
         if not is_valid_percentage(lightness):
-            raise ValueError(message_for_hsl_percentage_value_error("lightness", lightness))
-        if not is_valid_hsl_hue(hue):
-            raise ValueError(message_for_hsl_hue_value_error(hue))
-        if not is_valid_percentage(chroma):
-            raise ValueError(message_for_hsl_percentage_value_error("chroma", chroma))
-        """
+            raise ValueError(message_for_percentage_value_error("lightness", lightness))
+        if not is_valid_oklch_chroma_value(chroma):
+            raise ValueError(message_for_oklch_chroma_value_error(chroma))
+        if not is_valid_percentage(hue):
+            raise ValueError(message_for_hue_value_error(hue))
         self.hue: float = hue
         self.chroma: float = chroma
         self.lightness: float = lightness
