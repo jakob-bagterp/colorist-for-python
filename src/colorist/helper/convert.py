@@ -1,6 +1,7 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
 import colorsys
+import math
 
 from ..helper.error import message_for_hex_value_error
 
@@ -46,9 +47,40 @@ def hex_to_rgb(hex: str) -> tuple[int, int, int]:
         raise ValueError(message_for_hex_value_error(hex))
 
 
+def convert_oklch_to_oklab(lightness: float, chroma: float, hue: float) -> tuple[float, float, float]:
+    hue_radian = math.radians(hue)
+    a = chroma * math.cos(hue_radian)
+    b = chroma * math.sin(hue_radian)
+    return lightness, a, b
+
+
+def convert_oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, float, float]:
+    long = lightness + 0.3963377774 * a + 0.2158037573 * b
+    medium = lightness - 0.1055613458 * a - 0.0638541728 * b
+    short = lightness - 0.0894841775 * a - 1.2914855480 * b
+    long, medium, short = tuple(color ** 3 for color in (long, medium, short))
+    return long, medium, short
+
+
+def convert_lms_to_linear_rgb(long: float, medium: float, short: float) -> tuple[float, float, float]:
+    red = +4.0767416621 * long - 3.3077115913 * medium + 0.2309699292 * short
+    green = -1.2684380046 * long + 2.6097574011 * medium - 0.3413193965 * short
+    blue = -0.0041960863 * long - 0.7034186147 * medium + 1.7076147010 * short
+    return red, green, blue
+
+
+def gamma_correction_linear_rgb_to_srgb(red: float, green: float, blue: float) -> tuple[int, int, int]:
+    def gamma_correction(color: float) -> int:
+        color_corrected = 12.92 * color if color <= 0.0031308 else 1.055 * (color ** (1 / 2.4)) - 0.055
+        return int(color_corrected * 255) if color_corrected <= 1 else 255
+
+    return gamma_correction(red), gamma_correction(green), gamma_correction(blue)
+
+
 def oklch_to_rgb(lightness: float, chroma: float, hue: float) -> tuple[int, int, int]:
     """Convert OKLCH to RGB. Converts from OKLCH color space (lightness, chroma, hue) to RGB. Expects lightness between `0` and `100`, chroma between `0` and `0.4`, and hue between `0` and `360` degrees."""
 
-    # TODO: Implement this properly
-    red, green, blue = 0, 0, 0
-    return red, green, blue
+    lightness_oklab, a_oklab, b_oklab = convert_oklch_to_oklab(lightness, chroma, hue)
+    long_lms, medium_lms, short_lms = convert_oklab_to_lms(lightness_oklab, a_oklab, b_oklab)
+    red, green, blue = convert_lms_to_linear_rgb(long_lms, medium_lms, short_lms)
+    return gamma_correction_linear_rgb_to_srgb(red, green, blue)
