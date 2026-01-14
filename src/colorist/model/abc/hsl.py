@@ -6,7 +6,7 @@ from ... import helper
 from ...constants.ansi import RESET_ALL
 from ...helper.error import (message_for_hsl_hue_value_error,
                              message_for_percentage_value_error)
-from ...helper.validate import is_valid_hsl_hue, is_valid_percentage
+from ...helper.validate import is_valid_hue_value, is_valid_percentage
 from ..foreground.rgb import ColorRGB
 from .rgb import RGB_ABC
 
@@ -19,7 +19,7 @@ class HSL_ABC(ABC):
     __slots__ = ["hue", "saturation", "lightness", "_rgb", "_ansi_code"]
 
     def __init__(self, hue: float, saturation: float, lightness: float) -> None:
-        if not is_valid_hsl_hue(hue):
+        if not is_valid_hue_value(hue):
             raise ValueError(message_for_hsl_hue_value_error(hue))
         if not is_valid_percentage(saturation):
             raise ValueError(message_for_percentage_value_error("saturation", saturation))
