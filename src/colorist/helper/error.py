@@ -12,7 +12,7 @@ def message_for_hsl_hue_value_error(value: float) -> str:
     return f"Value for \"hue\" is {value}, but should be number between `0` and `360`."
 
 
-def message_for_hsl_percentage_value_error(param: str, value: float) -> str:
+def message_for_percentage_value_error(param: str, value: float) -> str:
     return f"Value for \"{param}\" is {value}, but should be number between `0` and `100` %."
 
 
