@@ -63,7 +63,7 @@ def convert_oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, f
 
 
 def convert_lms_to_linear_rgb(long: float, medium: float, short: float) -> tuple[float, float, float]:
-    red = +4.0767416621 * long - 3.3077115913 * medium + 0.2309699292 * short
+    red = 4.0767416621 * long - 3.3077115913 * medium + 0.2309699292 * short
     green = -1.2684380046 * long + 2.6097574011 * medium - 0.3413193965 * short
     blue = -0.0041960863 * long - 0.7034186147 * medium + 1.7076147010 * short
     return red, green, blue
