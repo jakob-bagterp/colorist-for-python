@@ -8,6 +8,18 @@ import pytest
 from colorist import helper
 
 
+@pytest.mark.parametrize("hex, expected", [
+    ("#FFFFFF", (255, 255, 255)),
+    ("000000", (0, 0, 0)),
+    ("#FF5733", (255, 87, 51)),
+    ("7F8C8D", (127, 140, 141)),
+    ("#B4F", (187, 68, 255)),
+    ("0F0", (0, 255, 0)),
+])
+def test_convert_hex_to_rgb(hex: str, expected: tuple[int, int, int]) -> None:
+    assert helper.convert.hex_to_rgb(hex) == expected
+
+
 @pytest.mark.parametrize("hex, expectation", [
     ("#1AFFa1", does_not_raise()),
     ("1AFFa1", does_not_raise()),
