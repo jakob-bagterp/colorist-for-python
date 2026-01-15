@@ -5,7 +5,7 @@ import colorsys
 from ..helper.error import message_for_hex_value_error
 
 
-def normalize_colorsys_rgb_to_real_rgb(rgb_colorsys: tuple[float, float, float]) -> tuple[int, int, int]:
+def colorsys_rgb_to_real_rgb(rgb_colorsys: tuple[float, float, float]) -> tuple[int, int, int]:
     """Since Colorsys outputs RGB values as floats between `0.0` and `1.0`, we need to normalize this to a standard RGB scale from `0` to `255`."""
 
     red, green, blue = tuple(int(color * 255) for color in rgb_colorsys)
@@ -29,7 +29,7 @@ def hsl_to_rgb(hue: float, saturation: float, lightness: float) -> tuple[int, in
     saturation_colorsys = normalize_percentage_to_colorsys_value(saturation)
     lightness_colorsys = normalize_percentage_to_colorsys_value(lightness)
     rgb_colorsys = colorsys.hls_to_rgb(hue_colorsys, lightness_colorsys, saturation_colorsys)
-    return normalize_colorsys_rgb_to_real_rgb(rgb_colorsys)
+    return colorsys_rgb_to_real_rgb(rgb_colorsys)
 
 
 def hex_to_rgb(hex: str) -> tuple[int, int, int]:

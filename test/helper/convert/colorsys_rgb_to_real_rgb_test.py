@@ -14,5 +14,5 @@ from colorist import helper
     ((0.1, 0.9, 0.5), (25, 229, 127)),
     ((0.255, 0.512, 0.768), (65, 130, 195)),
 ])
-def test_normalize_colorsys_rgb_to_real_rgb(rgb_colorsys: tuple[float, float, float], expected: tuple[int, int, int]) -> None:
-    assert helper.convert.normalize_colorsys_rgb_to_real_rgb(rgb_colorsys) == expected
+def test_convert_colorsys_rgb_to_real_rgb(rgb_colorsys: tuple[float, float, float], expected: tuple[int, int, int]) -> None:
+    assert helper.convert.colorsys_rgb_to_real_rgb(rgb_colorsys) == expected
