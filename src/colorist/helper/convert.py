@@ -12,7 +12,7 @@ def normalize_colorsys_rgb_to_real_rgb(rgb_colorsys: tuple[float, float, float])
     return red, green, blue
 
 
-def normalize_hue_degrees_to_colorsys_hue(hue: float) -> float:
+def hue_degrees_to_colorsys_hue(hue: float) -> float:
     """When converting HLS or HSV with Colorsys, we need to prepare hue between `0` and `360` degrees to a float between `0.0` and `1.0`."""
 
     return hue / 360.0
@@ -25,7 +25,7 @@ def normalize_percentage_to_colorsys_value(value: float) -> float:
 
 
 def hsl_to_rgb(hue: float, saturation: float, lightness: float) -> tuple[int, int, int]:
-    hue_colorsys = normalize_hue_degrees_to_colorsys_hue(hue)
+    hue_colorsys = hue_degrees_to_colorsys_hue(hue)
     saturation_colorsys = normalize_percentage_to_colorsys_value(saturation)
     lightness_colorsys = normalize_percentage_to_colorsys_value(lightness)
     rgb_colorsys = colorsys.hls_to_rgb(hue_colorsys, lightness_colorsys, saturation_colorsys)
