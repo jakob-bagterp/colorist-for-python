@@ -71,8 +71,12 @@ def lms_to_linear_rgb(long: float, medium: float, short: float) -> tuple[float, 
 
 def gamma_correction_linear_rgb_to_srgb(red: float, green: float, blue: float) -> tuple[int, int, int]:
     def gamma_correction(color: float) -> int:
+        if color <= 0:
+            return 0
+        if color >= 1:
+            return 255
         color_corrected = 12.92 * color if color <= 0.0031308 else 1.055 * (color ** (1 / 2.4)) - 0.055
-        return int(color_corrected * 255) if color_corrected <= 1 else 255
+        return int(color_corrected * 255)
 
     return gamma_correction(red), gamma_correction(green), gamma_correction(blue)
 
