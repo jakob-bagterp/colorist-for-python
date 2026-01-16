@@ -15,5 +15,5 @@ from colorist import helper
     (361, False),
     (-1, False),
 ])
-def test_is_valid_hsl_hue(input: float, expected: bool) -> None:
-    assert helper.validate.is_valid_hsl_hue(input) is expected
+def test_is_valid_hue_value(input: float, expected: bool) -> None:
+    assert helper.validate.is_valid_hue_value(input) is expected
