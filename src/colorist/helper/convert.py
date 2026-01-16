@@ -47,14 +47,14 @@ def hex_to_rgb(hex: str) -> tuple[int, int, int]:
         raise ValueError(message_for_hex_value_error(hex))
 
 
-def convert_oklch_to_oklab(lightness: float, chroma: float, hue: float) -> tuple[float, float, float]:
+def oklch_to_oklab(lightness: float, chroma: float, hue: float) -> tuple[float, float, float]:
     hue_radian = math.radians(hue)
     a = chroma * math.cos(hue_radian)
     b = chroma * math.sin(hue_radian)
     return lightness, a, b
 
 
-def convert_oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, float, float]:
+def oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, float, float]:
     long = lightness + 0.3963377774 * a + 0.2158037573 * b
     medium = lightness - 0.1055613458 * a - 0.0638541728 * b
     short = lightness - 0.0894841775 * a - 1.2914855480 * b
@@ -62,7 +62,7 @@ def convert_oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, f
     return long, medium, short
 
 
-def convert_lms_to_linear_rgb(long: float, medium: float, short: float) -> tuple[float, float, float]:
+def lms_to_linear_rgb(long: float, medium: float, short: float) -> tuple[float, float, float]:
     red = 4.0767416621 * long - 3.3077115913 * medium + 0.2309699292 * short
     green = -1.2684380046 * long + 2.6097574011 * medium - 0.3413193965 * short
     blue = -0.0041960863 * long - 0.7034186147 * medium + 1.7076147010 * short
@@ -80,7 +80,7 @@ def gamma_correction_linear_rgb_to_srgb(red: float, green: float, blue: float) -
 def oklch_to_rgb(lightness: float, chroma: float, hue: float) -> tuple[int, int, int]:
     """Convert OKLCH to RGB. Converts from OKLCH color space (lightness, chroma, hue) to RGB. Expects lightness between `0` and `100`, chroma between `0` and `0.4`, and hue between `0` and `360` degrees."""
 
-    lightness_oklab, a_oklab, b_oklab = convert_oklch_to_oklab(lightness, chroma, hue)
-    long_lms, medium_lms, short_lms = convert_oklab_to_lms(lightness_oklab, a_oklab, b_oklab)
-    red, green, blue = convert_lms_to_linear_rgb(long_lms, medium_lms, short_lms)
+    lightness_oklab, a_oklab, b_oklab = oklch_to_oklab(lightness, chroma, hue)
+    long_lms, medium_lms, short_lms = oklab_to_lms(lightness_oklab, a_oklab, b_oklab)
+    red, green, blue = lms_to_linear_rgb(long_lms, medium_lms, short_lms)
     return gamma_correction_linear_rgb_to_srgb(red, green, blue)
