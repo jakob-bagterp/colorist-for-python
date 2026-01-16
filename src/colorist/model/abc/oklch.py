@@ -30,7 +30,7 @@ class OKLCH_ABC(ABC):
         self.chroma: float = chroma
         self.lightness: float = lightness
 
-        self._rgb: RGB_ABC = self.convert_oklch_to_rgb()
+        self._rgb: RGB_ABC = self.convert_oklch_to_srgb()
         self._ansi_code: str = self.generate_ansi_code()
 
     def __str__(self) -> str:
@@ -39,10 +39,10 @@ class OKLCH_ABC(ABC):
     def __repr__(self) -> str:
         return f"L: {self.lightness}, C: {self.chroma}, H: {self.hue}"
 
-    def convert_oklch_to_rgb(self) -> RGB_ABC:
+    def convert_oklch_to_srgb(self) -> RGB_ABC:
         """Method to convert OKLCH to RGB color."""
 
-        red, green, blue = helper.convert.oklch_to_rgb(self.lightness, self.chroma, self.hue)
+        red, green, blue = helper.convert.oklch_to_srgb(self.lightness, self.chroma, self.hue)
         return ColorRGB(red, green, blue)
 
     @abstractmethod

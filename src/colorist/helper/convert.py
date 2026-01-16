@@ -77,7 +77,7 @@ def gamma_correction_linear_rgb_to_srgb(red: float, green: float, blue: float) -
     return gamma_correction(red), gamma_correction(green), gamma_correction(blue)
 
 
-def oklch_to_rgb(lightness: float, chroma: float, hue: float) -> tuple[int, int, int]:
+def oklch_to_srgb(lightness: float, chroma: float, hue: float) -> tuple[int, int, int]:
     """Convert OKLCH to RGB. Converts from OKLCH color space (lightness, chroma, hue) to RGB. Expects lightness between `0` and `100`, chroma between `0` and `0.4`, and hue between `0` and `360` degrees."""
 
     lightness_oklab, a_oklab, b_oklab = oklch_to_oklab(lightness, chroma, hue)
