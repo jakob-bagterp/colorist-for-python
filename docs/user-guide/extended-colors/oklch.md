@@ -140,7 +140,9 @@ Hue is the color wheel position from `0` to `360` degrees. Example:
 </table>
 
 ### What Is Chroma?
-While lightness and hue are relatively straightforward, chroma can be more difficult to understand. It represents the intensity or purity of a color. Higher values indicate more vivid, saturated colors, while lower values indicate more muted or grayish, unsaturated colors. However, the maximum chroma value varies depending on the lightness and hue. Therefore, not all combinations of lightness, chroma, and hue produce valid colors.
+While lightness and hue are relatively straightforward, chroma can be more difficult to understand. It represents the intensity or purity of a color. Higher values indicate more vivid, saturated colors, while lower values indicate more muted or grayish, unsaturated colors.
+
+However, the maximum chroma value varies depending on the lightness and hue. Therefore, not all combinations of lightness, chroma, and hue produce valid colors.
 
 Example:
 
