@@ -7,6 +7,7 @@ from ..model.background.bright_color import BgBrightColor
 from ..model.background.color import BgColor
 from ..model.background.hex import BgColorHex
 from ..model.background.hsl import BgColorHSL
+from ..model.background.oklch import BgColorOKLCH
 from ..model.background.rgb import BgColorRGB
 from ..model.background.vga import BgColorVGA
 from ..model.effect import Effect
@@ -14,12 +15,13 @@ from ..model.foreground.bright_color import BrightColor
 from ..model.foreground.color import Color
 from ..model.foreground.hex import ColorHex
 from ..model.foreground.hsl import ColorHSL
+from ..model.foreground.oklch import ColorOKLCH
 from ..model.foreground.rgb import ColorRGB
 from ..model.foreground.vga import ColorVGA
 
 
 def style_text(text: str,
-               *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None
+               *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | ColorOKLCH | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | BgColorOKLCH | Effect | str | None
                ) -> str:
     """Style text with various options for text and background colors, styling and effects."""
 
@@ -28,13 +30,13 @@ def style_text(text: str,
 
 class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
     def style_text(self, text: str,
-                   *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None
+                   *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | ColorOKLCH | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | BgColorOKLCH | Effect | str | None
                    ) -> str:
         """Style text with various options for text and background colors, styling and effects.
 
         Args:
             text (str): The text to be styled.
-            *styles (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None, optional): The text and/or background colors, styling and/or effects to be applied to the text.
+            *styles (Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | ColorOKLCH | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | BgColorOKLCH | Effect | str | None, optional): The text and/or background colors, styling and/or effects to be applied to the text.
 
         Returns:
             A new string with the text wrapped in the relevant ANSI escape codes, e.g. `style_text("APPROVED", Color.GREEN)` yields `\\033[32mAPPROVED\\033[0m`.

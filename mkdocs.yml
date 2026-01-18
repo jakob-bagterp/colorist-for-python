@@ -31,6 +31,7 @@ nav:
       - RGB: user-guide/extended-colors/rgb.md
       - HSL: user-guide/extended-colors/hsl.md
       - Hex: user-guide/extended-colors/hex.md
+      - OKLCH: user-guide/extended-colors/oklch.md
     - Custom:
       - Text Styling: user-guide/custom/text-styling.md
     - Compatibility:
@@ -52,6 +53,7 @@ nav:
       - RGB: reference/extended-colors/rgb.md
       - HSL: reference/extended-colors/hsl.md
       - Hex: reference/extended-colors/hex.md
+      - OKLCH: reference/extended-colors/oklch.md
     - Custom:
       - Text Styling: reference/custom/text-styling.md
   - ANSI Escape Codes:
@@ -166,6 +168,7 @@ extra_css:
   - assets/stylesheets/colors.css
   - assets/stylesheets/cubes.css
   - assets/stylesheets/effects.css
+  - assets/stylesheets/gradients.css
   - assets/stylesheets/tables.css
 
 extra_javascript:

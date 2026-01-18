@@ -12,13 +12,13 @@ tags:
 ## What are HSL Colors?
 The 24-bit HSL color model covers over 16 million colors, and each color can be defined as hue, saturation, and lightness:
 
-| Parameter      | Hue                           | Saturation                | Lightness                  |
-| -------------- | :---------------------------: | :-----------------------: | :------------------------: |
-| Allowed values | `0`-`360` degrees             | `0`-`100` %               | `0`-`100` %                |
-| Description    | Deegree on the color wheel.   | Intensity of the color.   | Brightness of the color.   |
+| Parameter      | Hue                        | Saturation              | Lightness                |
+| -------------- | :------------------------: | :---------------------: | :----------------------: |
+| Allowed values | `0`-`360` degrees          | `0`-`100` %             | `0`-`100` %              |
+| Description    | Degree on the color wheel. | Intensity of the color. | Brightness of the color. |
 
 !!! info "Disclaimer"
-    Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
+    Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 24-bit colors in RGB, HSL, Hex, or OKLCH. If your terminal does support such advanced colors, read on.
 
 <div class="color-cubes">
     <img src="../../../assets/images/cubes/cube_bright.svg" alt="Color cube bright">

@@ -17,7 +17,7 @@ The 24-bit RGB color model covers over 16 million colors, and each color can be 
 | Allowed values | `0-255` | `0-255` | `0-255` |
 
 !!! info "Disclaimer"
-    Not all [terminals support](../compatibility/terminal-support.md) 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
+    Not all [terminals support](../compatibility/terminal-support.md) 24-bit colors in RGB, HSL, Hex, or OKLCH. If your terminal does support such advanced colors, read on.
 
 <div class="color-cubes">
     <img src="../../../assets/images/cubes/cube_bright.svg" alt="Color cube bright">

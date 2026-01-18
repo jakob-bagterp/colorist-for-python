@@ -57,7 +57,7 @@ How it appears in the terminal:
 <pre><code>% <span class="text-contrast" style="background-color: rgb(128, 0, 32)">I want BURGUNDY background</span></code></pre>
 
 !!! info "Disclaimer"
-    Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 8-bit VGA colors or 24-bit colors in RGB, HSL, or Hex. If your terminal does support such advanced colors, read on.
+    Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 8-bit VGA colors or 24-bit colors in RGB, HSL, Hex, or OKLCH. If your terminal does support such advanced colors, read on.
 
 ### Multiple Styles
 You can also combine several styles by adding multiple styling arguments to the `style_text()` method:

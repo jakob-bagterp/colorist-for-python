@@ -30,6 +30,7 @@ If your terminal supports an extended color space, learn how to define colors as
 * [RGB](extended-colors/rgb.md)
 * [HSL](extended-colors/hsl.md)
 * [Hex](extended-colors/hex.md)
+* [OKLCH](extended-colors/oklch.md)
 
 ### ![Custom text on range of normal and bright colors](../assets/images/colors/palette/rainbow_custom_96x16.png) &nbsp;&nbsp;Custom Text Styling
 Learn how to [customize various colors and stylings](custom/text-styling.md) to text strings before printing them.
