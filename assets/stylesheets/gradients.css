@@ -1,0 +1,19 @@
+.gradient-wrapper > div {
+    width: 100%;
+    min-width: 150px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.gradient-srgb {
+    background: linear-gradient(to right in srgb, rgb(255, 0, 0), rgb(0, 0, 255));
+}
+
+.gradient-hsl {
+    background: linear-gradient(to right in hsl, rgb(255, 0, 0), rgb(0, 0, 255));
+}
+
+.gradient-oklch {
+    background: linear-gradient(to right in oklch, rgb(255, 0, 0), rgb(0, 0, 255));
+}
