@@ -60,7 +60,7 @@ For instance, consider the following comparison of gradients transitioning from 
     </tbody>
 </table>
 
-### Input Parameters
+## Input Parameters
 Each color in OKLCH can be defined as lightness, chroma, and hue:
 
 | Parameter      | Lightness                | Chroma                  | Hue                        |
@@ -68,7 +68,7 @@ Each color in OKLCH can be defined as lightness, chroma, and hue:
 | Allowed values | `0.0`-`1.0`              | `0.0`-`0.4`             | `0`-`360` degrees          |
 | Description    | Brightness of the color. | Intensity of the color. | Degree on the color wheel. |
 
-#### What Is Lightness?
+### What Is Lightness?
 Lightness is the brightness of the color. It ranges from `0.0` to `1.0`, where `0.0` is black and `1.0` is white. Example:
 
 <table>
@@ -104,7 +104,7 @@ Lightness is the brightness of the color. It ranges from `0.0` to `1.0`, where `
     </tbody>
 </table>
 
-#### What Is Hue?
+### What Is Hue?
 Hue is the color wheel position from `0` to `360` degrees. Example:
 
 <table>
@@ -136,7 +136,7 @@ Hue is the color wheel position from `0` to `360` degrees. Example:
     </tbody>
 </table>
 
-#### What Is Chroma?
+### What Is Chroma?
 While lightness and hue are relatively straightforward, chroma can be more difficult to understand. It represents the intensity or purity of a color. Higher values indicate more vivid colors, while lower values indicate more muted or grayish colors. However, the maximum chroma value varies depending on the lightness and hue. Therefore, not all combinations of lightness, chroma, and hue produce valid colors.
 
 Example:
