@@ -7,7 +7,9 @@ from ...constants.ansi import RESET_ALL
 from ...helper.error import (message_for_hue_value_error,
                              message_for_oklch_chroma_value_error,
                              message_for_percentage_value_error)
-from ...helper.validate import is_valid_oklch_chroma_value, is_valid_percentage
+from ...helper.validate import (is_valid_hue_value,
+                                is_valid_oklch_chroma_value,
+                                is_valid_percentage)
 from ..foreground.rgb import ColorRGB
 from .rgb import RGB_ABC
 
@@ -24,7 +26,7 @@ class OKLCH_ABC(ABC):
             raise ValueError(message_for_percentage_value_error("lightness", lightness))
         if not is_valid_oklch_chroma_value(chroma):
             raise ValueError(message_for_oklch_chroma_value_error(chroma))
-        if not is_valid_percentage(hue):
+        if not is_valid_hue_value(hue):
             raise ValueError(message_for_hue_value_error(hue))
         self.hue: float = hue
         self.chroma: float = chroma
