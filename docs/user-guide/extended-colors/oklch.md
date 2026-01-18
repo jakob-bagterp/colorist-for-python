@@ -177,6 +177,20 @@ Example:
 
 Although the maximum chroma value of `0.4` can technically be higher and replicable on some wide-gamut displays, `0.4` is a reasonable limit for most use cases, as defined in the [CSS specification for `oklch()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklch).
 
+### Converting OKLCH to RGB
+Since the color spaces of OKLCH and RGB are different, it's not straightforward to convert between them. Here's a cheat sheet for converting OKLCH to pure red, green, and blue in RGB and Hex:
+
+<div id="oklch-to-rgb-conversion-table"></div>
+
+| Color   | Red                         | Green                        | Blue                         |
+| ------- | :-------------------------: | :--------------------------: | :--------------------------: |
+| Example |                             |                              |                              |
+| OKLCH   | `oklch(0.628 0.2577 29.23)` | `oklch(0.8664 0.2948 142.5)` | `oklch(0.452 0.3132 264.05)` |
+| RGB     | `rgb(255 0 0)`              | `rgb(0 255 0)`               | `rgb(0 0 255)`.              |
+| Hex.    | `#ff0000`                   | `#00ff00`                    | `#0000ff`                    |
+
+Find more conversions in the [official documentation for OKLCH](https://oklch.net/).
+
 ## Full Line Text Functions
 Try the [`oklch()`](../../reference/extended-colors/oklch.md#colorist.print.foreground.oklch.MkDocstringsWrapper.oklch) and [`bg_oklch()`](../../reference/extended-colors/oklch.md#colorist.print.background.oklch.MkDocstringsWrapper.bg_oklch) methods for a full line of colored text..
 
