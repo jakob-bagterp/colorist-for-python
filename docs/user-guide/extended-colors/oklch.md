@@ -60,6 +60,9 @@ For instance, consider the following comparison of gradients transitioning from 
     </tbody>
 </table>
 
+!!! info "Disclaimer"
+    Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 24-bit colors in RGB, HSL, Hex, or OKLCH. If your terminal does support such advanced colors, read on.
+
 ## Input Parameters
 Each color in OKLCH can be defined as lightness, chroma, and hue:
 
