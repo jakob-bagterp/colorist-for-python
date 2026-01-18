@@ -1,7 +1,9 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
 __all__ = [
-    "Color", "BrightColor", "BgColor", "BgBrightColor", "ColorHex", "BgColorHex", "ColorRGB", "BgColorRGB", "ColorHSL", "BgColorHSL", "ColorVGA", "BgColorVGA", "Effect",
+    "Color", "BrightColor", "BgColor", "BgBrightColor",
+    "ColorHex", "BgColorHex", "ColorRGB", "BgColorRGB", "ColorHSL", "BgColorHSL", "ColorVGA", "BgColorVGA", "ColorOKLCH", "BgColorOKLCH",
+    "Effect",
     "print_color",
     "style_text",
     "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white",
@@ -17,6 +19,7 @@ from .model.background.bright_color import BgBrightColor
 from .model.background.color import BgColor
 from .model.background.hex import BgColorHex
 from .model.background.hsl import BgColorHSL
+from .model.background.oklch import BgColorOKLCH
 from .model.background.rgb import BgColorRGB
 from .model.background.vga import BgColorVGA
 from .model.effect import Effect
@@ -24,6 +27,7 @@ from .model.foreground.bright_color import BrightColor
 from .model.foreground.color import Color
 from .model.foreground.hex import ColorHex
 from .model.foreground.hsl import ColorHSL
+from .model.foreground.oklch import ColorOKLCH
 from .model.foreground.rgb import ColorRGB
 from .model.foreground.vga import ColorVGA
 from .print.background.bright_color import (bg_bright_black, bg_bright_blue,
