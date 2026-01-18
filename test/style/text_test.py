@@ -3,8 +3,9 @@
 import pytest
 
 from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
-                      BgColorRGB, BgColorVGA, BrightColor, Color, ColorHex,
-                      ColorHSL, ColorRGB, ColorVGA, Effect, style_text)
+                      BgColorOKLCH, BgColorRGB, BgColorVGA, BrightColor, Color,
+                      ColorHex, ColorHSL, ColorOKLCH, ColorRGB, ColorVGA,
+                      Effect, style_text)
 
 
 @pytest.mark.parametrize("text, styles, expected", [
@@ -25,9 +26,11 @@ from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
     ("random text", [ColorVGA(57), BgColor.CYAN, Effect.BLINK], "\033[38;5;57m\033[46m\033[5mrandom text\033[0m"),
     ("random text", [BgColorVGA(251)], "\033[48;5;251mrandom text\033[0m"),
     ("random text", ["\033[48;5;251m"], "\033[48;5;251mrandom text\033[0m"),
+    ("random text", [ColorOKLCH(0.7, 0.3, 332)], "\033[38;2;254;37;238mrandom text\033[0m"),
+    ("random text", [BgColorOKLCH(0.54, 0.15, 141)], "\033[48;2;51;130;37mrandom text\033[0m"),
 ])
 def test_style_text(text: str,
-                    styles: list[Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | Effect | str | None],
+                    styles: list[Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | ColorOKLCH | BgColorOKLCH | Effect | str | None],
                     expected: str
                     ) -> None:
     output = style_text(text, *styles)
