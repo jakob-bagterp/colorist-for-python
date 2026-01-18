@@ -9,7 +9,7 @@ tags:
 ---
 
 # VGA Colors
-## What are VGA Colors?
+## What Are VGA Colors?
 The VGA palette is based on a 8-bit color space of 216 colors and 24 shades of gray. 256 color options in total.
 
 !!! info "Disclaimer"

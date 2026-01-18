@@ -9,7 +9,7 @@ tags:
 ---
 
 # HSL Colors
-## What are HSL Colors?
+## What Are HSL Colors?
 The 24-bit HSL color space covers over 16 million colors, and each color can be defined by three parameters:
 
 * Hue

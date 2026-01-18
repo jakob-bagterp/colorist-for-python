@@ -9,7 +9,7 @@ tags:
 ---
 
 # OKLCH Colors
-## What are OKLCH Colors?
+## What Are OKLCH Colors?
 The [OKLCH color model](https://oklch.net/) was created by Björn Ottosson in 2020 and has already been widely adopted by many browsers and applications after being standardized as CSS parameters a few years later. Unlike RGB, HSL, and many other color models, which are either linear or cylindrical, OKLCH takes a different approach.
 
 Since humans perceive colors differently from how they are represented on screens as red, green, and blue — we actually see lightness, redness versus greenness, and blueness versus yellowness with our eye cones — OKLCH is designed to make colors appear more consistent to the human eye.

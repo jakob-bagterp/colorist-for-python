@@ -9,7 +9,7 @@ tags:
 ---
 
 # Hex Colors
-## What are Hex Colors?
+## What Are Hex Colors?
 The 24-bit Hex color model covers over 16 million colors, and each color can be defined with a code in hexadecimal, for instance `#00aaff` or sometimes shortened to `#0af`, that can be broken down into a [RGB value](rgb.md):
 
 | Hex Code  | `00`  | `aa`  | `ff`  |

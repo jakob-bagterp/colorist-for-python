@@ -9,7 +9,7 @@ tags:
 ---
 
 # RGB Colors
-## What are RGB Colors?
+## What Are RGB Colors?
 The 24-bit RGB color model covers over 16 million colors, and each color can be defined as red, green, and blue:
 
 | Channel        | Red     | Green   | Blue    |
