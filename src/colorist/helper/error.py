@@ -16,6 +16,10 @@ def message_for_percentage_value_error(param: str, value: float) -> str:
     return f"Value for \"{param}\" is {value}, but should be number between `0` and `100` %."
 
 
+def message_for_percentage_as_decimal_value_error(param: str, value: float) -> str:
+    return f"Value for \"{param}\" is {value}, but should be number between `0.0` and `1.0`."
+
+
 def message_for_hex_value_error(value: str) -> str:
     return f"Value {value} isn't valid Hex color code, and should be for instance `#B4FBB8` or `B4FBB8`, `#B4F` or `B4F`."
 

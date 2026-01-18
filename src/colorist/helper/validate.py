@@ -23,6 +23,10 @@ def is_valid_percentage(value: float) -> bool:
     return 0 <= value <= 100
 
 
+def is_valid_percentage_as_decimal(value: float) -> bool:
+    return 0 <= value <= 1
+
+
 HEX_SYNTAX_PATTERN = re.compile(r"^#?([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$")
 
 
