@@ -10,7 +10,7 @@ def oklch(text: str, lightness: float, chroma: float, hue: float) -> None:
 
     Args:
         text (str): Text to be printed on colored background.
-        lightness (float): Lightness value between `0.0` and `1.0` where `0` is black and `1` is white.
+        lightness (float): Lightness value between `0.0` and `1.0` where `0.0` is black and `1.0` is white.
         chroma (float): Chroma value between `0.0` and `0.4`.
         hue (float): Number between `0` and `360` degrees.
     """
@@ -25,7 +25,7 @@ class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
 
         Args:
             text (str): Text to be printed on colored background.
-            lightness (float): Lightness value between `0.0` and `1.0` where `0` is black and `1` is white.
+            lightness (float): Lightness value between `0.0` and `1.0` where `0.0` is black and `1.0` is white.
             chroma (float): Chroma value between `0.0` and `0.4`.
             hue (float): Number between `0` and `360` degrees.
 

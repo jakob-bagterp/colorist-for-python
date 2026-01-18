@@ -69,7 +69,7 @@ Each color in OKLCH can be defined as lightness, chroma, and hue:
 | Description    | Brightness of the color. | Intensity of the color. | Degree on the color wheel. |
 
 #### What Is Lightness?
-Lightness is the brightness of the color. It ranges from `0.0` to `1.0`, where `0` is black and `1` is white. Example:
+Lightness is the brightness of the color. It ranges from `0.0` to `1.0`, where `0.0` is black and `1.0` is white. Example:
 
 <table>
     <tbody>

@@ -83,7 +83,7 @@ def oklch_to_oklab(lightness: float, chroma: float, hue: float) -> tuple[float, 
     """Convert OKLCH color space to Oklab.
 
     Args:
-        lightness (float): Lightness value between `0.0` and `1.0` where `0` is black and `1` is white.
+        lightness (float): Lightness value between `0.0` and `1.0` where `0.0` is black and `1.0` is white.
         chroma (float): Chroma value between `0.0` and `0.4`.
         hue (float): Number between `0` and `360` degrees.
 
@@ -105,7 +105,7 @@ def oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, float, fl
     """Convert Oklab color space to LMS cone response.
 
     Args:
-        lightness (float): Lightness value between `0.0` and `1.0` where `0` is black and `1` is white.
+        lightness (float): Lightness value between `0.0` and `1.0` where `0.0` is black and `1.0` is white.
         a (float): Value between `-1.0` and `1.0`.
         b (float): Value between `-1.0` and `1.0`.
 
@@ -182,7 +182,7 @@ def oklch_to_srgb(lightness: float, chroma: float, hue: float) -> tuple[int, int
     """Convert from OKLCH color space to sRGB.
 
     Args:
-        lightness (float): Lightness value between `0.0` and `1.0` where `0` is black and `1` is white.
+        lightness (float): Lightness value between `0.0` and `1.0` where `0.0` is black and `1.0` is white.
         chroma (float): Chroma value between `0.0` and `0.4`.
         hue (float): Number between `0` and `360` degrees.
 
