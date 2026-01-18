@@ -70,6 +70,8 @@ def lms_to_linear_rgb(long: float, medium: float, short: float) -> tuple[float, 
 
 
 def gamma_correction_linear_rgb_to_srgb(red: float, green: float, blue: float) -> tuple[int, int, int]:
+    """Referece: https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)"""
+
     def gamma_correction(color: float) -> int:
         if color <= 0:
             return 0
