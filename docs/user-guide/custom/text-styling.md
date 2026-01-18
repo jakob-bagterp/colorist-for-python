@@ -18,7 +18,7 @@ tags:
 # How to Customize Text Styling and Colors with ANSI Escape Codes
 Instead of printing statements directly to the terminal, you can also customize and combine various colors and styling to text strings before printing them. This gives you more flexibility to create complex patterns with different styles.
 
-## How it Works
+## How It Works
 When using the [`style_text()`](../../reference/custom/text-styling.md#colorist.style.text.MkDocstringsWrapper.style_text) method to apply colors and styling to a text string...
 
 ```python linenums="1" hl_lines="3"
