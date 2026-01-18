@@ -68,7 +68,7 @@ Each color in OKLCH can be defined as lightness, chroma, and hue:
 | Allowed values | `0.0`-`1.0`              | `0.0`-`0.4`             | `0`-`360` degrees          |
 | Description    | Brightness of the color. | Intensity of the color. | Degree on the color wheel. |
 
-### What Is Lightness?
+#### What Is Lightness?
 Lightness is the brightness of the color. It ranges from `0.0` to `1.0`, where `0` is black and `1` is white. Example:
 
 <table>
@@ -104,7 +104,7 @@ Lightness is the brightness of the color. It ranges from `0.0` to `1.0`, where `
     </tbody>
 </table>
 
-### What Is Hue?
+#### What Is Hue?
 Hue is the color wheel position from `0` to `360` degrees. Example:
 
 <table>
@@ -136,7 +136,7 @@ Hue is the color wheel position from `0` to `360` degrees. Example:
     </tbody>
 </table>
 
-### What Is Chroma?
+#### What Is Chroma?
 While lightness and hue are relatively straightforward, chroma can be more difficult to understand. It represents the intensity or purity of a color. Higher values indicate more vivid colors, while lower values indicate more muted or grayish colors. However, the maximum chroma value varies depending on the lightness and hue. Therefore, not all combinations of lightness, chroma, and hue produce valid colors.
 
 Example:
@@ -173,4 +173,36 @@ Example:
 Although the maximum chroma value of `0.4` can technically be higher and replicable on some wide-gamut displays, `0.4` is a reasonable limit for most use cases, as defined in the [CSS specification for `oklch()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklch).
 
 ## Full Line Text Functions
-Try the [`oklch()`](../../reference/extended-colors/oklch.md#colorist.print.foreground.oklch.MkDocstringsWrapper.oklch) and [`bg_oklch()`](../../reference/extended-colors/oklch.md#colorist.print.background.oklch.MkDocstringsWrapper.bg_oklch) methods for a full line of colored text.
+Try the [`oklch()`](../../reference/extended-colors/oklch.md#colorist.print.foreground.oklch.MkDocstringsWrapper.oklch) and [`bg_oklch()`](../../reference/extended-colors/oklch.md#colorist.print.background.oklch.MkDocstringsWrapper.bg_oklch) methods for a full line of colored text..
+
+Example:
+
+```python linenums="1" hl_lines="3-4"
+from colorist import oklch, bg_oklch
+
+oklch("I want this text in orange OKLCH colors", 0.71, 0.1, 31)
+bg_oklch("I want this background in orange OKLCH colors", 0.71, 0.1, 31)
+```
+
+How it appears in the terminal:
+
+<pre><code>% <span style="color: oklch(0.71 0.1 31)">I want this text in orange OKLCH colors</span>
+% <span class="text-contrast" style="background-color: oklch(0.71 0.1 31)">I want this background in orange OKLCH colors</span></code></pre>
+
+## Custom String Styling
+Or customize the styling of text and background with the [`ColorOKLCH()`](../../reference/extended-colors/oklch.md#coloroklchlightness-chroma-hue) and [`BgColorOKLCH()`](../../reference/extended-colors/oklch.md#bgcoloroklchlightness-chroma-hue) classes:
+
+```python linenums="1" hl_lines="6-7"
+from colorist import ColorOKLCH, BgColorOKLCH
+
+neon_pink = ColorOKLCH(0.7, 0.3, 332)
+bg_basil_green = BgColorOKLCH(0.54, 0.15, 141)
+
+print(f"I want to use {neon_pink}NEON PINK{neon_pink.OFF}...")
+print(f"... and {bg_basil_green}BASIL GREEN{bg_basil_green.OFF} colors")
+```
+
+How it appears in the terminal:
+
+<pre><code>% I want to use <span style="color: oklch(0.7 0.3 332)">NEON PINK</span>...
+% ... and <span class="text-contrast" style="background-color: oklch(0.54 0.15 141)">BASIL GREEN</span> colors</code></pre>
