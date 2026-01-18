@@ -55,10 +55,23 @@ def oklch_to_oklab(lightness: float, chroma: float, hue: float) -> tuple[float, 
 
 
 def oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, float, float]:
-    long = lightness + 0.3963377774 * a + 0.2158037573 * b
-    medium = lightness - 0.1055613458 * a - 0.0638541728 * b
-    short = lightness - 0.0894841775 * a - 1.2914855480 * b
-    long, medium, short = tuple(color ** 3 for color in (long, medium, short))
+    """Convert Oklab color space to LMS cone response.
+
+    Refereces:
+        - https://bottosson.github.io/posts/oklab/
+        - https://en.wikipedia.org/wiki/Oklab_color_space
+    """
+
+    # Inverse linear map from Oklab to LMS with coefficients from the Oklab specification
+    long_prime = lightness + 0.3963377774 * a + 0.2158037573 * b
+    medium_prime = lightness - 0.1055613458 * a - 0.0638541728 * b
+    short_prime = lightness - 0.0894841775 * a - 1.2914855480 * b
+
+    # Revert the non-linearity (cube root inverse is power of 3)
+    long = long_prime ** 3
+    medium = medium_prime ** 3
+    short = short_prime ** 3
+
     return long, medium, short
 
 
