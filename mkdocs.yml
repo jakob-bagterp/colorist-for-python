@@ -31,6 +31,7 @@ nav:
       - RGB: user-guide/extended-colors/rgb.md
       - HSL: user-guide/extended-colors/hsl.md
       - Hex: user-guide/extended-colors/hex.md
+      - OKLCH: user-guide/extended-colors/oklch.md
     - Custom:
       - Text Styling: user-guide/custom/text-styling.md
     - Compatibility:
