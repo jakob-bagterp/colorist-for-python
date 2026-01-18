@@ -24,6 +24,7 @@ Find details about all methods in this section.
 * [RGB](extended-colors/rgb.md)
 * [HSL](extended-colors/hsl.md)
 * [Hex](extended-colors/hex.md)
+* [OKLCH](extended-colors/oklch.md)
 
 ### ![Custom text on range of normal and bright colors](../assets/images/colors/palette/rainbow_custom_96x16.png) &nbsp;&nbsp;Custom Text Styling
 * [Custom styling of text](custom/text-styling.md)

@@ -52,6 +52,7 @@ nav:
       - RGB: reference/extended-colors/rgb.md
       - HSL: reference/extended-colors/hsl.md
       - Hex: reference/extended-colors/hex.md
+      - OKLCH: reference/extended-colors/oklch.md
     - Custom:
       - Text Styling: reference/custom/text-styling.md
   - ANSI Escape Codes:
