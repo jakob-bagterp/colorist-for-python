@@ -303,3 +303,93 @@ pre code span[class*="extended-colors"]  {
 .oklch-hue-360 {
     background-color: oklch(0.5 0.2 360);
 }
+
+/* HSL Color Space Examples */
+
+.hsl-saturation-0 {
+    background-color: hsl(180, 0%, 50%);
+}
+
+.hsl-saturation-10 {
+    background-color: hsl(180, 10%, 50%);
+}
+
+.hsl-saturation-20 {
+    background-color: hsl(180, 20%, 50%);
+}
+
+.hsl-saturation-30 {
+    background-color: hsl(180, 30%, 50%);
+}
+
+.hsl-saturation-40 {
+    background-color: hsl(180, 40%, 50%);
+}
+
+.hsl-saturation-50 {
+    background-color: hsl(180, 50%, 50%);
+}
+
+.hsl-saturation-60 {
+    background-color: hsl(180, 60%, 50%);
+}
+
+.hsl-saturation-70 {
+    background-color: hsl(180, 70%, 50%);
+}
+
+.hsl-saturation-80 {
+    background-color: hsl(180, 80%, 50%);
+}
+
+.hsl-saturation-90 {
+    background-color: hsl(180, 90%, 50%);
+}
+
+.hsl-saturation-100 {
+    background-color: hsl(180, 100%, 50%);
+}
+
+.hsl-lightness-0 {
+    background-color: hsl(45, 50%, 0%);
+}
+
+.hsl-lightness-10 {
+    background-color: hsl(45, 50%, 10%);
+}
+
+.hsl-lightness-20 {
+    background-color: hsl(45, 50%, 20%);
+}
+
+.hsl-lightness-30 {
+    background-color: hsl(45, 50%, 30%);
+}
+
+.hsl-lightness-40 {
+    background-color: hsl(45, 50%, 40%);
+}
+
+.hsl-lightness-50 {
+    background-color: hsl(45, 50%, 50%);
+}
+
+.hsl-lightness-60 {
+    background-color: hsl(45, 50%, 60%);
+}
+
+.hsl-lightness-70 {
+    background-color: hsl(45, 50%, 70%);
+}
+
+.hsl-lightness-80 {
+    background-color: hsl(45, 50%, 80%);
+}
+
+.hsl-lightness-90 {
+    background-color: hsl(45, 50%, 90%);
+}
+
+.hsl-lightness-100 {
+    background-color: hsl(45, 50%, 100%);
+}
