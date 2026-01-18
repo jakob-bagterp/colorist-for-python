@@ -90,7 +90,7 @@ def oklch_to_oklab(lightness: float, chroma: float, hue: float) -> tuple[float, 
     Returns:
         tuple[float, float, float]: Tuple with Oklab values (lightness, a, b).
 
-    Refereces:
+    References:
         - https://bottosson.github.io/posts/oklab/
         - https://en.wikipedia.org/wiki/Oklab_color_space
     """
@@ -112,7 +112,7 @@ def oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, float, fl
     Returns:
         tuple[float, float, float]: Tuple with LMS values (long, medium, short).
 
-    Refereces:
+    References:
         - https://bottosson.github.io/posts/oklab/
         - https://en.wikipedia.org/wiki/Oklab_color_space
     """
@@ -141,7 +141,7 @@ def lms_to_linear_rgb(long: float, medium: float, short: float) -> tuple[float, 
     Returns:
         tuple[float, float, float]: Tuple with linear RGB values (red, green, blue).
 
-    Refereces:
+    References:
         - https://en.wikipedia.org/wiki/LMS_color_space
     """
 
@@ -162,7 +162,7 @@ def gamma_correction_linear_rgb_to_srgb(red: float, green: float, blue: float) -
     Returns:
         tuple[int, int, int]: Tuple with sRGB values as integers between `0` and `255`.
 
-    Refereces:
+    References:
         - https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)
         - http://www.brucelindbloom.com/index.html?Eqn_RGB_to_XYZ.html
     """
