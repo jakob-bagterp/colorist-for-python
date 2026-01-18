@@ -7,25 +7,57 @@ from ..helper.error import message_for_hex_value_error
 
 
 def colorsys_rgb_to_real_rgb(rgb_colorsys: tuple[float, float, float]) -> tuple[int, int, int]:
-    """Since Colorsys outputs RGB values as floats between `0.0` and `1.0`, we need to normalize this to a standard RGB scale from `0` to `255`."""
+    """Since Colorsys outputs RGB values as floats between `0.0` and `1.0`, we need to normalize this to a standard RGB scale from `0` to `255`.
+
+    Args:
+        rgb_colorsys (tuple[float, float, float]): Tuple with RGB colors from Colorsys as floats between `0.0` and `1.0`.
+
+    Returns:
+        tuple[int, int, int]: Tuple with RGB colors as integers between `0` and `255`.
+    """
 
     red, green, blue = tuple(int(color * 255) for color in rgb_colorsys)
     return red, green, blue
 
 
 def hue_degrees_to_colorsys_hue(hue: float) -> float:
-    """When converting HLS or HSV with Colorsys, we need to prepare hue between `0` and `360` degrees to a decimal between `0.0` and `1.0`."""
+    """When converting HLS or HSV with Colorsys, we need to prepare hue between `0` and `360` degrees to a decimal between `0.0` and `1.0`.
+
+    Args:
+        hue (float): Number between `0` and `360` degrees.
+
+    Returns:
+        float: Decimal between `0.0` and `1.0` for Colorsys.
+    """
 
     return hue / 360.0
 
 
 def percentage_to_colorsys_decimal(value: float) -> float:
-    """When converting HLS or HSV with Colorsys, we need to prepare lightness, saturation, etc. percentages between `0` and `100` % to a decimal between `0.0` and `1.0`."""
+    """When converting HLS or HSV with Colorsys, we need to prepare lightness, saturation, etc. percentages between `0` and `100` % to a decimal between `0.0` and `1.0`.
+
+    Args:
+        value (float): Percentage between `0` and `100` %.
+
+    Returns:
+        float: Decimal between `0.0` and `1.0` for Colorsys.
+    """
 
     return value / 100.0
 
 
 def hsl_to_rgb(hue: float, saturation: float, lightness: float) -> tuple[int, int, int]:
+    """Convert HSL color to RGB.
+
+    Args:
+        hue (float): Number between `0` and `360` degrees.
+        saturation (float): Percentage between `0` and `100` %.
+        lightness (float): Percentage between `0` and `100` %.
+
+    Returns:
+        tuple[int, int, int]: Tuple with RGB colors as integers between `0` and `255`.
+    """
+
     hue_colorsys = hue_degrees_to_colorsys_hue(hue)
     saturation_colorsys = percentage_to_colorsys_decimal(saturation)
     lightness_colorsys = percentage_to_colorsys_decimal(lightness)
@@ -48,6 +80,21 @@ def hex_to_rgb(hex: str) -> tuple[int, int, int]:
 
 
 def oklch_to_oklab(lightness: float, chroma: float, hue: float) -> tuple[float, float, float]:
+    """Convert OKLCH color space to Oklab.
+
+    Args:
+        lightness (float): Lightness value between `0.0` and `1.0` where `0` is black and `1` is white.
+        chroma (float): Chroma value between `0.0` and `0.4`.
+        hue (float): Number between `0` and `360` degrees.
+
+    Returns:
+        tuple[float, float, float]: Tuple with Oklab values (lightness, a, b).
+
+    Refereces:
+        - https://bottosson.github.io/posts/oklab/
+        - https://en.wikipedia.org/wiki/Oklab_color_space
+    """
+
     hue_radian = math.radians(hue)
     a = chroma * math.cos(hue_radian)
     b = chroma * math.sin(hue_radian)
@@ -56,6 +103,14 @@ def oklch_to_oklab(lightness: float, chroma: float, hue: float) -> tuple[float, 
 
 def oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, float, float]:
     """Convert Oklab color space to LMS cone response.
+
+    Args:
+        lightness (float): Lightness value between `0.0` and `1.0` where `0` is black and `1` is white.
+        a (float): Value between `-1.0` and `1.0`.
+        b (float): Value between `-1.0` and `1.0`.
+
+    Returns:
+        tuple[float, float, float]: Tuple with LMS values (long, medium, short).
 
     Refereces:
         - https://bottosson.github.io/posts/oklab/
@@ -76,7 +131,15 @@ def oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, float, fl
 
 
 def lms_to_linear_rgb(long: float, medium: float, short: float) -> tuple[float, float, float]:
-    """Convert LMS to linear RGB.
+    """Convert LMS color space to linear RGB.
+
+    Args:
+        long (float): Value between `0.0` and `1.0`.
+        medium (float): Value between `0.0` and `1.0`.
+        short (float): Value between `0.0` and `1.0`.
+
+    Returns:
+        tuple[float, float, float]: Tuple with linear RGB values (red, green, blue).
 
     Refereces:
         - https://en.wikipedia.org/wiki/LMS_color_space
@@ -89,7 +152,15 @@ def lms_to_linear_rgb(long: float, medium: float, short: float) -> tuple[float, 
 
 
 def gamma_correction_linear_rgb_to_srgb(red: float, green: float, blue: float) -> tuple[int, int, int]:
-    """Convert linear RGB to standard RGB (sRGB) with gamma correction.
+    """Convert linear RGB color space to sRGB with gamma correction.
+
+    Args:
+        red (float): Value between `0.0` and `1.0`.
+        green (float): Value between `0.0` and `1.0`.
+        blue (float): Value between `0.0` and `1.0`.
+
+    Returns:
+        tuple[int, int, int]: Tuple with sRGB values as integers between `0` and `255`.
 
     Refereces:
         - https://en.wikipedia.org/wiki/SRGB#Transfer_function_(%22gamma%22)
@@ -108,7 +179,16 @@ def gamma_correction_linear_rgb_to_srgb(red: float, green: float, blue: float) -
 
 
 def oklch_to_srgb(lightness: float, chroma: float, hue: float) -> tuple[int, int, int]:
-    """Convert OKLCH to RGB. Converts from OKLCH color space (lightness, chroma, hue) to RGB. Expects lightness between `0` and `100`, chroma between `0` and `0.4`, and hue between `0` and `360` degrees."""
+    """Convert from OKLCH color space to sRGB.
+
+    Args:
+        lightness (float): Lightness value between `0.0` and `1.0` where `0` is black and `1` is white.
+        chroma (float): Chroma value between `0.0` and `0.4`.
+        hue (float): Number between `0` and `360` degrees.
+
+    Returns:
+        tuple[int, int, int]: Tuple with sRGB values as integers between `0` and `255`.
+    """
 
     lightness_oklab, a_oklab, b_oklab = oklch_to_oklab(lightness, chroma, hue)
     long_lms, medium_lms, short_lms = oklab_to_lms(lightness_oklab, a_oklab, b_oklab)
