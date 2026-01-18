@@ -168,6 +168,7 @@ extra_css:
   - assets/stylesheets/colors.css
   - assets/stylesheets/cubes.css
   - assets/stylesheets/effects.css
+  - assets/stylesheets/gradients.css
   - assets/stylesheets/tables.css
 
 extra_javascript:

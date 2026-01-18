@@ -185,3 +185,121 @@ pre code span[class*="extended-colors"]  {
     background-color: var(--bg-color);  /* Get the background color from the markup as variable. */
     color: var(--fg-color);  /* Get the foreground color from the markup as variable. */
 }
+
+/* OKLCH Color Space Examples */
+
+.oklch-lightness-0-0 {
+    background-color: oklch(0.0 0.2 260);
+}
+
+.oklch-lightness-0-1 {
+    background-color: oklch(0.1 0.2 260);
+}
+
+.oklch-lightness-0-2 {
+    background-color: oklch(0.2 0.2 260);
+}
+
+.oklch-lightness-0-3 {
+    background-color: oklch(0.3 0.2 260);
+}
+
+.oklch-lightness-0-4 {
+    background-color: oklch(0.4 0.2 260);
+}
+
+.oklch-lightness-0-5 {
+    background-color: oklch(0.5 0.2 260);
+}
+
+.oklch-lightness-0-6 {
+    background-color: oklch(0.6 0.2 260);
+}
+
+.oklch-lightness-0-7 {
+    background-color: oklch(0.7 0.2 260);
+}
+
+.oklch-lightness-0-8 {
+    background-color: oklch(0.8 0.2 260);
+}
+
+.oklch-lightness-0-9 {
+    background-color: oklch(0.9 0.2 260);
+}
+
+.oklch-lightness-0-10 {
+    background-color: oklch(1.0 0.2 260);
+}
+
+.oklch-chroma-0-00 {
+    background-color: oklch(0.5 0.00 260);
+}
+
+.oklch-chroma-0-05 {
+    background-color: oklch(0.5 0.05 260);
+}
+
+.oklch-chroma-0-10 {
+    background-color: oklch(0.5 0.10 260);
+}
+
+.oklch-chroma-0-15 {
+    background-color: oklch(0.5 0.15 260);
+}
+
+.oklch-chroma-0-20 {
+    background-color: oklch(0.5 0.20 260);
+}
+
+.oklch-chroma-0-25 {
+    background-color: oklch(0.5 0.25 260);
+}
+
+.oklch-chroma-0-30 {
+    background-color: oklch(0.5 0.30 260);
+}
+
+.oklch-chroma-0-35 {
+    background-color: oklch(0.5 0.35 260);
+}
+
+.oklch-chroma-0-40 {
+    background-color: oklch(0.5 0.40 260);
+}
+
+.oklch-hue-0 {
+    background-color: oklch(0.5 0.2 0);
+}
+
+.oklch-hue-45 {
+    background-color: oklch(0.5 0.2 45);
+}
+
+.oklch-hue-90 {
+    background-color: oklch(0.5 0.2 90);
+}
+
+.oklch-hue-135 {
+    background-color: oklch(0.5 0.2 135);
+}
+
+.oklch-hue-180 {
+    background-color: oklch(0.5 0.2 180);
+}
+
+.oklch-hue-225 {
+    background-color: oklch(0.5 0.2 225);
+}
+
+.oklch-hue-270 {
+    background-color: oklch(0.5 0.2 270);
+}
+
+.oklch-hue-315 {
+    background-color: oklch(0.5 0.2 315);
+}
+
+.oklch-hue-360 {
+    background-color: oklch(0.5 0.2 360);
+}
