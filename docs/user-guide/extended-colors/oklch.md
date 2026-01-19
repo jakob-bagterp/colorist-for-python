@@ -10,11 +10,11 @@ tags:
 
 # OKLCH Colors
 ## What Are OKLCH Colors?
-The [OKLCH color model](https://oklch.net/) was created by Björn Ottosson in 2020 and has already been widely adopted by many browsers and applications after being standardized as CSS parameters a few years later. Unlike RGB, HSL, and many other color models, which are either linear or cylindrical, OKLCH takes a different approach.
+The [OKLCH color model](https://oklch.net/) was created by Björn Ottosson in 2020 and has already been widely adopted by many browsers and applications after being standardized as CSS parameters a few years later. Unlike RGB, HSL, and many other color models, which are typically linear or cylindrical, OKLCH takes a different approach. It is the first color model designed specifically with user interfaces (UI), CSS color management, and wide-gamut displays in mind, rather than print or CRT monitors.
 
-Since humans perceive colors differently from how they are represented on screens as red, green, and blue — we actually see lightness, redness versus greenness, and blueness versus yellowness with our eye cones — OKLCH is designed to make colors appear more consistent to the human eye.
+Since humans perceive colors differently from how they are represented on screens as red, green, and blue, OKLCH is designed to make colors appear more consistent to the human eye. Our eyes actually see lightness, redness versus greenness, and blueness versus yellowness, and this sometimes result in uneven color transitions using RGB, HSL, or other traditional color models.
 
-For example, when you change the hue in HSL, the perceived lightness of the color can vary significantly across the palette, making some colors appear much darker or lighter than others. In contrast, OKLCH maintains a consistent lightness across different hues, resulting in a uniform appearance.
+For example, when you change the hue across the color wheel in HSL, the perceived lightness of the color can vary significantly across the palette, making some colors appear much darker or lighter than others. In contrast, OKLCH maintains a consistent lightness across different hues, resulting in a uniform appearance.
 
 ### Example Gradients
 OKLCH produces smoother and more visually appealing color transitions than HSL or RGB when transitioning from one color to another gradually. This is because the lightness component in OKLCH is designed to be perceptually uniform, leading to more natural-looking gradients.
@@ -59,6 +59,8 @@ For instance, consider the following comparison of gradients transitioning from 
         </tr>
     </tbody>
 </table>
+
+Now, let's learn how to use OKLCH colors in your code with Colorist.
 
 !!! info "Disclaimer"
     Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 24-bit colors in RGB, HSL, Hex, or OKLCH. If your terminal does support such advanced colors, read on.
@@ -177,7 +179,7 @@ Example:
 
 Although the maximum chroma value of `0.4` can technically be higher and replicable on some wide-gamut displays, `0.4` is a reasonable limit for most use cases, as defined in the [CSS specification for `oklch()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklch).
 
-### Converting OKLCH to RGB
+### How to Convert OKLCH to RGB
 Since the color spaces of OKLCH and RGB are different, it's not straightforward to convert between them. Here's a cheat sheet for converting OKLCH to pure red, green, and blue in RGB and Hex:
 
 <div id="oklch-to-rgb-conversion-table"></div>
@@ -187,7 +189,7 @@ Since the color spaces of OKLCH and RGB are different, it's not straightforward 
 | Example |                             |                              |                              |
 | OKLCH   | `oklch(0.628 0.2577 29.23)` | `oklch(0.8664 0.2948 142.5)` | `oklch(0.452 0.3132 264.05)` |
 | RGB     | `rgb(255 0 0)`              | `rgb(0 255 0)`               | `rgb(0 0 255)`               |
-| Hex.    | `#ff0000`                   | `#00ff00`                    | `#0000ff`                    |
+| Hex     | `#ff0000`                   | `#00ff00`                    | `#0000ff`                    |
 
 Find more conversions in the [official documentation for OKLCH](https://oklch.net/).
 
