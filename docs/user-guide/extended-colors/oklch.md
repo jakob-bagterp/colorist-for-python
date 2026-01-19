@@ -10,11 +10,11 @@ tags:
 
 # OKLCH Colors
 ## What Are OKLCH Colors?
-The [OKLCH color model](https://oklch.net/) was created by Björn Ottosson in 2020 and has already been widely adopted by many browsers and applications after being standardized as CSS parameters a few years later. Unlike RGB, HSL, and many other color models, which are either linear or cylindrical, OKLCH takes a different approach.
+The [OKLCH color model](https://oklch.net/) was created by Björn Ottosson in 2020 and has already been widely adopted by many browsers and applications after being standardized as CSS parameters a few years later. Unlike RGB, HSL, and many other color models, which often are either linear or cylindrical, OKLCH takes a different approach.
 
-Since humans perceive colors differently from how they are represented on screens as red, green, and blue — we actually see lightness, redness versus greenness, and blueness versus yellowness with our eye cones — OKLCH is designed to make colors appear more consistent to the human eye.
+Since humans perceive colors differently from how they are represented on screens as red, green, and blue, OKLCH is designed to make colors appear more consistent to the human eye. Our eyes actually see lightness, redness versus greenness, and blueness versus yellowness, and this sometimes result in uneven color transitions using RGB, HSL, or other traditional color models.
 
-For example, when you change the hue in HSL, the perceived lightness of the color can vary significantly across the palette, making some colors appear much darker or lighter than others. In contrast, OKLCH maintains a consistent lightness across different hues, resulting in a uniform appearance.
+For example, when you change the hue across the color wheel in HSL, the perceived lightness of the color can vary significantly across the palette, making some colors appear much darker or lighter than others. In contrast, OKLCH maintains a consistent lightness across different hues, resulting in a uniform appearance.
 
 ### Example Gradients
 OKLCH produces smoother and more visually appealing color transitions than HSL or RGB when transitioning from one color to another gradually. This is because the lightness component in OKLCH is designed to be perceptually uniform, leading to more natural-looking gradients.
