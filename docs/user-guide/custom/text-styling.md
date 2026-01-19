@@ -12,6 +12,7 @@ tags:
     - HSL Colors
     - RGB Colors
     - VGA Colors
+    - OKLCH Colors
     - Effects
 ---
 
@@ -41,7 +42,7 @@ print(text)
 
 ## Examples
 ### Single Style
-In addition to standard colors for [text](../standard-colors/text-foreground.md) and [background](../standard-colors/background.md), you can also use [effects](../effects-and-styling.md) as well as extended colors for the [VGA](../extended-colors/vga.md), [RGB](../extended-colors/rgb.md), [HSL](../extended-colors/hsl.md), and [Hex](../extended-colors/hex.md) palettes.
+In addition to standard colors for [text](../standard-colors/text-foreground.md) and [background](../standard-colors/background.md), you can also use [effects](../effects-and-styling.md) as well as extended colors for the [VGA](../extended-colors/vga.md), [RGB](../extended-colors/rgb.md), [HSL](../extended-colors/hsl.md), [Hex](../extended-colors/hex.md), and [OKLCH](../extended-colors/oklch.md) palettes.
 
 For example:
 
