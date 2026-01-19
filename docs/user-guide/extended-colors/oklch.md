@@ -10,7 +10,7 @@ tags:
 
 # OKLCH Colors
 ## What Are OKLCH Colors?
-The [OKLCH color model](https://oklch.net/) was created by Björn Ottosson in 2020 and has already been widely adopted by many browsers and applications after being standardized as CSS parameters a few years later. Unlike RGB, HSL, and many other color models, which often are either linear or cylindrical, OKLCH takes a different approach.
+The [OKLCH color model](https://oklch.net/) was created by Björn Ottosson in 2020 and has already been widely adopted by many browsers and applications after being standardized as CSS parameters a few years later. Unlike RGB, HSL, and many other color models, which are typically linear or cylindrical, OKLCH takes a different approach. It is the first color model designed specifically with user interfaces (UI), CSS color management, and wide-gamut displays in mind, rather than print or CRT monitors.
 
 Since humans perceive colors differently from how they are represented on screens as red, green, and blue, OKLCH is designed to make colors appear more consistent to the human eye. Our eyes actually see lightness, redness versus greenness, and blueness versus yellowness, and this sometimes result in uneven color transitions using RGB, HSL, or other traditional color models.
 
@@ -179,7 +179,7 @@ Example:
 
 Although the maximum chroma value of `0.4` can technically be higher and replicable on some wide-gamut displays, `0.4` is a reasonable limit for most use cases, as defined in the [CSS specification for `oklch()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklch).
 
-### Converting OKLCH to RGB
+### How to Convert OKLCH to RGB
 Since the color spaces of OKLCH and RGB are different, it's not straightforward to convert between them. Here's a cheat sheet for converting OKLCH to pure red, green, and blue in RGB and Hex:
 
 <div id="oklch-to-rgb-conversion-table"></div>
