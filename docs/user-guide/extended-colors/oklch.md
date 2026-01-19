@@ -189,7 +189,7 @@ Since the color spaces of OKLCH and RGB are different, it's not straightforward 
 | Example |                             |                              |                              |
 | OKLCH   | `oklch(0.628 0.2577 29.23)` | `oklch(0.8664 0.2948 142.5)` | `oklch(0.452 0.3132 264.05)` |
 | RGB     | `rgb(255 0 0)`              | `rgb(0 255 0)`               | `rgb(0 0 255)`               |
-| Hex.    | `#ff0000`                   | `#00ff00`                    | `#0000ff`                    |
+| Hex     | `#ff0000`                   | `#00ff00`                    | `#0000ff`                    |
 
 Find more conversions in the [official documentation for OKLCH](https://oklch.net/).
 
