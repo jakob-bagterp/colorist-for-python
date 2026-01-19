@@ -60,6 +60,8 @@ For instance, consider the following comparison of gradients transitioning from 
     </tbody>
 </table>
 
+Now, let's learn how to use OKLCH colors in your code with Colorist.
+
 !!! info "Disclaimer"
     Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 24-bit colors in RGB, HSL, Hex, or OKLCH. If your terminal does support such advanced colors, read on.
 
