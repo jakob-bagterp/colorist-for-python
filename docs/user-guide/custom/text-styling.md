@@ -60,6 +60,27 @@ How it appears in the terminal:
 !!! info "Disclaimer"
     Not all [terminals support](../../user-guide/compatibility/terminal-support.md) 8-bit VGA colors or 24-bit colors in RGB, HSL, Hex, or OKLCH. If your terminal does support such advanced colors, read on.
 
+### Mulitple Color Models: RGB, HSL, Hex, OKLCH
+Let us try different text color models:
+
+```python linenums="1" hl_lines="3-6"
+from colorist import style_text, ColorRGB, ColorHSL, ColorHex, ColorOKLCH
+
+text_rgb = style_text("I want GREEN text", ColorRGB(57, 201, 146))
+text_hsl = style_text("I want GREEN text", ColorHSL(158, 57, 51))
+text_hex = style_text("I want GREEN text", ColorHex("#39c992"))
+text_oklch = style_text("I want GREEN text", ColorOKLCH(0.747, 0.1451, 162.86))
+
+print(text_rgb, text_hsl, text_hex, text_oklch)
+```
+
+How it appears in the terminal where each color is the same despite the different color models:
+
+<pre><code>% <span style="color: rgb(59, 201, 149)">I want GREEN text</span>
+% <span style="color: hsl(158, 57%, 51%)">I want GREEN text</span>
+% <span style="color: #39c992">I want GREEN text</span>
+% <span style="color: oklch(0.747 0.1451 162.86)">I want GREEN text</span></code></pre>
+
 ### Multiple Styles
 You can also combine several styles by adding multiple styling arguments to the `style_text()` method:
 
@@ -74,6 +95,7 @@ How it appears in the terminal:
 
 <pre><code>% <span class="fg-yellow effect-blinking"><strong>WARNING</strong></span></code></pre>
 
+### Mixing Multiple Colors and Effects
 This also enables you to combine text strings with different styles before printing them to the terminal. Extending the previous example:
 
 ```python linenums="1" hl_lines="4"
