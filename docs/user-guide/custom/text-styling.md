@@ -108,3 +108,27 @@ print(f"This is a {warning}. Be careful!")
 How it appears in the terminal:
 
 <pre><code>% This is a <span class="fg-yellow effect-blinking"><strong>WARNING</strong></span>. Be careful!</code></pre>
+
+### Custom Expressions with Lambda Functions
+You can also use the `style_text()` method as a `lambda` function to create custom methods:
+
+```python linenums="1" hl_lines="3-4"
+from colorist import style_text, Color
+
+approved = lambda text: style_text(text, Color.GREEN)
+not_approved = lambda text: style_text(text, Color.RED)
+
+def print_approval(text: str, is_approved: bool):
+    if is_approved:
+        print(approved(text))
+    else:
+        print(not_approved(text))
+
+print_approval("APPROVED", True)
+print_approval("NOT APPROVED", False)
+```
+
+How it appears in the terminal:
+
+<pre><code>% <span class="fg-green">APPROVED</span>
+% <span class="fg-red">NOT APPROVED</span></code></pre>
