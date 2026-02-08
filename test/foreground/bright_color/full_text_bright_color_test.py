@@ -4,8 +4,8 @@ import pytest
 import terminal
 from _config.callables import PrintFullTextCallable
 
-from colorist import (bright_black, bright_blue, bright_cyan, bright_green,
-                      bright_magenta, bright_red, bright_white, bright_yellow)
+from colorist import (bright_black, bright_blue, bright_cyan, bright_green, bright_magenta, bright_red, bright_white,
+                      bright_yellow)
 
 
 @pytest.mark.parametrize("print_function, text, expected", [

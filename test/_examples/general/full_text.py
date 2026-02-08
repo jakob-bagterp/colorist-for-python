@@ -1,8 +1,7 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
-from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
-                      BgColorRGB, BrightColor, Color, ColorHex, ColorHSL,
-                      ColorRGB, Effect, green, print_color)
+from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL, BgColorRGB, BrightColor, Color, ColorHex,
+                      ColorHSL, ColorRGB, Effect, green, print_color)
 
 if __name__ == "__main__":
     print("")

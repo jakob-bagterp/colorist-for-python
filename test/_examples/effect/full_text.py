@@ -1,7 +1,6 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
-from colorist import (effect_blink, effect_bold, effect_dim, effect_hide,
-                      effect_reverse, effect_underline)
+from colorist import effect_blink, effect_bold, effect_dim, effect_hide, effect_reverse, effect_underline
 
 if __name__ == "__main__":
     print("")

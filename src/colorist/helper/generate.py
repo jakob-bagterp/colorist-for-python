@@ -1,7 +1,6 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
-from ..constants.ansi import (AnsiColor, AnsiColorSelector, AnsiEffect,
-                              AnsiEffectSelector, AnsiRgbColorSelector,
+from ..constants.ansi import (AnsiColor, AnsiColorSelector, AnsiEffect, AnsiEffectSelector, AnsiRgbColorSelector,
                               AnsiVgaColorSelector)
 from ..constants.ascii import AsciiEscapeCode
 from ..model.abc.rgb import RGB_ABC

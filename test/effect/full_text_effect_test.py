@@ -4,10 +4,9 @@ import pytest
 import terminal
 from _config.callables import PrintEffectCallable, PrintEffectWithColorCallable
 
-from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
-                      BgColorRGB, BrightColor, Color, ColorHex, ColorHSL,
-                      ColorRGB, effect_blink, effect_bold, effect_dim,
-                      effect_hide, effect_reverse, effect_underline)
+from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL, BgColorRGB, BrightColor, Color, ColorHex,
+                      ColorHSL, ColorRGB, effect_blink, effect_bold, effect_dim, effect_hide, effect_reverse,
+                      effect_underline)
 from colorist.model.abc.color import BgColor_ABC, FgColor_ABC
 
 

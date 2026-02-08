@@ -3,10 +3,8 @@
 import pytest
 import terminal
 
-from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL,
-                      BgColorOKLCH, BgColorRGB, BgColorVGA, BrightColor, Color,
-                      ColorHex, ColorHSL, ColorOKLCH, ColorRGB, ColorVGA,
-                      Effect, style_text)
+from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL, BgColorOKLCH, BgColorRGB, BgColorVGA, BrightColor,
+                      Color, ColorHex, ColorHSL, ColorOKLCH, ColorRGB, ColorVGA, Effect, style_text)
 
 
 @pytest.mark.parametrize("text, styles, expected", [

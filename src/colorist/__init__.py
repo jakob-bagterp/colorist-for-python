@@ -30,25 +30,18 @@ from .model.foreground.hsl import ColorHSL
 from .model.foreground.oklch import ColorOKLCH
 from .model.foreground.rgb import ColorRGB
 from .model.foreground.vga import ColorVGA
-from .print.background.bright_color import (bg_bright_black, bg_bright_blue,
-                                            bg_bright_cyan, bg_bright_green,
-                                            bg_bright_magenta, bg_bright_red,
-                                            bg_bright_white, bg_bright_yellow)
-from .print.background.color import (bg_black, bg_blue, bg_cyan, bg_green,
-                                     bg_magenta, bg_red, bg_white, bg_yellow)
+from .print.background.bright_color import (bg_bright_black, bg_bright_blue, bg_bright_cyan, bg_bright_green,
+                                            bg_bright_magenta, bg_bright_red, bg_bright_white, bg_bright_yellow)
+from .print.background.color import bg_black, bg_blue, bg_cyan, bg_green, bg_magenta, bg_red, bg_white, bg_yellow
 from .print.background.hex import bg_hex
 from .print.background.hsl import bg_hsl
 from .print.background.oklch import bg_oklch
 from .print.background.rgb import bg_rgb
 from .print.background.vga import bg_vga
-from .print.effect import (effect_blink, effect_bold, effect_dim, effect_hide,
-                           effect_reverse, effect_underline)
-from .print.foreground.bright_color import (bright_black, bright_blue,
-                                            bright_cyan, bright_green,
-                                            bright_magenta, bright_red,
-                                            bright_white, bright_yellow)
-from .print.foreground.color import (black, blue, cyan, green, magenta, red,
-                                     white, yellow)
+from .print.effect import effect_blink, effect_bold, effect_dim, effect_hide, effect_reverse, effect_underline
+from .print.foreground.bright_color import (bright_black, bright_blue, bright_cyan, bright_green, bright_magenta,
+                                            bright_red, bright_white, bright_yellow)
+from .print.foreground.color import black, blue, cyan, green, magenta, red, white, yellow
 from .print.foreground.hex import hex
 from .print.foreground.hsl import hsl
 from .print.foreground.oklch import oklch

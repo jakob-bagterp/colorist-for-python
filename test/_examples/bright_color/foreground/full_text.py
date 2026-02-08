@@ -1,7 +1,7 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
-from colorist import (bright_black, bright_blue, bright_cyan, bright_green,
-                      bright_magenta, bright_red, bright_white, bright_yellow)
+from colorist import (bright_black, bright_blue, bright_cyan, bright_green, bright_magenta, bright_red, bright_white,
+                      bright_yellow)
 
 if __name__ == "__main__":
     print("")
