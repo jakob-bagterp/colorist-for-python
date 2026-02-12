@@ -1,6 +1,6 @@
 [project]
 name = "colorist"
-version = "1.8.11"
+version = "1.8.12"
 description = "Lightweight package that makes it easy and fast to print colored text in the terminal"
 authors = [
   { name = "Jakob Bagterp", email = "jakob_bagterp@hotmail.com" }
