@@ -21,6 +21,7 @@ dependencies = [
     "pytest-cov==7.0.0",
     "pytest-xdist==3.8.0",
     "tox==4.34.1",
+    "uv-build>=0.10.2",
 ]
 
 [build-system]
