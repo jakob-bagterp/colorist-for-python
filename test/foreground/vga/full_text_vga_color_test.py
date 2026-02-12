@@ -6,11 +6,7 @@ import terminal
 from colorist import vga
 
 
-@pytest.mark.parametrize("text, vga_color", [
-    ("random text", 0),
-    ("random text", 255),
-    ("random text", 135),
-])
+@pytest.mark.parametrize("text, vga_color", [("random text", 0), ("random text", 255), ("random text", 135)])
 def test_full_text_vga_color(text: str, vga_color: int, capfd: object) -> None:
     vga(text, vga_color)
     terminal_output = terminal.get_output(capfd)

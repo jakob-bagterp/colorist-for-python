@@ -20,18 +20,53 @@ from ..model.foreground.rgb import ColorRGB
 from ..model.foreground.vga import ColorVGA
 
 
-def style_text(text: str,
-               *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | ColorOKLCH | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | BgColorOKLCH | Effect | str | None
-               ) -> str:
+def style_text(
+    text: str,
+    *styles: Color
+    | BrightColor
+    | ColorVGA
+    | ColorRGB
+    | ColorHSL
+    | ColorHex
+    | ColorOKLCH
+    | BgColor
+    | BgBrightColor
+    | BgColorVGA
+    | BgColorRGB
+    | BgColorHSL
+    | BgColorHex
+    | BgColorOKLCH
+    | Effect
+    | str
+    | None,
+) -> str:
     """Style text with various options for text and background colors, styling and effects."""
 
     return f"{''.join('' if style is None else str(style) for style in styles)}{text}{RESET_ALL}"
 
 
 class MkDocstringsWrapper(MkDocstringsWrapper_ABC):
-    def style_text(self, text: str,
-                   *styles: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | ColorOKLCH | BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | BgColorOKLCH | Effect | str | None
-                   ) -> str:
+    def style_text(
+        self,
+        text: str,
+        *styles: Color
+        | BrightColor
+        | ColorVGA
+        | ColorRGB
+        | ColorHSL
+        | ColorHex
+        | ColorOKLCH
+        | BgColor
+        | BgBrightColor
+        | BgColorVGA
+        | BgColorRGB
+        | BgColorHSL
+        | BgColorHex
+        | BgColorOKLCH
+        | Effect
+        | str
+        | None,
+    ) -> str:
         """Style text with various options for text and background colors, styling and effects.
 
         Args:

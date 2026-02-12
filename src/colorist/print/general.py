@@ -19,11 +19,20 @@ from ..model.foreground.rgb import ColorRGB
 from ..model.foreground.vga import ColorVGA
 
 
-def print_color(text: str,
-                color: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | ColorOKLCH | str | None = None,
-                bg_color: BgColor | BgBrightColor | BgColorVGA | BgColorRGB | BgColorHSL | BgColorHex | BgColorOKLCH | str | None = None,
-                effect: Effect | str | None = None
-                ) -> None:
+def print_color(
+    text: str,
+    color: Color | BrightColor | ColorVGA | ColorRGB | ColorHSL | ColorHex | ColorOKLCH | str | None = None,
+    bg_color: BgColor
+    | BgBrightColor
+    | BgColorVGA
+    | BgColorRGB
+    | BgColorHSL
+    | BgColorHex
+    | BgColorOKLCH
+    | str
+    | None = None,
+    effect: Effect | str | None = None,
+) -> None:
     """Prints full line of text with various options for text and background color, styling and effects."""
 
     color_str = helper.print.normalize_input(color)

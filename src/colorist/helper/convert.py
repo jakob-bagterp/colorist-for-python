@@ -73,7 +73,7 @@ def hex_to_rgb(hex: str) -> tuple[int, int, int]:
         red, green, blue = tuple(int(hex[i] * 2, 16) for i in (0, 1, 2))
         return red, green, blue
     elif len(hex) == 6:
-        red, green, blue = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
+        red, green, blue = tuple(int(hex[i : i + 2], 16) for i in (0, 2, 4))
         return red, green, blue
     else:
         raise ValueError(message_for_hex_value_error(hex))
@@ -123,9 +123,9 @@ def oklab_to_lms(lightness: float, a: float, b: float) -> tuple[float, float, fl
     short_prime = lightness - 0.0894841775 * a - 1.2914855480 * b
 
     # Revert the non-linearity (cube root inverse is power of 3)
-    long = long_prime ** 3
-    medium = medium_prime ** 3
-    short = short_prime ** 3
+    long = long_prime**3
+    medium = medium_prime**3
+    short = short_prime**3
 
     return long, medium, short
 

@@ -7,7 +7,9 @@ if __name__ == "__main__":
     bg_steel_blue = BgColorRGB(70, 130, 180)
 
     print("")
-    print(f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF} and {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors inside this paragraph")
+    print(
+        f"I want to use {dusty_pink}dusty pink{dusty_pink.OFF} and {bg_steel_blue}steel blue{bg_steel_blue.OFF} colors inside this paragraph"
+    )
     print("")
 
     print("")
