@@ -1,7 +1,20 @@
 # Copyright 2022 – present, Jakob Bagterp. BSD 3-Clause license and refer to LICENSE file.
 
-from colorist import (BgBrightColor, BgColor, BgColorHex, BgColorHSL, BgColorRGB, BrightColor, Color, ColorHex,
-                      ColorHSL, ColorRGB, Effect, green, print_color)
+from colorist import (
+    BgBrightColor,
+    BgColor,
+    BgColorHex,
+    BgColorHSL,
+    BgColorRGB,
+    BrightColor,
+    Color,
+    ColorHex,
+    ColorHSL,
+    ColorRGB,
+    Effect,
+    green,
+    print_color,
+)
 
 if __name__ == "__main__":
     print("")
@@ -17,7 +30,12 @@ if __name__ == "__main__":
     print_color("Text on HSL colored background", bg_color=BgColorHSL(250, 50, 55))
     print_color("Text on Hex colored background", bg_color=BgColorHex("aB3"))
     print_color("Blinking text", effect=Effect.BLINK)
-    print_color("Bold RGB colored text on cyan background", color=ColorRGB(57, 33, 253), bg_color=BgColor.CYAN, effect=Effect.BOLD)
+    print_color(
+        "Bold RGB colored text on cyan background",
+        color=ColorRGB(57, 33, 253),
+        bg_color=BgColor.CYAN,
+        effect=Effect.BOLD,
+    )
     # Docs homepage:
     print("")
     green("This is GREEN!")

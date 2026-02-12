@@ -11,10 +11,10 @@ Overview of the dependencies:
 * Theme: [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
 * Plugins: Various [theme extensions](https://squidfunk.github.io/mkdocs-material/extensions/) and [mkdocstrings](https://mkdocstrings.github.io) for source code documentation
 
-You can find all the dependencies in the `/docs/requirements.txt` file. How to install them from the root of the project:
+You can find all the dependencies in the `pyproject.toml` file. How to install them from the root of the project:
 
 ```bash
-pip install -r ./docs/requirements.txt
+uv sync --frozen --group docs
 ```
 
 ## Build Pipeline
@@ -48,18 +48,11 @@ mkdocs serve
 ```
 
 ### Troubleshooting
-If you're running a virtual environment with [`venv`](https://docs.python.org/3/library/venv.html) (e.g. created with the command `python3 -m venv .venv`), sometimes the  MkDocs dependencies break for unknown reasons.
+If you're running a virtual environment with [`venv`](https://docs.python.org/3/library/venv.html) (e.g. created with the command `uv venv`), sometimes the  MkDocs dependencies break for unknown reasons.
 
 After activating the virtual environment with the `source .venv/bin/activate` command, try using the following commands instead:
 
 ```bash
-python3 -m mkdocs build
-python3 -m mkdocs serve
-```
-
-Or trying executing the commands with a specific version of Python:
-
-```bash
-python3.11 -m mkdocs build
-python3.11 -m mkdocs serve
+uv run mkdocs build
+uv run mkdocs serve
 ```

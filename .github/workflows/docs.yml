@@ -18,10 +18,12 @@ jobs:
         with:
           lfs: true
           fetch-depth: 0
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.14"
+
       - name: Set up cached packages
         run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v5
@@ -30,10 +32,12 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install -r ./docs/requirements.txt
-          pip install .
+        run: uv sync --frozen --group docs
+
       - name: Build and deploy MkDocs website to GitHub Pages
-        run: mkdocs gh-deploy --force
+        run: uv run mkdocs gh-deploy --force

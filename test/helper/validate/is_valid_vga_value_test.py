@@ -5,15 +5,9 @@ import pytest
 from colorist import helper
 
 
-@pytest.mark.parametrize("input, expected", [
-    (0, True),
-    (117, True),
-    (255, True),
-    (0.0, True),
-    (255.0, True),
-    (255.1, False),
-    (256, False),
-    (-1, False),
-])
+@pytest.mark.parametrize(
+    "input, expected",
+    [(0, True), (117, True), (255, True), (0.0, True), (255.0, True), (255.1, False), (256, False), (-1, False)],
+)
 def test_is_valid_vga_value(input: int, expected: bool) -> None:
     assert helper.validate.is_valid_vga_value(input) is expected

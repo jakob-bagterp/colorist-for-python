@@ -4,11 +4,7 @@ import pytest
 
 from colorist import BgColorVGA, ColorVGA
 
-MOCK_DATASET = [
-    (0, "VGA: 0"),
-    (137, "VGA: 137"),
-    (255, "VGA: 255"),
-]
+MOCK_DATASET = [(0, "VGA: 0"), (137, "VGA: 137"), (255, "VGA: 255")]
 
 
 @pytest.mark.parametrize("vga, expected_repr", MOCK_DATASET)

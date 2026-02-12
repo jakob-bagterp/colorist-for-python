@@ -15,17 +15,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.14"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install -r ./requirements.txt
-          pip install -r ./requirements_dev.txt
+        run: uv sync --frozen --group dev
+
       - name: Generate coverage report
-        run: pytest --numprocesses=auto --cov=./ --cov-report=xml -vv -rA
+        run: uv run pytest --numprocesses=auto --cov=./ --cov-report=xml -vv -rA
+
       - name: Upload coverage report to CodeCov
         uses: codecov/codecov-action@v5
         with:
