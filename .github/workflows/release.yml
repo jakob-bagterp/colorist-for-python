@@ -1,6 +1,7 @@
 # Preparation steps before triggering the workflow by pushing a version tag (e.g. v1.2.3):
 # 1. Update the version number in the following files:
-#    - /setup.cfg                (update the version in the [metadata] section)
+#    - /pyproject.toml           (update the version in the [metadata] section)
+#    - /uv.lock                  (run "uv sync" to populate the new version from pyproject.toml)
 #    - /src/<package>/version.py (update the __version_info__ tuple)
 #    - /README.md                (update the version in the badge)
 #    - /docs/index.md            (update the version in the badge)
