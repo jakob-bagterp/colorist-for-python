@@ -173,7 +173,7 @@ wheels = [
 
 [[package]]
 name = "colorist"
-version = "1.8.12"
+version = "1.8.13"
 source = { editable = "." }
 
 [package.dev-dependencies]
