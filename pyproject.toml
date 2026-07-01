@@ -34,7 +34,7 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "coverage==7.14.1",
+    "coverage==7.14.3",
     "mypy==2.1.0",
     "pre-commit==4.6.0",
     "pytest==9.0.3",
