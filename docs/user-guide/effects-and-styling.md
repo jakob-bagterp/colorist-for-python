@@ -69,7 +69,9 @@ Effects can also be mixed with colors:
 ```python linenums="1" hl_lines="3"
 from colorist import Color, Effect
 
-print(f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph")
+print(
+    f"I want both {Color.RED}colored and {Effect.BLINK}blinking{Effect.BLINK_OFF} text{Color.OFF} inside this paragraph"
+)
 ```
 
 How it appears in the terminal:
