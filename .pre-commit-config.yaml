@@ -31,6 +31,7 @@ repos:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
       - id: ruff-format
+        types_or: [python, pyi, jupyter]
 
 ci:
   autofix_prs: true
