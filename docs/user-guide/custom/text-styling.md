@@ -118,13 +118,11 @@ from colorist import style_text, Color
 approved = lambda text: style_text(text, Color.GREEN)
 not_approved = lambda text: style_text(text, Color.RED)
 
-
 def print_approval(text: str, is_approved: bool):
     if is_approved:
         print(approved(text))
     else:
         print(not_approved(text))
-
 
 print_approval("APPROVED", True)
 print_approval("NOT APPROVED", False)
