@@ -11,12 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Shuffle the endpoints, so the submissions don't always go to the same search engine first:
+      - name: Shuffle IndexNow endpoints
+        id: endpoints
+        run: echo "list=$(shuf -e yandex naver seznam yep | paste -sd, -)" >> "$GITHUB_OUTPUT"
+
       - name: Submit sitemap URLs to IndexNow
-        uses: jakob-bagterp/index-now-submit-sitemap-urls-action@v1
+        uses: jakob-bagterp/index-now-submit-sitemap-urls-action@v2
         with:
           host: jakob-bagterp.github.io
           api_key: 6d71a14ac15c4c41a0c19e641f659208
           api_key_location: https://jakob-bagterp.github.io/index-now-api-key.txt
-          endpoint: yandex
+          endpoint: ${{ steps.endpoints.outputs.list }}
           sitemap_locations: https://jakob-bagterp.github.io/colorist-for-python/sitemap.xml
           sitemap_days_ago: 7
+          retries: 3
