@@ -20,9 +20,14 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
+        id: setup-python
         uses: actions/setup-python@v7
         with:
           python-version: "3.14"
+
+      # Let uv use Python 3.14 from setup-python instead of 3.10 from the .python-version file:
+      - name: Use Python from setup-python in uv
+        run: echo "UV_PYTHON=${{ steps.setup-python.outputs.python-path }}" >> "$GITHUB_ENV"
 
       - name: Set up cached packages
         run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
