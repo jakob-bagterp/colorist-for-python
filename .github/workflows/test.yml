@@ -38,4 +38,7 @@ jobs:
           uv tool install tox --with tox-uv --with tox-gh-actions
 
       - name: Run tests with Tox
+        env:
+          # Lets a test verify that the job tests the Python version of its matrix entry:
+          EXPECTED_PYTHON_VERSION: ${{ matrix.python-version }}
         run: tox
