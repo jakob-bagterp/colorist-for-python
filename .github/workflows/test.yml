@@ -33,10 +33,8 @@ jobs:
         uses: astral-sh/setup-uv@v7
 
       # Install tox on the Python version of the matrix entry, as tox-gh-actions selects the tox environment by the Python version that tox runs on:
-      - name: Install dependencies
-        run: |
-          uv sync --frozen --all-extras
-          uv tool install tox --python ${{ matrix.python-version }} --with tox-uv --with tox-gh-actions
+      - name: Install tox
+        run: uv tool install tox --python ${{ matrix.python-version }} --with tox-uv --with tox-gh-actions
 
       - name: Run tests with Tox
         env:
