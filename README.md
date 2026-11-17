@@ -1,5 +1,5 @@
 [![Latest version](https://img.shields.io/static/v1?label=Version&message=1.8.15&color=yellowgreen)](https://github.com/jakob-bagterp/colorist-for-python/releases/latest)
-[![Python 3.10 | 3.11 | 3.12 | 3.13 | 3.14+](https://img.shields.io/static/v1?label=Python&message=3.10%20|%203.11%20|%203.12%20|%203.13%20|%203.14%2B&color=blueviolet)](https://www.python.org)
+[![Python 3.10 | 3.11 | 3.12 | 3.13 | 3.14 | 3.15+](https://img.shields.io/static/v1?label=Python&message=3.10%20|%203.11%20|%203.12%20|%203.13%20|%203.14%20|%203.15%2B&color=blueviolet)](https://www.python.org)
 [![BSD-3-Clause license](https://img.shields.io/static/v1?label=License&message=BSD-3-Clause&color=blue)](https://github.com/jakob-bagterp/colorist-for-python/blob/master/LICENSE.md)
 [![Codecov](https://codecov.io/gh/jakob-bagterp/colorist-for-python/branch/master/graph/badge.svg?token=1E69VOP4ED)](https://codecov.io/gh/jakob-bagterp/colorist-for-python)
 [![CodeQL](https://github.com/jakob-bagterp/colorist-for-python/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/jakob-bagterp/colorist-for-python/actions/workflows/github-code-scanning/codeql)
