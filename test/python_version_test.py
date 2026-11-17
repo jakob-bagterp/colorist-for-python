@@ -5,7 +5,7 @@ import pytest
 
 
 def test_python_version_matches_ci_matrix() -> None:
-    """Ensure that each CI job tests the Python version of its matrix entry, e.g. that a job for Python 3.14 isn't silently tested on Python 3.11."""
+    """Ensure that each CI job tests the Python version of its matrix entry, e.g. that a job for Python 3.15 isn't silently tested on Python 3.11."""
 
     expected_version = os.environ.get("EXPECTED_PYTHON_VERSION")
     if not expected_version:
