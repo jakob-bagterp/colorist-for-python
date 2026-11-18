@@ -43,6 +43,8 @@ dev = [
     "pytest-xdist==3.8.0",
     "ruff==0.17.3",
     "tox==4.65.0",
+    "tox-gh-actions==3.5.0",
+    "tox-uv==1.36.1",
 ]
 docs = [
     "mkdocs==1.6.1",
