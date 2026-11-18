@@ -34,8 +34,11 @@ jobs:
 
       # Install tox on the Python version of the matrix entry, as tox-gh-actions selects the tox environment by the Python version that tox runs on:
       - name: Install tox
-        # Pin tox below 4.67.14, as tox-gh-actions 3.5.0 fails to import with newer tox versions (ImportError: _PLACE_HOLDER):
-        run: uv tool install "tox<4.67.14" --python ${{ matrix.python-version }} --with tox-uv --with tox-gh-actions
+        # Use the versions of tox and its plugins pinned in the dev dependency group, so a new tox release can't break CI before Dependabot proposes it:
+        shell: bash
+        run: |
+          uv export --python ${{ matrix.python-version }} --only-group dev --no-hashes --no-emit-project --no-header --output-file "$RUNNER_TEMP/constraints.txt"
+          uv tool install tox --python ${{ matrix.python-version }} --with tox-uv --with tox-gh-actions --constraints "$RUNNER_TEMP/constraints.txt"
 
       - name: Run tests with Tox
         env:
